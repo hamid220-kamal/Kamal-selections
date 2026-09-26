@@ -1,6 +1,7 @@
 "use client";
 
 import Link from "next/link";
+import Image from "next/image";
 
 interface WomensHeroProps {
   onOpenStoreModal?: () => void;
@@ -8,104 +9,124 @@ interface WomensHeroProps {
 
 export function WomensHero({ onOpenStoreModal }: WomensHeroProps) {
   return (
-    <section className="section-women-hero" id="women-hero">
-      {/* BOTANICAL CORNER LINE-ART DECORATIONS */}
-      <div className="botanical-corner corner-top-left" aria-hidden="true">
-        <svg viewBox="0 0 200 200" className="botanical-line-svg">
-          <g stroke="#CFA753" strokeWidth="1.2" fill="none" opacity="0.35">
+    <section className="relative overflow-hidden bg-[#FAF5EB] pt-28 pb-16 lg:pt-36 lg:pb-24 border-b border-[#E5C378]/20" id="women-hero">
+      {/* BOTANICAL CORNER LINE-ART ACCENTS */}
+      <div className="absolute top-4 left-4 w-40 h-40 pointer-events-none opacity-25 z-0" aria-hidden="true">
+        <svg viewBox="0 0 200 200" className="w-full h-full">
+          <g stroke="#CFA753" strokeWidth="1.2" fill="none">
             <path d="M 10,10 Q 70,80 150,40 T 180,120" />
-            <path d="M 30,10 C 50,40 80,60 50,90 C 30,70 20,40 30,10 Z" fill="#F4C4D9" fillOpacity="0.15" />
-            <path d="M 70,40 C 100,60 120,90 90,120 C 70,100 60,70 70,40 Z" fill="#F4C4D9" fillOpacity="0.12" />
+            <path d="M 30,10 C 50,40 80,60 50,90 C 30,70 20,40 30,10 Z" fill="#F4C4D9" fillOpacity="0.2" />
+            <path d="M 70,40 C 100,60 120,90 90,120 C 70,100 60,70 70,40 Z" fill="#F4C4D9" fillOpacity="0.15" />
           </g>
         </svg>
       </div>
 
-      <div className="botanical-corner corner-bottom-left" aria-hidden="true">
-        <svg viewBox="0 0 200 200" className="botanical-line-svg">
-          <g stroke="#CFA753" strokeWidth="1.2" fill="none" opacity="0.35">
-            <path d="M 10,190 Q 80,120 40,50 T 120,20" />
-            <path d="M 20,160 C 40,140 70,120 90,150 C 70,170 40,180 20,160 Z" fill="#F4C4D9" fillOpacity="0.15" />
-          </g>
-        </svg>
-      </div>
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+        <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-8 items-center">
+          
+          {/* LEFT COLUMN: ~45% EDITORIAL CONTENT */}
+          <div className="lg:col-span-6 flex flex-col justify-center text-left space-y-6">
+            
+            {/* EYEBROW */}
+            <div className="inline-flex items-center space-x-3 animate-on-scroll fade-in">
+              <span className="h-[1px] w-8 bg-[#CFA753]"></span>
+              <span className="text-xs sm:text-sm font-semibold tracking-widest text-[#4A0717] uppercase">
+                KAMAL SELECTIONS · WOMEN'S WEAR
+              </span>
+              <span className="h-[1px] w-8 bg-[#CFA753]"></span>
+            </div>
 
-      <div className="women-hero-container">
-        {/* LEFT COLUMN: ~45% EDITORIAL CONTENT */}
-        <div className="women-hero-content-col">
-          {/* SMALL EYEBROW */}
-          <div className="showcase-eyebrow-wrap animate-on-scroll fade-in">
-            <span className="eyebrow-accent-line"></span>
-            <span className="showcase-eyebrow-text">KAMAL SELECTIONS · WOMEN'S WEAR</span>
-            <span className="eyebrow-accent-line"></span>
+            {/* SEMANTIC H1 HEADING */}
+            <div className="space-y-2">
+              <span className="sr-only">Women's Wear in Shadnagar</span>
+              <h1 className="font-serif text-4xl sm:text-5xl lg:text-6xl font-extrabold text-[#380511] leading-[1.12] tracking-tight">
+                Style Made <br />
+                <span className="italic text-[#4A0717] font-normal font-serif">for Every Woman.</span>
+              </h1>
+            </div>
+
+            {/* SUPPORTING PARAGRAPH */}
+            <p className="text-base sm:text-lg text-[#3D2314]/85 leading-relaxed max-w-xl">
+              Explore women's fashion designed for everyday comfort, celebrations and everything in between.
+            </p>
+
+            {/* CATEGORY STRIP */}
+            <div className="py-2.5 px-4 bg-[#FDFBF7] border border-[#E5C378]/30 rounded-full inline-block max-w-max shadow-xs">
+              <p className="text-xs sm:text-sm font-medium text-[#4A0717] tracking-wide">
+                Dresses · Kurtis · Tops · Leggings · 3-Piece Sets · Party Wear
+              </p>
+            </div>
+
+            {/* CTA GROUP */}
+            <div className="pt-2 flex flex-wrap items-center gap-4 sm:gap-6">
+              <a
+                href="#categories"
+                className="inline-flex items-center justify-center px-7 py-3.5 rounded-full bg-[#4A0717] text-[#FAF5EB] font-medium text-sm tracking-wide shadow-md hover:bg-[#380511] hover:scale-[1.02] active:scale-[0.98] transition-all duration-300 group"
+              >
+                <span>Explore Collection</span>
+                <span className="ml-2 group-hover:translate-y-0.5 transition-transform">↓</span>
+              </a>
+
+              <Link
+                href="/store"
+                onClick={(e) => {
+                  if (onOpenStoreModal) {
+                    e.preventDefault();
+                    onOpenStoreModal();
+                  }
+                }}
+                className="inline-flex items-center text-sm font-semibold text-[#4A0717] hover:text-[#380511] group py-2"
+              >
+                <span className="border-b border-[#4A0717]/40 group-hover:border-[#4A0717] transition-colors pb-0.5">
+                  Visit Our Store
+                </span>
+                <span className="ml-1.5 group-hover:translate-x-1 transition-transform">→</span>
+              </Link>
+            </div>
+
+            {/* LOCATION BADGE */}
+            <div className="pt-2 flex items-center space-x-2 text-xs text-[#3D2314]/70">
+              <span className="text-[#CFA753]">📍</span>
+              <span>Ibrahim Complex, Main Road, Shadnagar</span>
+            </div>
+
           </div>
 
-          {/* LARGE MAIN HEADING (H1 FOR SEO) */}
-          <h1 className="women-hero-heading animate-on-scroll slide-up delay-1">
-            Style Made<br />
-            <span className="burgundy-serif-accent">for Every Woman.</span>
-          </h1>
-
-          {/* SUPPORTING PARAGRAPH */}
-          <p className="women-hero-description animate-on-scroll slide-up delay-2">
-            Explore women's fashion designed for everyday comfort, celebrations and everything in between.
-          </p>
-
-          {/* COMPACT CATEGORY LINE */}
-          <div className="women-category-strip animate-on-scroll slide-up delay-3">
-            <span className="category-strip-text">
-              Dresses · Kurtis · Tops · Leggings · 3-Piece Sets · Party Wear
-            </span>
-          </div>
-
-          {/* CTA GROUP */}
-          <div className="women-hero-cta-group animate-on-scroll slide-up delay-4">
-            <a href="#categories" className="btn btn-burgundy btn-pill">
-              <span>Explore Collection ↓</span>
-            </a>
-
-            <Link
-              href="/store"
-              className="secondary-text-link"
-              onClick={(e) => {
-                if (onOpenStoreModal) {
-                  e.preventDefault();
-                  onOpenStoreModal();
-                }
-              }}
-            >
-              <span>Visit Our Store →</span>
-              <span className="link-underline"></span>
-            </Link>
-          </div>
-
-          {/* MICRO INFORMATION LINE */}
-          <div className="women-hero-micro-info animate-on-scroll fade-in delay-5">
-            <span className="micro-info-pin">📍</span>
-            <span className="micro-info-text">Women's Fashion · Shadnagar</span>
-          </div>
-        </div>
-
-        {/* RIGHT COLUMN: ~55% EDITORIAL ARCHED FRAME VISUAL */}
-        <div className="women-hero-visual-col animate-on-scroll slide-left delay-2">
-          <div className="women-arched-frame-wrapper">
-            <div className="women-arched-backdrop-accent" aria-hidden="true"></div>
-            <div className="women-arched-image-container">
-              <img
-                src="/assets/center-womens-hero.jpg"
-                alt="Kamal Selections Women's Wear Fashion Editorial in Shadnagar"
-                className="women-arched-fashion-img"
-                loading="eager"
+          {/* RIGHT COLUMN: EDITORIAL ARCHED FRAME VISUAL */}
+          <div className="lg:col-span-6 flex justify-center lg:justify-end">
+            <div className="relative w-full max-w-md lg:max-w-lg aspect-[3/4] p-3 sm:p-4">
+              
+              {/* BACKDROP DECORATIVE GOLDEN ACCENT FRAME */}
+              <div 
+                className="absolute inset-0 translate-x-3 translate-y-3 rounded-t-[140px] rounded-b-2xl border-2 border-[#D4AF37]/40 bg-[#FAF5EB] z-0" 
+                aria-hidden="true"
               />
+
+              {/* ARCHED IMAGE CONTAINER */}
+              <div className="relative h-full w-full overflow-hidden rounded-t-[140px] rounded-b-2xl shadow-xl z-10 border border-[#E5C378]/30 group">
+                <Image
+                  src="/images/women/hero/hero-portrait.jpg"
+                  alt="Kamal Selections Women's Wear Fashion Editorial in Shadnagar"
+                  fill
+                  priority
+                  sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 600px"
+                  className="object-cover object-top group-hover:scale-105 transition-transform duration-700 ease-out"
+                />
+                
+                {/* ELEGANT SUBTLE GRADIENT OVERLAY AT BOTTOM */}
+                <div className="absolute inset-0 bg-gradient-to-t from-[#380511]/40 via-transparent to-transparent opacity-60" />
+                
+                <div className="absolute bottom-4 left-4 right-4 text-center">
+                  <span className="inline-block px-3 py-1 bg-[#FAF5EB]/90 backdrop-blur-md rounded-full text-[11px] font-semibold text-[#4A0717] tracking-widest uppercase shadow-sm">
+                    Shadnagar Fashion Editorial
+                  </span>
+                </div>
+              </div>
+
             </div>
           </div>
-        </div>
-      </div>
 
-      {/* BOTTOM TRANSITION WAVE TOWARD SECTION 2 ("Explore Women's Categories") */}
-      <div className="women-hero-bottom-curve" aria-hidden="true">
-        <svg viewBox="0 0 1440 60" preserveAspectRatio="none" className="curve-wave-svg">
-          <path d="M0,25 C360,60 720,10 1080,45 C1260,55 1380,25 1440,15 L1440,60 L0,60 Z" fill="#FDF8F2"></path>
-        </svg>
+        </div>
       </div>
     </section>
   );
