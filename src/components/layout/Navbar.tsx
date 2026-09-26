@@ -2,6 +2,7 @@
 
 import { useEffect, useState } from "react";
 import Link from "next/link";
+import { usePathname } from "next/navigation";
 
 interface NavbarProps {
   onOpenStoreModal?: () => void;
@@ -17,14 +18,11 @@ export function Navbar({
   onToggleMobileMenu,
 }: NavbarProps) {
   const [isScrolled, setIsScrolled] = useState(false);
+  const pathname = usePathname();
 
   useEffect(() => {
     const handleScroll = () => {
-      if (window.scrollY > 40) {
-        setIsScrolled(true);
-      } else {
-        setIsScrolled(false);
-      }
+      setIsScrolled(window.scrollY > 40);
     };
 
     window.addEventListener("scroll", handleScroll);
@@ -43,21 +41,29 @@ export function Navbar({
         <nav className="nav-menu" aria-label="Main Navigation">
           <ul className="nav-list">
             <li className="nav-item">
-              <Link href="#home" className="nav-link active">Home</Link>
+              <Link href="/" className={`nav-link ${pathname === "/" ? "active" : ""}`}>
+                Home
+              </Link>
             </li>
             <li className="nav-item">
-              <Link href="/women" className="nav-link">Women’s Wear</Link>
+              <Link href="/women" className={`nav-link ${pathname === "/women" ? "active" : ""}`}>
+                Women’s Wear
+              </Link>
             </li>
             <li className="nav-item">
-              <Link href="#kids-wear" className="nav-link">Kids Wear</Link>
+              <Link href="/kids" className={`nav-link ${pathname === "/kids" ? "active" : ""}`}>
+                Kids Wear
+              </Link>
             </li>
             <li className="nav-item">
-              <Link href="#about-us" className="nav-link">About Us</Link>
+              <Link href="/about" className={`nav-link ${pathname === "/about" ? "active" : ""}`}>
+                About Us
+              </Link>
             </li>
             <li className="nav-item">
               <a
                 href="#our-store"
-                className="nav-link"
+                className={`nav-link ${pathname === "/store" ? "active" : ""}`}
                 id="open-store-modal-nav"
                 onClick={(e) => {
                   e.preventDefault();
@@ -68,15 +74,19 @@ export function Navbar({
               </a>
             </li>
             <li className="nav-item">
-              <Link href="#contact" className="nav-link">Contact</Link>
+              <Link href="/contact" className={`nav-link ${pathname === "/contact" ? "active" : ""}`}>
+                Contact
+              </Link>
             </li>
             <li className="nav-item">
-              <Link href="#faq" className="nav-link">FAQ</Link>
+              <Link href="/faq" className={`nav-link ${pathname === "/faq" ? "active" : ""}`}>
+                FAQ
+              </Link>
             </li>
             <li className="nav-item">
               <a
                 href="#size-guide"
-                className="nav-link"
+                className={`nav-link ${pathname === "/size-guide" ? "active" : ""}`}
                 id="open-size-guide-nav"
                 onClick={(e) => {
                   e.preventDefault();
