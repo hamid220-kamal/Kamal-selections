@@ -203,11 +203,24 @@ document.addEventListener('DOMContentLoaded', () => {
     });
   });
 
-  // 9. INTRO & WOMEN'S SECTION BUTTONS
+  // 9. INTRO, WOMEN'S, KIDS, WHY, FAQ & FOOTER BUTTONS
   const openStoreModalIntro = document.getElementById('open-store-modal-intro');
   const openStoreModalWomens = document.getElementById('open-store-modal-womens');
+  const openStoreModalKids = document.getElementById('open-store-modal-kids');
+  const openStoreModalWhy = document.getElementById('open-store-modal-why');
+  const openStoreModalFaqPrompt = document.getElementById('open-store-modal-faq-prompt');
+  const openStoreModalFaqBottom = document.getElementById('open-store-modal-faq-bottom');
+  const footerContactLink = document.getElementById('footer-contact-link');
+  const footerSizeGuideLink = document.getElementById('footer-size-guide-link');
+
   if (openStoreModalIntro) openStoreModalIntro.addEventListener('click', openStoreModal);
   if (openStoreModalWomens) openStoreModalWomens.addEventListener('click', openStoreModal);
+  if (openStoreModalKids) openStoreModalKids.addEventListener('click', openStoreModal);
+  if (openStoreModalWhy) openStoreModalWhy.addEventListener('click', openStoreModal);
+  if (openStoreModalFaqPrompt) openStoreModalFaqPrompt.addEventListener('click', openStoreModal);
+  if (openStoreModalFaqBottom) openStoreModalFaqBottom.addEventListener('click', openStoreModal);
+  if (footerContactLink) footerContactLink.addEventListener('click', openStoreModal);
+  if (footerSizeGuideLink) footerSizeGuideLink.addEventListener('click', openSizeGuide);
 
   // 10. SCROLL TRIGGERED ANIMATION OBSERVER
   const animatedElements = document.querySelectorAll('.animate-on-scroll');

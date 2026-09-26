@@ -1,3 +1,7 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
 /* ==========================================================================
    KAMAL SELECTIONS - HERO SECTION DESIGN SYSTEM & STYLES
    Brand: Kamal Selections (Shadnagar, Telangana)
@@ -4201,3 +4205,27 @@ img {
     gap: 0.6rem;
   }
 }
+
+/* ==========================================
+   SCROLL TRIGGERED ANIMATIONS & PARITY FALLBACKS
+   ========================================== */
+.animate-on-scroll {
+  opacity: 0;
+  transform: translateY(24px);
+  transition: opacity 0.8s cubic-bezier(0.16, 1, 0.3, 1), transform 0.8s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.animate-on-scroll.slide-left {
+  transform: translateX(24px);
+}
+
+.animate-on-scroll.fade-in {
+  transform: translateY(0);
+}
+
+.animate-on-scroll.visible,
+.animate-on-scroll.is-visible {
+  opacity: 1 !important;
+  transform: translate(0, 0) !important;
+}
+
