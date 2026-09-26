@@ -203,4 +203,27 @@ document.addEventListener('DOMContentLoaded', () => {
     });
   });
 
+  // 9. INTRO & WOMEN'S SECTION BUTTONS
+  const openStoreModalIntro = document.getElementById('open-store-modal-intro');
+  const openStoreModalWomens = document.getElementById('open-store-modal-womens');
+  if (openStoreModalIntro) openStoreModalIntro.addEventListener('click', openStoreModal);
+  if (openStoreModalWomens) openStoreModalWomens.addEventListener('click', openStoreModal);
+
+  // 10. SCROLL TRIGGERED ANIMATION OBSERVER
+  const animatedElements = document.querySelectorAll('.animate-on-scroll');
+  if ('IntersectionObserver' in window) {
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('visible');
+          observer.unobserve(entry.target);
+        }
+      });
+    }, { threshold: 0.12 });
+
+    animatedElements.forEach(el => observer.observe(el));
+  } else {
+    animatedElements.forEach(el => el.classList.add('visible'));
+  }
+
 });
