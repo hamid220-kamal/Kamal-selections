@@ -68,13 +68,13 @@ export function Footer({ onOpenStoreModal, onOpenSizeGuideModal }: FooterProps) 
           <div className="footer-nav-col">
             <h4 className="footer-col-title">WOMEN'S WEAR</h4>
             <ul className="footer-links-list">
-              <li><a href="#womens-wear">Dresses</a></li>
-              <li><a href="#womens-wear">Kurtis</a></li>
-              <li><a href="#womens-wear">Tops</a></li>
-              <li><a href="#womens-wear">Leggings</a></li>
-              <li><a href="#womens-wear">Burqa</a></li>
-              <li><a href="#womens-wear">3-Piece Sets</a></li>
-              <li><a href="#womens-wear">Party Wear</a></li>
+              <li><Link href="/women#dresses">Dresses</Link></li>
+              <li><Link href="/women#kurtis">Kurtis</Link></li>
+              <li><Link href="/women#tops">Tops</Link></li>
+              <li><Link href="/women#leggings">Leggings</Link></li>
+              <li><Link href="/women#burqa">Burqa</Link></li>
+              <li><Link href="/women#3piece">3-Piece Sets</Link></li>
+              <li><Link href="/women#partywear">Party Wear</Link></li>
             </ul>
           </div>
 

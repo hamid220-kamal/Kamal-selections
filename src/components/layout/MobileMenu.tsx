@@ -31,8 +31,8 @@ export function MobileMenu({
           </button>
         </div>
         <ul className="drawer-nav">
-          <li><a href="#home" className="drawer-link active-drawer" onClick={onClose}>Home</a></li>
-          <li><a href="#womens-wear" className="drawer-link" onClick={onClose}>Women’s Wear</a></li>
+          <li><Link href="/" className="drawer-link" onClick={onClose}>Home</Link></li>
+          <li><Link href="/women" className="drawer-link" onClick={onClose}>Women’s Wear</Link></li>
           <li><a href="#kids-wear" className="drawer-link" onClick={onClose}>Kids Wear</a></li>
           <li><a href="#about-us" className="drawer-link" onClick={onClose}>About Us</a></li>
           <li>

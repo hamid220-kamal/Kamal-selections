@@ -1,5 +1,7 @@
 "use client";
 
+import Link from "next/link";
+
 interface WomensPreviewProps {
   onOpenStoreModal?: () => void;
 }
@@ -116,13 +118,13 @@ export function WomensPreview({ onOpenStoreModal }: WomensPreviewProps) {
 
           {/* PRIMARY CTA BUTTON */}
           <div className="womens-cta-wrap animate-on-scroll fade-in delay-4">
-            <button className="btn btn-burgundy btn-pill" id="open-store-modal-womens" onClick={onOpenStoreModal}>
+            <Link href="/women" className="btn btn-burgundy btn-pill" id="open-store-modal-womens">
               <span>Explore Women’s Wear</span>
               <svg className="btn-arrow" viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" strokeWidth="2.2">
                 <line x1="5" y1="12" x2="19" y2="12"></line>
                 <polyline points="12 5 19 12 12 19"></polyline>
               </svg>
-            </button>
+            </Link>
           </div>
         </div>
 

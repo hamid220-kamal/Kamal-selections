@@ -4229,3 +4229,208 @@ img {
   transform: translate(0, 0) !important;
 }
 
+/* ==========================================================================
+   DEDICATED WOMEN'S WEAR HERO SECTION STYLES
+   ========================================================================== */
+.section-women-hero {
+  position: relative;
+  background: linear-gradient(180deg, #FDF8F2 0%, #FAF3EB 100%);
+  padding: calc(var(--nav-height) + 2.5rem) 2rem 5rem 2rem;
+  overflow: hidden;
+  color: #3E0A23;
+  min-height: 85vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.women-hero-container {
+  max-width: var(--container-max-width);
+  margin: 0 auto;
+  width: 100%;
+  display: grid;
+  grid-template-columns: 0.95fr 1.05fr;
+  gap: 4.5rem;
+  align-items: center;
+  position: relative;
+  z-index: 5;
+}
+
+.women-hero-content-col {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.women-hero-heading {
+  font-family: var(--font-serif-brand);
+  font-size: 3.8rem;
+  font-weight: 700;
+  letter-spacing: 0.03em;
+  color: #560E30;
+  line-height: 1.08;
+  margin-bottom: 1.5rem;
+}
+
+.women-hero-description {
+  font-family: var(--font-sans-ui);
+  font-size: 1.12rem;
+  line-height: 1.75;
+  color: #4A2B35;
+  margin-bottom: 1.8rem;
+  max-width: 540px;
+  font-weight: 400;
+}
+
+.women-category-strip {
+  display: inline-flex;
+  align-items: center;
+  padding: 8px 18px;
+  background: rgba(229, 195, 120, 0.14);
+  border: 1px solid rgba(229, 195, 120, 0.35);
+  border-radius: 30px;
+  margin-bottom: 2.2rem;
+}
+
+.category-strip-text {
+  font-family: var(--font-sans-ui);
+  font-size: 0.84rem;
+  font-weight: 600;
+  letter-spacing: 0.04em;
+  color: #6E4D1B;
+}
+
+.women-hero-cta-group {
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+  margin-bottom: 2.5rem;
+  flex-wrap: wrap;
+}
+
+.women-hero-micro-info {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  font-family: var(--font-sans-ui);
+  font-size: 0.85rem;
+  font-weight: 600;
+  letter-spacing: 0.06em;
+  color: #6E4D1B;
+  text-transform: uppercase;
+}
+
+/* Right Visual Column & Editorial Arched Frame */
+.women-hero-visual-col {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.women-arched-frame-wrapper {
+  position: relative;
+  width: 100%;
+  max-width: 460px;
+  height: 580px;
+}
+
+.women-arched-backdrop-accent {
+  position: absolute;
+  top: -18px;
+  right: -18px;
+  width: 100%;
+  height: 100%;
+  border-radius: 240px 240px 24px 24px;
+  border: 1.5px solid rgba(229, 195, 120, 0.45);
+  background: radial-gradient(circle at 50% 30%, rgba(244, 196, 217, 0.3) 0%, transparent 70%);
+  z-index: 1;
+}
+
+.women-arched-image-container {
+  position: relative;
+  z-index: 2;
+  width: 100%;
+  height: 100%;
+  border-radius: 230px 230px 24px 24px;
+  overflow: hidden;
+  border: 6px solid #FFFFFF;
+  box-shadow: 0 20px 50px rgba(42, 7, 23, 0.15);
+}
+
+.women-arched-fashion-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center top;
+  transition: transform 0.8s ease-out;
+}
+
+.women-arched-frame-wrapper:hover .women-arched-fashion-img {
+  transform: scale(1.03);
+}
+
+.women-hero-bottom-curve {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 60px;
+  line-height: 0;
+  z-index: 10;
+}
+
+/* Responsive Rules for Women Hero */
+@media (max-width: 1200px) {
+  .women-hero-heading {
+    font-size: 3.2rem;
+  }
+  .women-arched-frame-wrapper {
+    height: 500px;
+  }
+}
+
+@media (max-width: 992px) {
+  .section-women-hero {
+    padding-top: calc(var(--nav-height) + 1rem);
+    padding-bottom: 4rem;
+  }
+  .women-hero-container {
+    grid-template-columns: 1fr;
+    gap: 3rem;
+  }
+  .women-hero-content-col {
+    align-items: center;
+    text-align: center;
+  }
+  .women-hero-heading {
+    font-size: 2.8rem;
+  }
+  .women-hero-description {
+    max-width: 100%;
+  }
+  .women-category-strip {
+    justify-content: center;
+  }
+  .women-hero-cta-group {
+    justify-content: center;
+    width: 100%;
+  }
+}
+
+@media (max-width: 576px) {
+  .women-hero-heading {
+    font-size: 2.2rem;
+  }
+  .women-hero-description {
+    font-size: 0.98rem;
+  }
+  .category-strip-text {
+    font-size: 0.76rem;
+  }
+  .women-arched-frame-wrapper {
+    height: 420px;
+  }
+}
+
+

@@ -46,7 +46,7 @@ export function Navbar({
               <Link href="#home" className="nav-link active">Home</Link>
             </li>
             <li className="nav-item">
-              <Link href="#womens-wear" className="nav-link">Women’s Wear</Link>
+              <Link href="/women" className="nav-link">Women’s Wear</Link>
             </li>
             <li className="nav-item">
               <Link href="#kids-wear" className="nav-link">Kids Wear</Link>

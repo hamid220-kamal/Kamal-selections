@@ -1,5 +1,7 @@
 "use client";
 
+import Link from "next/link";
+
 interface HeroProps {
   onOpenStoreModal?: () => void;
   onOpenSizeGuideModal?: () => void;
@@ -97,13 +99,13 @@ export function Hero({ onOpenStoreModal }: HeroProps) {
 
           {/* CTA BUTTONS GROUP */}
           <div className="hero-cta-group animate-slide-up delay-5">
-            <a href="#womens-wear" className="btn btn-primary btn-pill">
+            <Link href="/women" className="btn btn-primary btn-pill">
               <span>Explore Women’s Wear</span>
               <svg className="btn-arrow" viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" strokeWidth="2.2" strokeLinecap="round" strokeLinejoin="round">
                 <line x1="5" y1="12" x2="19" y2="12"></line>
                 <polyline points="12 5 19 12 12 19"></polyline>
               </svg>
-            </a>
+            </Link>
 
             <a href="#kids-wear" className="btn btn-secondary btn-pill">
               <span>Explore Kids Wear</span>
