@@ -8,7 +8,7 @@ export function WomensCollectionGrid() {
   const [activeFilter, setActiveFilter] = useState<string>("All");
   const [selectedItem, setSelectedItem] = useState<CollectionGridItem | null>(null);
 
-  const filters = ["All", "Kurtis", "Dresses", "3-Piece Sets", "Party Wear", "Tops"];
+  const filters = ["All", ...womensData.categories.map((category) => category.name)];
 
   const filteredItems = activeFilter === "All"
     ? womensData.collectionGrid
@@ -33,37 +33,44 @@ export function WomensCollectionGrid() {
         </div>
 
         {/* CATEGORY FILTER TABS */}
-        <div className="flex flex-wrap items-center justify-center gap-2 sm:gap-3 mb-12">
+        <div className="mb-5 overflow-x-auto pb-2">
+          <div className="flex w-max min-w-full items-center justify-center gap-2 sm:gap-3">
           {filters.map((filter) => (
             <button
               key={filter}
+              type="button"
+              aria-pressed={activeFilter === filter}
               onClick={() => setActiveFilter(filter)}
-              className={`px-5 py-2 rounded-full text-xs sm:text-sm font-medium tracking-wide transition-all duration-300 ${
+              className={`shrink-0 border px-4 py-2 text-xs sm:text-sm font-medium transition-colors focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[#4A0717] ${
                 activeFilter === filter
-                  ? "bg-[#4A0717] text-[#FAF5EB] shadow-md"
-                  : "bg-[#FAF5EB] text-[#3D2314]/80 hover:bg-[#FAF5EB]/80 border border-[#E5C378]/30"
+                  ? "border-[#4A0717] bg-[#4A0717] text-[#FAF5EB]"
+                  : "border-[#E5C378]/50 bg-transparent text-[#3D2314]/80 hover:border-[#4A0717]"
               }`}
             >
               {filter}
             </button>
           ))}
+          </div>
         </div>
+        <p className="mb-8 text-center text-sm text-[#3D2314]/65" aria-live="polite">
+          {filteredItems.length} {filteredItems.length === 1 ? "look" : "looks"}
+          {activeFilter !== "All" ? ` in ${activeFilter}` : " across the collection"}
+        </p>
 
         {/* MASONRY / EDITORIAL SHOWCASE GRID */}
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 sm:gap-8">
           {filteredItems.map((item) => (
-            <div
+            <button
               key={item.id}
+              type="button"
               onClick={() => setSelectedItem(item)}
-              className="group cursor-pointer bg-[#FAF5EB] rounded-2xl overflow-hidden border border-[#E5C378]/30 shadow-md hover:shadow-xl transition-all duration-500 flex flex-col"
+              className="group flex w-full cursor-pointer flex-col overflow-hidden rounded-lg border border-[#E5C378]/40 bg-[#FAF5EB] text-left shadow-sm transition-shadow duration-300 hover:shadow-lg focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-[#4A0717]"
             >
               {/* IMAGE CONTAINER WITH VARYING ASPECT RATIO */}
               <div
                 className={`relative w-full overflow-hidden ${
                   item.aspect === "tall"
                     ? "aspect-[3/4]"
-                    : item.aspect === "detail"
-                    ? "aspect-[16/10]"
                     : item.aspect === "square"
                     ? "aspect-square"
                     : "aspect-[4/5]"
@@ -97,7 +104,7 @@ export function WomensCollectionGrid() {
                   {item.descriptor}
                 </p>
               </div>
-            </div>
+            </button>
           ))}
         </div>
 
@@ -110,6 +117,9 @@ export function WomensCollectionGrid() {
           onClick={() => setSelectedItem(null)}
         >
           <div
+            role="dialog"
+            aria-modal="true"
+            aria-labelledby="collection-look-title"
             className="bg-[#FAF5EB] rounded-2xl border border-[#E5C378]/40 shadow-2xl max-w-2xl w-full overflow-hidden p-6 sm:p-8 space-y-6 relative"
             onClick={(e) => e.stopPropagation()}
           >
@@ -134,7 +144,7 @@ export function WomensCollectionGrid() {
               <span className="text-xs font-bold tracking-widest text-[#D4AF37] uppercase">
                 {selectedItem.category} SHOWCASE
               </span>
-              <h3 className="font-serif text-2xl font-bold text-[#380511]">
+              <h3 id="collection-look-title" className="font-serif text-2xl font-bold text-[#380511]">
                 {selectedItem.title}
               </h3>
               <p className="text-sm text-[#3D2314]/85 leading-relaxed">
