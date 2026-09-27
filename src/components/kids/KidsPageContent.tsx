@@ -4,21 +4,23 @@ import { useEffect, useState } from "react";
 import { Navbar } from "@/components/layout/Navbar";
 import { MobileMenu } from "@/components/layout/MobileMenu";
 import { Footer } from "@/components/layout/Footer";
-import { WomensHero } from "@/components/women/WomensHero";
-import { WomensIntro } from "@/components/women/WomensIntro";
-import { WomensRange } from "@/components/women/WomensRange";
-import { WomensMoments } from "@/components/women/WomensMoments";
-import { WomensSignature } from "@/components/women/WomensSignature";
-import { WomensWhyUs } from "@/components/women/WomensWhyUs";
-import { WomensLookbook } from "@/components/women/WomensLookbook";
-import { WomensStoreExperience } from "@/components/women/WomensStoreExperience";
-import { WomensLocationStrip } from "@/components/women/WomensLocationStrip";
-import { WomensFinalBanner } from "@/components/women/WomensFinalBanner";
+import { KidsHero } from "@/components/kids/KidsHero";
+import { KidsIntro } from "@/components/kids/KidsIntro";
+import { KidsRange } from "@/components/kids/KidsRange";
+import { KidsSplit } from "@/components/kids/KidsSplit";
+import { KidsMoments } from "@/components/kids/KidsMoments";
+import { KidsSignature } from "@/components/kids/KidsSignature";
+import { KidsComfortStyle } from "@/components/kids/KidsComfortStyle";
+import { KidsLookbook } from "@/components/kids/KidsLookbook";
+import { KidsStoreExperience } from "@/components/kids/KidsStoreExperience";
+import { KidsFamilyShopping } from "@/components/kids/KidsFamilyShopping";
+import { KidsLocationStrip } from "@/components/kids/KidsLocationStrip";
+import { KidsFinalBanner } from "@/components/kids/KidsFinalBanner";
 import { StoreModal } from "@/components/modals/StoreModal";
 import { SizeGuideModal } from "@/components/modals/SizeGuideModal";
 import { SearchModal } from "@/components/modals/SearchModal";
 
-export function WomensPageContent() {
+export function KidsPageContent() {
   const [isStoreModalOpen, setIsStoreModalOpen] = useState(false);
   const [isSizeGuideOpen, setIsSizeGuideOpen] = useState(false);
   const [isSearchModalOpen, setIsSearchModalOpen] = useState(false);
@@ -48,7 +50,7 @@ export function WomensPageContent() {
   }, []);
 
   return (
-    <div className="womens-page-wrapper bg-[#FDFBF7] min-h-screen text-[#3D2314] antialiased">
+    <div className="kids-page-wrapper bg-[#FAF3EB] min-h-screen text-[#3D2314] antialiased">
       {/* GLOBAL NAVBAR */}
       <Navbar
         onOpenStoreModal={() => setIsStoreModalOpen(true)}
@@ -68,34 +70,40 @@ export function WomensPageContent() {
       {/* MAIN CONTENT - EXACT EDITORIAL SHOWCASE HIERARCHY */}
       <main>
         {/* HERO (PRESERVED 100% UNTOUCHED) */}
-        <WomensHero onOpenStoreModal={() => setIsStoreModalOpen(true)} />
+        <KidsHero onOpenStoreModal={() => setIsStoreModalOpen(true)} />
 
         {/* SECTION 1 — COLLECTION INTRO */}
-        <WomensIntro />
+        <KidsIntro />
 
-        {/* SECTION 2 — OUR WOMEN'S WEAR RANGE (EDITORIAL MASONRY TILES) */}
-        <WomensRange />
+        {/* SECTION 2 — OUR KIDS' WEAR RANGE (EDITORIAL MASONRY TILES) */}
+        <KidsRange />
 
-        {/* SECTION 3 — EVERYDAY → OCCASION */}
-        <WomensMoments />
+        {/* SECTION 3 — GIRLS + BOYS SPLIT */}
+        <KidsSplit />
 
-        {/* SECTION 4 — SIGNATURE VISUAL */}
-        <WomensSignature />
+        {/* SECTION 4 — EVERYDAY → CELEBRATION */}
+        <KidsMoments />
 
-        {/* SECTION 5 — WHY WOMEN CHOOSE KAMAL SELECTIONS */}
-        <WomensWhyUs />
+        {/* SECTION 5 — SIGNATURE KIDS EDITORIAL */}
+        <KidsSignature />
 
-        {/* SECTION 6 — STYLE GALLERY (LOOKBOOK) */}
-        <WomensLookbook />
+        {/* SECTION 6 — COMFORT + STYLE */}
+        <KidsComfortStyle />
 
-        {/* SECTION 7 — IN-STORE MESSAGE ("SEE IT. FEEL IT. CHOOSE IT.") */}
-        <WomensStoreExperience onOpenStoreModal={() => setIsStoreModalOpen(true)} />
+        {/* SECTION 7 — KIDS STYLE GALLERY (LOOKBOOK) */}
+        <KidsLookbook />
 
-        {/* SECTION 8 — LOCATION STRIP */}
-        <WomensLocationStrip />
+        {/* SECTION 8 — IN-STORE EXPERIENCE */}
+        <KidsStoreExperience onOpenStoreModal={() => setIsStoreModalOpen(true)} />
 
-        {/* SECTION 9 — FINAL DRAMATIC CTA */}
-        <WomensFinalBanner onOpenStoreModal={() => setIsStoreModalOpen(true)} />
+        {/* SECTION 9 — FAMILY SHOPPING MESSAGE */}
+        <KidsFamilyShopping onOpenStoreModal={() => setIsStoreModalOpen(true)} />
+
+        {/* SECTION 10 — LOCATION STRIP */}
+        <KidsLocationStrip />
+
+        {/* SECTION 11 — FINAL DRAMATIC CTA */}
+        <KidsFinalBanner onOpenStoreModal={() => setIsStoreModalOpen(true)} />
       </main>
 
       {/* GLOBAL FOOTER */}

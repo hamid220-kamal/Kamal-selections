@@ -46,10 +46,10 @@ export function Footer({ onOpenStoreModal, onOpenSizeGuideModal }: FooterProps) 
             <h4 className="footer-col-title">EXPLORE</h4>
             <ul className="footer-links-list">
               <li><Link href="/">Home</Link></li>
-              <li><a href="#womens-wear">Women's Wear</a></li>
-              <li><a href="#kids-wear">Kids Wear</a></li>
-              <li><a href="#about-us">About Us</a></li>
-              <li><a href="#why-us">Why Kamal Selections</a></li>
+              <li><Link href="/women">Women's Wear</Link></li>
+              <li><Link href="/kids">Kids Wear</Link></li>
+              <li><Link href="/about">About Us</Link></li>
+              <li><Link href="/why-kamal-selections">Why Kamal Selections</Link></li>
             </ul>
           </div>
 
@@ -57,10 +57,10 @@ export function Footer({ onOpenStoreModal, onOpenSizeGuideModal }: FooterProps) 
           <div className="footer-nav-col">
             <h4 className="footer-col-title">VISIT</h4>
             <ul className="footer-links-list">
-              <li><a href="#our-store">Our Store</a></li>
-              <li><a href="#store-modal" id="footer-contact-link" onClick={onOpenStoreModal}>Contact</a></li>
-              <li><a href="#faq">FAQ</a></li>
-              <li><a href="#size-guide-modal" id="footer-size-guide-link" onClick={onOpenSizeGuideModal}>Size Guide</a></li>
+              <li><Link href="/store">Our Store</Link></li>
+              <li><Link href="/contact">Contact</Link></li>
+              <li><Link href="/faq">FAQ</Link></li>
+              <li><Link href="/size-guide">Size Guide</Link></li>
             </ul>
           </div>
 
@@ -82,10 +82,10 @@ export function Footer({ onOpenStoreModal, onOpenSizeGuideModal }: FooterProps) 
           <div className="footer-nav-col">
             <h4 className="footer-col-title">KIDS WEAR</h4>
             <ul className="footer-links-list">
-              <li><a href="#kids-wear">Girls Wear</a></li>
-              <li><a href="#kids-wear">Boys Wear</a></li>
-              <li><a href="#kids-wear">Frocks</a></li>
-              <li><a href="#kids-wear">Kids Sets</a></li>
+              <li><Link href="/kids#girls-clothing">Girls Wear</Link></li>
+              <li><Link href="/kids#boys-clothing">Boys Wear</Link></li>
+              <li><Link href="/kids#kids-frocks">Frocks</Link></li>
+              <li><Link href="/kids#kids-sets">Kids Sets</Link></li>
             </ul>
           </div>
         </nav>

@@ -4,21 +4,23 @@ import { useEffect, useState } from "react";
 import { Navbar } from "@/components/layout/Navbar";
 import { MobileMenu } from "@/components/layout/MobileMenu";
 import { Footer } from "@/components/layout/Footer";
-import { WomensHero } from "@/components/women/WomensHero";
-import { WomensIntro } from "@/components/women/WomensIntro";
-import { WomensRange } from "@/components/women/WomensRange";
-import { WomensMoments } from "@/components/women/WomensMoments";
-import { WomensSignature } from "@/components/women/WomensSignature";
-import { WomensWhyUs } from "@/components/women/WomensWhyUs";
-import { WomensLookbook } from "@/components/women/WomensLookbook";
-import { WomensStoreExperience } from "@/components/women/WomensStoreExperience";
-import { WomensLocationStrip } from "@/components/women/WomensLocationStrip";
-import { WomensFinalBanner } from "@/components/women/WomensFinalBanner";
+import { AboutHero } from "@/components/about/AboutHero";
+import { AboutBeginning } from "@/components/about/AboutBeginning";
+import { AboutTimeline } from "@/components/about/AboutTimeline";
+import { AboutBeliefs } from "@/components/about/AboutBeliefs";
+import { AboutSplit } from "@/components/about/AboutSplit";
+import { AboutRealStore } from "@/components/about/AboutRealStore";
+import { AboutApproach } from "@/components/about/AboutApproach";
+import { AboutCommunity } from "@/components/about/AboutCommunity";
+import { AboutLocation } from "@/components/about/AboutLocation";
+import { AboutVisitUs } from "@/components/about/AboutVisitUs";
+import { AboutContactStrip } from "@/components/about/AboutContactStrip";
+import { AboutFinalCTA } from "@/components/about/AboutFinalCTA";
 import { StoreModal } from "@/components/modals/StoreModal";
 import { SizeGuideModal } from "@/components/modals/SizeGuideModal";
 import { SearchModal } from "@/components/modals/SearchModal";
 
-export function WomensPageContent() {
+export function AboutPageContent() {
   const [isStoreModalOpen, setIsStoreModalOpen] = useState(false);
   const [isSizeGuideOpen, setIsSizeGuideOpen] = useState(false);
   const [isSearchModalOpen, setIsSearchModalOpen] = useState(false);
@@ -48,7 +50,7 @@ export function WomensPageContent() {
   }, []);
 
   return (
-    <div className="womens-page-wrapper bg-[#FDFBF7] min-h-screen text-[#3D2314] antialiased">
+    <div className="about-page-wrapper bg-[#FAF3EB] min-h-screen text-[#30251F] antialiased">
       {/* GLOBAL NAVBAR */}
       <Navbar
         onOpenStoreModal={() => setIsStoreModalOpen(true)}
@@ -65,37 +67,43 @@ export function WomensPageContent() {
         onOpenSizeGuideModal={() => setIsSizeGuideOpen(true)}
       />
 
-      {/* MAIN CONTENT - EXACT EDITORIAL SHOWCASE HIERARCHY */}
+      {/* MAIN CONTENT - EXACT STORYTELLING SHOWCASE HIERARCHY */}
       <main>
         {/* HERO (PRESERVED 100% UNTOUCHED) */}
-        <WomensHero onOpenStoreModal={() => setIsStoreModalOpen(true)} />
+        <AboutHero onOpenStoreModal={() => setIsStoreModalOpen(true)} />
 
-        {/* SECTION 1 — COLLECTION INTRO */}
-        <WomensIntro />
+        {/* SECTION 1 — OUR BEGINNING */}
+        <AboutBeginning />
 
-        {/* SECTION 2 — OUR WOMEN'S WEAR RANGE (EDITORIAL MASONRY TILES) */}
-        <WomensRange />
+        {/* SECTION 2 — SINCE 2021 TIMELINE */}
+        <AboutTimeline />
 
-        {/* SECTION 3 — EVERYDAY → OCCASION */}
-        <WomensMoments />
+        {/* SECTION 3 — WHAT WE BELIEVE */}
+        <AboutBeliefs />
 
-        {/* SECTION 4 — SIGNATURE VISUAL */}
-        <WomensSignature />
+        {/* SECTION 4 — FOR EVERY WOMAN & EVERY LITTLE ONE (SPLIT) */}
+        <AboutSplit />
 
-        {/* SECTION 5 — WHY WOMEN CHOOSE KAMAL SELECTIONS */}
-        <WomensWhyUs />
+        {/* SECTION 5 — THE STORE BEHIND THE WEBSITE */}
+        <AboutRealStore onOpenStoreModal={() => setIsStoreModalOpen(true)} />
 
-        {/* SECTION 6 — STYLE GALLERY (LOOKBOOK) */}
-        <WomensLookbook />
+        {/* SECTION 6 — OUR APPROACH */}
+        <AboutApproach />
 
-        {/* SECTION 7 — IN-STORE MESSAGE ("SEE IT. FEEL IT. CHOOSE IT.") */}
-        <WomensStoreExperience onOpenStoreModal={() => setIsStoreModalOpen(true)} />
+        {/* SECTION 7 — OUR COMMUNITY */}
+        <AboutCommunity />
 
-        {/* SECTION 8 — LOCATION STRIP */}
-        <WomensLocationStrip />
+        {/* SECTION 8 — WHY SHADNAGAR */}
+        <AboutLocation />
 
-        {/* SECTION 9 — FINAL DRAMATIC CTA */}
-        <WomensFinalBanner onOpenStoreModal={() => setIsStoreModalOpen(true)} />
+        {/* SECTION 9 — VISIT US */}
+        <AboutVisitUs onOpenStoreModal={() => setIsStoreModalOpen(true)} />
+
+        {/* SECTION 10 — CONTACT STRIP */}
+        <AboutContactStrip />
+
+        {/* FINAL CTA — EMOTIONAL BRAND STATEMENT */}
+        <AboutFinalCTA />
       </main>
 
       {/* GLOBAL FOOTER */}

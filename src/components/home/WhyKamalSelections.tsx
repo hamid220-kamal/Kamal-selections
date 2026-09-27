@@ -1,5 +1,7 @@
 "use client";
 
+import Link from "next/link";
+
 interface WhyKamalSelectionsProps {
   onOpenStoreModal?: () => void;
 }
@@ -56,10 +58,10 @@ export function WhyKamalSelections({ onOpenStoreModal }: WhyKamalSelectionsProps
               </svg>
             </button>
 
-            <a href="#womens-wear" className="secondary-text-link">
+            <Link href="/women" className="secondary-text-link">
               <span>Explore Our Collections</span>
               <span className="link-underline"></span>
-            </a>
+            </Link>
           </div>
         </div>
 
