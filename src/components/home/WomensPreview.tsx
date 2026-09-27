@@ -153,23 +153,21 @@ export function WomensPreview({ onOpenStoreModal }: WomensPreviewProps) {
             <div className="gallery-row row-large">
               <div className="category-card-item card-large">
                 <div className="card-img-wrap">
-                  <img src="/assets/cat-dresses.jpg" alt="Dresses Collection" loading="lazy" />
+                  <img src="/assets/cat-dresses.jpg" alt="Dresses Style" loading="lazy" />
                   <div className="card-gradient-overlay"></div>
                 </div>
                 <div className="card-label-bar">
                   <span className="card-cat-name">Dresses</span>
-                  <span className="card-arrow-circle">&rarr;</span>
                 </div>
               </div>
 
               <div className="category-card-item card-large">
                 <div className="card-img-wrap">
-                  <img src="/assets/cat-kurtis.jpg" alt="Kurtis Collection" loading="lazy" />
+                  <img src="/assets/cat-kurtis.jpg" alt="Kurtis Style" loading="lazy" />
                   <div className="card-gradient-overlay"></div>
                 </div>
                 <div className="card-label-bar">
                   <span className="card-cat-name">Kurtis</span>
-                  <span className="card-arrow-circle">&rarr;</span>
                 </div>
               </div>
             </div>
@@ -178,23 +176,21 @@ export function WomensPreview({ onOpenStoreModal }: WomensPreviewProps) {
             <div className="gallery-row row-medium">
               <div className="category-card-item card-medium">
                 <div className="card-img-wrap">
-                  <img src="/assets/cat-tops.jpg" alt="Tops Collection" loading="lazy" />
+                  <img src="/assets/cat-tops.jpg" alt="Tops Style" loading="lazy" />
                   <div className="card-gradient-overlay"></div>
                 </div>
                 <div className="card-label-bar">
                   <span className="card-cat-name">Tops</span>
-                  <span className="card-arrow-circle">&rarr;</span>
                 </div>
               </div>
 
               <div className="category-card-item card-medium">
                 <div className="card-img-wrap">
-                  <img src="/assets/cat-leggings.jpg" alt="Leggings Collection" loading="lazy" />
+                  <img src="/assets/cat-leggings.jpg" alt="Leggings Style" loading="lazy" />
                   <div className="card-gradient-overlay"></div>
                 </div>
                 <div className="card-label-bar">
                   <span className="card-cat-name">Leggings</span>
-                  <span className="card-arrow-circle">&rarr;</span>
                 </div>
               </div>
             </div>
@@ -203,34 +199,31 @@ export function WomensPreview({ onOpenStoreModal }: WomensPreviewProps) {
             <div className="gallery-row row-small">
               <div className="category-card-item card-small">
                 <div className="card-img-wrap">
-                  <img src="/assets/cat-burqa.jpg" alt="Burqa Collection" loading="lazy" />
+                  <img src="/assets/cat-burqa.jpg" alt="Burqa Style" loading="lazy" />
                   <div className="card-gradient-overlay"></div>
                 </div>
                 <div className="card-label-bar">
                   <span className="card-cat-name">Burqa</span>
-                  <span className="card-arrow-circle">&rarr;</span>
                 </div>
               </div>
 
               <div className="category-card-item card-small">
                 <div className="card-img-wrap">
-                  <img src="/assets/cat-3piece.jpg" alt="3-Piece Sets Collection" loading="lazy" />
+                  <img src="/assets/cat-3piece.jpg" alt="3-Piece Sets Style" loading="lazy" />
                   <div className="card-gradient-overlay"></div>
                 </div>
                 <div className="card-label-bar">
                   <span className="card-cat-name">3-Piece Sets</span>
-                  <span className="card-arrow-circle">&rarr;</span>
                 </div>
               </div>
 
               <div className="category-card-item card-small">
                 <div className="card-img-wrap">
-                  <img src="/assets/cat-partywear.jpg" alt="Party Wear Collection" loading="lazy" />
+                  <img src="/assets/cat-partywear.jpg" alt="Party Wear Style" loading="lazy" />
                   <div className="card-gradient-overlay"></div>
                 </div>
                 <div className="card-label-bar">
                   <span className="card-cat-name">Party Wear</span>
-                  <span className="card-arrow-circle">&rarr;</span>
                 </div>
               </div>
             </div>

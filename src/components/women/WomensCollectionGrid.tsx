@@ -52,9 +52,8 @@ export function WomensCollectionGrid() {
           ))}
           </div>
         </div>
-        <p className="mb-8 text-center text-sm text-[#3D2314]/65" aria-live="polite">
-          {filteredItems.length} {filteredItems.length === 1 ? "look" : "looks"}
-          {activeFilter !== "All" ? ` in ${activeFilter}` : " across the collection"}
+        <p className="mb-8 text-center text-sm text-[#3D2314]/75" aria-live="polite">
+          Visual style showcase — visit Kamal Selections in Shadnagar to explore live collections.
         </p>
 
         {/* MASONRY / EDITORIAL SHOWCASE GRID */}
@@ -83,9 +82,9 @@ export function WomensCollectionGrid() {
                   sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
                   className="object-cover object-top group-hover:scale-105 transition-transform duration-700 ease-out"
                 />
-                <div className="absolute inset-0 bg-gradient-to-t from-[#380511]/80 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end p-6">
+                <div className="absolute inset-0 bg-gradient-to-t from-[#380511]/70 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end p-5">
                   <span className="text-xs font-semibold text-[#D4AF37] uppercase tracking-wider">
-                    Click to View Look Detail →
+                    Enlarge Photo
                   </span>
                 </div>
               </div>

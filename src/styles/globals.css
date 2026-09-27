@@ -635,6 +635,39 @@ img {
   background: rgba(229, 195, 120, 0.2);
 }
 
+/* Hero Supporting Copy Description */
+.hero-desc-copy {
+  font-family: var(--font-sans-ui);
+  font-size: 0.95rem;
+  line-height: 1.6;
+  color: rgba(255, 248, 234, 0.88);
+  max-width: 480px;
+  margin-bottom: 1.1rem;
+  text-shadow: 0 2px 8px rgba(0, 0, 0, 0.5);
+}
+
+/* Category informational tags line */
+.hero-category-tags {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 0.45rem 0.65rem;
+  font-family: var(--font-sans-ui);
+  font-size: 0.72rem;
+  font-weight: 600;
+  letter-spacing: 0.16em;
+  color: var(--color-gold-light);
+  margin-bottom: 1.85rem;
+  cursor: default;
+  user-select: none;
+  text-shadow: 0 1px 4px rgba(0, 0, 0, 0.6);
+}
+
+.hero-category-tags .tag-dot {
+  color: rgba(229, 195, 120, 0.45);
+  font-weight: 400;
+}
+
 /* 8. HERO BOTTOM BAR & TRANSITION */
 .hero-bottom-bar {
   position: absolute;
@@ -648,41 +681,59 @@ img {
   pointer-events: none;
 }
 
-/* Scroll Down Indicator */
+/* Scroll Down Indicator with mouse/pill animation */
 .scroll-down-indicator {
   align-self: center;
   display: inline-flex;
-  flex-direction: row;
+  flex-direction: column;
   align-items: center;
   justify-content: center;
-  gap: 10px;
+  gap: 6px;
   min-height: 44px;
-  margin-top: 1.1rem;
+  margin-top: 1.25rem;
   padding: 0.35rem 0.75rem;
   color: var(--color-cream-soft);
-  transition: color var(--transition-fast);
+  transition: all var(--transition-fast);
   text-decoration: none;
+  cursor: pointer;
 }
 
 .scroll-down-indicator:hover {
   color: var(--color-gold-main);
+  transform: translateY(2px);
+}
+
+.scroll-pill-icon {
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  width: 18px;
+  height: 28px;
+  border-radius: 12px;
+  border: 1.5px solid rgba(229, 195, 120, 0.7);
+  padding-top: 4px;
+}
+
+.scroll-pill-wheel {
+  width: 3px;
+  height: 6px;
+  border-radius: 2px;
+  background-color: var(--color-gold-main);
+  animation: scrollWheel 1.8s infinite ease-in-out;
+}
+
+@keyframes scrollWheel {
+  0% { transform: translateY(0); opacity: 1; }
+  50% { transform: translateY(6px); opacity: 0.2; }
+  100% { transform: translateY(0); opacity: 1; }
 }
 
 .scroll-text {
   font-size: 0.72rem;
   font-weight: 600;
-  letter-spacing: 0.08em;
+  letter-spacing: 0.12em;
   color: var(--color-gold-main);
-}
-
-.scroll-arrow {
-  flex: 0 0 auto;
-  animation: scrollNudge 1.8s infinite ease-in-out;
-}
-
-@keyframes scrollNudge {
-  0%, 100% { transform: translateY(0); }
-  50% { transform: translateY(3px); }
+  text-transform: uppercase;
 }
 
 @media (prefers-reduced-motion: reduce) {
@@ -2013,14 +2064,14 @@ img {
   border-radius: 16px;
   overflow: hidden;
   box-shadow: 0 8px 25px rgba(62, 10, 35, 0.12);
-  cursor: pointer;
+  cursor: default;
   transition: transform 0.4s cubic-bezier(0.16, 1, 0.3, 1), box-shadow 0.4s ease;
   background: #2D0717;
 }
 
 .category-card-item:hover {
-  transform: translateY(-4px);
-  box-shadow: 0 14px 35px rgba(62, 10, 35, 0.22);
+  transform: translateY(-2px);
+  box-shadow: 0 12px 30px rgba(62, 10, 35, 0.18);
 }
 
 .card-large {
@@ -2050,13 +2101,13 @@ img {
 }
 
 .category-card-item:hover .card-img-wrap img {
-  transform: scale(1.08);
+  transform: scale(1.03);
 }
 
 .card-gradient-overlay {
   position: absolute;
   inset: 0;
-  background: linear-gradient(180deg, transparent 40%, rgba(30, 4, 12, 0.78) 100%);
+  background: linear-gradient(180deg, transparent 40%, rgba(30, 4, 12, 0.85) 100%);
   pointer-events: none;
 }
 
@@ -2067,40 +2118,21 @@ img {
   right: 14px;
   display: flex;
   align-items: center;
-  justify-content: space-between;
+  justify-content: flex-start;
   color: #FFF;
   z-index: 2;
 }
 
 .card-cat-name {
   font-family: var(--font-sans-ui);
-  font-size: 0.9rem;
+  font-size: 0.95rem;
   font-weight: 600;
-  text-shadow: 0 2px 6px rgba(0, 0, 0, 0.6);
+  text-shadow: 0 2px 6px rgba(0, 0, 0, 0.7);
   letter-spacing: 0.02em;
 }
 
 .card-small .card-cat-name {
-  font-size: 0.8rem;
-}
-
-.card-arrow-circle {
-  width: 26px;
-  height: 26px;
-  border-radius: 50%;
-  background: rgba(255, 255, 255, 0.9);
-  color: #3E0A23;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  font-size: 0.85rem;
-  transition: transform 0.3s ease, background 0.3s ease, color 0.3s ease;
-}
-
-.category-card-item:hover .card-arrow-circle {
-  transform: translateX(4px);
-  background: #C42766;
-  color: #FFF;
+  font-size: 0.82rem;
 }
 
 .womens-bottom-curve {

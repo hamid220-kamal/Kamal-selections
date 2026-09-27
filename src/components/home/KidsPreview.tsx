@@ -1,5 +1,7 @@
 "use client";
 
+import Link from "next/link";
+
 interface KidsPreviewProps {
   onOpenStoreModal?: () => void;
 }
@@ -95,13 +97,13 @@ export function KidsPreview({ onOpenStoreModal }: KidsPreviewProps) {
 
           {/* PRIMARY CTA BUTTON */}
           <div className="kids-cta-wrap animate-on-scroll fade-in delay-4">
-            <button className="btn btn-burgundy btn-pill" id="open-store-modal-kids" onClick={onOpenStoreModal}>
+            <Link href="/kids" className="btn btn-burgundy btn-pill" id="open-kids-page">
               <span>Explore Kids Wear</span>
               <svg className="btn-arrow" viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" strokeWidth="2.2">
                 <line x1="5" y1="12" x2="19" y2="12"></line>
                 <polyline points="12 5 19 12 12 19"></polyline>
               </svg>
-            </button>
+            </Link>
           </div>
         </div>
 
@@ -127,45 +129,41 @@ export function KidsPreview({ onOpenStoreModal }: KidsPreviewProps) {
           <div className="kids-2x2-grid">
             <div className="category-card-item kids-card">
               <div className="card-img-wrap">
-                <img src="/assets/cat-girls-wear.jpg" alt="Girls Wear Collection" loading="lazy" />
+                <img src="/assets/cat-girls-wear.jpg" alt="Girls Wear Style" loading="lazy" />
                 <div className="card-gradient-overlay"></div>
               </div>
               <div className="card-label-bar">
                 <span className="card-cat-name">Girls Wear</span>
-                <span className="card-arrow-circle">&rarr;</span>
               </div>
             </div>
 
             <div className="category-card-item kids-card">
               <div className="card-img-wrap">
-                <img src="/assets/cat-boys-wear.jpg" alt="Boys Wear Collection" loading="lazy" />
+                <img src="/assets/cat-boys-wear.jpg" alt="Boys Wear Style" loading="lazy" />
                 <div className="card-gradient-overlay"></div>
               </div>
               <div className="card-label-bar">
                 <span className="card-cat-name">Boys Wear</span>
-                <span className="card-arrow-circle">&rarr;</span>
               </div>
             </div>
 
             <div className="category-card-item kids-card">
               <div className="card-img-wrap">
-                <img src="/assets/cat-frocks.jpg" alt="Frocks Collection" loading="lazy" />
+                <img src="/assets/cat-frocks.jpg" alt="Frocks Style" loading="lazy" />
                 <div className="card-gradient-overlay"></div>
               </div>
               <div className="card-label-bar">
                 <span className="card-cat-name">Frocks</span>
-                <span className="card-arrow-circle">&rarr;</span>
               </div>
             </div>
 
             <div className="category-card-item kids-card">
               <div className="card-img-wrap">
-                <img src="/assets/cat-kids-sets.jpg" alt="Kids Sets Collection" loading="lazy" />
+                <img src="/assets/cat-kids-sets.jpg" alt="Kids Sets Style" loading="lazy" />
                 <div className="card-gradient-overlay"></div>
               </div>
               <div className="card-label-bar">
                 <span className="card-cat-name">Kids Sets</span>
-                <span className="card-arrow-circle">&rarr;</span>
               </div>
             </div>
           </div>

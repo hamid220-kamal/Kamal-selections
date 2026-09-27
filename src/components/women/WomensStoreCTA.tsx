@@ -51,11 +51,11 @@ export function WomensStoreCTA({ onOpenStoreModal }: WomensStoreCTAProps) {
             </div>
 
             <h2 className="font-serif text-3xl sm:text-4xl lg:text-5xl font-extrabold text-[#380511] leading-tight">
-              See It. Feel It. Try It.
+              See It. Try It. Love It.
             </h2>
 
             <p className="text-base sm:text-lg text-[#3D2314]/85 leading-relaxed font-sans">
-              Explore the collection in person at Kamal Selections, Shadnagar.
+              Visit Kamal Selections at Ibrahim Complex, Main Road, Shadnagar and explore our latest women&apos;s and kids&apos; styles in person.
             </p>
 
             {/* DETAILS CARD */}
@@ -96,18 +96,26 @@ export function WomensStoreCTA({ onOpenStoreModal }: WomensStoreCTAProps) {
             {/* ACTION BUTTONS */}
             <div className="pt-2 flex flex-wrap items-center gap-4">
               <a
-                href={brandData.maps.directionsUrl}
-                target="_blank"
-                rel="noopener noreferrer"
+                href="/store"
                 className="inline-flex items-center justify-center px-7 py-3.5 rounded-full bg-[#4A0717] text-[#FAF5EB] font-medium text-sm tracking-wide shadow-md hover:bg-[#380511] hover:scale-[1.02] active:scale-[0.98] transition-all duration-300 group"
               >
-                <span>Get Directions</span>
+                <span>Visit Our Store</span>
                 <span className="ml-2 group-hover:translate-x-1 transition-transform">→</span>
               </a>
 
               <a
-                href={`tel:${brandData.phone}`}
+                href={brandData.maps.directionsUrl}
+                target="_blank"
+                rel="noopener noreferrer"
                 className="inline-flex items-center justify-center px-7 py-3.5 rounded-full bg-[#FAF5EB] text-[#4A0717] font-semibold text-sm tracking-wide border border-[#E5C378]/60 shadow-xs hover:bg-[#FDFBF7] transition-all duration-300"
+              >
+                <span>Get Directions</span>
+                <span className="ml-1.5">→</span>
+              </a>
+
+              <a
+                href={`tel:${brandData.phone}`}
+                className="inline-flex items-center justify-center px-6 py-3.5 rounded-full bg-transparent text-[#380511] font-semibold text-sm tracking-wide hover:underline"
               >
                 <span>Call Store</span>
               </a>

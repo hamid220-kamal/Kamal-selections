@@ -1,4 +1,4 @@
-"use client";
+import Link from "next/link";
 
 interface SearchModalProps {
   isOpen: boolean;
@@ -30,11 +30,11 @@ export function SearchModal({ isOpen, onClose }: SearchModalProps) {
         </div>
         <div className="search-tags">
           <span>Popular Searches:</span>
-          <a href="#womens-wear" className="search-tag" onClick={onClose}>Cotton Kurtis</a>
-          <a href="#womens-wear" className="search-tag" onClick={onClose}>Dresses</a>
-          <a href="#kids-wear" className="search-tag" onClick={onClose}>Girls Lehenga</a>
-          <a href="#kids-wear" className="search-tag" onClick={onClose}>Boys Kurta Set</a>
-          <a href="#womens-wear" className="search-tag" onClick={onClose}>Party Wear</a>
+          <Link href="/women" className="search-tag" onClick={onClose}>Cotton Kurtis</Link>
+          <Link href="/women" className="search-tag" onClick={onClose}>Dresses</Link>
+          <Link href="/kids" className="search-tag" onClick={onClose}>Girls Wear</Link>
+          <Link href="/kids" className="search-tag" onClick={onClose}>Boys Sets</Link>
+          <Link href="/women" className="search-tag" onClick={onClose}>Party Wear</Link>
         </div>
       </div>
     </div>
