@@ -497,6 +497,47 @@ img {
   letter-spacing: 0.05em;
 }
 
+/* Subtle Gold Circular Editorial Story Marker (EST. 2021) */
+.hero-story-marker {
+  display: inline-flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 46px;
+  height: 46px;
+  border-radius: 50%;
+  border: 1px solid rgba(229, 195, 120, 0.5);
+  background: radial-gradient(circle, rgba(74, 7, 23, 0.75) 0%, rgba(26, 3, 10, 0.9) 100%);
+  box-shadow: 0 4px 14px rgba(0, 0, 0, 0.35), inset 0 0 8px rgba(229, 195, 120, 0.18);
+  text-align: center;
+  line-height: 1.05;
+  flex-shrink: 0;
+  user-select: none;
+  transition: transform var(--transition-fast), border-color var(--transition-fast);
+}
+
+.hero-story-marker:hover {
+  transform: scale(1.05);
+  border-color: var(--color-gold-main);
+}
+
+.hero-story-marker .marker-est {
+  font-family: var(--font-sans-ui);
+  font-size: 0.52rem;
+  letter-spacing: 0.18em;
+  font-weight: 700;
+  color: #CFA753;
+  text-transform: uppercase;
+}
+
+.hero-story-marker .marker-year {
+  font-family: var(--font-serif-brand);
+  font-size: 0.82rem;
+  font-weight: 700;
+  color: #F8E5BA;
+  letter-spacing: 0.04em;
+}
+
 /* 6. CTA BUTTONS */
 .hero-cta-group {
   display: flex;
@@ -1259,6 +1300,8 @@ img {
 .delay-4 { animation-delay: 0.6s; }
 .delay-5 { animation-delay: 0.75s; }
 .delay-6 { animation-delay: 0.9s; }
+.delay-7 { animation-delay: 1.05s; }
+.delay-8 { animation-delay: 1.2s; }
 
 @keyframes fadeIn {
   from { opacity: 0; }
