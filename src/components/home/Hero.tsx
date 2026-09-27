@@ -168,21 +168,18 @@ export function Hero({ onOpenStoreModal }: HeroProps) {
               </div>
             </div>
           </div>
+
+          <a href="#womens-wear" className="scroll-down-indicator" aria-label="Scroll to collection preview">
+            <span className="scroll-text">Scroll to explore</span>
+            <svg className="scroll-arrow" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" aria-hidden="true">
+              <polyline points="6 9 12 15 18 9"></polyline>
+            </svg>
+          </a>
         </div>
       </div>
 
-      {/* BOTTOM OF HERO: SCROLL DOWN INDICATOR & CURVED CREAM TRANSITION */}
+      {/* BOTTOM OF HERO: CURVED CREAM TRANSITION */}
       <div className="hero-bottom-bar">
-        <a href="#womens-wear" className="scroll-down-indicator" aria-label="Scroll to collection preview">
-          <div className="mouse-icon">
-            <div className="mouse-wheel"></div>
-          </div>
-          <span className="scroll-text">SCROLL DOWN</span>
-          <svg className="scroll-arrow" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5">
-            <polyline points="6 9 12 15 18 9"></polyline>
-          </svg>
-        </a>
-
         <div className="hero-curve-transition" aria-hidden="true">
           <svg viewBox="0 0 1440 120" preserveAspectRatio="none" className="curve-svg">
             <path d="M0,32 C280,100 520,120 720,120 C920,120 1160,100 1440,32 L1440,120 L0,120 Z" fill="#FDF8F2"></path>

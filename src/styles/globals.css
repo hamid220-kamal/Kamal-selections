@@ -627,61 +627,45 @@ img {
 
 /* Scroll Down Indicator */
 .scroll-down-indicator {
-  pointer-events: auto;
-  display: flex;
-  flex-direction: column;
+  align-self: center;
+  display: inline-flex;
+  flex-direction: row;
   align-items: center;
-  gap: 6px;
-  margin-bottom: 12px;
+  justify-content: center;
+  gap: 10px;
+  min-height: 44px;
+  margin-top: 1.1rem;
+  padding: 0.35rem 0.75rem;
   color: var(--color-cream-soft);
-  transition: color var(--transition-fast), transform var(--transition-fast);
+  transition: color var(--transition-fast);
   text-decoration: none;
 }
 
 .scroll-down-indicator:hover {
   color: var(--color-gold-main);
-  transform: translateY(2px);
-}
-
-.mouse-icon {
-  width: 20px;
-  height: 32px;
-  border: 1.8px solid var(--color-gold-main);
-  border-radius: 12px;
-  display: flex;
-  justify-content: center;
-  padding-top: 6px;
-  box-shadow: 0 0 10px rgba(229, 195, 120, 0.3);
-}
-
-.mouse-wheel {
-  width: 3px;
-  height: 6px;
-  background: var(--color-gold-main);
-  border-radius: 2px;
-  animation: scrollWheel 1.8s infinite ease-in-out;
-}
-
-@keyframes scrollWheel {
-  0% { opacity: 1; transform: translateY(0); }
-  60% { opacity: 0.2; transform: translateY(10px); }
-  100% { opacity: 1; transform: translateY(0); }
 }
 
 .scroll-text {
-  font-size: 0.62rem;
+  font-size: 0.72rem;
   font-weight: 600;
-  letter-spacing: 0.2em;
+  letter-spacing: 0.08em;
   color: var(--color-gold-main);
 }
 
 .scroll-arrow {
-  animation: bounceArrow 1.8s infinite ease-in-out;
+  flex: 0 0 auto;
+  animation: scrollNudge 1.8s infinite ease-in-out;
 }
 
-@keyframes bounceArrow {
+@keyframes scrollNudge {
   0%, 100% { transform: translateY(0); }
-  50% { transform: translateY(4px); }
+  50% { transform: translateY(3px); }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .scroll-arrow {
+    animation: none;
+  }
 }
 
 /* Curved Cream SVG Transition Wave */
