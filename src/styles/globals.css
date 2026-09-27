@@ -146,6 +146,7 @@ img {
 .brand-logo {
   display: flex;
   align-items: center;
+  gap: 0.85rem;
   transition: transform var(--transition-fast);
   text-decoration: none;
 }
@@ -155,9 +156,9 @@ img {
 }
 
 .brand-logo-img {
-  height: 74px;
+  height: 64px;
   width: auto;
-  max-width: 185px;
+  max-width: 160px;
   object-fit: contain;
   border-radius: 12px;
   border: 1px solid rgba(229, 195, 120, 0.3);
@@ -170,9 +171,31 @@ img {
   box-shadow: 0 6px 26px rgba(196, 39, 102, 0.5), 0 0 22px rgba(209, 135, 238, 0.4);
 }
 
+.brand-logo-text {
+  font-family: var(--font-script);
+  font-size: 2.15rem;
+  font-weight: 400;
+  line-height: 1;
+  color: #F0CE83;
+  letter-spacing: 0.02em;
+  white-space: nowrap;
+  text-shadow: 0 2px 10px rgba(0, 0, 0, 0.45), 0 0 15px rgba(229, 195, 120, 0.25);
+  transition: color 0.3s ease, text-shadow 0.3s ease, font-size 0.3s ease;
+  user-select: none;
+}
+
+.brand-logo:hover .brand-logo-text {
+  color: #FFF0C9;
+  text-shadow: 0 2px 12px rgba(0, 0, 0, 0.6), 0 0 22px rgba(229, 195, 120, 0.5);
+}
+
 .navbar-header.scrolled .brand-logo-img {
-  height: 60px;
-  max-width: 145px;
+  height: 52px;
+  max-width: 130px;
+}
+
+.navbar-header.scrolled .brand-logo-text {
+  font-size: 1.85rem;
 }
 
 /* Desktop Navigation */

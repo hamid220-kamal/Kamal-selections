@@ -35,6 +35,7 @@ export function Navbar({
         {/* LOGO */}
         <Link href="/" className="brand-logo" aria-label="Kamal Selections Home">
           <img src="/assets/logo.png" alt="Kamal Selection Logo" className="brand-logo-img" />
+          <span className="brand-logo-text">Kamal Selections</span>
         </Link>
 
         {/* DESKTOP NAVIGATION LINKS */}
