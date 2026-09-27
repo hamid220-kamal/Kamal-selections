@@ -62,58 +62,20 @@ export function Navbar({
               </Link>
             </li>
             <li className="nav-item">
-              <a
-                href="#our-store"
-                className={`nav-link ${pathname === "/store" ? "active" : ""}`}
-                id="open-store-modal-nav"
-                onClick={(e) => {
-                  e.preventDefault();
-                  onOpenStoreModal?.();
-                }}
-              >
-                Our Store
-              </a>
+              <Link href="/store" className={`nav-link ${pathname === "/store" ? "active" : ""}`}>
+               Our Store
+              </Link>
             </li>
             <li className="nav-item">
               <Link href="/contact" className={`nav-link ${pathname === "/contact" ? "active" : ""}`}>
                 Contact
               </Link>
             </li>
-            <li className="nav-item">
-              <Link href="/faq" className={`nav-link ${pathname === "/faq" ? "active" : ""}`}>
-                FAQ
-              </Link>
-            </li>
-            <li className="nav-item">
-              <a
-                href="#size-guide"
-                className={`nav-link ${pathname === "/size-guide" ? "active" : ""}`}
-                id="open-size-guide-nav"
-                onClick={(e) => {
-                  e.preventDefault();
-                  onOpenSizeGuideModal?.();
-                }}
-              >
-                Size Guide
-              </a>
-            </li>
           </ul>
         </nav>
 
         {/* RIGHT ACTIONS */}
         <div className="nav-actions">
-          <button
-            className="icon-btn search-trigger"
-            id="search-btn"
-            aria-label="Search Collection"
-            onClick={onOpenSearchModal}
-          >
-            <svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" strokeWidth="1.8" strokeLinecap="round" strokeLinejoin="round">
-              <circle cx="11" cy="11" r="8"></circle>
-              <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
-            </svg>
-          </button>
-
           <button
             className="icon-btn menu-trigger"
             id="mobile-menu-btn"

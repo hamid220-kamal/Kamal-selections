@@ -51,21 +51,6 @@ export function MobileMenu({
             </a>
           </li>
           <li><a href="#contact" className="drawer-link" onClick={onClose}>Contact</a></li>
-          <li><a href="#faq" className="drawer-link" onClick={onClose}>FAQ</a></li>
-          <li>
-            <a
-              href="#size-guide"
-              className="drawer-link"
-              id="mobile-size-link"
-              onClick={(e) => {
-                e.preventDefault();
-                onClose();
-                onOpenSizeGuideModal?.();
-              }}
-            >
-              Size Guide
-            </a>
-          </li>
         </ul>
         <div className="drawer-footer">
           <p className="drawer-location">

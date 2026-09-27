@@ -538,6 +538,238 @@ img {
   letter-spacing: 0.04em;
 }
 
+/* Store Hero Location & Hours Meta Block */
+.store-hero-meta-block {
+  display: flex;
+  flex-direction: column;
+  gap: 0.85rem;
+  margin-bottom: 2rem;
+  width: 100%;
+  max-width: 480px;
+}
+
+.store-hero-location-row {
+  display: inline-flex;
+  align-items: center;
+  gap: 12px;
+  background: rgba(255, 255, 255, 0.06);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  padding: 8px 16px;
+  border-radius: 14px;
+  border: 1px solid rgba(229, 195, 120, 0.28);
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.25);
+  width: fit-content;
+}
+
+.store-hero-pin-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 34px;
+  height: 34px;
+  border-radius: 50%;
+  background: rgba(196, 39, 102, 0.25);
+  border: 1px solid rgba(229, 195, 120, 0.4);
+  flex-shrink: 0;
+}
+
+.store-hero-location-text {
+  display: flex;
+  flex-direction: column;
+  line-height: 1.25;
+}
+
+.store-building-name {
+  font-family: var(--font-sans-ui);
+  font-size: 0.85rem;
+  font-weight: 700;
+  letter-spacing: 0.12em;
+  color: #F8E5BA;
+  text-transform: uppercase;
+}
+
+.store-street-name {
+  font-family: var(--font-sans-ui);
+  font-size: 0.82rem;
+  color: var(--color-cream-soft);
+  font-weight: 400;
+}
+
+.store-hero-hours-phone {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+
+.store-hours-badge,
+.store-phone-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 7px;
+  font-family: var(--font-sans-ui);
+  font-size: 0.78rem;
+  font-weight: 600;
+  color: var(--color-gold-light);
+  background: rgba(229, 195, 120, 0.12);
+  border: 1px solid rgba(229, 195, 120, 0.25);
+  padding: 5px 12px;
+  border-radius: 20px;
+  text-decoration: none;
+  transition: all var(--transition-fast);
+}
+
+.store-phone-badge:hover {
+  background: rgba(229, 195, 120, 0.22);
+  border-color: var(--color-gold-main);
+  color: #FFFFFF;
+}
+
+/* Contact Hero Meta Block */
+.contact-hero-meta-block {
+  display: flex;
+  flex-direction: column;
+  gap: 0.85rem;
+  margin-bottom: 1.85rem;
+  width: 100%;
+  max-width: 500px;
+}
+
+.contact-phone-card {
+  display: inline-flex;
+  align-items: center;
+  gap: 14px;
+  background: rgba(255, 255, 255, 0.08);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  padding: 10px 18px;
+  border-radius: 16px;
+  border: 1px solid rgba(229, 195, 120, 0.35);
+  box-shadow: 0 4px 18px rgba(0, 0, 0, 0.3);
+  text-decoration: none;
+  transition: all var(--transition-fast);
+  width: fit-content;
+}
+
+.contact-phone-card:hover {
+  background: rgba(229, 195, 120, 0.18);
+  border-color: var(--color-gold-main);
+  transform: translateY(-2px);
+}
+
+.contact-phone-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 38px;
+  height: 38px;
+  border-radius: 50%;
+  background: linear-gradient(135deg, var(--color-magenta-primary) 0%, #E5C378 100%);
+  color: #FFFFFF;
+  flex-shrink: 0;
+  box-shadow: 0 2px 8px rgba(196, 39, 102, 0.35);
+}
+
+.contact-phone-info {
+  display: flex;
+  flex-direction: column;
+}
+
+.contact-phone-label {
+  font-family: var(--font-sans-ui);
+  font-size: 0.66rem;
+  font-weight: 700;
+  letter-spacing: 0.18em;
+  color: var(--color-gold-light);
+  text-transform: uppercase;
+  line-height: 1.2;
+}
+
+.contact-phone-number {
+  font-family: var(--font-serif-brand);
+  font-size: 1.25rem;
+  font-weight: 700;
+  letter-spacing: 0.04em;
+  color: #FFFFFF;
+  line-height: 1.2;
+}
+
+.contact-location-social-row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  flex-wrap: wrap;
+}
+
+.contact-location-info {
+  display: flex;
+  align-items: flex-start;
+  gap: 10px;
+  background: rgba(25, 3, 6, 0.4);
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
+  padding: 8px 14px;
+  border-radius: 12px;
+  border: 1px solid rgba(229, 195, 120, 0.22);
+}
+
+.contact-location-pin {
+  margin-top: 2px;
+  flex-shrink: 0;
+}
+
+.contact-location-text {
+  display: flex;
+  flex-direction: column;
+  line-height: 1.25;
+}
+
+.contact-location-title {
+  font-family: var(--font-sans-ui);
+  font-size: 0.62rem;
+  font-weight: 700;
+  letter-spacing: 0.16em;
+  color: var(--color-gold-main);
+  text-transform: uppercase;
+}
+
+.contact-location-store {
+  font-family: var(--font-sans-ui);
+  font-size: 0.85rem;
+  font-weight: 600;
+  color: var(--color-cream-main);
+}
+
+.contact-location-address {
+  font-family: var(--font-sans-ui);
+  font-size: 0.78rem;
+  color: var(--color-cream-muted);
+}
+
+.contact-social-pill {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  font-family: var(--font-sans-ui);
+  font-size: 0.78rem;
+  font-weight: 600;
+  color: var(--color-gold-light);
+  background: rgba(229, 195, 120, 0.12);
+  border: 1px solid rgba(229, 195, 120, 0.25);
+  padding: 6px 14px;
+  border-radius: 20px;
+  text-decoration: none;
+  transition: all var(--transition-fast);
+}
+
+.contact-social-pill:hover {
+  background: rgba(229, 195, 120, 0.22);
+  border-color: var(--color-gold-main);
+  color: #FFFFFF;
+}
+
 /* 6. CTA BUTTONS */
 .hero-cta-group {
   display: flex;
@@ -1386,6 +1618,24 @@ img {
     justify-content: center;
     width: 100%;
   }
+  .store-hero-meta-block {
+    align-items: center;
+  }
+  .store-hero-location-row {
+    justify-content: center;
+  }
+  .store-hero-hours-phone {
+    justify-content: center;
+  }
+  .contact-hero-meta-block {
+    align-items: center;
+  }
+  .contact-phone-card {
+    justify-content: center;
+  }
+  .contact-location-social-row {
+    justify-content: center;
+  }
   .category-cards-grid {
     grid-template-columns: 1fr;
   }
@@ -1431,6 +1681,38 @@ img {
     font-size: 0.82rem;
     padding: 5px 12px;
     flex-wrap: wrap;
+    justify-content: center;
+  }
+  .store-hero-meta-block {
+    align-items: center;
+    margin-bottom: 1.6rem;
+  }
+  .store-hero-location-row {
+    width: 100%;
+    justify-content: flex-start;
+  }
+  .store-hero-hours-phone {
+    width: 100%;
+    justify-content: flex-start;
+  }
+  .contact-hero-meta-block {
+    align-items: flex-start;
+    margin-bottom: 1.5rem;
+    width: 100%;
+  }
+  .contact-phone-card {
+    width: 100%;
+  }
+  .contact-location-social-row {
+    width: 100%;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .contact-location-info {
+    width: 100%;
+  }
+  .contact-social-pill {
+    width: 100%;
     justify-content: center;
   }
   .hero-cta-group {
