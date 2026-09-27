@@ -74,8 +74,8 @@ export function AboutRealStore({ onOpenStoreModal }: AboutRealStoreProps = {}) {
           <div className="lg:col-span-7 relative">
             <div className="relative rounded-3xl overflow-hidden shadow-2xl border border-[#E5C378]/50 aspect-[16/10] sm:aspect-[16/10]">
               <img
-                src="/images/store/store-hero-bg.jpg"
-                alt="Kamal Selections retail store interior and display in Shadnagar"
+                src="/store1.png"
+                alt="Kamal Selections genuine retail showroom interior and entrance at Ibrahim Complex, Main Road, Shadnagar"
                 className="w-full h-full object-cover object-center transform hover:scale-105 transition-transform duration-700 ease-out"
                 loading="lazy"
               />

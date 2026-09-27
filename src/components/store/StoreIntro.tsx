@@ -91,7 +91,7 @@ export function StoreIntro() {
             </div>
           </div>
 
-          {/* RIGHT: AUTHENTIC STORE INTERIOR IMAGE (6 COLS) */}
+          {/* RIGHT: AUTHENTIC STOREFRONT SIGNAGE IMAGE (6 COLS) */}
           <div className="lg:col-span-6 relative">
             <div className="relative mx-auto max-w-md lg:max-w-none">
               {/* Outer Decorative Gold Offset Border */}
@@ -100,8 +100,8 @@ export function StoreIntro() {
               {/* Image Container */}
               <div className="relative aspect-[4/3] sm:aspect-[16/11] rounded-3xl overflow-hidden shadow-2xl border border-[#E5C378]/40 bg-[#D8CEC1]">
                 <img
-                  src="/images/store/store-hero-bg.jpg"
-                  alt="Kamal Selections genuine clothing store interior in Ibrahim Complex, Shadnagar"
+                  src="/store board.png"
+                  alt="Kamal Selections store exterior signage at Ibrahim Complex, Main Road, Shadnagar"
                   className="w-full h-full object-cover object-center transform hover:scale-105 transition-transform duration-700 ease-out"
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-[#20040A]/60 via-transparent to-transparent"></div>
@@ -109,13 +109,13 @@ export function StoreIntro() {
                 {/* In-Store Badge */}
                 <div className="absolute top-4 left-4 z-10">
                   <span className="px-3.5 py-1 rounded-full bg-[#20040A]/80 border border-[#D4AF37]/50 text-[#F8E5BA] text-[10px] font-bold tracking-[0.2em] uppercase backdrop-blur-md shadow-md">
-                    GENUINE STORE PHOTOGRAPH
+                    STOREFRONT &amp; SIGNAGE
                   </span>
                 </div>
 
                 <div className="absolute bottom-4 left-4 right-4 flex items-center justify-between text-xs text-[#FAF3EB] bg-[#20040A]/70 backdrop-blur-md px-4 py-2.5 rounded-xl border border-[#E5C378]/30">
                   <span className="font-semibold uppercase tracking-wider">Ibrahim Complex</span>
-                  <span>Shadnagar, Telangana</span>
+                  <span>Main Road, Shadnagar</span>
                 </div>
               </div>
             </div>

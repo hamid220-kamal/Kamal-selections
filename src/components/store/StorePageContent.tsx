@@ -8,7 +8,7 @@ import { StoreHero } from "@/components/store/StoreHero";
 import { StoreIntro } from "@/components/store/StoreIntro";
 import { StoreExperience } from "@/components/store/StoreExperience";
 import { StoreRangeOverview } from "@/components/store/StoreRangeOverview";
-import { StoreRealVisual } from "@/components/store/StoreRealVisual";
+import { StoreGallery } from "@/components/store/StoreGallery";
 import { StoreCollectionsSplit } from "@/components/store/StoreCollectionsSplit";
 import { StoreFindUs } from "@/components/store/StoreFindUs";
 import { StoreMap } from "@/components/store/StoreMap";
@@ -82,8 +82,8 @@ export function StorePageContent() {
         {/* SECTION 3 — WHAT YOU'LL FIND */}
         <StoreRangeOverview />
 
-        {/* SECTION 4 — REAL STORE VISUAL */}
-        <StoreRealVisual />
+        {/* SECTION 4 — COMPLETE 4-IMAGE AUTHENTIC STORE GALLERY */}
+        <StoreGallery />
 
         {/* SECTION 5 — WOMEN + KIDS SPLIT */}
         <StoreCollectionsSplit />

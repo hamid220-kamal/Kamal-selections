@@ -9,11 +9,11 @@ export function AboutLocation() {
         <div className="bg-[#FFFFFF] rounded-3xl border border-[#E5C378]/40 p-8 sm:p-12 shadow-lg flex flex-col md:flex-row items-center justify-between gap-8 sm:gap-12">
           
           {/* LEFT: LOCATION STORY */}
-          <div className="md:w-3/5">
+          <div className="md:w-1/2">
             <div className="inline-flex items-center gap-2 mb-3">
               <span className="w-6 h-px bg-[#D4AF37]"></span>
               <span className="text-[11px] font-bold tracking-[0.24em] text-[#A41A50] uppercase">
-                COMMUNITY TIES
+                COMMUNITY TIES &amp; LOCATION
               </span>
             </div>
 
@@ -25,48 +25,63 @@ export function AboutLocation() {
               Located at Ibrahim Complex on Main Road, Kamal Selections is built around serving the women and families of Shadnagar.
             </p>
 
-            <div className="flex items-center gap-3 text-xs text-[#69564A]">
-              <span className="w-2 h-2 rounded-full bg-[#A41A50]"></span>
-              <span>Central Shadnagar Location</span>
-              <span className="text-[#D4AF37]">·</span>
-              <span>Easily Accessible by Foot &amp; Transit</span>
+            <div className="p-4 rounded-2xl bg-[#FAF3EB] border border-[#E5C378]/50 mb-6">
+              <div className="flex items-start gap-3">
+                <div className="w-8 h-8 rounded-full bg-[#FFFFFF] border border-[#D4AF37] flex items-center justify-center text-[#A41A50] shrink-0 mt-0.5">
+                  <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" strokeWidth="2">
+                    <path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7z"/>
+                    <circle cx="12" cy="9" r="2.5"/>
+                  </svg>
+                </div>
+                <div>
+                  <span className="text-[10px] font-bold text-[#A41A50] uppercase tracking-wider block">
+                    PHYSICAL ADDRESS
+                  </span>
+                  <p className="text-sm font-serif font-bold text-[#30251F]">
+                    Ibrahim Complex, Main Road
+                  </p>
+                  <p className="text-xs text-[#69564A]">
+                    Shadnagar, Telangana — 509216
+                  </p>
+                </div>
+              </div>
             </div>
+
+            <a
+              href={brandData.maps.directionsUrl}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="btn btn-primary btn-pill btn-sm"
+              id="about-location-maps-btn"
+            >
+              <span>Get Directions</span>
+              <span aria-hidden="true" className="btn-arrow">→</span>
+            </a>
           </div>
 
-          {/* RIGHT: SUBTLE ARCHITECTURAL / LOCATION CARD */}
-          <div className="md:w-2/5 w-full">
-            <div className="p-6 rounded-2xl bg-[#FAF3EB] border border-[#E5C378]/50 shadow-inner text-center relative overflow-hidden">
-              {/* Gold Location Pin Icon */}
-              <div className="w-14 h-14 mx-auto mb-4 rounded-full bg-[#FFFFFF] border-2 border-[#D4AF37] shadow-md flex items-center justify-center text-[#A41A50]">
-                <svg viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" strokeWidth="2">
-                  <path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7z"/>
-                  <circle cx="12" cy="9" r="2.5"/>
-                </svg>
+          {/* RIGHT: AUTHENTIC STOREFRONT SIGNAGE BOARD (store board.png) */}
+          <div className="md:w-1/2 w-full">
+            <div className="relative rounded-2xl overflow-hidden shadow-xl border border-[#E5C378]/50 aspect-[4/3] bg-[#D8CEC1] group">
+              <img
+                src="/store board.png"
+                alt="Kamal Selections exterior storefront signage at Ibrahim Complex, Main Road, Shadnagar"
+                className="w-full h-full object-cover object-center transform group-hover:scale-105 transition-transform duration-700 ease-out"
+                loading="lazy"
+              />
+              <div className="absolute inset-0 bg-gradient-to-t from-[#20040A]/60 via-transparent to-transparent"></div>
+
+              {/* In-Store Badge */}
+              <div className="absolute top-3 left-3 z-10">
+                <span className="px-3 py-0.5 rounded-full bg-[#FAF3EB]/95 border border-[#D4AF37]/60 text-[#4A0717] text-[10px] font-bold tracking-[0.2em] uppercase backdrop-blur-md shadow-md">
+                  STOREFRONT SIGNAGE
+                </span>
               </div>
 
-              <span className="text-[10px] font-bold text-[#A41A50] tracking-[0.2em] uppercase block mb-1">
-                OUR TOWN &amp; LOCATION
-              </span>
-              
-              <h3 className="font-serif text-xl font-bold text-[#30251F] mb-1">
-                Shadnagar, Telangana
-              </h3>
-              
-              <p className="text-xs text-[#69564A] leading-relaxed mb-5">
-                Ibrahim Complex, Main Road<br />
-                PIN: 509216
-              </p>
-
-              <a
-                href={brandData.maps.directionsUrl}
-                target="_blank"
-                rel="noopener noreferrer"
-                className="btn btn-outline btn-pill btn-sm w-full justify-center"
-                id="about-location-maps-btn"
-              >
-                <span>View on Google Maps</span>
-                <span aria-hidden="true" className="btn-arrow">→</span>
-              </a>
+              {/* Bottom Tag */}
+              <div className="absolute bottom-3 left-3 right-3 flex items-center justify-between text-[11px] text-[#FAF3EB] bg-[#20040A]/75 backdrop-blur-md px-3.5 py-1.5 rounded-xl border border-[#E5C378]/30">
+                <span className="font-semibold uppercase tracking-wider">Ibrahim Complex</span>
+                <span>Main Road, Shadnagar</span>
+              </div>
             </div>
           </div>
 

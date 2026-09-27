@@ -81,13 +81,20 @@ export function KidsStoreExperience({ onOpenStoreModal }: KidsStoreExperiencePro
           <div className="lg:col-span-6">
             <div className="relative rounded-2xl overflow-hidden shadow-2xl border border-[#E5C378]/35 aspect-[16/10] sm:aspect-[16/9]">
               <img
-                src="/images/store/store-hero-bg.jpg"
-                alt="Kamal Selections boutique store interior in Shadnagar"
+                src="/store3.png"
+                alt="Kamal Selections kids wear collection, children's clothes racks and checkout counter inside the Shadnagar store"
                 className="w-full h-full object-cover object-center transform hover:scale-105 transition-transform duration-700 ease-out"
                 loading="lazy"
               />
               <div className="absolute inset-0 bg-gradient-to-t from-[#20040A]/60 via-transparent to-transparent"></div>
               
+              {/* In-Store Badge */}
+              <div className="absolute top-4 left-4 z-10">
+                <span className="px-3.5 py-1 rounded-full bg-[#FAF3EB]/95 backdrop-blur-md border border-[#D4AF37]/60 text-[#1D4ED8] text-[10px] font-bold tracking-[0.2em] uppercase shadow-md">
+                  DISCOVER OUR KIDS COLLECTION IN-STORE
+                </span>
+              </div>
+
               {/* Bottom Tag */}
               <div className="absolute bottom-4 left-4 right-4 flex items-center justify-between text-xs text-[#F8E5BA] bg-[#20040A]/70 backdrop-blur-md px-4 py-2 rounded-xl border border-[#E5C378]/30">
                 <span className="font-semibold uppercase tracking-wider">Ibrahim Complex · Main Road</span>
