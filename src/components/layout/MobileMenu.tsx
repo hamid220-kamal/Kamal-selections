@@ -34,23 +34,10 @@ export function MobileMenu({
         <ul className="drawer-nav">
           <li><Link href="/" className="drawer-link" onClick={onClose}>Home</Link></li>
           <li><Link href="/women" className="drawer-link" onClick={onClose}>Women’s Wear</Link></li>
-          <li><a href="#kids-wear" className="drawer-link" onClick={onClose}>Kids Wear</a></li>
-          <li><a href="#about-us" className="drawer-link" onClick={onClose}>About Us</a></li>
-          <li>
-            <a
-              href="#our-store"
-              className="drawer-link"
-              id="mobile-store-link"
-              onClick={(e) => {
-                e.preventDefault();
-                onClose();
-                onOpenStoreModal?.();
-              }}
-            >
-              Our Store
-            </a>
-          </li>
-          <li><a href="#contact" className="drawer-link" onClick={onClose}>Contact</a></li>
+          <li><Link href="/kids" className="drawer-link" onClick={onClose}>Kids Wear</Link></li>
+          <li><Link href="/about" className="drawer-link" onClick={onClose}>About Us</Link></li>
+          <li><Link href="/store" className="drawer-link" onClick={onClose}>Our Store</Link></li>
+          <li><Link href="/contact" className="drawer-link" onClick={onClose}>Contact</Link></li>
         </ul>
         <div className="drawer-footer">
           <p className="drawer-location">
@@ -60,16 +47,14 @@ export function MobileMenu({
             </svg>
             Shadnagar, Telangana, India
           </p>
-          <button
+          <Link
+            href="/store"
             className="btn btn-primary btn-block"
             id="drawer-visit-btn"
-            onClick={() => {
-              onClose();
-              onOpenStoreModal?.();
-            }}
+            onClick={onClose}
           >
             Visit Our Store
-          </button>
+          </Link>
         </div>
       </div>
     </div>
