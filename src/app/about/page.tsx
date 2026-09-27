@@ -20,7 +20,7 @@ export default function AboutPage() {
             <div className="absolute -left-3 -top-3 h-full w-full border border-[#B37B49]/55" aria-hidden="true" />
             <div className="relative aspect-[4/5] overflow-hidden bg-[#D8CEC1]">
               <Image
-                src="/images/about/shop-owner.jpg"
+                src="/assets/owner.png"
                 alt="The owner of Kamal Selections at her store"
                 fill
                 priority
