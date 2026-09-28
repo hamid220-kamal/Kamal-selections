@@ -69,27 +69,44 @@ export function KidsFamilyShopping({ onOpenStoreModal }: KidsFamilyShoppingProps
               </div>
             </div>
 
-            {/* RIGHT: TASTEFUL FAMILY LIFESTYLE IMAGE (6 COLS) */}
+            {/* RIGHT: FAMILY WARDROBE HIGHLIGHT CARD (6 COLS) */}
             <div className="lg:col-span-6">
-              <div className="relative rounded-2xl overflow-hidden shadow-2xl border border-[#E5C378]/40 aspect-[4/3] sm:aspect-[16/11]">
-                <img
-                  src="/images/home/collage-kids.jpg"
-                  alt="Mother and children exploring beautiful clothing together at Kamal Selections"
-                  className="w-full h-full object-cover object-center transform hover:scale-105 transition-transform duration-700 ease-out"
-                  loading="lazy"
-                />
-                <div className="absolute inset-0 bg-gradient-to-t from-[#20040A]/50 via-transparent to-transparent"></div>
-                
-                {/* Floating Badge */}
-                <div className="absolute bottom-4 left-4 z-10">
-                  <div className="px-4 py-2 rounded-xl bg-[#2A050E]/80 backdrop-blur-md border border-[#E5C378]/40 text-white">
-                    <span className="text-[10px] font-bold tracking-widest text-[#E5C378] uppercase block">
-                      WOMEN &amp; KIDS IN SHADNAGAR
-                    </span>
-                    <span className="text-xs font-serif text-[#F8E5BA]">
-                      Curated For Every Family Celebration
-                    </span>
+              <div className="relative rounded-2xl overflow-hidden shadow-2xl border border-[#E5C378]/40 bg-gradient-to-br from-[#2E050F] via-[#20040A] to-[#140106] p-8 sm:p-10 text-white">
+                <div className="flex items-center justify-between mb-6 pb-4 border-b border-[#E5C378]/25">
+                  <span className="text-[10px] font-bold text-[#E5C378] tracking-[0.24em] uppercase">
+                    HARMONIOUS STYLING
+                  </span>
+                  <span className="text-xs text-[#F8E5BA]/80 font-serif italic">Shadnagar Showroom</span>
+                </div>
+
+                <h3 className="font-serif text-2xl sm:text-3xl font-bold text-white mb-4">
+                  Celebration Wardrobe Together.
+                </h3>
+                <p className="text-sm text-[#F8E5BA]/90 leading-relaxed mb-6">
+                  Save time shopping across multiple stores. Find coordinated mother-daughter festive palettes and father-son styling under one welcoming roof.
+                </p>
+
+                <div className="space-y-3 pt-2">
+                  <div className="flex items-start gap-3 p-3.5 rounded-xl bg-white/5 border border-white/10">
+                    <span className="text-[#E5C378] mt-0.5">✦</span>
+                    <div className="text-xs">
+                      <strong className="text-white block mb-0.5">Matching Festive Color Stories</strong>
+                      <span className="text-[#F8E5BA]/80">Harmonized pastels, maroons, and royal blues for family ceremonies and festivals.</span>
+                    </div>
                   </div>
+
+                  <div className="flex items-start gap-3 p-3.5 rounded-xl bg-white/5 border border-white/10">
+                    <span className="text-[#E5C378] mt-0.5">✦</span>
+                    <div className="text-xs">
+                      <strong className="text-white block mb-0.5">Family-Friendly Shopping Pace</strong>
+                      <span className="text-[#F8E5BA]/80">Relaxed seating and patient staff so parents and kids can choose with complete peace of mind.</span>
+                    </div>
+                  </div>
+                </div>
+
+                <div className="mt-8 pt-4 border-t border-[#E5C378]/20 flex items-center justify-between text-xs text-[#E5C378]">
+                  <span>Ibrahim Complex, Shadnagar</span>
+                  <span className="font-semibold uppercase tracking-wider">Women &amp; Kids Showroom</span>
                 </div>
               </div>
             </div>

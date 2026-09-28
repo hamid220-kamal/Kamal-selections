@@ -12,8 +12,8 @@ export function AboutHero({ onOpenStoreModal }: AboutHeroProps = {}) {
       {/* FULL-BLEED EDITORIAL BACKGROUND IMAGE LAYER */}
       <div className="hero-bg-container">
         <img
-          src="/images/about/story-hero-bg.jpg"
-          alt="Kamal Selections Family and Community in Shadnagar"
+          src="/images/about/kamal-selections-heritage-family-story.jpg"
+          alt="Kamal Selections family heritage and Indian fashion showroom story in Shadnagar"
           className="hero-bg-img"
           id="hero-bg-img"
         />

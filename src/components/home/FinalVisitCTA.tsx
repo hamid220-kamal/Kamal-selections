@@ -5,7 +5,12 @@ export function FinalVisitCTA() {
     <section className="section-final-visit-cta" id="visit-us">
       {/* BACKGROUND EDITORIAL CAMPAIGN PHOTO & DEEP BURGUNDY OVERLAY */}
       <div className="final-cta-bg-wrapper" aria-hidden="true">
-        <img src="/assets/final-cta-bg.jpg" alt="Kamal Selections Fashion Campaign Visual" className="final-cta-bg-img" loading="lazy" />
+        <img
+          src="/images/home/kamal-selections-in-store-experience-banner.jpg"
+          alt="Visit Kamal Selections Showroom at Ibrahim Complex, Main Road, Shadnagar"
+          className="final-cta-bg-img"
+          loading="lazy"
+        />
         <div className="final-cta-burgundy-overlay"></div>
       </div>
 

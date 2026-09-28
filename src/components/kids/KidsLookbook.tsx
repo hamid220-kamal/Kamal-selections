@@ -23,89 +23,110 @@ export function KidsLookbook() {
           </p>
         </div>
 
-        {/* ASYMMETRIC OVERLAPPING CINEMATIC GALLERY */}
-        <div className="grid grid-cols-1 md:grid-cols-12 gap-5 lg:gap-6 items-start">
+        {/* ASYMMETRIC OVERLAPPING CINEMATIC STYLE LOOKBOOK */}
+        <div className="grid grid-cols-1 md:grid-cols-12 gap-5 lg:gap-6 items-stretch">
           
-          {/* COLUMN 1 (5 COLS): LARGE PORTRAIT (GIRLS OCCASION WEAR) */}
-          <div className="md:col-span-5 relative group overflow-hidden rounded-2xl shadow-xl border border-[#E5C378]/35 aspect-[3/4] sm:aspect-[4/5] md:aspect-[3/4]">
-            <img
-              src="/images/kids/cat-girls-wear.jpg"
-              alt="Girls festive collection at Kamal Selections"
-              className="w-full h-full object-cover object-center transform group-hover:scale-105 transition-transform duration-700 ease-out"
-              loading="lazy"
-            />
-            <div className="absolute inset-0 bg-gradient-to-t from-black/75 via-transparent to-transparent"></div>
-            <div className="absolute bottom-5 left-5 z-10">
-              <span className="px-3 py-1 rounded-full bg-[#E5C378]/25 border border-[#E5C378]/50 text-[#F8E5BA] text-[10px] font-bold tracking-[0.2em] uppercase backdrop-blur-md">
-                GIRLS
+          {/* COLUMN 1 (5 COLS): LARGE FEATURED CARD (FESTIVE PALETTES) */}
+          <div className="md:col-span-5 relative group overflow-hidden rounded-2xl shadow-xl border border-[#E5C378]/35 bg-gradient-to-b from-[#2E050F] via-[#20040A] to-[#140106] p-7 sm:p-9 flex flex-col justify-between text-white">
+            <div>
+              <div className="flex items-center justify-between mb-6">
+                <span className="px-3 py-1 rounded-full bg-[#E5C378]/20 border border-[#E5C378]/40 text-[#F8E5BA] text-[10px] font-bold tracking-[0.2em] uppercase">
+                  LOOKBOOK FOCUS
+                </span>
+                <span className="text-xs text-[#E5C378] font-serif italic">Kids Edit 2026</span>
+              </div>
+
+              <span className="text-[11px] font-semibold tracking-[0.24em] text-[#E5C378] uppercase block mb-2">
+                CELEBRATION PALETTES
               </span>
-              <p className="font-serif text-xl sm:text-2xl text-white font-bold mt-2">
-                Celebration Details
+              <h3 className="font-serif text-3xl sm:text-4xl font-bold text-white mb-4 leading-tight">
+                Pastel Twirls &amp; Emerald Accents.
+              </h3>
+              <p className="text-sm text-[#F8E5BA]/90 leading-relaxed mb-6">
+                Joyful pastel lehengas and tailored sherwani sets paired with breathable linings so children look radiant and feel completely unrestricted.
               </p>
+
+              <div className="space-y-2 pt-4 border-t border-[#E5C378]/25 text-xs text-[#F8E5BA]/80">
+                <div className="flex items-center gap-2">
+                  <span className="w-1.5 h-1.5 rounded-full bg-[#E5C378]"></span>
+                  <span><strong>Girls Edit:</strong> Flared festive frocks, net lehengas &amp; kurti sets</span>
+                </div>
+                <div className="flex items-center gap-2">
+                  <span className="w-1.5 h-1.5 rounded-full bg-[#E5C378]"></span>
+                  <span><strong>Boys Edit:</strong> Nehru jackets, kurta sets &amp; coordinated bottoms</span>
+                </div>
+              </div>
+            </div>
+
+            <div className="mt-8 pt-4 border-t border-[#E5C378]/20 flex items-center justify-between text-xs text-[#E5C378]">
+              <span className="font-semibold uppercase tracking-wider">Kamal Selections Showroom</span>
+              <span>In-Store Try-Ons Available →</span>
             </div>
           </div>
 
           {/* COLUMN 2 (7 COLS): TOP HORIZONTAL & DUAL TILES */}
-          <div className="md:col-span-7 space-y-5 lg:space-y-6">
+          <div className="md:col-span-7 flex flex-col gap-5 lg:gap-6 justify-between">
             
-            {/* WIDE HORIZONTAL (FESTIVE HERO KIDS MOMENT) */}
-            <div className="relative group overflow-hidden rounded-2xl shadow-xl border border-[#E5C378]/35 h-56 sm:h-64 md:h-72">
-              <img
-                src="/images/kids/center-kids-hero.jpg"
-                alt="Festive family kids clothing at Kamal Selections"
-                className="w-full h-full object-cover object-center transform group-hover:scale-105 transition-transform duration-700 ease-out"
-                loading="lazy"
-              />
-              <div className="absolute inset-0 bg-gradient-to-t from-black/75 via-transparent to-transparent"></div>
-              <div className="absolute bottom-5 left-5 z-10">
-                <span className="px-3 py-1 rounded-full bg-[#E5C378]/25 border border-[#E5C378]/50 text-[#F8E5BA] text-[10px] font-bold tracking-[0.2em] uppercase backdrop-blur-md">
-                  KIDS FROCKS
+            {/* WIDE HORIZONTAL (ACTIVE PLAY EDIT) */}
+            <div className="relative group overflow-hidden rounded-2xl shadow-xl border border-[#E5C378]/35 bg-gradient-to-r from-[#FAF3EB] to-[#FFFFFF] p-7 flex flex-col justify-between border-l-4 border-l-[#A41A50]">
+              <div className="flex items-center justify-between mb-3">
+                <span className="text-[10px] font-bold tracking-[0.2em] text-[#A41A50] uppercase">
+                  EVERYDAY &amp; OUTINGS EDIT
                 </span>
-                <p className="font-serif text-xl sm:text-2xl text-white font-bold mt-2">
-                  Twirl-Ready Elegance
-                </p>
+                <span className="text-xs text-[#69564A]">Pure Comfort</span>
+              </div>
+              <h3 className="font-serif text-2xl sm:text-3xl font-bold text-[#30251F] mb-2">
+                Breathable Cotton Co-Ords &amp; Tees
+              </h3>
+              <p className="text-sm text-[#51443B] leading-relaxed mb-4">
+                Non-restrictive shapes, tear-resistant stitching, and soft organic cotton fibers made to withstand joyful playtime and family travel.
+              </p>
+              <div className="flex items-center gap-3 text-xs font-semibold text-[#A41A50]">
+                <span>Pure Cotton</span>
+                <span>•</span>
+                <span>Skin-Friendly Dyes</span>
+                <span>•</span>
+                <span>Ages 1 to 14</span>
               </div>
             </div>
 
-            {/* TWO SQUARES SIDE-BY-SIDE (BOYS & KIDS SETS) */}
-            <div className="grid grid-cols-1 sm:grid-cols-2 gap-5 lg:gap-6">
+            {/* TWO SQUARES SIDE-BY-SIDE */}
+            <div className="grid grid-cols-1 sm:grid-cols-2 gap-5 lg:gap-6 flex-grow">
               
-              {/* BOYS */}
-              <div className="relative group overflow-hidden rounded-2xl shadow-lg border border-[#E5C378]/35 h-60 sm:h-64">
-                <img
-                  src="/images/kids/cat-boys-wear.jpg"
-                  alt="Smart boys wear at Kamal Selections"
-                  className="w-full h-full object-cover object-center transform group-hover:scale-105 transition-transform duration-700 ease-out"
-                  loading="lazy"
-                />
-                <div className="absolute inset-0 bg-gradient-to-t from-black/75 via-transparent to-transparent"></div>
-                <div className="absolute bottom-4 left-4 z-10">
-                  <span className="px-2.5 py-0.5 rounded-full bg-[#E5C378]/25 border border-[#E5C378]/50 text-[#F8E5BA] text-[9px] font-bold tracking-[0.2em] uppercase backdrop-blur-md">
-                    BOYS
+              {/* CARD 1: SENSITIVE SKIN FOCUS */}
+              <div className="relative group overflow-hidden rounded-2xl shadow-lg border border-[#E5C378]/35 bg-[#FFFFFF] p-6 flex flex-col justify-between">
+                <div>
+                  <span className="text-[10px] font-bold text-[#D4AF37] tracking-[0.2em] uppercase block mb-1">
+                    CARE &amp; COMFORT
                   </span>
-                  <p className="font-serif text-lg text-white font-bold mt-1.5">
-                    Smart &amp; Playful
+                  <h4 className="font-serif text-xl font-bold text-[#30251F] mb-2">
+                    Lined for Sensitive Skin
+                  </h4>
+                  <p className="text-xs text-[#69564A] leading-relaxed mb-4">
+                    Every festive piece features smooth inner cotton lining so intricate sequins and brocade fabrics never cause irritation.
                   </p>
                 </div>
+                <span className="text-[11px] font-semibold text-[#A41A50]">
+                  Child-First Construction ✦
+                </span>
               </div>
 
-              {/* KIDS SETS */}
-              <div className="relative group overflow-hidden rounded-2xl shadow-lg border border-[#E5C378]/35 h-60 sm:h-64">
-                <img
-                  src="/images/kids/cat-kids-sets.jpg"
-                  alt="Coordinated kids sets at Kamal Selections"
-                  className="w-full h-full object-cover object-center transform group-hover:scale-105 transition-transform duration-700 ease-out"
-                  loading="lazy"
-                />
-                <div className="absolute inset-0 bg-gradient-to-t from-black/75 via-transparent to-transparent"></div>
-                <div className="absolute bottom-4 left-4 z-10">
-                  <span className="px-2.5 py-0.5 rounded-full bg-[#E5C378]/25 border border-[#E5C378]/50 text-[#F8E5BA] text-[9px] font-bold tracking-[0.2em] uppercase backdrop-blur-md">
-                    KIDS SETS
+              {/* CARD 2: DURABILITY */}
+              <div className="relative group overflow-hidden rounded-2xl shadow-lg border border-[#E5C378]/35 bg-[#FFFFFF] p-6 flex flex-col justify-between">
+                <div>
+                  <span className="text-[10px] font-bold text-[#D4AF37] tracking-[0.2em] uppercase block mb-1">
+                    LONGEVITY
                   </span>
-                  <p className="font-serif text-lg text-white font-bold mt-1.5">
-                    Everyday Co-ords
+                  <h4 className="font-serif text-xl font-bold text-[#30251F] mb-2">
+                    Easy Care &amp; Flexible Fits
+                  </h4>
+                  <p className="text-xs text-[#69564A] leading-relaxed mb-4">
+                    Elasticated waistbands and growth-friendly hems designed to keep pace with your child&apos;s active everyday routine.
                   </p>
                 </div>
+                <span className="text-[11px] font-semibold text-[#A41A50]">
+                  Practical Everyday Joy ✦
+                </span>
               </div>
 
             </div>

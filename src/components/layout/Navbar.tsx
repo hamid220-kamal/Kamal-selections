@@ -34,7 +34,7 @@ export function Navbar({
       <div className="navbar-container">
         {/* LOGO */}
         <Link href="/" className="brand-logo" aria-label="Kamal Selections Home">
-          <img src="/assets/logo.png" alt="Kamal Selection Logo" className="brand-logo-img" />
+          <img src="/brand/logo/kamal-selections-logo.png" alt="Kamal Selections Boutique Logo" className="brand-logo-img" />
           <span className="brand-logo-text">Kamal Selections</span>
         </Link>
 

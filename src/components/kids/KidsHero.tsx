@@ -12,8 +12,8 @@ export function KidsHero({ onOpenStoreModal }: KidsHeroProps = {}) {
       {/* FULL-BLEED EDITORIAL BACKGROUND IMAGE LAYER */}
       <div className="hero-bg-container">
         <img
-          src="/images/kids/kids-hero-bg.jpg"
-          alt="Kamal Selections Kids Wear Fashion Campaign in Shadnagar"
+          src="/images/kids/kamal-selections-kids-wear-hero-banner.jpg"
+          alt="Kamal Selections Kids Wear - Little Looks For Their Biggest Days"
           className="hero-bg-img"
           id="hero-bg-img"
         />

@@ -8,8 +8,8 @@ export function ContactHero() {
       {/* FULL-BLEED EDITORIAL BACKGROUND IMAGE LAYER */}
       <div className="hero-bg-container">
         <img
-          src="/images/contact/contact-hero-bg.jpg"
-          alt="Contact Kamal Selections in Shadnagar"
+          src="/images/contact/kamal-selections-contact-hero-lifestyle.jpg"
+          alt="Contact Kamal Selections fashion boutique team and visit our showroom in Shadnagar"
           className="hero-bg-img"
           id="hero-bg-img"
         />

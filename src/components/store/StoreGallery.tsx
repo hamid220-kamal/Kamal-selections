@@ -28,19 +28,19 @@ export function StoreGallery() {
           </p>
         </div>
 
-        {/* 4-IMAGE EDITORIAL SHOWCASE COMPOSITION */}
-        <div className="grid grid-cols-1 lg:grid-cols-12 gap-6 lg:gap-8 items-stretch">
+        {/* 4-IMAGE EDITORIAL SHOWCASE COMPOSITION (3:4 PORTRAIT RATIOS PRESERVING REAL STORE SHOTS) */}
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-8 lg:gap-10 items-stretch">
           
-          {/* IMAGE 1: FEATURED LARGE (7 COLS) — MAIN ENTRANCE & SHOWROOM OVERVIEW (store1.png) */}
-          <div className="lg:col-span-7 group relative rounded-3xl overflow-hidden bg-[#FFFFFF] border border-[#E5C378]/40 shadow-xl flex flex-col justify-between transition-all duration-500 hover:shadow-2xl hover:border-[#D4AF37]">
-            <div className="relative aspect-[16/11] sm:aspect-[16/10] w-full overflow-hidden bg-[#E8DFD5]">
+          {/* IMAGE 1: MAIN ENTRANCE & SHOWROOM OVERVIEW */}
+          <div className="group relative rounded-3xl overflow-hidden bg-[#FFFFFF] border border-[#E5C378]/40 shadow-xl flex flex-col justify-between transition-all duration-500 hover:shadow-2xl hover:border-[#D4AF37]">
+            <div className="relative aspect-[4/5] sm:aspect-[3/4] w-full overflow-hidden bg-[#E8DFD5]">
               <img
-                src="/store1.png"
+                src="/images/store/kamal-selections-showroom-interior.png"
                 alt="Kamal Selections main entrance and showroom overview with well-lit clothing displays in Shadnagar"
                 className="w-full h-full object-cover object-center transform group-hover:scale-105 transition-transform duration-700 ease-out"
                 loading="lazy"
               />
-              <div className="absolute inset-0 bg-gradient-to-t from-[#20040A]/80 via-[#20040A]/20 to-transparent"></div>
+              <div className="absolute inset-0 bg-gradient-to-t from-[#20040A]/85 via-[#20040A]/20 to-transparent"></div>
 
               {/* Tag */}
               <div className="absolute top-4 left-4 z-10">
@@ -70,16 +70,16 @@ export function StoreGallery() {
             </div>
           </div>
 
-          {/* IMAGE 2: COMPLEMENTARY (5 COLS) — STORE EXTERIOR / SIGNAGE (store board.png) */}
-          <div className="lg:col-span-5 group relative rounded-3xl overflow-hidden bg-[#FFFFFF] border border-[#E5C378]/40 shadow-xl flex flex-col justify-between transition-all duration-500 hover:shadow-2xl hover:border-[#D4AF37]">
-            <div className="relative aspect-[16/11] sm:aspect-[16/10] w-full overflow-hidden bg-[#E8DFD5]">
+          {/* IMAGE 2: STORE EXTERIOR / SIGNAGE */}
+          <div className="group relative rounded-3xl overflow-hidden bg-[#FFFFFF] border border-[#E5C378]/40 shadow-xl flex flex-col justify-between transition-all duration-500 hover:shadow-2xl hover:border-[#D4AF37]">
+            <div className="relative aspect-[4/5] sm:aspect-[3/4] w-full overflow-hidden bg-[#E8DFD5]">
               <img
-                src="/store board.png"
+                src="/images/store/kamal-selections-storefront-shadnagar.png"
                 alt="Kamal Selections exterior storefront and prominent signage board at Ibrahim Complex, Main Road, Shadnagar"
-                className="w-full h-full object-cover object-center transform group-hover:scale-105 transition-transform duration-700 ease-out"
+                className="w-full h-full object-cover object-top transform group-hover:scale-105 transition-transform duration-700 ease-out"
                 loading="lazy"
               />
-              <div className="absolute inset-0 bg-gradient-to-t from-[#20040A]/80 via-[#20040A]/20 to-transparent"></div>
+              <div className="absolute inset-0 bg-gradient-to-t from-[#20040A]/85 via-[#20040A]/20 to-transparent"></div>
 
               {/* Tag */}
               <div className="absolute top-4 left-4 z-10">
@@ -90,7 +90,7 @@ export function StoreGallery() {
 
               {/* Overlay text */}
               <div className="absolute bottom-5 left-5 right-5 z-10 text-white">
-                <h3 className="font-serif text-2xl font-bold tracking-wide drop-shadow-md mb-1">
+                <h3 className="font-serif text-2xl sm:text-3xl font-bold tracking-wide drop-shadow-md mb-1">
                   Exterior Signage Board
                 </h3>
                 <p className="text-xs sm:text-sm text-[#F8E5BA] drop-shadow leading-relaxed">
@@ -109,16 +109,16 @@ export function StoreGallery() {
             </div>
           </div>
 
-          {/* IMAGE 3: (6 COLS) — WOMEN'S COLLECTION / SHOWROOM INTERIOR (store2.png) */}
-          <div className="lg:col-span-6 group relative rounded-3xl overflow-hidden bg-[#FFFFFF] border border-[#E5C378]/40 shadow-xl flex flex-col justify-between transition-all duration-500 hover:shadow-2xl hover:border-[#D4AF37]">
-            <div className="relative aspect-[16/11] sm:aspect-[16/10] w-full overflow-hidden bg-[#E8DFD5]">
+          {/* IMAGE 3: WOMEN'S COLLECTION / SHOWROOM INTERIOR */}
+          <div className="group relative rounded-3xl overflow-hidden bg-[#FFFFFF] border border-[#E5C378]/40 shadow-xl flex flex-col justify-between transition-all duration-500 hover:shadow-2xl hover:border-[#D4AF37]">
+            <div className="relative aspect-[4/5] sm:aspect-[3/4] w-full overflow-hidden bg-[#E8DFD5]">
               <img
-                src="/store2.png"
+                src="/images/store/kamal-selections-womens-wear-collection.png"
                 alt="Kamal Selections women's wear collection and ethnic garment racks inside the Shadnagar showroom"
                 className="w-full h-full object-cover object-center transform group-hover:scale-105 transition-transform duration-700 ease-out"
                 loading="lazy"
               />
-              <div className="absolute inset-0 bg-gradient-to-t from-[#20040A]/80 via-[#20040A]/20 to-transparent"></div>
+              <div className="absolute inset-0 bg-gradient-to-t from-[#20040A]/85 via-[#20040A]/20 to-transparent"></div>
 
               {/* Tag */}
               <div className="absolute top-4 left-4 z-10">
@@ -129,7 +129,7 @@ export function StoreGallery() {
 
               {/* Overlay text */}
               <div className="absolute bottom-5 left-5 right-5 z-10 text-white">
-                <h3 className="font-serif text-2xl font-bold tracking-wide drop-shadow-md mb-1">
+                <h3 className="font-serif text-2xl sm:text-3xl font-bold tracking-wide drop-shadow-md mb-1">
                   Women&apos;s Department
                 </h3>
                 <p className="text-xs sm:text-sm text-[#F8E5BA] drop-shadow leading-relaxed">
@@ -148,16 +148,16 @@ export function StoreGallery() {
             </div>
           </div>
 
-          {/* IMAGE 4: (6 COLS) — KIDS COLLECTION / COUNTER & INTERIOR (store3.png) */}
-          <div className="lg:col-span-6 group relative rounded-3xl overflow-hidden bg-[#FFFFFF] border border-[#E5C378]/40 shadow-xl flex flex-col justify-between transition-all duration-500 hover:shadow-2xl hover:border-[#D4AF37]">
-            <div className="relative aspect-[16/11] sm:aspect-[16/10] w-full overflow-hidden bg-[#E8DFD5]">
+          {/* IMAGE 4: KIDS COLLECTION / COUNTER & INTERIOR */}
+          <div className="group relative rounded-3xl overflow-hidden bg-[#FFFFFF] border border-[#E5C378]/40 shadow-xl flex flex-col justify-between transition-all duration-500 hover:shadow-2xl hover:border-[#D4AF37]">
+            <div className="relative aspect-[4/5] sm:aspect-[3/4] w-full overflow-hidden bg-[#E8DFD5]">
               <img
-                src="/store3.png"
+                src="/images/store/kamal-selections-kids-wear-showroom.png"
                 alt="Kamal Selections kids wear collection, billing counter, and interior garment displays in Shadnagar"
                 className="w-full h-full object-cover object-center transform group-hover:scale-105 transition-transform duration-700 ease-out"
                 loading="lazy"
               />
-              <div className="absolute inset-0 bg-gradient-to-t from-[#0F1E36]/80 via-[#0F1E36]/20 to-transparent"></div>
+              <div className="absolute inset-0 bg-gradient-to-t from-[#0F1E36]/85 via-[#0F1E36]/20 to-transparent"></div>
 
               {/* Tag */}
               <div className="absolute top-4 left-4 z-10">
@@ -168,7 +168,7 @@ export function StoreGallery() {
 
               {/* Overlay text */}
               <div className="absolute bottom-5 left-5 right-5 z-10 text-white">
-                <h3 className="font-serif text-2xl font-bold tracking-wide drop-shadow-md mb-1">
+                <h3 className="font-serif text-2xl sm:text-3xl font-bold tracking-wide drop-shadow-md mb-1">
                   Kids&apos; Wear &amp; Billing Area
                 </h3>
                 <p className="text-xs sm:text-sm text-[#F8E5BA] drop-shadow leading-relaxed">

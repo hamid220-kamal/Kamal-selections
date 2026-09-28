@@ -77,28 +77,48 @@ export function KidsStoreExperience({ onOpenStoreModal }: KidsStoreExperiencePro
             </div>
           </div>
 
-          {/* RIGHT: STORE PHOTOGRAPHY (6 COLS) */}
+          {/* RIGHT: STORE ENVIRONMENT CARD (6 COLS) */}
           <div className="lg:col-span-6">
-            <div className="relative rounded-2xl overflow-hidden shadow-2xl border border-[#E5C378]/35 aspect-[16/10] sm:aspect-[16/9]">
-              <img
-                src="/store3.png"
-                alt="Kamal Selections kids wear collection, children's clothes racks and checkout counter inside the Shadnagar store"
-                className="w-full h-full object-cover object-center transform hover:scale-105 transition-transform duration-700 ease-out"
-                loading="lazy"
-              />
-              <div className="absolute inset-0 bg-gradient-to-t from-[#20040A]/60 via-transparent to-transparent"></div>
-              
-              {/* In-Store Badge */}
-              <div className="absolute top-4 left-4 z-10">
-                <span className="px-3.5 py-1 rounded-full bg-[#FAF3EB]/95 backdrop-blur-md border border-[#D4AF37]/60 text-[#1D4ED8] text-[10px] font-bold tracking-[0.2em] uppercase shadow-md">
-                  DISCOVER OUR KIDS COLLECTION IN-STORE
-                </span>
+            <div className="relative rounded-3xl overflow-hidden shadow-2xl border border-[#E5C378]/40 bg-gradient-to-br from-[#2E0611] via-[#20040A] to-[#140106] p-8 sm:p-10 text-white">
+              <div className="flex items-center justify-between mb-6 pb-4 border-b border-[#E5C378]/25">
+                <div>
+                  <span className="text-[10px] font-bold text-[#E5C378] tracking-[0.22em] uppercase block mb-1">
+                    PHYSICAL SHOWROOM
+                  </span>
+                  <h3 className="font-serif text-2xl sm:text-3xl font-bold text-white">
+                    Kamal Selections
+                  </h3>
+                </div>
+                <div className="px-3.5 py-1.5 rounded-full bg-[#E5C378]/20 border border-[#E5C378]/40 text-[#F8E5BA] text-xs font-semibold">
+                  Open Daily · 10 AM – 9 PM
+                </div>
               </div>
 
-              {/* Bottom Tag */}
-              <div className="absolute bottom-4 left-4 right-4 flex items-center justify-between text-xs text-[#F8E5BA] bg-[#20040A]/70 backdrop-blur-md px-4 py-2 rounded-xl border border-[#E5C378]/30">
-                <span className="font-semibold uppercase tracking-wider">Ibrahim Complex · Main Road</span>
-                <span>Shadnagar, Telangana</span>
+              <p className="text-sm text-[#F8E5BA]/90 leading-relaxed mb-6">
+                Located conveniently at Ibrahim Complex on Main Road, Shadnagar. Bring your children for relaxed, patient in-store trials.
+              </p>
+
+              <div className="space-y-3 mb-8">
+                <div className="flex items-start gap-3 p-3.5 rounded-xl bg-white/5 border border-white/10">
+                  <span className="text-[#E5C378] mt-0.5">✦</span>
+                  <div className="text-xs">
+                    <strong className="text-white block mb-0.5">Gentle In-Person Fitting</strong>
+                    <span className="text-[#F8E5BA]/80">Check fabric softness, correct sizing, and twirl comfort before making a decision.</span>
+                  </div>
+                </div>
+
+                <div className="flex items-start gap-3 p-3.5 rounded-xl bg-white/5 border border-white/10">
+                  <span className="text-[#E5C378] mt-0.5">✦</span>
+                  <div className="text-xs">
+                    <strong className="text-white block mb-0.5">Full Sizing Options</strong>
+                    <span className="text-[#F8E5BA]/80">Complete age brackets from toddlers (age 1) up to teenage festive attire (age 14+).</span>
+                  </div>
+                </div>
+              </div>
+
+              <div className="pt-4 border-t border-[#E5C378]/20 flex items-center justify-between text-xs text-[#E5C378]">
+                <span>Ibrahim Complex, Shadnagar</span>
+                <span className="font-semibold uppercase tracking-wider">Family Welcoming Environment</span>
               </div>
             </div>
           </div>

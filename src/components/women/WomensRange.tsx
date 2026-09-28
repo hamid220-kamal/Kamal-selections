@@ -15,8 +15,8 @@ const CATEGORIES: CategoryTile[] = [
     id: "dresses",
     name: "Dresses",
     phrase: "Easy elegance for everyday and occasions.",
-    image: "/assets/cat-dresses.jpg",
-    alt: "Indian woman wearing a flowing floral dress at Kamal Selections",
+    image: "/images/women/categories/kamal-selections-womens-designer-dresses.jpg",
+    alt: "Designer dresses and flowing ethnic gowns at Kamal Selections in Shadnagar",
     colSpanClass: "lg:col-span-8",
     heightClass: "h-64 sm:h-80 md:h-96",
   },
@@ -24,8 +24,8 @@ const CATEGORIES: CategoryTile[] = [
     id: "kurtis",
     name: "Kurtis",
     phrase: "Comfortable silhouettes with modern detail.",
-    image: "/assets/cat-kurtis.jpg",
-    alt: "Yellow embroidered kurti available at Kamal Selections in Shadnagar",
+    image: "/images/women/categories/kamal-selections-womens-embroidered-kurtis.jpg",
+    alt: "Embroidered ethnic kurtis for daily wear and festive celebrations at Kamal Selections",
     colSpanClass: "lg:col-span-4",
     heightClass: "h-64 sm:h-80 md:h-96",
   },
@@ -33,8 +33,8 @@ const CATEGORIES: CategoryTile[] = [
     id: "tops",
     name: "Tops",
     phrase: "Casual styles for everyday looks.",
-    image: "/assets/cat-tops.jpg",
-    alt: "Contemporary women's tops at Kamal Selections",
+    image: "/images/women/categories/kamal-selections-womens-casual-trendy-tops.jpg",
+    alt: "Contemporary women's casual and stylish tops at Kamal Selections",
     colSpanClass: "lg:col-span-4",
     heightClass: "h-64 sm:h-72",
   },
@@ -42,8 +42,8 @@ const CATEGORIES: CategoryTile[] = [
     id: "leggings",
     name: "Leggings",
     phrase: "Everyday essentials for easy pairing.",
-    image: "/assets/cat-leggings.jpg",
-    alt: "Premium comfortable leggings at Kamal Selections",
+    image: "/images/women/categories/kamal-selections-womens-premium-leggings.jpg",
+    alt: "Premium comfortable stretch leggings at Kamal Selections",
     colSpanClass: "lg:col-span-4",
     heightClass: "h-64 sm:h-72",
   },
@@ -51,8 +51,8 @@ const CATEGORIES: CategoryTile[] = [
     id: "burqa",
     name: "Burqa",
     phrase: "Modest styles with a graceful finish.",
-    image: "/assets/cat-burqa.jpg",
-    alt: "Graceful and modest burqa styles at Kamal Selections",
+    image: "/images/women/categories/kamal-selections-womens-modest-burqa-collection.jpg",
+    alt: "Graceful and modest burqa collection at Kamal Selections",
     colSpanClass: "lg:col-span-4",
     heightClass: "h-64 sm:h-72",
   },
@@ -60,8 +60,8 @@ const CATEGORIES: CategoryTile[] = [
     id: "3piece",
     name: "3-Piece Sets",
     phrase: "Complete looks with coordinated style.",
-    image: "/assets/cat-3piece.jpg",
-    alt: "Coordinated three-piece ethnic suit at Kamal Selections",
+    image: "/images/women/categories/kamal-selections-womens-three-piece-ethnic-suits.jpg",
+    alt: "Three-piece coordinated ethnic suits and dupatta sets at Kamal Selections",
     colSpanClass: "lg:col-span-5",
     heightClass: "h-64 sm:h-80",
   },
@@ -69,7 +69,7 @@ const CATEGORIES: CategoryTile[] = [
     id: "partywear",
     name: "Party Wear",
     phrase: "Statement looks for celebrations.",
-    image: "/assets/cat-partywear.jpg",
+    image: "/images/women/categories/kamal-selections-womens-sequined-partywear.jpg",
     alt: "Midnight blue festive party wear lehenga at Kamal Selections",
     colSpanClass: "lg:col-span-7",
     heightClass: "h-64 sm:h-80",
@@ -100,39 +100,61 @@ export function WomensRange() {
           </p>
         </div>
 
-        {/* ASYMMETRIC EDITORIAL MASONRY GRID (NON-CLICKABLE TILES) */}
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-12 gap-5 sm:gap-6">
-          {CATEGORIES.map((cat) => (
-            <div
-              key={cat.id}
-              id={cat.id}
-              className={`${cat.colSpanClass} ${cat.heightClass} relative rounded-2xl overflow-hidden shadow-lg border border-[#E5C378]/30 group select-none`}
-            >
-              {/* Background Photograph */}
-              <img
-                src={cat.image}
-                alt={cat.alt}
-                className="w-full h-full object-cover object-center transform group-hover:scale-105 transition-transform duration-700 ease-out"
-                loading="lazy"
-              />
+        {/* BALANCED EDITORIAL FASHION GRID (FULL SUBJECT VISIBILITY) */}
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-12 gap-5 sm:gap-6 lg:gap-8">
+          {CATEGORIES.map((cat, idx) => {
+            // Balanced responsive grid:
+            // 2 featured cards on top (6 cols each)
+            // 3 essential cards in middle (4 cols each)
+            // 2 celebration cards on bottom (6 cols each)
+            const spanClass =
+              idx < 2
+                ? "lg:col-span-6"
+                : idx < 5
+                ? "lg:col-span-4"
+                : "lg:col-span-6";
 
-              {/* Gradient Vignette Overlay for Typography Legibility */}
-              <div className="absolute inset-0 bg-gradient-to-t from-[#20040A]/90 via-[#20040A]/40 to-transparent pointer-events-none"></div>
+            return (
+              <div
+                key={cat.id}
+                id={cat.id}
+                className={`${spanClass} relative rounded-3xl overflow-hidden shadow-xl border border-[#E5C378]/35 bg-[#20040A] group select-none transition-all duration-500 hover:shadow-2xl hover:border-[#D4AF37]`}
+              >
+                {/* 4:5 Portrait Aspect Ratio preserves 100% vertical model height (head to toe) */}
+                <div className="relative aspect-[4/5] w-full overflow-hidden">
+                  <img
+                    src={cat.image}
+                    alt={cat.alt}
+                    className="w-full h-full object-cover object-[center_15%] transform group-hover:scale-105 transition-transform duration-700 ease-out"
+                    loading="lazy"
+                  />
 
-              {/* Bottom Editorial Content */}
-              <div className="absolute bottom-0 left-0 right-0 p-5 sm:p-7 z-10">
-                <h3 className="font-serif text-2xl sm:text-3xl font-bold text-[#FFFFFF] tracking-wide mb-1 drop-shadow-sm">
-                  {cat.name}
-                </h3>
-                <p className="text-xs sm:text-sm text-[#F8E5BA] font-light tracking-wide max-w-md drop-shadow-sm">
-                  {cat.phrase}
-                </p>
+                  {/* Gradient Vignette Overlay for Typography Legibility */}
+                  <div className="absolute inset-0 bg-gradient-to-t from-[#1F030B]/90 via-[#1F030B]/30 to-transparent pointer-events-none"></div>
+
+                  {/* Top Category Badge */}
+                  <div className="absolute top-4 left-4 z-10">
+                    <span className="px-3 py-1 rounded-full bg-[#FAF3EB]/90 backdrop-blur-md border border-[#D4AF37]/50 text-[#A41A50] text-[10px] font-bold tracking-[0.2em] uppercase shadow-sm">
+                      {cat.name}
+                    </span>
+                  </div>
+
+                  {/* Bottom Editorial Content */}
+                  <div className="absolute bottom-0 left-0 right-0 p-5 sm:p-7 z-10">
+                    <h3 className="font-serif text-2xl sm:text-3xl font-bold text-[#FFFFFF] tracking-wide mb-1 drop-shadow-md">
+                      {cat.name}
+                    </h3>
+                    <p className="text-xs sm:text-sm text-[#F8E5BA] font-light tracking-wide max-w-md drop-shadow">
+                      {cat.phrase}
+                    </p>
+                  </div>
+
+                  {/* Subtle Corner Gold Accent */}
+                  <div className="absolute top-4 right-4 w-2 h-2 rounded-full bg-[#E5C378]/60 opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+                </div>
               </div>
-
-              {/* Subtle Corner Gold Accent */}
-              <div className="absolute top-4 right-4 w-2 h-2 rounded-full bg-[#E5C378]/50 opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
-            </div>
-          ))}
+            );
+          })}
         </div>
 
         {/* BOTTOM REASSURANCE BAR */}

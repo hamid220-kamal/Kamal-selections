@@ -5,8 +5,8 @@ const KIDS_CATEGORIES = [
     id: "frocks",
     name: "Kids Frocks",
     desc: "Playful silhouettes for little girls.",
-    image: "/images/kids/cat-frocks.jpg",
-    alt: "Playful kids frock silhouette at Kamal Selections",
+    image: "/images/kids/categories/kamal-selections-girls-party-frocks.jpg",
+    alt: "Occasion frocks and princess gowns for girls at Kamal Selections in Shadnagar",
     tag: "GIRLS' COLLECTION",
     accentColor: "from-[#FAD0C4]/40 to-[#FFD1FF]/20",
     badgeBg: "bg-[#FDF2F4] text-[#A41A50] border-[#FAD0C4]",
@@ -17,8 +17,8 @@ const KIDS_CATEGORIES = [
     id: "sets",
     name: "Kids Sets",
     desc: "Easy coordinated looks for everyday wear.",
-    image: "/images/kids/cat-kids-sets.jpg",
-    alt: "Coordinated kids outfit sets at Kamal Selections",
+    image: "/images/kids/categories/kamal-selections-kids-coordinated-sets.jpg",
+    alt: "Comfortable kids coordinated sets and playwear at Kamal Selections",
     tag: "COORDINATED WEAR",
     accentColor: "from-[#E0C3FC]/30 to-[#8EC5FC]/20",
     badgeBg: "bg-[#F5F0FA] text-[#6B46C1] border-[#E0C3FC]",
@@ -29,8 +29,8 @@ const KIDS_CATEGORIES = [
     id: "girls",
     name: "Girls' Clothing",
     desc: "Comfortable styles for every little occasion.",
-    image: "/images/kids/cat-girls-wear.jpg",
-    alt: "Girls festive and everyday clothing at Kamal Selections",
+    image: "/images/kids/categories/kamal-selections-girls-ethnic-wear.jpg",
+    alt: "Traditional ethnic wear and festive lehengas for girls at Kamal Selections",
     tag: "OCCASION & CASUAL",
     accentColor: "from-[#FFE5D9]/40 to-[#FFF1E6]/20",
     badgeBg: "bg-[#FFF6F0] text-[#B85D19] border-[#FFE5D9]",
@@ -41,8 +41,8 @@ const KIDS_CATEGORIES = [
     id: "boys",
     name: "Boys' Clothing",
     desc: "Smart, playful looks made for active days.",
-    image: "/images/kids/cat-boys-wear.jpg",
-    alt: "Smart boys clothing at Kamal Selections",
+    image: "/images/kids/categories/kamal-selections-boys-kurta-pyjama.jpg",
+    alt: "Boys festive kurtas, ethnic sherwanis and partywear at Kamal Selections",
     tag: "ACTIVE & SMART",
     accentColor: "from-[#CFDEF3]/40 to-[#E0EAFC]/20",
     badgeBg: "bg-[#F0F5FA] text-[#1D4ED8] border-[#CFDEF3]",
@@ -83,27 +83,27 @@ export function KidsRange() {
           </div>
         </div>
 
-        {/* ASYMMETRIC EDITORIAL MASONRY GRID (NON-CLICKABLE REPRESENTATIONS) */}
-        <div className="grid grid-cols-1 lg:grid-cols-12 gap-6 lg:gap-8 items-stretch">
+        {/* BALANCED EDITORIAL FASHION GRID (FULL CHILD & OUTFIT VISIBILITY) */}
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 lg:gap-8 items-stretch">
           {KIDS_CATEGORIES.map((cat) => (
             <div
               key={cat.id}
-              className={`${cat.gridSpan} group relative rounded-3xl overflow-hidden bg-[#FFFFFF] border border-[#E5C378]/35 shadow-lg flex flex-col transition-all duration-500 hover:shadow-2xl hover:border-[#D4AF37]`}
+              className="group relative rounded-3xl overflow-hidden bg-[#FFFFFF] border border-[#E5C378]/35 shadow-lg flex flex-col justify-between transition-all duration-500 hover:shadow-2xl hover:border-[#D4AF37]"
             >
-              {/* IMAGE WRAPPER */}
-              <div className={`relative w-full ${cat.imageHeight} overflow-hidden`}>
+              {/* IMAGE WRAPPER (4:5 PORTRAIT RATIO PREVENTS HEAD/CHIN/DRESS CROPPING) */}
+              <div className="relative aspect-[4/5] w-full overflow-hidden bg-[#E8DFD5]">
                 <img
                   src={cat.image}
                   alt={cat.alt}
-                  className="w-full h-full object-cover object-center transform group-hover:scale-105 transition-transform duration-700 ease-out"
+                  className="w-full h-full object-cover object-[center_15%] transform group-hover:scale-105 transition-transform duration-700 ease-out"
                   loading="lazy"
                 />
                 
                 {/* Soft gradient overlay at bottom of image */}
-                <div className="absolute inset-0 bg-gradient-to-t from-[#20040A]/80 via-[#20040A]/20 to-transparent"></div>
+                <div className="absolute inset-0 bg-gradient-to-t from-[#20040A]/85 via-[#20040A]/20 to-transparent"></div>
 
                 {/* Subtle top pastel tint for warmth */}
-                <div className={`absolute inset-0 bg-gradient-to-br ${cat.accentColor} mix-blend-multiply opacity-30 pointer-events-none`}></div>
+                <div className={`absolute inset-0 bg-gradient-to-br ${cat.accentColor} mix-blend-multiply opacity-25 pointer-events-none`}></div>
 
                 {/* Category Pill Tag */}
                 <div className="absolute top-4 left-4 z-10">
@@ -114,10 +114,10 @@ export function KidsRange() {
 
                 {/* Overlay Text Inside Image */}
                 <div className="absolute bottom-5 left-5 right-5 z-10 text-white">
-                  <h3 className="font-serif text-2xl sm:text-3xl font-bold tracking-wide drop-shadow-md mb-1.5">
+                  <h3 className="font-serif text-2xl font-bold tracking-wide drop-shadow-md mb-1">
                     {cat.name}
                   </h3>
-                  <p className="text-sm text-[#F8E5BA] drop-shadow font-normal max-w-md">
+                  <p className="text-xs text-[#F8E5BA] drop-shadow font-normal line-clamp-2">
                     {cat.desc}
                   </p>
                 </div>
@@ -126,7 +126,7 @@ export function KidsRange() {
               {/* EDITORIAL BOTTOM BAR */}
               <div className="p-4 sm:p-5 bg-gradient-to-r from-[#FAF3EB] to-[#FFFFFF] border-t border-[#E5C378]/25 flex items-center justify-between">
                 <span className="text-[11px] font-semibold text-[#A41A50] tracking-wider uppercase">
-                  Available in Store · Shadnagar
+                  In Store · Shadnagar
                 </span>
                 <span className="text-[11px] text-[#69564A] italic font-serif">
                   Carefully Selected

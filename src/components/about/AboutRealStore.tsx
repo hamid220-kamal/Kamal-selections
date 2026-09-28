@@ -70,28 +70,48 @@ export function AboutRealStore({ onOpenStoreModal }: AboutRealStoreProps = {}) {
             </div>
           </div>
 
-          {/* RIGHT: REAL STORE PHOTOGRAPHY WITH GOLD LABEL (7 COLS) */}
+          {/* RIGHT: REAL SHOWROOM EXPERIENCE CARD (7 COLS) */}
           <div className="lg:col-span-7 relative">
-            <div className="relative rounded-3xl overflow-hidden shadow-2xl border border-[#E5C378]/50 aspect-[16/10] sm:aspect-[16/10]">
-              <img
-                src="/store1.png"
-                alt="Kamal Selections genuine retail showroom interior and entrance at Ibrahim Complex, Main Road, Shadnagar"
-                className="w-full h-full object-cover object-center transform hover:scale-105 transition-transform duration-700 ease-out"
-                loading="lazy"
-              />
-              <div className="absolute inset-0 bg-gradient-to-t from-[#20040A]/60 via-transparent to-transparent"></div>
-
-              {/* TOP SUBTLE GOLD LABEL BADGE */}
-              <div className="absolute top-5 left-5 z-10">
-                <span className="px-4 py-1.5 rounded-full bg-[#20040A]/80 border border-[#D4AF37]/60 text-[#F8E5BA] text-[11px] font-bold tracking-[0.24em] uppercase backdrop-blur-md shadow-md">
-                  IBRAHIM COMPLEX · SHADNAGAR
-                </span>
+            <div className="relative rounded-3xl overflow-hidden shadow-2xl border border-[#E5C378]/40 bg-gradient-to-br from-[#2E050F] via-[#20040A] to-[#140106] p-8 sm:p-10 text-white">
+              <div className="flex items-center justify-between mb-6 pb-4 border-b border-[#E5C378]/25">
+                <div>
+                  <span className="text-[10px] font-bold text-[#E5C378] tracking-[0.24em] uppercase block mb-1">
+                    PHYSICAL BOUTIQUE
+                  </span>
+                  <h3 className="font-serif text-2xl sm:text-3xl font-bold text-white">
+                    Kamal Selections Showroom
+                  </h3>
+                </div>
+                <div className="px-3.5 py-1.5 rounded-full bg-[#E5C378]/20 border border-[#E5C378]/40 text-[#F8E5BA] text-xs font-semibold">
+                  Open Daily · 10 AM – 9 PM
+                </div>
               </div>
 
-              {/* BOTTOM STRIP */}
-              <div className="absolute bottom-4 left-4 right-4 flex items-center justify-between text-xs text-[#FAF3EB] bg-[#20040A]/70 backdrop-blur-md px-4 py-2.5 rounded-xl border border-[#E5C378]/30">
-                <span className="font-semibold uppercase tracking-wider">Main Road, Shadnagar</span>
-                <span>Open Daily · 10 AM to 9 PM</span>
+              <p className="text-sm text-[#F8E5BA]/90 leading-relaxed mb-6">
+                Situated at the heart of Shadnagar on Main Road. Designed for customers who value inspecting pure fabrics, comparing subtle color variations, and trying garments with complete comfort.
+              </p>
+
+              <div className="grid grid-cols-1 sm:grid-cols-2 gap-3.5 mb-8">
+                <div className="p-3.5 rounded-xl bg-white/5 border border-white/10">
+                  <div className="flex items-center gap-2 mb-1">
+                    <span className="text-[#E5C378]">✦</span>
+                    <strong className="text-xs text-white">Spacious Trial Rooms</strong>
+                  </div>
+                  <p className="text-[11px] text-[#F8E5BA]/80">Comfortable, private fitting rooms for women and children.</p>
+                </div>
+
+                <div className="p-3.5 rounded-xl bg-white/5 border border-white/10">
+                  <div className="flex items-center gap-2 mb-1">
+                    <span className="text-[#E5C378]">✦</span>
+                    <strong className="text-xs text-white">Warm Personal Service</strong>
+                  </div>
+                  <p className="text-[11px] text-[#F8E5BA]/80">Attentive assistance to help you pair silhouettes and sizes.</p>
+                </div>
+              </div>
+
+              <div className="pt-4 border-t border-[#E5C378]/20 flex items-center justify-between text-xs text-[#E5C378]">
+                <span>Ibrahim Complex, Main Road, Shadnagar</span>
+                <span className="font-semibold uppercase tracking-wider">Welcome In-Store</span>
               </div>
             </div>
           </div>

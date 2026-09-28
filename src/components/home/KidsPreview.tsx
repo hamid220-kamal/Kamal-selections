@@ -119,53 +119,82 @@ export function KidsPreview({ onOpenStoreModal }: KidsPreviewProps) {
           </div>
 
           <div className="kids-arch-frame">
-            <img src="/assets/center-kids-hero.jpg" alt="Kamal Selections Kids Wear Showcase in Shadnagar" className="portrait-img" loading="lazy" />
+            <img
+              src="/images/home/kamal-selections-kids-celebration-attire.jpg"
+              alt="Kamal Selections Kids Festive and Celebration Clothing Showcase"
+              className="portrait-img"
+              loading="lazy"
+            />
             <div className="portrait-img-shadow" aria-hidden="true"></div>
           </div>
         </div>
 
-        {/* 3. RIGHT ZONE: FOUR CATEGORY CARDS GRID (2x2) */}
+        {/* 3. RIGHT ZONE: FOUR CATEGORY EDITORIAL CARDS (2x2) */}
         <div className="kids-gallery-grid-col animate-on-scroll slide-left">
           <div className="kids-2x2-grid">
-            <div className="category-card-item kids-card">
-              <div className="card-img-wrap">
-                <img src="/assets/cat-girls-wear.jpg" alt="Girls Wear Style" loading="lazy" />
-                <div className="card-gradient-overlay"></div>
+            <Link href="/kids" className="category-card-item kids-card block no-underline">
+              <div className="card-img-wrap bg-gradient-to-br from-[#20040A] to-[#120105] p-6 flex flex-col justify-between h-full border border-[#E5C378]/30">
+                <div className="flex items-center justify-between">
+                  <span className="text-[10px] tracking-[0.2em] uppercase font-bold text-[#E5C378]">GIRLS</span>
+                  <span className="text-xs text-[#F8E5BA]/70">Ages 1–14</span>
+                </div>
+                <div>
+                  <h3 className="font-serif text-2xl text-[#FFFFFF] font-bold mb-1">Girls Wear</h3>
+                  <p className="text-xs text-[#F8E5BA]/90 leading-relaxed">Festive lehengas &amp; ethnic dresses</p>
+                </div>
+                <span className="text-[11px] font-semibold text-[#E5C378] flex items-center gap-1">
+                  Explore Girls Wear <span>→</span>
+                </span>
               </div>
-              <div className="card-label-bar">
-                <span className="card-cat-name">Girls Wear</span>
-              </div>
-            </div>
+            </Link>
 
-            <div className="category-card-item kids-card">
-              <div className="card-img-wrap">
-                <img src="/assets/cat-boys-wear.jpg" alt="Boys Wear Style" loading="lazy" />
-                <div className="card-gradient-overlay"></div>
+            <Link href="/kids" className="category-card-item kids-card block no-underline">
+              <div className="card-img-wrap bg-gradient-to-br from-[#1E040B] to-[#100104] p-6 flex flex-col justify-between h-full border border-[#E5C378]/30">
+                <div className="flex items-center justify-between">
+                  <span className="text-[10px] tracking-[0.2em] uppercase font-bold text-[#E5C378]">BOYS</span>
+                  <span className="text-xs text-[#F8E5BA]/70">Ages 1–14</span>
+                </div>
+                <div>
+                  <h3 className="font-serif text-2xl text-[#FFFFFF] font-bold mb-1">Boys Wear</h3>
+                  <p className="text-xs text-[#F8E5BA]/90 leading-relaxed">Traditional kurtas &amp; ethnic sets</p>
+                </div>
+                <span className="text-[11px] font-semibold text-[#E5C378] flex items-center gap-1">
+                  Explore Boys Wear <span>→</span>
+                </span>
               </div>
-              <div className="card-label-bar">
-                <span className="card-cat-name">Boys Wear</span>
-              </div>
-            </div>
+            </Link>
 
-            <div className="category-card-item kids-card">
-              <div className="card-img-wrap">
-                <img src="/assets/cat-frocks.jpg" alt="Frocks Style" loading="lazy" />
-                <div className="card-gradient-overlay"></div>
+            <Link href="/kids" className="category-card-item kids-card block no-underline">
+              <div className="card-img-wrap bg-gradient-to-br from-[#24050D] to-[#140106] p-6 flex flex-col justify-between h-full border border-[#E5C378]/30">
+                <div className="flex items-center justify-between">
+                  <span className="text-[10px] tracking-[0.2em] uppercase font-bold text-[#E5C378]">OCCASION</span>
+                  <span className="text-xs text-[#F8E5BA]/70">All Ages</span>
+                </div>
+                <div>
+                  <h3 className="font-serif text-2xl text-[#FFFFFF] font-bold mb-1">Frocks</h3>
+                  <p className="text-xs text-[#F8E5BA]/90 leading-relaxed">Birthday frocks &amp; celebratory gowns</p>
+                </div>
+                <span className="text-[11px] font-semibold text-[#E5C378] flex items-center gap-1">
+                  Explore Frocks <span>→</span>
+                </span>
               </div>
-              <div className="card-label-bar">
-                <span className="card-cat-name">Frocks</span>
-              </div>
-            </div>
+            </Link>
 
-            <div className="category-card-item kids-card">
-              <div className="card-img-wrap">
-                <img src="/assets/cat-kids-sets.jpg" alt="Kids Sets Style" loading="lazy" />
-                <div className="card-gradient-overlay"></div>
+            <Link href="/kids" className="category-card-item kids-card block no-underline">
+              <div className="card-img-wrap bg-gradient-to-br from-[#2A0610] to-[#180208] p-6 flex flex-col justify-between h-full border border-[#E5C378]/30">
+                <div className="flex items-center justify-between">
+                  <span className="text-[10px] tracking-[0.2em] uppercase font-bold text-[#E5C378]">CO-ORD</span>
+                  <span className="text-xs text-[#F8E5BA]/70">Daily &amp; Party</span>
+                </div>
+                <div>
+                  <h3 className="font-serif text-2xl text-[#FFFFFF] font-bold mb-1">Kids Sets</h3>
+                  <p className="text-xs text-[#F8E5BA]/90 leading-relaxed">Coordinated comfortable sets</p>
+                </div>
+                <span className="text-[11px] font-semibold text-[#E5C378] flex items-center gap-1">
+                  Explore Kids Sets <span>→</span>
+                </span>
               </div>
-              <div className="card-label-bar">
-                <span className="card-cat-name">Kids Sets</span>
-              </div>
-            </div>
+            </Link>
           </div>
         </div>
       </div>

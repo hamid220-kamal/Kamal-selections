@@ -27,96 +27,92 @@ export function AboutSplit() {
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8 lg:gap-12 items-stretch">
           
           {/* LEFT: WOMEN'S EDITORIAL */}
-          <div className="relative group overflow-hidden rounded-3xl bg-[#FFFFFF] border border-[#E5C378]/35 shadow-xl flex flex-col transition-all duration-500 hover:shadow-2xl hover:border-[#D4AF37]">
-            <div className="relative aspect-[3/4] sm:aspect-[4/5] w-full overflow-hidden">
-              <img
-                src="/images/women/women-store-browsing.jpg"
-                alt="Women browsing ethnic clothing at Kamal Selections in Shadnagar"
-                className="w-full h-full object-cover object-center transform group-hover:scale-105 transition-transform duration-700 ease-out"
-                loading="lazy"
-              />
-              <div className="absolute inset-0 bg-gradient-to-t from-[#2A050E]/85 via-transparent to-transparent"></div>
-              
-              {/* Category Stamp */}
-              <div className="absolute top-5 left-5 z-10">
-                <span className="px-3.5 py-1 rounded-full bg-[#FAF3EB]/90 backdrop-blur-md border border-[#E5C378]/60 text-[#A41A50] text-[10px] font-bold tracking-[0.22em] uppercase shadow-sm">
+          <div className="relative group overflow-hidden rounded-3xl bg-gradient-to-br from-[#2E050F] via-[#20040A] to-[#140106] border border-[#E5C378]/40 shadow-xl p-8 sm:p-10 flex flex-col justify-between text-white transition-all duration-500 hover:shadow-2xl hover:border-[#D4AF37]">
+            <div>
+              <div className="flex items-center justify-between mb-6">
+                <span className="px-3.5 py-1 rounded-full bg-[#E5C378]/20 border border-[#E5C378]/50 text-[#F8E5BA] text-[10px] font-bold tracking-[0.22em] uppercase">
                   WOMEN&apos;S WEAR
                 </span>
+                <span className="text-xs text-[#E5C378] font-serif italic">Everyday to Bridal</span>
               </div>
 
-              {/* Minimal Text Overlay */}
-              <div className="absolute bottom-6 left-6 right-6 z-10 text-white">
-                <h3 className="font-serif text-2xl sm:text-3xl font-bold tracking-wide mb-2 drop-shadow-md">
-                  FOR EVERY WOMAN
-                </h3>
-                <p className="text-sm text-[#F8E5BA] max-w-sm drop-shadow leading-relaxed mb-4">
-                  From everyday styles to outfits for celebrations, explore a range designed for different moments.
-                </p>
-                <Link
-                  href="/women"
-                  className="inline-flex items-center text-xs font-bold uppercase tracking-wider text-white hover:text-[#E5C378] transition-colors"
-                >
-                  <span>Explore Women&apos;s Showcase</span>
-                  <span className="ml-2">→</span>
-                </Link>
+              <span className="text-[11px] font-semibold tracking-[0.24em] text-[#E5C378] uppercase block mb-2">
+                COLLECTION FOCUS
+              </span>
+              <h3 className="font-serif text-3xl sm:text-4xl font-bold tracking-wide mb-4">
+                FOR EVERY WOMAN
+              </h3>
+              <p className="text-sm text-[#F8E5BA]/90 leading-relaxed mb-6">
+                From comfortable everyday cotton kurtis and chic office-wear coordinates to breathtaking festive lehengas, party wear, and regal 3-piece sets.
+              </p>
+
+              <div className="space-y-2 pt-4 border-t border-[#E5C378]/25 text-xs text-[#F8E5BA]/80">
+                <div className="flex items-center gap-2">
+                  <span className="w-1.5 h-1.5 rounded-full bg-[#E5C378]"></span>
+                  <span><strong>Range:</strong> Kurtis, Suits, Anarkalis, Lehengas &amp; Co-ords</span>
+                </div>
+                <div className="flex items-center gap-2">
+                  <span className="w-1.5 h-1.5 rounded-full bg-[#E5C378]"></span>
+                  <span><strong>Fabrics:</strong> Pure Cotton, Modal, Chanderi Silk &amp; Organza</span>
+                </div>
               </div>
             </div>
 
-            {/* Editorial Footer */}
-            <div className="p-4 sm:p-5 bg-gradient-to-r from-[#FFF5F7] to-[#FFFFFF] border-t border-[#E5C378]/25 flex items-center justify-between">
-              <span className="text-xs font-semibold text-[#A41A50] uppercase tracking-wider">
-                Dresses · Kurtis · 3-Piece Sets · Party Wear
-              </span>
-              <span className="text-xs text-[#69564A] italic font-serif">
-                In-Store Selection
-              </span>
+            <div className="mt-8 pt-6 border-t border-[#E5C378]/20 flex items-center justify-between">
+              <span className="text-xs text-[#E5C378] font-semibold uppercase tracking-wider">Sizes S to 3XL</span>
+              <Link
+                href="/women"
+                className="inline-flex items-center text-xs font-bold uppercase tracking-wider text-white hover:text-[#E5C378] transition-colors"
+                id="about-split-women-link"
+              >
+                <span>Explore Women&apos;s Showcase</span>
+                <span className="ml-2">→</span>
+              </Link>
             </div>
           </div>
 
-          {/* RIGHT: KIDS EDITORIAL */}
-          <div className="relative group overflow-hidden rounded-3xl bg-[#FFFFFF] border border-[#E5C378]/35 shadow-xl flex flex-col transition-all duration-500 hover:shadow-2xl hover:border-[#D4AF37]">
-            <div className="relative aspect-[3/4] sm:aspect-[4/5] w-full overflow-hidden">
-              <img
-                src="/images/kids/kids-intro-lifestyle.jpg"
-                alt="Indian children smiling in festive clothing at Kamal Selections lookbook"
-                className="w-full h-full object-cover object-center transform group-hover:scale-105 transition-transform duration-700 ease-out"
-                loading="lazy"
-              />
-              <div className="absolute inset-0 bg-gradient-to-t from-[#20040A]/85 via-transparent to-transparent"></div>
-
-              {/* Category Stamp */}
-              <div className="absolute top-5 left-5 z-10">
-                <span className="px-3.5 py-1 rounded-full bg-[#FAF3EB]/90 backdrop-blur-md border border-[#E5C378]/60 text-[#1D4ED8] text-[10px] font-bold tracking-[0.22em] uppercase shadow-sm">
+          {/* RIGHT: KIDS' EDITORIAL */}
+          <div className="relative group overflow-hidden rounded-3xl bg-gradient-to-br from-[#121B2F] via-[#0C1220] to-[#060A12] border border-[#E5C378]/40 shadow-xl p-8 sm:p-10 flex flex-col justify-between text-white transition-all duration-500 hover:shadow-2xl hover:border-[#D4AF37]">
+            <div>
+              <div className="flex items-center justify-between mb-6">
+                <span className="px-3.5 py-1 rounded-full bg-[#E5C378]/20 border border-[#E5C378]/50 text-[#F8E5BA] text-[10px] font-bold tracking-[0.22em] uppercase">
                   KIDS&apos; WEAR
                 </span>
+                <span className="text-xs text-[#E5C378] font-serif italic">Ages 1 to 14</span>
               </div>
 
-              {/* Minimal Text Overlay */}
-              <div className="absolute bottom-6 left-6 right-6 z-10 text-white">
-                <h3 className="font-serif text-2xl sm:text-3xl font-bold tracking-wide mb-2 drop-shadow-md">
-                  FOR EVERY LITTLE ONE
-                </h3>
-                <p className="text-sm text-[#F8E5BA] max-w-sm drop-shadow leading-relaxed mb-4">
-                  Playful, comfortable and occasion-ready styles for girls and boys across every age.
-                </p>
-                <Link
-                  href="/kids"
-                  className="inline-flex items-center text-xs font-bold uppercase tracking-wider text-white hover:text-[#E5C378] transition-colors"
-                >
-                  <span>Explore Kids&apos; Showcase</span>
-                  <span className="ml-2">→</span>
-                </Link>
+              <span className="text-[11px] font-semibold tracking-[0.24em] text-[#E5C378] uppercase block mb-2">
+                COLLECTION FOCUS
+              </span>
+              <h3 className="font-serif text-3xl sm:text-4xl font-bold tracking-wide mb-4">
+                FOR EVERY LITTLE ONE
+              </h3>
+              <p className="text-sm text-[#F8E5BA]/90 leading-relaxed mb-6">
+                Playful, soft-lined, and festive outfits for girls and boys. Crafted to keep children cheerful and completely at ease throughout long family functions.
+              </p>
+
+              <div className="space-y-2 pt-4 border-t border-[#E5C378]/25 text-xs text-[#F8E5BA]/80">
+                <div className="flex items-center gap-2">
+                  <span className="w-1.5 h-1.5 rounded-full bg-[#E5C378]"></span>
+                  <span><strong>Range:</strong> Party Frocks, Sherwanis, Kurta Sets &amp; Daily Co-ords</span>
+                </div>
+                <div className="flex items-center gap-2">
+                  <span className="w-1.5 h-1.5 rounded-full bg-[#E5C378]"></span>
+                  <span><strong>Comfort:</strong> Soft Inner Lining, Skin-Safe Dyes &amp; Flexible Fits</span>
+                </div>
               </div>
             </div>
 
-            {/* Editorial Footer */}
-            <div className="p-4 sm:p-5 bg-gradient-to-r from-[#F0F5FA] to-[#FFFFFF] border-t border-[#E5C378]/25 flex items-center justify-between">
-              <span className="text-xs font-semibold text-[#1D4ED8] uppercase tracking-wider">
-                Frocks · Sets · Girls&apos; &amp; Boys&apos; Clothing
-              </span>
-              <span className="text-xs text-[#69564A] italic font-serif">
-                In-Store Selection
-              </span>
+            <div className="mt-8 pt-6 border-t border-[#E5C378]/20 flex items-center justify-between">
+              <span className="text-xs text-[#E5C378] font-semibold uppercase tracking-wider">Toddlers to Teens</span>
+              <Link
+                href="/kids"
+                className="inline-flex items-center text-xs font-bold uppercase tracking-wider text-white hover:text-[#E5C378] transition-colors"
+                id="about-split-kids-link"
+              >
+                <span>Explore Kids&apos; Showcase</span>
+                <span className="ml-2">→</span>
+              </Link>
             </div>
           </div>
 

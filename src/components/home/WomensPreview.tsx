@@ -131,12 +131,17 @@ export function WomensPreview({ onOpenStoreModal }: WomensPreviewProps) {
         {/* 2. CENTER COLUMN: LARGE HERO FASHION PORTRAIT */}
         <div className="womens-hero-portrait-col animate-on-scroll slide-up">
           <div className="portrait-arch-frame">
-            <img src="/assets/center-womens-hero.jpg" alt="Kamal Selections Women's Wear Showcase" className="portrait-img" loading="lazy" />
+            <img
+              src="/images/home/kamal-selections-womens-couture-showcase.jpg"
+              alt="Kamal Selections Bridal and Festive Women's Couture"
+              className="portrait-img"
+              loading="lazy"
+            />
             <div className="portrait-img-shadow" aria-hidden="true"></div>
           </div>
         </div>
 
-        {/* 3. RIGHT COLUMN: ASYMMETRICAL CATEGORY GALLERY GRID */}
+        {/* 3. RIGHT COLUMN: ASYMMETRICAL CATEGORY EDITORIAL GRID */}
         <div className="womens-gallery-grid-col animate-on-scroll slide-left">
           {/* OPTIONAL MICRO-DETAIL: BADGE "TRENDY STYLES" */}
           <div className="badge-trendy-styles">
@@ -151,81 +156,89 @@ export function WomensPreview({ onOpenStoreModal }: WomensPreviewProps) {
           <div className="gallery-cards-wrapper">
             {/* TOP ROW: LARGE CARDS (DRESSES & KURTIS) */}
             <div className="gallery-row row-large">
-              <div className="category-card-item card-large">
-                <div className="card-img-wrap">
-                  <img src="/assets/cat-dresses.jpg" alt="Dresses Style" loading="lazy" />
-                  <div className="card-gradient-overlay"></div>
+              <Link href="/women" className="category-card-item card-large block no-underline">
+                <div className="card-img-wrap bg-gradient-to-br from-[#3D0C1A] to-[#1A030A] p-6 flex flex-col justify-between h-full border border-[#E5C378]/30">
+                  <div className="flex items-center justify-between">
+                    <span className="text-[10px] tracking-[0.2em] uppercase font-bold text-[#E5C378]">COLLECTION</span>
+                    <span className="text-xs text-[#F8E5BA]/70">In-Store</span>
+                  </div>
+                  <div>
+                    <h3 className="font-serif text-2xl text-[#FFFFFF] font-bold mb-1">Dresses</h3>
+                    <p className="text-xs text-[#F8E5BA]/90 leading-relaxed">Flowing silhouettes &amp; festive gowns</p>
+                  </div>
+                  <span className="text-[11px] font-semibold text-[#E5C378] flex items-center gap-1">
+                    Explore Range <span>→</span>
+                  </span>
                 </div>
-                <div className="card-label-bar">
-                  <span className="card-cat-name">Dresses</span>
-                </div>
-              </div>
+              </Link>
 
-              <div className="category-card-item card-large">
-                <div className="card-img-wrap">
-                  <img src="/assets/cat-kurtis.jpg" alt="Kurtis Style" loading="lazy" />
-                  <div className="card-gradient-overlay"></div>
+              <Link href="/women" className="category-card-item card-large block no-underline">
+                <div className="card-img-wrap bg-gradient-to-br from-[#2D0914] to-[#140207] p-6 flex flex-col justify-between h-full border border-[#E5C378]/30">
+                  <div className="flex items-center justify-between">
+                    <span className="text-[10px] tracking-[0.2em] uppercase font-bold text-[#E5C378]">COLLECTION</span>
+                    <span className="text-xs text-[#F8E5BA]/70">In-Store</span>
+                  </div>
+                  <div>
+                    <h3 className="font-serif text-2xl text-[#FFFFFF] font-bold mb-1">Kurtis</h3>
+                    <p className="text-xs text-[#F8E5BA]/90 leading-relaxed">Daily elegance &amp; embroidered styles</p>
+                  </div>
+                  <span className="text-[11px] font-semibold text-[#E5C378] flex items-center gap-1">
+                    Explore Range <span>→</span>
+                  </span>
                 </div>
-                <div className="card-label-bar">
-                  <span className="card-cat-name">Kurtis</span>
-                </div>
-              </div>
+              </Link>
             </div>
 
             {/* MIDDLE ROW: MEDIUM CARDS (TOPS & LEGGINGS) */}
             <div className="gallery-row row-medium">
-              <div className="category-card-item card-medium">
-                <div className="card-img-wrap">
-                  <img src="/assets/cat-tops.jpg" alt="Tops Style" loading="lazy" />
-                  <div className="card-gradient-overlay"></div>
+              <Link href="/women" className="category-card-item card-medium block no-underline">
+                <div className="card-img-wrap bg-gradient-to-br from-[#330816] to-[#1A030B] p-5 flex flex-col justify-between h-full border border-[#E5C378]/25">
+                  <span className="text-[9px] tracking-[0.2em] uppercase font-bold text-[#E5C378]">CASUAL &amp; TRENDY</span>
+                  <div>
+                    <h3 className="font-serif text-xl text-[#FFFFFF] font-bold mb-0.5">Tops</h3>
+                    <p className="text-[11px] text-[#F8E5BA]/80">Modern cuts &amp; breathable fabrics</p>
+                  </div>
+                  <span className="text-[10px] font-semibold text-[#E5C378]">View Styles →</span>
                 </div>
-                <div className="card-label-bar">
-                  <span className="card-cat-name">Tops</span>
-                </div>
-              </div>
+              </Link>
 
-              <div className="category-card-item card-medium">
-                <div className="card-img-wrap">
-                  <img src="/assets/cat-leggings.jpg" alt="Leggings Style" loading="lazy" />
-                  <div className="card-gradient-overlay"></div>
+              <Link href="/women" className="category-card-item card-medium block no-underline">
+                <div className="card-img-wrap bg-gradient-to-br from-[#380918] to-[#1B030C] p-5 flex flex-col justify-between h-full border border-[#E5C378]/25">
+                  <span className="text-[9px] tracking-[0.2em] uppercase font-bold text-[#E5C378]">EVERYDAY ESSENTIALS</span>
+                  <div>
+                    <h3 className="font-serif text-xl text-[#FFFFFF] font-bold mb-0.5">Leggings</h3>
+                    <p className="text-[11px] text-[#F8E5BA]/80">Premium stretch comfort</p>
+                  </div>
+                  <span className="text-[10px] font-semibold text-[#E5C378]">View Styles →</span>
                 </div>
-                <div className="card-label-bar">
-                  <span className="card-cat-name">Leggings</span>
-                </div>
-              </div>
+              </Link>
             </div>
 
             {/* BOTTOM ROW: SMALL CARDS (BURQA, 3-PIECE SETS, PARTY WEAR) */}
             <div className="gallery-row row-small">
-              <div className="category-card-item card-small">
-                <div className="card-img-wrap">
-                  <img src="/assets/cat-burqa.jpg" alt="Burqa Style" loading="lazy" />
-                  <div className="card-gradient-overlay"></div>
+              <Link href="/women" className="category-card-item card-small block no-underline">
+                <div className="card-img-wrap bg-[#24050E] p-4 flex flex-col justify-between h-full border border-[#E5C378]/20">
+                  <span className="text-[9px] uppercase tracking-wider text-[#E5C378]">MODEST</span>
+                  <h4 className="font-serif text-base text-[#FFFFFF] font-bold">Burqa</h4>
+                  <span className="text-[10px] text-[#F8E5BA]/70">Explore →</span>
                 </div>
-                <div className="card-label-bar">
-                  <span className="card-cat-name">Burqa</span>
-                </div>
-              </div>
+              </Link>
 
-              <div className="category-card-item card-small">
-                <div className="card-img-wrap">
-                  <img src="/assets/cat-3piece.jpg" alt="3-Piece Sets Style" loading="lazy" />
-                  <div className="card-gradient-overlay"></div>
+              <Link href="/women" className="category-card-item card-small block no-underline">
+                <div className="card-img-wrap bg-[#2A0611] p-4 flex flex-col justify-between h-full border border-[#E5C378]/20">
+                  <span className="text-[9px] uppercase tracking-wider text-[#E5C378]">CO-ORD</span>
+                  <h4 className="font-serif text-base text-[#FFFFFF] font-bold">3-Piece Sets</h4>
+                  <span className="text-[10px] text-[#F8E5BA]/70">Explore →</span>
                 </div>
-                <div className="card-label-bar">
-                  <span className="card-cat-name">3-Piece Sets</span>
-                </div>
-              </div>
+              </Link>
 
-              <div className="category-card-item card-small">
-                <div className="card-img-wrap">
-                  <img src="/assets/cat-partywear.jpg" alt="Party Wear Style" loading="lazy" />
-                  <div className="card-gradient-overlay"></div>
+              <Link href="/women" className="category-card-item card-small block no-underline">
+                <div className="card-img-wrap bg-[#2F0713] p-4 flex flex-col justify-between h-full border border-[#E5C378]/20">
+                  <span className="text-[9px] uppercase tracking-wider text-[#E5C378]">OCCASION</span>
+                  <h4 className="font-serif text-base text-[#FFFFFF] font-bold">Party Wear</h4>
+                  <span className="text-[10px] text-[#F8E5BA]/70">Explore →</span>
                 </div>
-                <div className="card-label-bar">
-                  <span className="card-cat-name">Party Wear</span>
-                </div>
-              </div>
+              </Link>
             </div>
           </div>
         </div>

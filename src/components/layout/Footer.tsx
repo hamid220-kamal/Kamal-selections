@@ -10,16 +10,25 @@ interface FooterProps {
 export function Footer({ onOpenStoreModal, onOpenSizeGuideModal }: FooterProps) {
   return (
     <footer className="site-footer" id="footer">
-      {/* CHAMPAGNE GOLD TOP DIVIDER LINE */}
-      <div className="footer-top-divider" aria-hidden="true"></div>
+      {/* PHOTOREALISTIC BOUTIQUE BACKGROUND */}
+      <img
+        src="/images/footer/kamal-selections-boutique-footer-bg.jpg"
+        alt=""
+        className="footer-bg-image"
+        aria-hidden="true"
+        loading="lazy"
+      />
+      {/* DARK OVERLAY FOR READABILITY */}
+      <div className="footer-bg-overlay" aria-hidden="true"></div>
 
       <div className="footer-main-container">
+        <div className="footer-top-divider" aria-hidden="true"></div>
         {/* 1. TOP FOOTER BRAND AREA (HORIZONTAL SPLIT BLOCK) */}
         <div className="footer-brand-header">
           {/* LEFT: LOGO, TAGLINE & STORE LOCATION */}
           <div className="footer-brand-left">
             <Link href="/" className="footer-logo-link" aria-label="Kamal Selections Homepage">
-              <img src="/assets/logo.png" alt="Kamal Selections Logo" className="footer-logo-img" />
+              <img src="/brand/logo/kamal-selections-logo.png" alt="Kamal Selections Boutique Logo" className="footer-logo-img" />
             </Link>
             <p className="footer-tagline-script">Fashion for Every Woman &amp;<br />Every Little One</p>
             <span className="footer-sub-location">Women's &amp; Kids' Wear in Shadnagar</span>

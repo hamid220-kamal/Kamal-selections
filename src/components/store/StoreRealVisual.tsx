@@ -3,22 +3,14 @@
 export function StoreRealVisual() {
   return (
     <section className="relative w-full overflow-hidden bg-[#20040A]" id="store-visual">
-      <div className="relative w-full h-[60vh] sm:h-[70vh] lg:h-[75vh] min-h-[460px]">
-        {/* LARGE IMMERSIVE REAL STORE PHOTOGRAPH */}
-        <img
-          src="/images/store/store-hero-bg.jpg"
-          alt="Authentic inside view of Kamal Selections clothing store displays in Shadnagar"
-          className="w-full h-full object-cover object-center"
-          loading="lazy"
-        />
+      {/* LUXURIOUS EDITORIAL BURGUNDY CONTAINER */}
+      <div className="relative w-full py-20 sm:py-28 lg:py-32 bg-gradient-to-br from-[#2E050F] via-[#20040A] to-[#140106] border-y border-[#E5C378]/30">
+        <div className="absolute top-0 right-0 w-96 h-96 bg-[#E5C378]/10 rounded-full blur-3xl pointer-events-none"></div>
+        <div className="absolute bottom-0 left-0 w-96 h-96 bg-[#A41A50]/20 rounded-full blur-3xl pointer-events-none"></div>
 
-        {/* ELEGANT GRADIENT OVERLAYS */}
-        <div className="absolute inset-0 bg-gradient-to-r from-[#20040A]/85 via-[#20040A]/40 to-transparent"></div>
-        <div className="absolute inset-0 bg-gradient-to-t from-[#1F030B]/90 via-transparent to-transparent"></div>
-
-        {/* MINIMAL SUBTLE TEXT OVERLAY */}
-        <div className="absolute inset-0 flex items-center">
-          <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 w-full">
+        {/* EDITORIAL CONTENT */}
+        <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="flex flex-col lg:flex-row lg:items-end justify-between gap-8">
             <div className="max-w-xl text-white">
               
               <div className="inline-flex items-center gap-3 mb-4">
@@ -38,13 +30,12 @@ export function StoreRealVisual() {
               </p>
 
             </div>
-          </div>
-        </div>
 
-        {/* BOTTOM METADATA BADGE */}
-        <div className="absolute bottom-6 right-6 hidden sm:block z-10">
-          <div className="px-4 py-2 rounded-full bg-[#20040A]/80 border border-[#E5C378]/35 backdrop-blur-md text-[11px] font-medium text-[#F8E5BA] tracking-wider uppercase">
-            Real In-Store Environment · Ibrahim Complex
+            <div className="inline-block self-start lg:self-end">
+              <div className="px-5 py-2.5 rounded-full bg-[#FAF3EB]/10 border border-[#E5C378]/40 backdrop-blur-md text-xs font-medium text-[#F8E5BA] tracking-wider uppercase">
+                Real In-Store Environment · Ibrahim Complex ✦
+              </div>
+            </div>
           </div>
         </div>
       </div>

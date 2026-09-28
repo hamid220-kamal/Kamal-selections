@@ -23,89 +23,110 @@ export function WomensLookbook() {
           </p>
         </div>
 
-        {/* ASYMMETRIC OVERLAPPING CINEMATIC GALLERY */}
-        <div className="grid grid-cols-1 md:grid-cols-12 gap-5 lg:gap-6 items-start">
+        {/* ASYMMETRIC OVERLAPPING CINEMATIC STYLE LOOKBOOK */}
+        <div className="grid grid-cols-1 md:grid-cols-12 gap-5 lg:gap-6 items-stretch">
           
-          {/* COLUMN 1 (5 COLS): LARGE PORTRAIT (PARTY WEAR) */}
-          <div className="md:col-span-5 relative group overflow-hidden rounded-2xl shadow-xl border border-[#E5C378]/35 aspect-[3/4] sm:aspect-[4/5] md:aspect-[3/4]">
-            <img
-              src="/assets/cat-partywear.jpg"
-              alt="Party wear look at Kamal Selections"
-              className="w-full h-full object-cover object-center transform group-hover:scale-105 transition-transform duration-700 ease-out"
-              loading="lazy"
-            />
-            <div className="absolute inset-0 bg-gradient-to-t from-black/75 via-transparent to-transparent"></div>
-            <div className="absolute bottom-5 left-5 z-10">
-              <span className="px-3 py-1 rounded-full bg-[#E5C378]/25 border border-[#E5C378]/50 text-[#F8E5BA] text-[10px] font-bold tracking-[0.2em] uppercase backdrop-blur-md">
-                PARTY WEAR
+          {/* COLUMN 1 (5 COLS): LARGE FEATURED CARD (FESTIVE PALETTE) */}
+          <div className="md:col-span-5 relative group overflow-hidden rounded-2xl shadow-xl border border-[#E5C378]/35 bg-gradient-to-b from-[#2E050F] via-[#20040A] to-[#140106] p-7 sm:p-9 flex flex-col justify-between text-white">
+            <div>
+              <div className="flex items-center justify-between mb-6">
+                <span className="px-3 py-1 rounded-full bg-[#E5C378]/20 border border-[#E5C378]/40 text-[#F8E5BA] text-[10px] font-bold tracking-[0.2em] uppercase">
+                  LOOKBOOK FOCUS
+                </span>
+                <span className="text-xs text-[#E5C378] font-serif italic">Edition 2026</span>
+              </div>
+
+              <span className="text-[11px] font-semibold tracking-[0.24em] text-[#E5C378] uppercase block mb-2">
+                CELEBRATION PALETTES
               </span>
-              <p className="font-serif text-xl sm:text-2xl text-white font-bold mt-2">
-                Celebration Details
+              <h3 className="font-serif text-3xl sm:text-4xl font-bold text-white mb-4 leading-tight">
+                Royal Wine &amp; Muted Gold.
+              </h3>
+              <p className="text-sm text-[#F8E5BA]/90 leading-relaxed mb-6">
+                Deep hues paired with subtle zari borders create a timeless aesthetic for weddings, receptions, and festivals in Shadnagar.
               </p>
+
+              <div className="space-y-2 pt-4 border-t border-[#E5C378]/25 text-xs text-[#F8E5BA]/80">
+                <div className="flex items-center gap-2">
+                  <span className="w-1.5 h-1.5 rounded-full bg-[#E5C378]"></span>
+                  <span><strong>Silhouettes:</strong> Flared Anarkalis &amp; Velvet Lehengas</span>
+                </div>
+                <div className="flex items-center gap-2">
+                  <span className="w-1.5 h-1.5 rounded-full bg-[#E5C378]"></span>
+                  <span><strong>Finishes:</strong> Hand-worked sequins &amp; gota patti</span>
+                </div>
+              </div>
+            </div>
+
+            <div className="mt-8 pt-4 border-t border-[#E5C378]/20 flex items-center justify-between text-xs text-[#E5C378]">
+              <span className="font-semibold uppercase tracking-wider">Kamal Selections Showroom</span>
+              <span>Available in Store →</span>
             </div>
           </div>
 
           {/* COLUMN 2 (7 COLS): TOP HORIZONTAL & DUAL TILES */}
-          <div className="md:col-span-7 space-y-5 lg:space-y-6">
+          <div className="md:col-span-7 flex flex-col gap-5 lg:gap-6 justify-between">
             
-            {/* WIDE HORIZONTAL (DRESSES) */}
-            <div className="relative group overflow-hidden rounded-2xl shadow-xl border border-[#E5C378]/35 h-56 sm:h-64 md:h-72">
-              <img
-                src="/assets/cat-dresses.jpg"
-                alt="Flowing dresses at Kamal Selections"
-                className="w-full h-full object-cover object-center transform group-hover:scale-105 transition-transform duration-700 ease-out"
-                loading="lazy"
-              />
-              <div className="absolute inset-0 bg-gradient-to-t from-black/75 via-transparent to-transparent"></div>
-              <div className="absolute bottom-5 left-5 z-10">
-                <span className="px-3 py-1 rounded-full bg-[#E5C378]/25 border border-[#E5C378]/50 text-[#F8E5BA] text-[10px] font-bold tracking-[0.2em] uppercase backdrop-blur-md">
-                  DRESSES
+            {/* WIDE HORIZONTAL (DAYWEAR EDIT) */}
+            <div className="relative group overflow-hidden rounded-2xl shadow-xl border border-[#E5C378]/35 bg-gradient-to-r from-[#FAF3EB] to-[#FFFFFF] p-7 flex flex-col justify-between border-l-4 border-l-[#A41A50]">
+              <div className="flex items-center justify-between mb-3">
+                <span className="text-[10px] font-bold tracking-[0.2em] text-[#A41A50] uppercase">
+                  EVERYDAY &amp; OFFICE EDIT
                 </span>
-                <p className="font-serif text-xl sm:text-2xl text-white font-bold mt-2">
-                  Effortless Day &amp; Evening
-                </p>
+                <span className="text-xs text-[#69564A]">Pure Comfort</span>
+              </div>
+              <h3 className="font-serif text-2xl sm:text-3xl font-bold text-[#30251F] mb-2">
+                Effortless Cotton &amp; Modal Kurtis
+              </h3>
+              <p className="text-sm text-[#51443B] leading-relaxed mb-4">
+                Breathable fabrics tailored for long working hours and daily ease, with contemporary necklines and refined threadwork accents.
+              </p>
+              <div className="flex items-center gap-3 text-xs font-semibold text-[#A41A50]">
+                <span>Pastel Tones</span>
+                <span>•</span>
+                <span>Machine-Washable</span>
+                <span>•</span>
+                <span>Sizes S to 3XL</span>
               </div>
             </div>
 
-            {/* TWO SQUARES SIDE-BY-SIDE (KURTIS & 3-PIECE SETS) */}
-            <div className="grid grid-cols-1 sm:grid-cols-2 gap-5 lg:gap-6">
+            {/* TWO SQUARES SIDE-BY-SIDE */}
+            <div className="grid grid-cols-1 sm:grid-cols-2 gap-5 lg:gap-6 flex-grow">
               
-              {/* KURTIS */}
-              <div className="relative group overflow-hidden rounded-2xl shadow-lg border border-[#E5C378]/35 h-60 sm:h-64">
-                <img
-                  src="/assets/cat-kurtis.jpg"
-                  alt="Everyday kurti at Kamal Selections"
-                  className="w-full h-full object-cover object-center transform group-hover:scale-105 transition-transform duration-700 ease-out"
-                  loading="lazy"
-                />
-                <div className="absolute inset-0 bg-gradient-to-t from-black/75 via-transparent to-transparent"></div>
-                <div className="absolute bottom-4 left-4 z-10">
-                  <span className="px-2.5 py-0.5 rounded-full bg-[#E5C378]/25 border border-[#E5C378]/50 text-[#F8E5BA] text-[9px] font-bold tracking-[0.2em] uppercase backdrop-blur-md">
-                    KURTIS
+              {/* CARD 1: ARTISANAL DETAILS */}
+              <div className="relative group overflow-hidden rounded-2xl shadow-lg border border-[#E5C378]/35 bg-[#FFFFFF] p-6 flex flex-col justify-between">
+                <div>
+                  <span className="text-[10px] font-bold text-[#D4AF37] tracking-[0.2em] uppercase block mb-1">
+                    CRAFT FOCUS
                   </span>
-                  <p className="font-serif text-lg text-white font-bold mt-1.5">
-                    Silhouettes in Bloom
+                  <h4 className="font-serif text-xl font-bold text-[#30251F] mb-2">
+                    Zari &amp; Threadwork
+                  </h4>
+                  <p className="text-xs text-[#69564A] leading-relaxed">
+                    Delicate embroidery that enhances the garment without feeling heavy or rigid.
                   </p>
                 </div>
+                <span className="text-[11px] font-semibold text-[#A41A50] mt-4 block">
+                  See Real Detailing in Store →
+                </span>
               </div>
 
-              {/* 3-PIECE SETS */}
-              <div className="relative group overflow-hidden rounded-2xl shadow-lg border border-[#E5C378]/35 h-60 sm:h-64">
-                <img
-                  src="/assets/cat-3piece.jpg"
-                  alt="Coordinated three-piece ethnic wear"
-                  className="w-full h-full object-cover object-center transform group-hover:scale-105 transition-transform duration-700 ease-out"
-                  loading="lazy"
-                />
-                <div className="absolute inset-0 bg-gradient-to-t from-black/75 via-transparent to-transparent"></div>
-                <div className="absolute bottom-4 left-4 z-10">
-                  <span className="px-2.5 py-0.5 rounded-full bg-[#E5C378]/25 border border-[#E5C378]/50 text-[#F8E5BA] text-[9px] font-bold tracking-[0.2em] uppercase backdrop-blur-md">
-                    3-PIECE SETS
+              {/* CARD 2: OCCASION COORDINATES */}
+              <div className="relative group overflow-hidden rounded-2xl shadow-lg border border-[#E5C378]/35 bg-[#FFFFFF] p-6 flex flex-col justify-between">
+                <div>
+                  <span className="text-[10px] font-bold text-[#D4AF37] tracking-[0.2em] uppercase block mb-1">
+                    COORDINATION
                   </span>
-                  <p className="font-serif text-lg text-white font-bold mt-1.5">
-                    Coordinated Harmony
+                  <h4 className="font-serif text-xl font-bold text-[#30251F] mb-2">
+                    3-Piece Dupatta Sets
+                  </h4>
+                  <p className="text-xs text-[#69564A] leading-relaxed">
+                    Complete harmony between kurta, tailored pants and rich flowing dupattas.
                   </p>
                 </div>
+                <span className="text-[11px] font-semibold text-[#A41A50] mt-4 block">
+                  Explore in Shadnagar →
+                </span>
               </div>
 
             </div>

@@ -14,23 +14,14 @@ export function WomensStoreCTA({ onOpenStoreModal }: WomensStoreCTAProps) {
         
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-16 items-center">
           
-          {/* LEFT: STORE PHOTO & LOCATION BADGE (SPAN 6) */}
+          {/* LEFT: STORE DESTINATION CARD (SPAN 6) */}
           <div className="lg:col-span-6 relative">
-            <div className="relative aspect-[4/3] w-full rounded-2xl overflow-hidden shadow-2xl border border-[#E5C378]/30 group">
-              <Image
-                src="/images/store/store-front.jpg"
-                alt="Kamal Selections Store in Shadnagar, Telangana"
-                fill
-                sizes="(max-width: 1024px) 100vw, 50vw"
-                className="object-cover object-center group-hover:scale-105 transition-transform duration-700 ease-out"
-              />
-              <div className="absolute inset-0 bg-gradient-to-t from-[#380511]/80 via-[#380511]/20 to-transparent" />
-
-              <div className="absolute bottom-6 left-6 right-6 text-[#FAF5EB] space-y-1">
-                <span className="text-xs font-mono font-bold tracking-widest text-[#D4AF37] uppercase">
+            <div className="relative p-8 rounded-3xl overflow-hidden shadow-2xl border border-[#E5C378]/40 bg-gradient-to-br from-[#380511] to-[#20040A] text-[#FAF5EB]">
+              <div className="space-y-3">
+                <span className="text-xs font-mono font-bold tracking-widest text-[#D4AF37] uppercase block">
                   SHADNAGAR STORE DESTINATION
                 </span>
-                <p className="font-serif text-xl font-bold">
+                <p className="font-serif text-2xl font-bold">
                   {brandData.name}
                 </p>
                 <p className="text-xs text-[#FAF5EB]/80 font-sans">

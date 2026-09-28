@@ -82,8 +82,8 @@ export function WomensIntro() {
               {/* Main Image Container */}
               <div className="relative aspect-[4/3] sm:aspect-[5/4] rounded-2xl overflow-hidden shadow-2xl border border-[#E5C378]/40">
                 <img
-                  src="/images/women/women-store-browsing.jpg"
-                  alt="Customer browsing ethnic women's garments at Kamal Selections in Shadnagar"
+                  src="/images/women/kamal-selections-womens-boutique-browsing.jpg"
+                  alt="Customer exploring curated ethnic dresses and kurtis at Kamal Selections boutique in Shadnagar"
                   className="w-full h-full object-cover object-center transform hover:scale-105 transition-transform duration-700 ease-out"
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-[#2A050E]/40 via-transparent to-transparent"></div>

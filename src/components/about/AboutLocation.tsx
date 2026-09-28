@@ -59,28 +59,44 @@ export function AboutLocation() {
             </a>
           </div>
 
-          {/* RIGHT: AUTHENTIC STOREFRONT SIGNAGE BOARD (store board.png) */}
+          {/* RIGHT: SHADNAGAR SHOWROOM LANDMARK GUIDE */}
           <div className="md:w-1/2 w-full">
-            <div className="relative rounded-2xl overflow-hidden shadow-xl border border-[#E5C378]/50 aspect-[4/3] bg-[#D8CEC1] group">
-              <img
-                src="/store board.png"
-                alt="Kamal Selections exterior storefront signage at Ibrahim Complex, Main Road, Shadnagar"
-                className="w-full h-full object-cover object-center transform group-hover:scale-105 transition-transform duration-700 ease-out"
-                loading="lazy"
-              />
-              <div className="absolute inset-0 bg-gradient-to-t from-[#20040A]/60 via-transparent to-transparent"></div>
-
-              {/* In-Store Badge */}
-              <div className="absolute top-3 left-3 z-10">
-                <span className="px-3 py-0.5 rounded-full bg-[#FAF3EB]/95 border border-[#D4AF37]/60 text-[#4A0717] text-[10px] font-bold tracking-[0.2em] uppercase backdrop-blur-md shadow-md">
-                  STOREFRONT SIGNAGE
+            <div className="relative rounded-2xl overflow-hidden shadow-xl border border-[#E5C378]/40 bg-gradient-to-br from-[#2E050F] via-[#20040A] to-[#140106] p-7 sm:p-9 text-white group">
+              <div className="flex items-center justify-between mb-5 pb-3 border-b border-[#E5C378]/25">
+                <span className="text-[10px] font-bold text-[#E5C378] tracking-[0.22em] uppercase">
+                  STORE LANDMARK GUIDE
                 </span>
+                <span className="text-xs text-[#F8E5BA]/80 font-serif italic">Heart of Town</span>
               </div>
 
-              {/* Bottom Tag */}
-              <div className="absolute bottom-3 left-3 right-3 flex items-center justify-between text-[11px] text-[#FAF3EB] bg-[#20040A]/75 backdrop-blur-md px-3.5 py-1.5 rounded-xl border border-[#E5C378]/30">
-                <span className="font-semibold uppercase tracking-wider">Ibrahim Complex</span>
-                <span>Main Road, Shadnagar</span>
+              <h3 className="font-serif text-2xl font-bold text-white mb-2">
+                Main Road Convenience.
+              </h3>
+              <p className="text-xs text-[#F8E5BA]/90 leading-relaxed mb-6">
+                Situated prominently along the main commercial corridor of Shadnagar, easily accessible from all residential neighborhoods and transit stops.
+              </p>
+
+              <div className="space-y-3 mb-6">
+                <div className="flex items-start gap-3 p-3 rounded-xl bg-white/5 border border-white/10">
+                  <span className="text-[#E5C378] text-xs mt-0.5">✦</span>
+                  <div className="text-xs">
+                    <strong className="text-white block mb-0.5">Ibrahim Complex Landmark</strong>
+                    <span className="text-[#F8E5BA]/80">Easily recognized commercial building with wide front access.</span>
+                  </div>
+                </div>
+
+                <div className="flex items-start gap-3 p-3 rounded-xl bg-white/5 border border-white/10">
+                  <span className="text-[#E5C378] text-xs mt-0.5">✦</span>
+                  <div className="text-xs">
+                    <strong className="text-white block mb-0.5">Extended Opening Hours</strong>
+                    <span className="text-[#F8E5BA]/80">Open 10:00 AM to 9:00 PM every day of the week, including Sundays.</span>
+                  </div>
+                </div>
+              </div>
+
+              <div className="pt-3 border-t border-[#E5C378]/20 flex items-center justify-between text-xs text-[#E5C378]">
+                <span>Pincode: 509216</span>
+                <span className="font-semibold uppercase tracking-wider">Telangana, India</span>
               </div>
             </div>
           </div>

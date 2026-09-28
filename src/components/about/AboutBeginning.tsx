@@ -20,11 +20,11 @@ export function AboutBeginning() {
               {/* Image Container */}
               <div className="relative aspect-[4/5] rounded-2xl overflow-hidden shadow-2xl border border-[#E5C378]/40 bg-[#D8CEC1]">
                 <Image
-                  src="/assets/owner.png"
-                  alt="Kamal Selections in-store shopping experience in Shadnagar"
+                  src="/images/about/kamal-selections-founder-shadnagar.png"
+                  alt="Kamal Selections showroom founder and friendly in-store shopping experience in Shadnagar"
                   fill
                   sizes="(max-width: 1024px) 100vw, 42vw"
-                  className="object-cover object-center transform hover:scale-105 transition-transform duration-700 ease-out"
+                  className="object-cover object-[center_15%] transform hover:scale-105 transition-transform duration-700 ease-out"
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-[#20040A]/50 via-transparent to-transparent"></div>
               </div>

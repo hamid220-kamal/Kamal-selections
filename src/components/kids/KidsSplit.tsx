@@ -32,8 +32,8 @@ export function KidsSplit() {
             {/* Image Container with Editorial Asymmetric Crop */}
             <div className="relative aspect-[3/4] sm:aspect-[4/5] w-full overflow-hidden">
               <img
-                src="/images/kids/kids-girl-split.jpg"
-                alt="Cheerful Indian girl wearing elegant peach frock dress from Kamal Selections"
+                src="/images/kids/kamal-selections-girls-pastel-lehenga.jpg"
+                alt="Little girl in pastel pink embroidered festive lehenga from Kamal Selections"
                 className="w-full h-full object-cover object-top transform group-hover:scale-105 transition-transform duration-700 ease-out"
                 loading="lazy"
               />
@@ -76,8 +76,8 @@ export function KidsSplit() {
             {/* Image Container with Editorial Asymmetric Crop */}
             <div className="relative aspect-[3/4] sm:aspect-[4/5] w-full overflow-hidden">
               <img
-                src="/images/kids/kids-boy-split.jpg"
-                alt="Confident Indian boy wearing smart royal blue kurta jacket from Kamal Selections"
+                src="/images/kids/kamal-selections-boys-emerald-sherwani.jpg"
+                alt="Young boy in emerald green festive sherwani from Kamal Selections"
                 className="w-full h-full object-cover object-top transform group-hover:scale-105 transition-transform duration-700 ease-out"
                 loading="lazy"
               />

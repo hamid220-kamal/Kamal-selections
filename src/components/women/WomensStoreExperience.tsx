@@ -78,28 +78,48 @@ export function WomensStoreExperience({ onOpenStoreModal }: WomensStoreExperienc
             </div>
           </div>
 
-          {/* RIGHT: STORE PHOTOGRAPHY (6 COLS) */}
+          {/* RIGHT: STORE ENVIRONMENT CARD (6 COLS) */}
           <div className="lg:col-span-6">
-            <div className="relative rounded-2xl overflow-hidden shadow-2xl border border-[#E5C378]/35 aspect-[16/10] sm:aspect-[16/9]">
-              <img
-                src="/store2.png"
-                alt="Kamal Selections women's wear collection and ethnic garment racks inside the Shadnagar showroom"
-                className="w-full h-full object-cover object-center transform hover:scale-105 transition-transform duration-700 ease-out"
-                loading="lazy"
-              />
-              <div className="absolute inset-0 bg-gradient-to-t from-[#20040A]/60 via-transparent to-transparent"></div>
-              
-              {/* In-Store Badge */}
-              <div className="absolute top-4 left-4 z-10">
-                <span className="px-3.5 py-1 rounded-full bg-[#FAF3EB]/95 backdrop-blur-md border border-[#D4AF37]/60 text-[#A41A50] text-[10px] font-bold tracking-[0.2em] uppercase shadow-md">
-                  EXPLORE OUR WOMEN&apos;S COLLECTION IN-STORE
-                </span>
+            <div className="relative rounded-3xl overflow-hidden shadow-2xl border border-[#E5C378]/40 bg-gradient-to-br from-[#2E0611] via-[#20040A] to-[#140106] p-8 sm:p-10 text-white">
+              <div className="flex items-center justify-between mb-6 pb-4 border-b border-[#E5C378]/25">
+                <div>
+                  <span className="text-[10px] font-bold text-[#E5C378] tracking-[0.22em] uppercase block mb-1">
+                    PHYSICAL SHOWROOM
+                  </span>
+                  <h3 className="font-serif text-2xl sm:text-3xl font-bold text-white">
+                    Kamal Selections
+                  </h3>
+                </div>
+                <div className="px-3.5 py-1.5 rounded-full bg-[#E5C378]/20 border border-[#E5C378]/40 text-[#F8E5BA] text-xs font-semibold">
+                  Open Daily · 10 AM – 9 PM
+                </div>
               </div>
 
-              {/* Bottom Tag */}
-              <div className="absolute bottom-4 left-4 right-4 flex items-center justify-between text-xs text-[#F8E5BA] bg-[#20040A]/70 backdrop-blur-md px-4 py-2 rounded-xl border border-[#E5C378]/30">
-                <span className="font-semibold uppercase tracking-wider">Ibrahim Complex · Main Road</span>
-                <span>Shadnagar, Telangana</span>
+              <p className="text-sm text-[#F8E5BA]/90 leading-relaxed mb-6">
+                Located conveniently at Ibrahim Complex on Main Road, Shadnagar. Experience the tactile beauty of our women&apos;s collection in person.
+              </p>
+
+              <div className="space-y-3 mb-8">
+                <div className="flex items-start gap-3 p-3.5 rounded-xl bg-white/5 border border-white/10">
+                  <span className="text-[#E5C378] mt-0.5">✦</span>
+                  <div className="text-xs">
+                    <strong className="text-white block mb-0.5">Feel Genuine Textures</strong>
+                    <span className="text-[#F8E5BA]/80">Inspect pure cottons, flowing georgettes, and artisanal embroidery first-hand.</span>
+                  </div>
+                </div>
+
+                <div className="flex items-start gap-3 p-3.5 rounded-xl bg-white/5 border border-white/10">
+                  <span className="text-[#E5C378] mt-0.5">✦</span>
+                  <div className="text-xs">
+                    <strong className="text-white block mb-0.5">Try Your Fit With Ease</strong>
+                    <span className="text-[#F8E5BA]/80">Find the silhouette and size that flatters you naturally before choosing.</span>
+                  </div>
+                </div>
+              </div>
+
+              <div className="flex items-center justify-between text-xs text-[#E5C378] pt-4 border-t border-[#E5C378]/25">
+                <span>Ibrahim Complex, Main Road, Shadnagar</span>
+                <span className="font-bold">Telangana 509216</span>
               </div>
             </div>
           </div>

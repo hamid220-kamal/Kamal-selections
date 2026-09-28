@@ -2,28 +2,25 @@
 
 const KIDS_MOMENTS = [
   {
-    title: "EVERYDAY",
-    desc: "Comfortable styles for regular days.",
-    image: "/images/kids/cat-kids-sets.jpg",
-    alt: "Comfortable everyday kids outfit set",
-    accent: "text-[#B85D19]",
-    badge: "01 · PLAY & DAILY",
+    title: "EVERYDAY PLAY",
+    desc: "Comfortable breathable cotton sets and easy tees for daily activities and school breaks.",
+    fabrics: "Soft Breathable Cotton · French Terry · Gentle Knits",
+    tone: "Lightweight, irritation-free garments designed for active movement.",
+    bgGrad: "from-[#FAF3EB] via-[#FFFFFF] to-[#F5ECE0]",
   },
   {
     title: "FAMILY DAYS",
-    desc: "Easy looks for outings and gatherings.",
-    image: "/images/kids/cat-girls-wear.jpg",
-    alt: "Family gathering outfits for kids",
-    accent: "text-[#6B46C1]",
-    badge: "02 · OUTINGS & VISITS",
+    desc: "Smart coordinates, casual shirts, and twirl-ready frocks for weekend outings and gatherings.",
+    fabrics: "Linen Blends · Crisp Poplin · Fine Cambric",
+    tone: "Effortlessly polished looks that keep children comfortable all day.",
+    bgGrad: "from-[#FBF5EB] via-[#FFFFFF] to-[#F7EFE2]",
   },
   {
     title: "CELEBRATIONS",
-    desc: "Festive outfits for special occasions.",
-    image: "/images/kids/center-kids-hero.jpg",
-    alt: "Festive celebrations kids clothing",
-    accent: "text-[#A41A50]",
-    badge: "03 · FESTIVALS & WEDDINGS",
+    desc: "Festive sherwanis, kurtas, and pastel lehengas tailored for weddings and festive pujas.",
+    fabrics: "Brocade Accents · Soft Chanderi · Lined Jacquard",
+    tone: "Traditional grandeur with soft inner linings to protect sensitive skin.",
+    bgGrad: "from-[#FDF2F4] via-[#FFFFFF] to-[#FBE8EC]",
   },
 ];
 
@@ -61,40 +58,39 @@ export function KidsMoments() {
             </div>
           </div>
 
-          {/* RIGHT THREE STACKED VISUAL MOMENTS (7 COLS) */}
+          {/* RIGHT THREE STACKED OCCASION CARDS (7 COLS) */}
           <div className="lg:col-span-7 space-y-5">
-            {KIDS_MOMENTS.map((moment) => (
+            {KIDS_MOMENTS.map((moment, idx) => (
               <div
                 key={moment.title}
-                className="group relative overflow-hidden rounded-2xl bg-[#FFFFFF] border border-[#E5C378]/35 shadow-md flex flex-col sm:flex-row items-center transition-all duration-300 hover:shadow-xl hover:border-[#D4AF37]"
+                className={`group relative overflow-hidden rounded-2xl bg-gradient-to-r ${moment.bgGrad} border border-[#E5C378]/35 shadow-md p-6 sm:p-7 transition-all duration-300 hover:shadow-xl hover:border-[#D4AF37]`}
               >
-                {/* Visual Thumbnail */}
-                <div className="relative w-full sm:w-48 h-48 sm:h-36 shrink-0 overflow-hidden">
-                  <img
-                    src={moment.image}
-                    alt={moment.alt}
-                    className="w-full h-full object-cover object-center transform group-hover:scale-105 transition-transform duration-500 ease-out"
-                    loading="lazy"
-                  />
-                  <div className="absolute inset-0 bg-gradient-to-t sm:bg-gradient-to-r from-black/50 sm:from-transparent to-transparent"></div>
-                </div>
+                <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-4">
+                  <div className="space-y-1.5 max-w-lg">
+                    <div className="flex items-center gap-2">
+                      <span className="text-[10px] font-bold text-[#A41A50] tracking-[0.2em] uppercase">
+                        0{idx + 1} · OCCASION FOCUS
+                      </span>
+                      <span className="w-4 h-px bg-[#D4AF37]"></span>
+                    </div>
 
-                {/* Content Details */}
-                <div className="p-5 sm:p-6 flex-grow flex items-center justify-between w-full">
-                  <div>
-                    <span className="text-[10px] font-bold text-[#D4AF37] tracking-[0.2em] uppercase block mb-1">
-                      {moment.badge}
-                    </span>
-                    <h3 className="font-serif text-xl sm:text-2xl font-bold text-[#3D2314] tracking-wide mb-1">
+                    <h3 className="font-serif text-2xl sm:text-3xl font-bold text-[#3D2314] tracking-wide">
                       {moment.title}
                     </h3>
-                    <p className="text-xs sm:text-sm text-[#69564A]">
+
+                    <p className="text-sm text-[#51443B] leading-relaxed">
                       {moment.desc}
                     </p>
+
+                    <div className="pt-2 flex flex-wrap items-center gap-x-4 gap-y-1 text-xs text-[#69564A]">
+                      <span className="font-semibold text-[#A41A50]">Fabrics: {moment.fabrics}</span>
+                      <span className="italic">{moment.tone}</span>
+                    </div>
                   </div>
 
-                  {/* Gold Divider Line Accent */}
-                  <div className="hidden sm:block w-12 h-px bg-[#E5C378]/60 ml-4 shrink-0"></div>
+                  <div className="hidden sm:flex items-center justify-center w-12 h-12 rounded-full bg-[#FAF3EB] border border-[#D4AF37]/50 text-[#A41A50] shrink-0 font-serif font-bold">
+                    0{idx + 1}
+                  </div>
                 </div>
               </div>
             ))}

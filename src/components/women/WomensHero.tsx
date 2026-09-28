@@ -14,8 +14,8 @@ export function WomensHero({ onOpenStoreModal }: WomensHeroProps = {}) {
       {/* FULL-BLEED EDITORIAL BACKGROUND IMAGE LAYER */}
       <div className="hero-bg-container">
         <img
-          src="/images/women/hero/womens-hero-bg.jpg"
-          alt="Kamal Selections Women's Wear Fashion Campaign in Shadnagar"
+          src="/images/women/hero/kamal-selections-womens-wear-hero-banner.jpg"
+          alt="Kamal Selections Women's Wear - Style That Feels Beautifully Yours"
           className="hero-bg-img"
           id="hero-bg-img"
         />

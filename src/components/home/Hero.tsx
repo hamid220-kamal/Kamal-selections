@@ -14,8 +14,8 @@ export function Hero({ onOpenStoreModal }: HeroProps) {
       {/* EDITORIAL BACKGROUND IMAGE LAYER */}
       <div className="hero-bg-container">
         <img
-          src="/assets/hero-bg.jpg"
-          alt="Kamal Selections Fashion Editorial - Stylish Indian Mother and Children in Contemporary Festive Wear"
+          src="/images/home/kamal-selections-home-hero-indian-fashion.jpg"
+          alt="Kamal Selections - Premium Indian Ethnic Fashion Showroom in Shadnagar"
           className="hero-bg-img"
           id="hero-bg-img"
         />

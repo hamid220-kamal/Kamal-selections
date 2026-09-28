@@ -3,21 +3,24 @@
 const MOMENTS = [
   {
     title: "EVERYDAY",
-    desc: "Comfortable everyday fashion",
-    image: "/assets/cat-kurtis.jpg",
-    alt: "Comfortable everyday cotton kurti from Kamal Selections",
+    desc: "Comfortable everyday fashion with breathable cotton and contemporary cuts.",
+    fabrics: "Pure Cotton · Modal · Soft Georgette",
+    tone: "Effortless routine style for office, travel & home.",
+    bgGrad: "from-[#FAF3EB] via-[#FFFFFF] to-[#F5ECE0]",
   },
   {
     title: "ELEGANT",
-    desc: "Refined styles for gatherings",
-    image: "/assets/cat-3piece.jpg",
-    alt: "Refined three-piece festive suit for gatherings",
+    desc: "Refined silhouettes and graceful coordinates for family gatherings and festive days.",
+    fabrics: "Chanderi Silk · Organza · Delicate Zari",
+    tone: "Poised statement pieces that stand out with subtlety.",
+    bgGrad: "from-[#FBF5EB] via-[#FFFFFF] to-[#F7EFE2]",
   },
   {
     title: "CELEBRATION",
-    desc: "Statement looks for special occasions",
-    image: "/assets/cat-partywear.jpg",
-    alt: "Statement festive wear for weddings and celebrations",
+    desc: "Statement party wear, bridal lehengas, and rich suits designed for special memories.",
+    fabrics: "Raw Silk · Heavy Sequins · Velvet",
+    tone: "Intricate craftsmanship for weddings, receptions & milestones.",
+    bgGrad: "from-[#FDF2F4] via-[#FFFFFF] to-[#FBE8EC]",
   },
 ];
 
@@ -55,40 +58,39 @@ export function WomensMoments() {
             </div>
           </div>
 
-          {/* RIGHT THREE STACKED VISUAL MOMENTS (7 COLS) */}
+          {/* RIGHT THREE STACKED EDITORIAL MOMENTS (7 COLS) */}
           <div className="lg:col-span-7 space-y-5">
             {MOMENTS.map((moment, idx) => (
               <div
                 key={moment.title}
-                className="group relative overflow-hidden rounded-2xl bg-[#FFFFFF] border border-[#E5C378]/35 shadow-md flex flex-col sm:flex-row items-center transition-all duration-300 hover:shadow-xl hover:border-[#D4AF37]"
+                className={`group relative overflow-hidden rounded-2xl bg-gradient-to-r ${moment.bgGrad} border border-[#E5C378]/35 shadow-md p-6 sm:p-7 transition-all duration-300 hover:shadow-xl hover:border-[#D4AF37]`}
               >
-                {/* Visual Thumbnail */}
-                <div className="relative w-full sm:w-44 h-48 sm:h-36 shrink-0 overflow-hidden">
-                  <img
-                    src={moment.image}
-                    alt={moment.alt}
-                    className="w-full h-full object-cover object-center transform group-hover:scale-105 transition-transform duration-500 ease-out"
-                    loading="lazy"
-                  />
-                  <div className="absolute inset-0 bg-gradient-to-t sm:bg-gradient-to-r from-black/50 sm:from-transparent to-transparent"></div>
-                </div>
+                <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-4">
+                  <div className="space-y-1.5 max-w-lg">
+                    <div className="flex items-center gap-2">
+                      <span className="text-[10px] font-bold text-[#A41A50] tracking-[0.2em] uppercase">
+                        0{idx + 1} · OCCASION FOCUS
+                      </span>
+                      <span className="w-4 h-px bg-[#D4AF37]"></span>
+                    </div>
 
-                {/* Content Details */}
-                <div className="p-5 sm:p-6 flex-grow flex items-center justify-between w-full">
-                  <div>
-                    <span className="text-[10px] font-bold text-[#D4AF37] tracking-[0.2em] uppercase block mb-1">
-                      0{idx + 1} · OCCASION FOCUS
-                    </span>
-                    <h3 className="font-serif text-xl sm:text-2xl font-bold text-[#3D2314] tracking-wide mb-1">
+                    <h3 className="font-serif text-2xl sm:text-3xl font-bold text-[#3D2314] tracking-wide">
                       {moment.title}
                     </h3>
-                    <p className="text-xs sm:text-sm text-[#69564A]">
+
+                    <p className="text-sm text-[#51443B] leading-relaxed">
                       {moment.desc}
                     </p>
+
+                    <div className="pt-2 flex flex-wrap items-center gap-x-4 gap-y-1 text-xs text-[#69564A]">
+                      <span className="font-semibold text-[#A41A50]">Fabrics: {moment.fabrics}</span>
+                      <span className="italic">{moment.tone}</span>
+                    </div>
                   </div>
 
-                  {/* Gold Divider Line Accent */}
-                  <div className="hidden sm:block w-12 h-px bg-[#E5C378]/60 ml-4 shrink-0"></div>
+                  <div className="hidden sm:flex items-center justify-center w-12 h-12 rounded-full bg-[#FAF3EB] border border-[#D4AF37]/50 text-[#A41A50] shrink-0 font-serif font-bold">
+                    0{idx + 1}
+                  </div>
                 </div>
               </div>
             ))}

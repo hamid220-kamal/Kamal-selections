@@ -6,8 +6,8 @@ export function KidsSignature() {
       {/* FULL-WIDTH CINEMATIC BACKGROUND IMAGE */}
       <div className="relative w-full h-[60vh] sm:h-[70vh] lg:h-[80vh] min-h-[460px]">
         <img
-          src="/images/kids/kids-signature-campaign.jpg"
-          alt="Indian children in coordinated festive clothing from Kamal Selections lookbook"
+          src="/images/kids/kamal-selections-kids-signature-campaign.jpg"
+          alt="Indian children in coordinated festive clothing from Kamal Selections lookbook in Shadnagar"
           className="w-full h-full object-cover object-center"
           loading="lazy"
         />

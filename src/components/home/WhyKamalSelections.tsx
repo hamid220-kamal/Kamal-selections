@@ -69,22 +69,38 @@ export function WhyKamalSelections({ onOpenStoreModal }: WhyKamalSelectionsProps
         <div className="why-collage-col animate-on-scroll slide-up delay-1">
           <div className="fashion-collage-grid">
             <div className="collage-item collage-1">
-              <img src="/assets/collage-fabric.jpg" alt="Fine Indian embroidery detail" loading="lazy" />
+              <img
+                src="/images/home/kamal-selections-craftsmanship-zari-embroidery.jpg"
+                alt="Intricate Indian Zari Embroidery and Pure Fabric Detail at Kamal Selections"
+                loading="lazy"
+              />
               <div className="collage-border-frame"></div>
             </div>
 
             <div className="collage-item collage-2">
-              <img src="/assets/collage-kurti.jpg" alt="Designer Kurti pattern detail" loading="lazy" />
+              <img
+                src="/images/home/kamal-selections-artisan-kurti-stitching.jpg"
+                alt="Fine Stitching and Handwork on Women's Kurtis at Kamal Selections"
+                loading="lazy"
+              />
               <div className="collage-border-frame"></div>
             </div>
 
             <div className="collage-item collage-3">
-              <img src="/assets/collage-kids.jpg" alt="Kids festive outfit detail" loading="lazy" />
+              <img
+                src="/images/home/kamal-selections-kids-comfort-fabric-detail.jpg"
+                alt="Soft Breathable Fabrics and Gentle Embellishments for Children"
+                loading="lazy"
+              />
               <div className="collage-border-frame"></div>
             </div>
 
             <div className="collage-item collage-4">
-              <img src="/assets/collage-styling.jpg" alt="Ethnic styling & sequins detail" loading="lazy" />
+              <img
+                src="/images/home/kamal-selections-sequin-styling-craft.jpg"
+                alt="Artisanal Sequin Embellishments and Festive Finishing at Kamal Selections"
+                loading="lazy"
+              />
               <div className="collage-border-frame"></div>
             </div>
           </div>

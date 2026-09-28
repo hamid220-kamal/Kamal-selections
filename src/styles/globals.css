@@ -1753,7 +1753,7 @@ img {
 .section-brand-intro {
   position: relative;
   background: linear-gradient(180deg, #FDF8F2 0%, #FAF3EB 100%);
-  padding: 5.5rem 2rem 6.5rem 2rem;
+  padding: 4.5rem 2rem 5rem 2rem;
   overflow: hidden;
   color: #3E0A23;
 }
@@ -2096,7 +2096,7 @@ img {
 /* Responsive Adjustments for Section 2 */
 @media (max-width: 992px) {
   .section-brand-intro {
-    padding: 4.5rem 1.5rem 5.5rem 1.5rem;
+    padding: 3.5rem 1.5rem 4rem 1.5rem;
   }
   .intro-container {
     grid-template-columns: 1fr;
@@ -2165,7 +2165,7 @@ img {
 .section-womens-showcase {
   position: relative;
   background: linear-gradient(180deg, #FDF8F2 0%, #FAF3EB 50%, #FDF5EC 100%);
-  padding: 5.5rem 2rem 7rem 2rem;
+  padding: 4.5rem 2rem 5.5rem 2rem;
   overflow: hidden;
   color: #3E0A23;
 }
@@ -2473,7 +2473,7 @@ img {
 /* SECTION 4 TEASER STYLES */
 .section-kids-showcase {
   background: #FDF8F2;
-  padding: 5rem 2rem;
+  padding: 4rem 2rem;
 }
 
 /* Responsive Rules for Section 3 */
@@ -2507,7 +2507,7 @@ img {
 
 @media (max-width: 992px) {
   .section-womens-showcase {
-    padding: 4rem 1.5rem 5.5rem 1.5rem;
+    padding: 3.5rem 1.5rem 4.5rem 1.5rem;
   }
   .womens-showcase-container {
     grid-template-columns: 1fr;
@@ -2571,7 +2571,7 @@ img {
 .section-kids-showcase {
   position: relative;
   background: linear-gradient(180deg, #FDF8F2 0%, #FAF3EB 50%, #FDF4EC 100%);
-  padding: 5.5rem 2rem 7rem 2rem;
+  padding: 4.5rem 2rem 5.5rem 2rem;
   overflow: hidden;
   color: #3E0A23;
 }
@@ -2707,7 +2707,7 @@ img {
 /* SECTION 5 STORY TEASER STYLES */
 .section-story-teaser {
   background: #FDF8F2;
-  padding: 5.5rem 2rem;
+  padding: 4.5rem 2rem;
 }
 
 /* Responsive Rules for Section 4 */
@@ -2799,7 +2799,7 @@ img {
 .section-why-us {
   position: relative;
   background: linear-gradient(135deg, #1A030C 0%, #2A0717 50%, #3E0A23 100%);
-  padding: 6rem 2rem 7.5rem 2rem;
+  padding: 5rem 2rem 6rem 2rem;
   overflow: hidden;
   color: #FDF8F2;
 }
@@ -3047,7 +3047,7 @@ img {
 /* SECTION 6 STORE TEASER STYLES */
 .section-store-teaser {
   background: #FDF8F2;
-  padding: 5.5rem 2rem;
+  padding: 4.5rem 2rem;
 }
 
 /* Responsive Rules for Section 5 */
@@ -3074,7 +3074,7 @@ img {
 
 @media (max-width: 992px) {
   .section-why-us {
-    padding: 4.5rem 1.5rem 6rem 1.5rem;
+    padding: 4rem 1.5rem 5rem 1.5rem;
   }
   .why-us-container {
     grid-template-columns: 1fr;
@@ -3100,6 +3100,7 @@ img {
   }
 }
 
+
 @media (max-width: 576px) {
   .why-main-heading {
     font-size: 2.3rem;
@@ -3123,7 +3124,7 @@ img {
 .section-our-store {
   position: relative;
   background: linear-gradient(180deg, #FDF8F2 0%, #FAF3EB 100%);
-  padding: 5.5rem 2rem 7.5rem 2rem;
+  padding: 4.5rem 2rem 6rem 2rem;
   overflow: hidden;
   color: #3E0A23;
 }
@@ -3421,7 +3422,7 @@ img {
 .section-latest-styles {
   position: relative;
   background: #2A0717;
-  padding: 6.5rem 2rem 8.5rem 2rem;
+  padding: 5rem 2rem 6.5rem 2rem;
   color: #FFF8EA;
   overflow: hidden;
 }
@@ -3636,7 +3637,7 @@ img {
 .section-faq-homepage {
   position: relative;
   background: #FDF8F2;
-  padding: 7rem 2rem 8.5rem 2rem;
+  padding: 5.5rem 2rem 7rem 2rem;
   color: #3E0A23;
   overflow: hidden;
 }
@@ -3902,11 +3903,11 @@ img {
 .section-final-visit-cta {
   position: relative;
   width: 100%;
-  min-height: 720px;
+  min-height: 680px;
   display: flex;
   align-items: center;
   justify-content: center;
-  padding: 8rem 2rem;
+  padding: 6.5rem 2rem;
   overflow: hidden;
   background: #1A030C;
   color: #FFF8EA;
@@ -4097,7 +4098,7 @@ img {
 
 @media (max-width: 992px) {
   .section-our-store {
-    padding: 4.5rem 1.5rem 6rem 1.5rem;
+    padding: 4rem 1.5rem 5rem 1.5rem;
   }
   .store-card-heading {
     font-size: 2.3rem;
@@ -4144,8 +4145,8 @@ img {
 
   /* Section 9 Tablet Responsive */
   .section-final-visit-cta {
-    min-height: 620px;
-    padding: 6.5rem 1.8rem;
+    min-height: 580px;
+    padding: 5.5rem 1.8rem;
   }
   .final-visit-heading {
     font-size: 3rem;
@@ -4174,7 +4175,7 @@ img {
 
   /* Section 7 Mobile Responsive */
   .section-latest-styles {
-    padding: 4.5rem 1.25rem 7rem 1.25rem;
+    padding: 4rem 1.25rem 5.5rem 1.25rem;
   }
   .latest-main-heading {
     font-size: 2.1rem;
@@ -4201,7 +4202,7 @@ img {
 
   /* Section 8 Mobile Responsive */
   .section-faq-homepage {
-    padding: 4.5rem 1.25rem 7rem 1.25rem;
+    padding: 4rem 1.25rem 5.5rem 1.25rem;
   }
   .faq-main-heading {
     font-size: 2.1rem;
@@ -4216,8 +4217,8 @@ img {
   }
   /* Section 9 Mobile Responsive */
   .section-final-visit-cta {
-    min-height: 580px;
-    padding: 5rem 1.25rem;
+    min-height: 520px;
+    padding: 4.5rem 1.25rem;
   }
   .final-cta-frame-accent {
     inset: 1.2rem;
@@ -4249,63 +4250,105 @@ img {
 /* ==========================================
    FINAL SITE FOOTER STYLING (DESKTOP & ROOT)
    ========================================== */
+
+/* Footer background photo overlay */
 .site-footer {
   position: relative;
-  background: #1A030C;
   color: #FFF8EA;
-  padding: 0 2rem 3rem 2rem;
   overflow: hidden;
-  border-top: 1px solid rgba(229, 195, 120, 0.25);
+  border-top: none;
 }
 
+/* Photorealistic boutique background */
+.footer-bg-image {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center center;
+  z-index: 0;
+}
+
+/* Layered dark overlay for readability: deep dark burgundy tint */
+.footer-bg-overlay {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(
+    180deg,
+    rgba(15, 2, 8, 0.82) 0%,
+    rgba(26, 3, 12, 0.88) 40%,
+    rgba(20, 2, 10, 0.93) 100%
+  );
+  z-index: 1;
+}
+
+/* Top subtle gold gradient wave */
+.footer-bg-overlay::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 2px;
+  background: linear-gradient(90deg, transparent 0%, rgba(229, 195, 120, 0.7) 50%, transparent 100%);
+}
+
+/* All footer content sits above the overlay */
+.footer-main-container {
+  position: relative;
+  z-index: 2;
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 3.5rem 2rem 2.5rem 2rem;
+}
+
+/* Thin gold top separator */
 .footer-top-divider {
   width: 100%;
   height: 1px;
-  background: linear-gradient(90deg, transparent 0%, rgba(229, 195, 120, 0.4) 50%, transparent 100%);
-  margin-bottom: 4.5rem;
-}
-
-.footer-main-container {
-  max-width: 1280px;
-  margin: 0 auto;
+  background: linear-gradient(90deg, transparent 0%, rgba(229, 195, 120, 0.55) 50%, transparent 100%);
+  margin-bottom: 3rem;
 }
 
 /* 1. Top Brand Header Horizontal Split */
 .footer-brand-header {
   display: flex;
-  align-items: center;
+  align-items: flex-start;
   justify-content: space-between;
-  gap: 3rem;
-  padding-bottom: 3.5rem;
+  gap: 2.5rem;
+  padding-bottom: 2.5rem;
   flex-wrap: wrap;
 }
 
 .footer-brand-left {
   display: flex;
   flex-direction: column;
-  max-width: 460px;
+  max-width: 420px;
 }
 
 .footer-logo-img {
-  width: 210px;
+  width: 190px;
   height: auto;
   object-fit: contain;
-  margin-bottom: 1.2rem;
+  margin-bottom: 1rem;
+  filter: drop-shadow(0 2px 12px rgba(0,0,0,0.5));
 }
 
 .footer-tagline-script {
   font-family: var(--font-script);
-  font-size: 1.9rem;
-  color: #C42766;
+  font-size: 1.75rem;
+  color: #E8A8C2;
   line-height: 1.25;
-  margin-bottom: 0.6rem;
+  margin-bottom: 0.5rem;
+  text-shadow: 0 2px 8px rgba(0,0,0,0.4);
 }
 
 .footer-sub-location {
   font-family: var(--font-sans-ui);
-  font-size: 0.9rem;
-  color: rgba(253, 248, 242, 0.72);
-  letter-spacing: 0.03em;
+  font-size: 0.88rem;
+  color: rgba(253, 248, 242, 0.65);
+  letter-spacing: 0.04em;
 }
 
 .footer-brand-right {
@@ -4313,55 +4356,58 @@ img {
 }
 
 .footer-invitation-box {
-  background: rgba(42, 7, 23, 0.75);
-  border: 1px solid rgba(229, 195, 120, 0.3);
-  padding: 1.8rem 2.2rem;
-  border-radius: 20px;
-  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.25);
+  background: rgba(10, 1, 5, 0.6);
+  border: 1px solid rgba(229, 195, 120, 0.35);
+  padding: 1.6rem 2rem;
+  border-radius: 18px;
+  box-shadow: 0 16px 40px rgba(0, 0, 0, 0.4), inset 0 1px 0 rgba(229, 195, 120, 0.15);
   display: flex;
   flex-direction: column;
   align-items: flex-start;
-  backdrop-filter: blur(8px);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
 }
 
 .invitation-heading {
   font-family: var(--font-serif-brand);
-  font-size: 1.5rem;
+  font-size: 1.4rem;
   font-weight: 700;
   color: #FFF8EA;
-  margin-bottom: 0.4rem;
+  margin-bottom: 0.35rem;
 }
 
 .invitation-sub {
   font-family: var(--font-sans-ui);
-  font-size: 0.92rem;
-  color: rgba(253, 248, 242, 0.78);
-  margin-bottom: 1.2rem;
+  font-size: 0.9rem;
+  color: rgba(253, 248, 242, 0.72);
+  margin-bottom: 1.1rem;
 }
 
 .footer-middle-divider {
   width: 100%;
   height: 1px;
-  background: rgba(229, 195, 120, 0.15);
-  margin: 2.5rem 0 3.5rem 0;
+  background: rgba(229, 195, 120, 0.2);
+  margin: 2rem 0 2.5rem 0;
 }
 
 /* 2. Main Footer Navigation Grid (4 Columns) */
 .footer-nav-grid {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
-  gap: 3rem;
-  margin-bottom: 3.5rem;
+  gap: 2.5rem;
+  margin-bottom: 2.5rem;
 }
 
 .footer-col-title {
   font-family: var(--font-sans-ui);
-  font-size: 0.8rem;
+  font-size: 0.76rem;
   font-weight: 700;
-  letter-spacing: 0.15em;
+  letter-spacing: 0.16em;
   color: var(--color-gold-main);
   text-transform: uppercase;
-  margin-bottom: 1.4rem;
+  margin-bottom: 1.2rem;
+  padding-bottom: 0.6rem;
+  border-bottom: 1px solid rgba(229, 195, 120, 0.2);
 }
 
 .footer-links-list {
@@ -4370,21 +4416,21 @@ img {
   margin: 0;
   display: flex;
   flex-direction: column;
-  gap: 0.85rem;
+  gap: 0.7rem;
 }
 
 .footer-links-list a {
   font-family: var(--font-sans-ui);
-  font-size: 0.95rem;
-  color: rgba(253, 248, 242, 0.82);
+  font-size: 0.9rem;
+  color: rgba(253, 248, 242, 0.75);
   text-decoration: none;
-  transition: color 0.3s ease, transform 0.2s ease;
+  transition: color 0.25s ease, transform 0.2s ease;
   display: inline-block;
 }
 
 .footer-links-list a:hover {
   color: var(--color-gold-main);
-  transform: translateX(3px);
+  transform: translateX(4px);
 }
 
 /* 3. Contact Information Strip */
@@ -4392,30 +4438,33 @@ img {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  background: rgba(255, 255, 255, 0.03);
-  border: 1px solid rgba(229, 195, 120, 0.2);
-  padding: 1.6rem 2.2rem;
-  border-radius: 16px;
-  margin-bottom: 3rem;
+  background: rgba(255, 255, 255, 0.04);
+  border: 1px solid rgba(229, 195, 120, 0.22);
+  padding: 1.4rem 2rem;
+  border-radius: 14px;
+  margin-bottom: 2rem;
   flex-wrap: wrap;
-  gap: 1.8rem;
+  gap: 1.5rem;
+  backdrop-filter: blur(6px);
+  -webkit-backdrop-filter: blur(6px);
 }
 
 .contact-strip-item {
   display: flex;
   align-items: center;
-  gap: 1rem;
+  gap: 0.85rem;
 }
 
 .contact-icon {
-  width: 40px;
-  height: 40px;
+  width: 38px;
+  height: 38px;
   border-radius: 50%;
-  background: rgba(229, 195, 120, 0.12);
+  background: rgba(229, 195, 120, 0.14);
   display: flex;
   align-items: center;
   justify-content: center;
   flex-shrink: 0;
+  border: 1px solid rgba(229, 195, 120, 0.2);
 }
 
 .contact-text-wrap {
@@ -4425,7 +4474,7 @@ img {
 
 .contact-label {
   font-family: var(--font-sans-ui);
-  font-size: 0.72rem;
+  font-size: 0.68rem;
   font-weight: 700;
   letter-spacing: 0.1em;
   color: var(--color-gold-main);
@@ -4434,7 +4483,7 @@ img {
 
 .contact-val {
   font-family: var(--font-sans-ui);
-  font-size: 0.92rem;
+  font-size: 0.9rem;
   color: #FFF8EA;
   font-style: normal;
   margin-top: 2px;
@@ -4455,15 +4504,15 @@ img {
   align-items: center;
   justify-content: center;
   gap: 1.2rem;
-  margin-bottom: 2.8rem;
+  margin-bottom: 2rem;
 }
 
 .social-strip-title {
   font-family: var(--font-sans-ui);
-  font-size: 0.78rem;
+  font-size: 0.75rem;
   font-weight: 700;
   letter-spacing: 0.12em;
-  color: rgba(253, 248, 242, 0.65);
+  color: rgba(253, 248, 242, 0.55);
   text-transform: uppercase;
 }
 
@@ -4471,30 +4520,31 @@ img {
   display: inline-flex;
   align-items: center;
   gap: 8px;
-  padding: 0.5rem 1.3rem;
+  padding: 0.45rem 1.2rem;
   background: rgba(229, 195, 120, 0.1);
-  border: 1px solid rgba(229, 195, 120, 0.3);
+  border: 1px solid rgba(229, 195, 120, 0.32);
   border-radius: 50px;
   color: var(--color-gold-main);
   font-family: var(--font-sans-ui);
-  font-size: 0.88rem;
+  font-size: 0.86rem;
   font-weight: 600;
   text-decoration: none;
   transition: all 0.3s ease;
+  backdrop-filter: blur(4px);
 }
 
 .social-insta-link:hover {
-  background: rgba(229, 195, 120, 0.22);
+  background: rgba(229, 195, 120, 0.25);
   color: #FFF;
   transform: translateY(-2px);
-  box-shadow: 0 6px 20px rgba(229, 195, 120, 0.2);
+  box-shadow: 0 6px 20px rgba(229, 195, 120, 0.25);
 }
 
 .footer-thin-divider {
   width: 100%;
   height: 1px;
-  background: rgba(229, 195, 120, 0.12);
-  margin-bottom: 2rem;
+  background: rgba(229, 195, 120, 0.14);
+  margin-bottom: 1.5rem;
 }
 
 /* 5. Legal & Copyright Bottom Bar */
@@ -4503,10 +4553,10 @@ img {
   align-items: center;
   justify-content: space-between;
   font-family: var(--font-sans-ui);
-  font-size: 0.85rem;
-  color: rgba(253, 248, 242, 0.6);
+  font-size: 0.82rem;
+  color: rgba(253, 248, 242, 0.5);
   flex-wrap: wrap;
-  gap: 1.2rem;
+  gap: 1rem;
 }
 
 .footer-legal-links {
@@ -4516,7 +4566,7 @@ img {
 }
 
 .legal-link {
-  color: rgba(253, 248, 242, 0.6);
+  color: rgba(253, 248, 242, 0.5);
   text-decoration: none;
   transition: color 0.3s ease;
 }
@@ -4526,55 +4576,69 @@ img {
 }
 
 .legal-dot {
-  color: rgba(229, 195, 120, 0.4);
+  color: rgba(229, 195, 120, 0.35);
 }
 
 .footer-copyright-wrap {
   display: flex;
   align-items: center;
-  gap: 1.5rem;
+  gap: 1.2rem;
 }
 
 .copyright-location {
   color: var(--color-gold-main);
-  opacity: 0.8;
+  opacity: 0.75;
 }
 
 /* Responsive Rules for Footer */
 @media (max-width: 992px) {
   .footer-nav-grid {
     grid-template-columns: repeat(2, 1fr);
-    gap: 2.5rem;
+    gap: 2rem;
   }
   .footer-brand-header {
     flex-direction: column;
     align-items: flex-start;
+    gap: 2rem;
+  }
+  .footer-invitation-box {
+    width: 100%;
+    box-sizing: border-box;
   }
 }
 
 @media (max-width: 576px) {
-  .site-footer {
-    padding: 0 1.25rem 2.5rem 1.25rem;
+  .footer-main-container {
+    padding: 2.5rem 1.25rem 2rem 1.25rem;
   }
   .footer-nav-grid {
-    grid-template-columns: 1fr;
-    gap: 2rem;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1.5rem;
   }
   .footer-contact-strip {
     flex-direction: column;
     align-items: flex-start;
-    padding: 1.4rem;
+    padding: 1.2rem 1.2rem;
+    gap: 1.2rem;
   }
   .footer-bottom-bar {
     flex-direction: column;
     align-items: flex-start;
-    gap: 0.8rem;
+    gap: 0.7rem;
   }
   .footer-social-strip {
-    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: flex-start;
     gap: 0.6rem;
   }
+  .footer-logo-img {
+    width: 160px;
+  }
+  .footer-tagline-script {
+    font-size: 1.5rem;
+  }
 }
+
 
 /* ==========================================
    SCROLL TRIGGERED ANIMATIONS & PARITY FALLBACKS

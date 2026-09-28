@@ -4,26 +4,26 @@ const EXPERIENCE_STEPS = [
   {
     step: "01",
     title: "EXPLORE",
-    desc: "Take your time browsing different women's and kids' styles.",
-    image: "/images/women/women-store-browsing.jpg",
-    alt: "Customer browsing ethnic wear racks at Kamal Selections",
+    desc: "Take your time browsing through women's ethnic racks and children's collections at an unhurried, comfortable pace.",
     caption: "Unhurried Browsing",
+    highlights: ["Wide showroom aisles", "Clearly organized sizes", "Full collection visible"],
+    bgGrad: "from-[#FAF3EB] via-[#FFFFFF] to-[#F5ECE0]",
   },
   {
     step: "02",
     title: "COMPARE",
-    desc: "See different colours, designs and silhouettes in person.",
-    image: "/assets/cat-partywear.jpg",
-    alt: "Comparing intricate embroidery and silhouettes in store",
+    desc: "Feel real textures, inspect handwork and delicate zari borders, and compare subtle shades under true warm lighting.",
     caption: "Feel The Fabric & Details",
+    highlights: ["Pure cotton & silk touch", "Color tone clarity", "Inspect inner linings"],
+    bgGrad: "from-[#FBF5EB] via-[#FFFFFF] to-[#F7EFE2]",
   },
   {
     step: "03",
     title: "CHOOSE",
-    desc: "Find the style that feels right for you and your family.",
-    image: "/images/home/collage-kids.jpg",
-    alt: "Happy family finding coordinated clothing at Kamal Selections",
+    desc: "Try outfits in private fitting rooms and make confident decisions with guidance from our welcoming showroom team.",
     caption: "Confident Decisions",
+    highlights: ["Private trial rooms", "Sizing adjustments", "Family consultation"],
+    bgGrad: "from-[#FDF2F4] via-[#FFFFFF] to-[#FBE8EC]",
   },
 ];
 
@@ -56,50 +56,43 @@ export function StoreExperience() {
           {EXPERIENCE_STEPS.map((step) => (
             <div
               key={step.step}
-              className="group relative rounded-3xl overflow-hidden bg-[#FFFFFF] border border-[#E5C378]/35 shadow-md flex flex-col transition-all duration-500 hover:shadow-2xl hover:border-[#D4AF37]"
+              className={`group relative rounded-3xl overflow-hidden bg-gradient-to-b ${step.bgGrad} border border-[#E5C378]/40 shadow-md p-8 sm:p-9 flex flex-col justify-between transition-all duration-500 hover:shadow-2xl hover:border-[#D4AF37]`}
             >
-              {/* Image Container with Editorial Proportions */}
-              <div className="relative aspect-[4/3] sm:aspect-[5/4] w-full overflow-hidden">
-                <img
-                  src={step.image}
-                  alt={step.alt}
-                  className="w-full h-full object-cover object-center transform group-hover:scale-105 transition-transform duration-700 ease-out"
-                  loading="lazy"
-                />
-                <div className="absolute inset-0 bg-gradient-to-t from-[#20040A]/70 via-transparent to-transparent"></div>
-
-                {/* Step Number Badge */}
-                <div className="absolute top-4 left-4 z-10">
-                  <span className="inline-flex items-center justify-center w-11 h-11 rounded-full bg-[#FAF3EB]/95 border border-[#D4AF37]/60 text-xs font-bold text-[#A41A50] tracking-wider shadow-md backdrop-blur-md">
+              <div>
+                <div className="flex items-center justify-between mb-6 pb-4 border-b border-[#E5C378]/30">
+                  <span className="inline-flex items-center justify-center w-12 h-12 rounded-full bg-[#FAF3EB] border border-[#D4AF37]/60 text-sm font-bold text-[#A41A50] font-serif shadow-sm">
                     {step.step}
                   </span>
-                </div>
-
-                {/* In-Image Caption */}
-                <div className="absolute bottom-4 left-4 right-4 z-10 text-white">
-                  <span className="text-[10px] font-bold text-[#E5C378] tracking-[0.2em] uppercase block mb-1">
+                  <span className="text-[10px] font-bold text-[#D4AF37] tracking-[0.2em] uppercase">
                     {step.caption}
                   </span>
-                  <h3 className="font-serif text-2xl font-bold tracking-wide drop-shadow-md">
-                    {step.title}
-                  </h3>
                 </div>
-              </div>
 
-              {/* Editorial Description Body */}
-              <div className="p-6 sm:p-7 flex-grow flex flex-col justify-between">
+                <h3 className="font-serif text-2xl sm:text-3xl font-bold text-[#3D2314] tracking-wide mb-3">
+                  {step.title}
+                </h3>
+
                 <p className="text-sm text-[#51443B] leading-relaxed mb-6">
                   {step.desc}
                 </p>
 
-                <div className="pt-4 border-t border-[#E5C378]/25 flex items-center justify-between text-xs text-[#69564A]">
-                  <span className="uppercase tracking-wider font-semibold text-[#A41A50]">
-                    In-Store Step
-                  </span>
-                  <span className="font-serif italic">
-                    Shadnagar
-                  </span>
+                <div className="space-y-2 pt-2 border-t border-[#E5C378]/25 text-xs text-[#69564A]">
+                  {step.highlights.map((item) => (
+                    <div key={item} className="flex items-center gap-2">
+                      <span className="text-[#A41A50]">✦</span>
+                      <span>{item}</span>
+                    </div>
+                  ))}
                 </div>
+              </div>
+
+              <div className="pt-6 mt-6 border-t border-[#E5C378]/25 flex items-center justify-between text-xs text-[#69564A]">
+                <span className="uppercase tracking-wider font-semibold text-[#A41A50]">
+                  In-Store Step
+                </span>
+                <span className="font-serif italic">
+                  Shadnagar Showroom
+                </span>
               </div>
             </div>
           ))}

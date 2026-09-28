@@ -8,8 +8,8 @@ export function StoreHero() {
       {/* FULL-BLEED EDITORIAL BACKGROUND IMAGE LAYER */}
       <div className="hero-bg-container">
         <img
-          src="/images/store/store-hero-bg.jpg"
-          alt="Kamal Selections Physical Storefront in Ibrahim Complex, Shadnagar"
+          src="/images/store/kamal-selections-store-hero-facade.jpg"
+          alt="Kamal Selections physical fashion showroom facade and entrance at Ibrahim Complex, Main Road, Shadnagar"
           className="hero-bg-img"
           id="hero-bg-img"
         />

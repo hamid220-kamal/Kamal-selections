@@ -112,7 +112,7 @@ export function BrandIntroduction({ onOpenStoreModal }: BrandIntroductionProps) 
         <div className="intro-visual-col animate-on-scroll slide-left">
           <div className="arched-frame-wrapper">
             <div className="arched-image-container">
-              <img src="/assets/hero-bg-alt.jpg" alt="Kamal Selections - Women's and Kids' Fashion in Shadnagar" className="arched-fashion-img" loading="lazy" />
+              <img src="/images/home/kamal-selections-festive-ethnic-collection.jpg" alt="Kamal Selections - Festive Women's Fashion in Shadnagar" className="arched-fashion-img" loading="lazy" />
               <div className="arched-img-overlay" aria-hidden="true"></div>
             </div>
 
