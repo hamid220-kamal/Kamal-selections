@@ -26,7 +26,7 @@ const KIDS_MOMENTS = [
 
 export function KidsMoments() {
   return (
-    <section className="py-20 md:py-28 bg-[#FDFBF7] text-[#3D2314] relative border-t border-[#E5C378]/25" id="kids-moments">
+    <section className="py-16 md:py-20 bg-[#FDFBF7] text-[#3D2314] relative border-t border-[#E5C378]/25" id="kids-moments">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-16 items-center">
           

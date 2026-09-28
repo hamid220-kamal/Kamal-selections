@@ -66,7 +66,7 @@ export function StoreVisitInfo() {
   ];
 
   return (
-    <section className="py-20 md:py-24 bg-[#FAF3EB] text-[#30251F] relative border-t border-[#E5C378]/25" id="visit-information">
+    <section className="py-16 md:py-20 bg-[#FAF3EB] text-[#30251F] relative border-t border-[#E5C378]/25" id="visit-information">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         
         {/* HEADER */}

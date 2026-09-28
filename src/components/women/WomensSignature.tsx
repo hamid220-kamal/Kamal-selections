@@ -2,7 +2,7 @@
 
 export function WomensSignature() {
   return (
-    <section className="relative w-full py-24 sm:py-32 bg-[#20040A] overflow-hidden select-none" id="signature-visual">
+    <section className="relative w-full py-16 sm:py-20 bg-[#20040A] overflow-hidden select-none" id="signature-visual">
       {/* LUXURY AMBIENT GLOWS & BOTANICAL LINES */}
       <div className="absolute top-0 right-0 w-96 h-96 bg-gradient-to-bl from-[#E5C378]/15 via-[#A41A50]/20 to-transparent rounded-full blur-3xl pointer-events-none"></div>
       <div className="absolute bottom-0 left-0 w-96 h-96 bg-gradient-to-tr from-[#E5C378]/10 via-[#2A050E]/40 to-transparent rounded-full blur-3xl pointer-events-none"></div>

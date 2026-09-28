@@ -52,7 +52,7 @@ const VALUE_POINTS = [
 
 export function KidsComfortStyle() {
   return (
-    <section className="py-20 md:py-28 bg-[#FAF3EB] text-[#3D2314] relative border-t border-[#E5C378]/25" id="kids-comfort-style">
+    <section className="py-16 md:py-20 bg-[#FAF3EB] text-[#3D2314] relative border-t border-[#E5C378]/25" id="kids-comfort-style">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         
         {/* HEADER */}

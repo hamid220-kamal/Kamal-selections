@@ -4,7 +4,7 @@ import Image from "next/image";
 
 export function AboutBeginning() {
   return (
-    <section className="py-20 md:py-28 bg-[#F4EEE5] text-[#30251F] relative overflow-hidden" id="story">
+    <section className="py-16 md:py-20 bg-[#F4EEE5] text-[#30251F] relative overflow-hidden" id="story">
       {/* SUBTLE GOLD & WARM BLUSH ACCENT GLOW */}
       <div className="absolute top-0 right-0 w-96 h-96 bg-gradient-to-bl from-[#E5C378]/15 via-transparent to-transparent rounded-full blur-3xl pointer-events-none"></div>
 

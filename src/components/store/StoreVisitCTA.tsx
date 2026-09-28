@@ -4,7 +4,7 @@ import { brandData } from "@/data/brand";
 
 export function StoreVisitCTA() {
   return (
-    <section className="bg-[#380511] text-[#FAF5EB] relative overflow-hidden py-20 sm:py-24 lg:py-28" id="visit-cta">
+    <section className="bg-[#380511] text-[#FAF5EB] relative overflow-hidden py-14 sm:py-16 lg:py-20" id="visit-cta">
       {/* AMBIENT GLOWS */}
       <div className="absolute top-0 right-0 w-96 h-96 bg-gradient-to-bl from-[#E5C378]/15 to-transparent rounded-full blur-3xl pointer-events-none"></div>
       <div className="absolute bottom-0 left-0 w-80 h-80 bg-gradient-to-tr from-[#A41A50]/20 to-transparent rounded-full blur-2xl pointer-events-none"></div>

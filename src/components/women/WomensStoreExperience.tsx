@@ -9,7 +9,7 @@ interface WomensStoreExperienceProps {
 
 export function WomensStoreExperience({ onOpenStoreModal }: WomensStoreExperienceProps = {}) {
   return (
-    <section className="bg-[#380511] text-[#FAF5EB] relative overflow-hidden py-16 sm:py-20 lg:py-24" id="in-store-experience">
+    <section className="bg-[#380511] text-[#FAF5EB] relative overflow-hidden py-14 sm:py-16 lg:py-20" id="in-store-experience">
       
       {/* SUBTLE GOLD ORNAMENTAL ACCENTS */}
       <div className="absolute top-0 right-0 w-96 h-96 bg-gradient-to-bl from-[#E5C378]/10 to-transparent rounded-full blur-3xl pointer-events-none"></div>

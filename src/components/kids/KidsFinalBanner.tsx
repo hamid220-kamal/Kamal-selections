@@ -9,7 +9,7 @@ interface KidsFinalBannerProps {
 
 export function KidsFinalBanner({ onOpenStoreModal }: KidsFinalBannerProps = {}) {
   return (
-    <section className="relative py-24 sm:py-28 lg:py-32 bg-[#2A050E] text-[#FAF5EB] overflow-hidden" id="final-cta">
+    <section className="relative py-16 sm:py-20 bg-[#2A050E] text-[#FAF5EB] overflow-hidden" id="final-cta">
       
       {/* BOTANICAL CORNER LINE ART (TOP RIGHT) */}
       <div className="absolute top-0 right-0 w-72 h-72 sm:w-96 sm:h-96 opacity-25 pointer-events-none" aria-hidden="true">

@@ -4,7 +4,7 @@ import { brandData } from "@/data/brand";
 
 export function StoreFindUs() {
   return (
-    <section className="py-20 md:py-24 bg-[#FAF3EB] text-[#30251F] relative border-t border-[#E5C378]/25" id="find-us">
+    <section className="py-16 md:py-20 bg-[#FAF3EB] text-[#30251F] relative border-t border-[#E5C378]/25" id="find-us">
       <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
         
         <div className="bg-[#FFFFFF] rounded-3xl border border-[#E5C378]/40 p-8 sm:p-12 lg:p-14 shadow-xl flex flex-col md:flex-row items-center justify-between gap-8 sm:gap-12 relative overflow-hidden">

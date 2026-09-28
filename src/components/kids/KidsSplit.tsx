@@ -2,7 +2,7 @@
 
 export function KidsSplit() {
   return (
-    <section className="py-20 md:py-28 bg-[#FAF3EB] text-[#3D2314] relative overflow-hidden" id="girls-boys-editorial">
+    <section className="py-16 md:py-20 bg-[#FAF3EB] text-[#3D2314] relative overflow-hidden" id="girls-boys-editorial">
       {/* BACKGROUND DECORATIVE ACCENTS */}
       <div className="absolute top-0 left-1/4 w-96 h-96 bg-gradient-to-br from-[#FAD0C4]/15 via-transparent to-transparent rounded-full blur-3xl pointer-events-none"></div>
       <div className="absolute bottom-0 right-1/4 w-96 h-96 bg-gradient-to-tl from-[#CFDEF3]/20 via-transparent to-transparent rounded-full blur-3xl pointer-events-none"></div>

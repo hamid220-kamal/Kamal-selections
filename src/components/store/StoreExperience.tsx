@@ -29,7 +29,7 @@ const EXPERIENCE_STEPS = [
 
 export function StoreExperience() {
   return (
-    <section className="py-20 md:py-28 bg-[#F4EEE5] text-[#30251F] relative border-t border-[#E5C378]/25" id="store-experience">
+    <section className="py-16 md:py-20 bg-[#F4EEE5] text-[#30251F] relative border-t border-[#E5C378]/25" id="store-experience">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         
         {/* HEADER */}

@@ -2,7 +2,7 @@
 
 export function StoreGallery() {
   return (
-    <section className="py-20 md:py-28 bg-[#FAF3EB] text-[#30251F] relative overflow-hidden border-t border-[#E5C378]/25" id="store-gallery">
+    <section className="py-16 md:py-20 bg-[#FAF3EB] text-[#30251F] relative overflow-hidden border-t border-[#E5C378]/25" id="store-gallery">
       {/* AMBIENT BACKGROUND GLOW */}
       <div className="absolute top-1/3 left-0 w-96 h-96 bg-gradient-to-tr from-[#E5C378]/15 via-transparent to-transparent rounded-full blur-3xl pointer-events-none"></div>
 

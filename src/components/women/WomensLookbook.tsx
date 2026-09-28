@@ -2,7 +2,7 @@
 
 export function WomensLookbook() {
   return (
-    <section className="py-20 md:py-28 bg-[#FDFBF7] text-[#3D2314] relative overflow-hidden" id="style-gallery">
+    <section className="py-16 md:py-20 bg-[#FDFBF7] text-[#3D2314] relative overflow-hidden" id="style-gallery">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         
         {/* HEADER */}

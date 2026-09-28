@@ -53,7 +53,7 @@ const KIDS_CATEGORIES = [
 
 export function KidsRange() {
   return (
-    <section className="py-20 md:py-28 bg-[#FDFBF7] text-[#3D2314] relative border-t border-[#E5C378]/30" id="categories">
+    <section className="py-16 md:py-20 bg-[#FDFBF7] text-[#3D2314] relative border-t border-[#E5C378]/30" id="categories">
       {/* BACKGROUND AMBIENT GLOW */}
       <div className="absolute top-1/2 left-0 w-96 h-96 bg-gradient-to-tr from-[#E5C378]/10 via-[#FAD0C4]/15 to-transparent rounded-full blur-3xl pointer-events-none -translate-y-1/2"></div>
 

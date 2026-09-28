@@ -2,7 +2,7 @@
 
 export function KidsIntro() {
   return (
-    <section className="py-20 md:py-28 bg-[#FAF3EB] text-[#3D2314] relative overflow-hidden" id="collection-intro">
+    <section className="py-16 md:py-20 bg-[#FAF3EB] text-[#3D2314] relative overflow-hidden" id="collection-intro">
       {/* SUBTLE BOTANICAL BACKGROUND ACCENT */}
       <div className="absolute top-0 right-0 w-80 h-80 bg-gradient-to-bl from-[#E5C378]/15 via-transparent to-transparent rounded-full blur-2xl pointer-events-none"></div>
 

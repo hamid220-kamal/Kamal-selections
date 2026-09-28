@@ -9,7 +9,7 @@ interface WomensFinalBannerProps {
 
 export function WomensFinalBanner({ onOpenStoreModal }: WomensFinalBannerProps = {}) {
   return (
-    <section className="relative bg-[#2A050E] text-[#FAF5EB] py-24 sm:py-32 overflow-hidden text-center select-none" id="final-cta">
+    <section className="relative bg-[#2A050E] text-[#FAF5EB] py-16 sm:py-20 overflow-hidden text-center select-none" id="final-cta">
       
       {/* BOTANICAL GOLD CORNER DECORATION */}
       <div className="absolute -bottom-8 -left-8 w-64 h-64 pointer-events-none opacity-25">

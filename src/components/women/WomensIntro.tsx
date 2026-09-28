@@ -2,7 +2,7 @@
 
 export function WomensIntro() {
   return (
-    <section className="py-20 md:py-28 bg-[#FDFBF7] text-[#3D2314] relative overflow-hidden" id="collection-intro">
+    <section className="py-16 md:py-20 bg-[#FDFBF7] text-[#3D2314] relative overflow-hidden" id="collection-intro">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-16 items-center">
           

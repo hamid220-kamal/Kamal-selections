@@ -8,7 +8,7 @@ interface KidsFamilyShoppingProps {
 
 export function KidsFamilyShopping({ onOpenStoreModal }: KidsFamilyShoppingProps = {}) {
   return (
-    <section className="py-20 md:py-28 bg-[#FAF3EB] text-[#3D2314] relative overflow-hidden border-t border-[#E5C378]/25" id="family-shopping">
+    <section className="py-16 md:py-20 bg-[#FAF3EB] text-[#3D2314] relative overflow-hidden border-t border-[#E5C378]/25" id="family-shopping">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="bg-[#FFFFFF] rounded-3xl border border-[#E5C378]/40 p-8 sm:p-12 lg:p-16 shadow-xl relative overflow-hidden">
           

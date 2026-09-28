@@ -4,7 +4,7 @@ import Link from "next/link";
 
 export function AboutSplit() {
   return (
-    <section className="py-20 md:py-28 bg-[#FAF3EB] text-[#30251F] relative overflow-hidden border-t border-[#E5C378]/25" id="dual-focus">
+    <section className="py-16 md:py-20 bg-[#FAF3EB] text-[#30251F] relative overflow-hidden border-t border-[#E5C378]/25" id="dual-focus">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         
         {/* SECTION HEADER */}
