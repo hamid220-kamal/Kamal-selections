@@ -132,67 +132,63 @@ export function KidsPreview({ onOpenStoreModal }: KidsPreviewProps) {
         {/* 3. RIGHT ZONE: FOUR CATEGORY EDITORIAL CARDS (2x2) */}
         <div className="kids-gallery-grid-col animate-on-scroll slide-left">
           <div className="kids-2x2-grid">
-            <Link href="/kids" className="category-card-item kids-card block no-underline">
-              <div className="card-img-wrap bg-gradient-to-br from-[#20040A] to-[#120105] p-6 flex flex-col justify-between h-full border border-[#E5C378]/30">
-                <div className="flex items-center justify-between">
-                  <span className="text-[10px] tracking-[0.2em] uppercase font-bold text-[#E5C378]">GIRLS</span>
-                  <span className="text-xs text-[#F8E5BA]/70">Ages 1–14</span>
-                </div>
-                <div>
-                  <h3 className="font-serif text-2xl text-[#FFFFFF] font-bold mb-1">Girls Wear</h3>
-                  <p className="text-xs text-[#F8E5BA]/90 leading-relaxed">Festive lehengas &amp; ethnic dresses</p>
-                </div>
-                <span className="text-[11px] font-semibold text-[#E5C378] flex items-center gap-1">
-                  Explore Girls Wear <span>→</span>
-                </span>
+            <Link href="/kids" className="category-card-item kids-card group relative block overflow-hidden rounded-2xl border border-[#E5C378]/30 shadow-md no-underline">
+              <img
+                src="/images/home/kids-cat-girlswear.jpg"
+                alt="Kamal Selections Girls Wear"
+                className="absolute inset-0 w-full h-full object-cover object-center transition-transform duration-700 ease-out group-hover:scale-105"
+                loading="lazy"
+              />
+              <div className="absolute inset-0 bg-gradient-to-t from-black/75 via-transparent to-transparent pointer-events-none" />
+              <div className="relative z-10 p-4 sm:p-5 flex flex-col justify-end h-full">
+                <h3 className="font-serif text-xl sm:text-2xl text-[#FFFFFF] font-bold tracking-wide drop-shadow-md">
+                  Girls Wear
+                </h3>
               </div>
             </Link>
 
-            <Link href="/kids" className="category-card-item kids-card block no-underline">
-              <div className="card-img-wrap bg-gradient-to-br from-[#1E040B] to-[#100104] p-6 flex flex-col justify-between h-full border border-[#E5C378]/30">
-                <div className="flex items-center justify-between">
-                  <span className="text-[10px] tracking-[0.2em] uppercase font-bold text-[#E5C378]">BOYS</span>
-                  <span className="text-xs text-[#F8E5BA]/70">Ages 1–14</span>
-                </div>
-                <div>
-                  <h3 className="font-serif text-2xl text-[#FFFFFF] font-bold mb-1">Boys Wear</h3>
-                  <p className="text-xs text-[#F8E5BA]/90 leading-relaxed">Traditional kurtas &amp; ethnic sets</p>
-                </div>
-                <span className="text-[11px] font-semibold text-[#E5C378] flex items-center gap-1">
-                  Explore Boys Wear <span>→</span>
-                </span>
+            <Link href="/kids" className="category-card-item kids-card group relative block overflow-hidden rounded-2xl border border-[#E5C378]/30 shadow-md no-underline">
+              <img
+                src="/images/home/kids-cat-boyswear.jpg"
+                alt="Kamal Selections Boys Wear"
+                className="absolute inset-0 w-full h-full object-cover object-center transition-transform duration-700 ease-out group-hover:scale-105"
+                loading="lazy"
+              />
+              <div className="absolute inset-0 bg-gradient-to-t from-black/75 via-transparent to-transparent pointer-events-none" />
+              <div className="relative z-10 p-4 sm:p-5 flex flex-col justify-end h-full">
+                <h3 className="font-serif text-xl sm:text-2xl text-[#FFFFFF] font-bold tracking-wide drop-shadow-md">
+                  Boys Wear
+                </h3>
               </div>
             </Link>
 
-            <Link href="/kids" className="category-card-item kids-card block no-underline">
-              <div className="card-img-wrap bg-gradient-to-br from-[#24050D] to-[#140106] p-6 flex flex-col justify-between h-full border border-[#E5C378]/30">
-                <div className="flex items-center justify-between">
-                  <span className="text-[10px] tracking-[0.2em] uppercase font-bold text-[#E5C378]">OCCASION</span>
-                  <span className="text-xs text-[#F8E5BA]/70">All Ages</span>
-                </div>
-                <div>
-                  <h3 className="font-serif text-2xl text-[#FFFFFF] font-bold mb-1">Frocks</h3>
-                  <p className="text-xs text-[#F8E5BA]/90 leading-relaxed">Birthday frocks &amp; celebratory gowns</p>
-                </div>
-                <span className="text-[11px] font-semibold text-[#E5C378] flex items-center gap-1">
-                  Explore Frocks <span>→</span>
-                </span>
+            <Link href="/kids" className="category-card-item kids-card group relative block overflow-hidden rounded-2xl border border-[#E5C378]/30 shadow-md no-underline">
+              <img
+                src="/images/home/kids-cat-frocks.jpg"
+                alt="Kamal Selections Frocks"
+                className="absolute inset-0 w-full h-full object-cover object-center transition-transform duration-700 ease-out group-hover:scale-105"
+                loading="lazy"
+              />
+              <div className="absolute inset-0 bg-gradient-to-t from-black/75 via-transparent to-transparent pointer-events-none" />
+              <div className="relative z-10 p-4 sm:p-5 flex flex-col justify-end h-full">
+                <h3 className="font-serif text-xl sm:text-2xl text-[#FFFFFF] font-bold tracking-wide drop-shadow-md">
+                  Frocks
+                </h3>
               </div>
             </Link>
 
-            <Link href="/kids" className="category-card-item kids-card block no-underline">
-              <div className="card-img-wrap bg-gradient-to-br from-[#2A0610] to-[#180208] p-6 flex flex-col justify-between h-full border border-[#E5C378]/30">
-                <div className="flex items-center justify-between">
-                  <span className="text-[10px] tracking-[0.2em] uppercase font-bold text-[#E5C378]">CO-ORD</span>
-                  <span className="text-xs text-[#F8E5BA]/70">Daily &amp; Party</span>
-                </div>
-                <div>
-                  <h3 className="font-serif text-2xl text-[#FFFFFF] font-bold mb-1">Kids Sets</h3>
-                  <p className="text-xs text-[#F8E5BA]/90 leading-relaxed">Coordinated comfortable sets</p>
-                </div>
-                <span className="text-[11px] font-semibold text-[#E5C378] flex items-center gap-1">
-                  Explore Kids Sets <span>→</span>
-                </span>
+            <Link href="/kids" className="category-card-item kids-card group relative block overflow-hidden rounded-2xl border border-[#E5C378]/30 shadow-md no-underline">
+              <img
+                src="/images/home/kids-cat-kidssets.jpg"
+                alt="Kamal Selections Kids Sets"
+                className="absolute inset-0 w-full h-full object-cover object-center transition-transform duration-700 ease-out group-hover:scale-105"
+                loading="lazy"
+              />
+              <div className="absolute inset-0 bg-gradient-to-t from-black/75 via-transparent to-transparent pointer-events-none" />
+              <div className="relative z-10 p-4 sm:p-5 flex flex-col justify-end h-full">
+                <h3 className="font-serif text-xl sm:text-2xl text-[#FFFFFF] font-bold tracking-wide drop-shadow-md">
+                  Kids Sets
+                </h3>
               </div>
             </Link>
           </div>
