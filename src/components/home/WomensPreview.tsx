@@ -156,87 +156,114 @@ export function WomensPreview({ onOpenStoreModal }: WomensPreviewProps) {
           <div className="gallery-cards-wrapper">
             {/* TOP ROW: LARGE CARDS (DRESSES & KURTIS) */}
             <div className="gallery-row row-large">
-              <Link href="/women" className="category-card-item card-large block no-underline">
-                <div className="card-img-wrap bg-gradient-to-br from-[#3D0C1A] to-[#1A030A] p-6 flex flex-col justify-between h-full border border-[#E5C378]/30">
-                  <div className="flex items-center justify-between">
-                    <span className="text-[10px] tracking-[0.2em] uppercase font-bold text-[#E5C378]">COLLECTION</span>
-                    <span className="text-xs text-[#F8E5BA]/70">In-Store</span>
-                  </div>
-                  <div>
-                    <h3 className="font-serif text-2xl text-[#FFFFFF] font-bold mb-1">Dresses</h3>
-                    <p className="text-xs text-[#F8E5BA]/90 leading-relaxed">Flowing silhouettes &amp; festive gowns</p>
-                  </div>
-                  <span className="text-[11px] font-semibold text-[#E5C378] flex items-center gap-1">
-                    Explore Range <span>→</span>
-                  </span>
+              <Link href="/women" className="category-card-item card-large group relative block overflow-hidden rounded-2xl border border-[#E5C378]/30 shadow-md no-underline">
+                <img
+                  src="/images/home/womens-cat-dresses.jpg"
+                  alt="Kamal Selections Dresses"
+                  className="absolute inset-0 w-full h-full object-cover object-center transition-transform duration-700 ease-out group-hover:scale-105"
+                  loading="lazy"
+                />
+                <div className="absolute inset-0 bg-gradient-to-t from-black/75 via-transparent to-transparent pointer-events-none" />
+                <div className="relative z-10 p-4 sm:p-5 flex flex-col justify-end h-full">
+                  <h3 className="font-serif text-xl sm:text-2xl text-[#FFFFFF] font-bold tracking-wide drop-shadow-md">
+                    Dresses
+                  </h3>
                 </div>
               </Link>
 
-              <Link href="/women" className="category-card-item card-large block no-underline">
-                <div className="card-img-wrap bg-gradient-to-br from-[#2D0914] to-[#140207] p-6 flex flex-col justify-between h-full border border-[#E5C378]/30">
-                  <div className="flex items-center justify-between">
-                    <span className="text-[10px] tracking-[0.2em] uppercase font-bold text-[#E5C378]">COLLECTION</span>
-                    <span className="text-xs text-[#F8E5BA]/70">In-Store</span>
-                  </div>
-                  <div>
-                    <h3 className="font-serif text-2xl text-[#FFFFFF] font-bold mb-1">Kurtis</h3>
-                    <p className="text-xs text-[#F8E5BA]/90 leading-relaxed">Daily elegance &amp; embroidered styles</p>
-                  </div>
-                  <span className="text-[11px] font-semibold text-[#E5C378] flex items-center gap-1">
-                    Explore Range <span>→</span>
-                  </span>
+              <Link href="/women" className="category-card-item card-large group relative block overflow-hidden rounded-2xl border border-[#E5C378]/30 shadow-md no-underline">
+                <img
+                  src="/images/home/womens-cat-kurtis.jpg"
+                  alt="Kamal Selections Kurtis"
+                  className="absolute inset-0 w-full h-full object-cover object-center transition-transform duration-700 ease-out group-hover:scale-105"
+                  loading="lazy"
+                />
+                <div className="absolute inset-0 bg-gradient-to-t from-black/75 via-transparent to-transparent pointer-events-none" />
+                <div className="relative z-10 p-4 sm:p-5 flex flex-col justify-end h-full">
+                  <h3 className="font-serif text-xl sm:text-2xl text-[#FFFFFF] font-bold tracking-wide drop-shadow-md">
+                    Kurtis
+                  </h3>
                 </div>
               </Link>
             </div>
 
             {/* MIDDLE ROW: MEDIUM CARDS (TOPS & LEGGINGS) */}
             <div className="gallery-row row-medium">
-              <Link href="/women" className="category-card-item card-medium block no-underline">
-                <div className="card-img-wrap bg-gradient-to-br from-[#330816] to-[#1A030B] p-5 flex flex-col justify-between h-full border border-[#E5C378]/25">
-                  <span className="text-[9px] tracking-[0.2em] uppercase font-bold text-[#E5C378]">CASUAL &amp; TRENDY</span>
-                  <div>
-                    <h3 className="font-serif text-xl text-[#FFFFFF] font-bold mb-0.5">Tops</h3>
-                    <p className="text-[11px] text-[#F8E5BA]/80">Modern cuts &amp; breathable fabrics</p>
-                  </div>
-                  <span className="text-[10px] font-semibold text-[#E5C378]">View Styles →</span>
+              <Link href="/women" className="category-card-item card-medium group relative block overflow-hidden rounded-2xl border border-[#E5C378]/30 shadow-md no-underline">
+                <img
+                  src="/images/home/womens-cat-tops.jpg"
+                  alt="Kamal Selections Tops"
+                  className="absolute inset-0 w-full h-full object-cover object-center transition-transform duration-700 ease-out group-hover:scale-105"
+                  loading="lazy"
+                />
+                <div className="absolute inset-0 bg-gradient-to-t from-black/75 via-transparent to-transparent pointer-events-none" />
+                <div className="relative z-10 p-4 flex flex-col justify-end h-full">
+                  <h3 className="font-serif text-lg sm:text-xl text-[#FFFFFF] font-bold tracking-wide drop-shadow-md">
+                    Tops
+                  </h3>
                 </div>
               </Link>
 
-              <Link href="/women" className="category-card-item card-medium block no-underline">
-                <div className="card-img-wrap bg-gradient-to-br from-[#380918] to-[#1B030C] p-5 flex flex-col justify-between h-full border border-[#E5C378]/25">
-                  <span className="text-[9px] tracking-[0.2em] uppercase font-bold text-[#E5C378]">EVERYDAY ESSENTIALS</span>
-                  <div>
-                    <h3 className="font-serif text-xl text-[#FFFFFF] font-bold mb-0.5">Leggings</h3>
-                    <p className="text-[11px] text-[#F8E5BA]/80">Premium stretch comfort</p>
-                  </div>
-                  <span className="text-[10px] font-semibold text-[#E5C378]">View Styles →</span>
+              <Link href="/women" className="category-card-item card-medium group relative block overflow-hidden rounded-2xl border border-[#E5C378]/30 shadow-md no-underline">
+                <img
+                  src="/images/home/womens-cat-leggings.jpg"
+                  alt="Kamal Selections Leggings"
+                  className="absolute inset-0 w-full h-full object-cover object-center transition-transform duration-700 ease-out group-hover:scale-105"
+                  loading="lazy"
+                />
+                <div className="absolute inset-0 bg-gradient-to-t from-black/75 via-transparent to-transparent pointer-events-none" />
+                <div className="relative z-10 p-4 flex flex-col justify-end h-full">
+                  <h3 className="font-serif text-lg sm:text-xl text-[#FFFFFF] font-bold tracking-wide drop-shadow-md">
+                    Leggings
+                  </h3>
                 </div>
               </Link>
             </div>
 
             {/* BOTTOM ROW: SMALL CARDS (BURQA, 3-PIECE SETS, PARTY WEAR) */}
             <div className="gallery-row row-small">
-              <Link href="/women" className="category-card-item card-small block no-underline">
-                <div className="card-img-wrap bg-[#24050E] p-4 flex flex-col justify-between h-full border border-[#E5C378]/20">
-                  <span className="text-[9px] uppercase tracking-wider text-[#E5C378]">MODEST</span>
-                  <h4 className="font-serif text-base text-[#FFFFFF] font-bold">Burqa</h4>
-                  <span className="text-[10px] text-[#F8E5BA]/70">Explore →</span>
+              <Link href="/women" className="category-card-item card-small group relative block overflow-hidden rounded-2xl border border-[#E5C378]/25 shadow-md no-underline">
+                <img
+                  src="/images/home/womens-cat-burqa.jpg"
+                  alt="Kamal Selections Burqa"
+                  className="absolute inset-0 w-full h-full object-cover object-center transition-transform duration-700 ease-out group-hover:scale-105"
+                  loading="lazy"
+                />
+                <div className="absolute inset-0 bg-gradient-to-t from-black/75 via-transparent to-transparent pointer-events-none" />
+                <div className="relative z-10 p-3 flex flex-col justify-end h-full">
+                  <h4 className="font-serif text-sm sm:text-base text-[#FFFFFF] font-bold drop-shadow-md tracking-wide">
+                    Burqa
+                  </h4>
                 </div>
               </Link>
 
-              <Link href="/women" className="category-card-item card-small block no-underline">
-                <div className="card-img-wrap bg-[#2A0611] p-4 flex flex-col justify-between h-full border border-[#E5C378]/20">
-                  <span className="text-[9px] uppercase tracking-wider text-[#E5C378]">CO-ORD</span>
-                  <h4 className="font-serif text-base text-[#FFFFFF] font-bold">3-Piece Sets</h4>
-                  <span className="text-[10px] text-[#F8E5BA]/70">Explore →</span>
+              <Link href="/women" className="category-card-item card-small group relative block overflow-hidden rounded-2xl border border-[#E5C378]/25 shadow-md no-underline">
+                <img
+                  src="/images/home/womens-cat-3piece.jpg"
+                  alt="Kamal Selections 3-Piece Sets"
+                  className="absolute inset-0 w-full h-full object-cover object-center transition-transform duration-700 ease-out group-hover:scale-105"
+                  loading="lazy"
+                />
+                <div className="absolute inset-0 bg-gradient-to-t from-black/75 via-transparent to-transparent pointer-events-none" />
+                <div className="relative z-10 p-3 flex flex-col justify-end h-full">
+                  <h4 className="font-serif text-sm sm:text-base text-[#FFFFFF] font-bold drop-shadow-md tracking-wide">
+                    3-Piece Sets
+                  </h4>
                 </div>
               </Link>
 
-              <Link href="/women" className="category-card-item card-small block no-underline">
-                <div className="card-img-wrap bg-[#2F0713] p-4 flex flex-col justify-between h-full border border-[#E5C378]/20">
-                  <span className="text-[9px] uppercase tracking-wider text-[#E5C378]">OCCASION</span>
-                  <h4 className="font-serif text-base text-[#FFFFFF] font-bold">Party Wear</h4>
-                  <span className="text-[10px] text-[#F8E5BA]/70">Explore →</span>
+              <Link href="/women" className="category-card-item card-small group relative block overflow-hidden rounded-2xl border border-[#E5C378]/25 shadow-md no-underline">
+                <img
+                  src="/images/home/womens-cat-partywear.jpg"
+                  alt="Kamal Selections Party Wear"
+                  className="absolute inset-0 w-full h-full object-cover object-center transition-transform duration-700 ease-out group-hover:scale-105"
+                  loading="lazy"
+                />
+                <div className="absolute inset-0 bg-gradient-to-t from-black/75 via-transparent to-transparent pointer-events-none" />
+                <div className="relative z-10 p-3 flex flex-col justify-end h-full">
+                  <h4 className="font-serif text-sm sm:text-base text-[#FFFFFF] font-bold drop-shadow-md tracking-wide">
+                    Party Wear
+                  </h4>
                 </div>
               </Link>
             </div>
