@@ -16,22 +16,18 @@ export function StorePreview() {
       <div className="store-main-container">
         {/* MAIN SPLIT COMPOSITION: LEFT IMAGE PLACEHOLDER (~55%) & RIGHT INFO CARD (~45%) */}
         <div className="store-split-grid">
-          {/* LEFT ~55%: LARGE REAL STORE PHOTO PLACEHOLDER AREA */}
+          {/* LEFT ~55%: LARGE REAL STORE PHOTO */}
           <div className="store-photo-column animate-on-scroll slide-up">
-            <div className="real-store-photo-container">
-              {/* CLEANLY LABELED PLACEHOLDER FOR REAL STORE PHOTO */}
-              <div className="store-photo-placeholder">
-                <div className="placeholder-icon">
-                  <svg viewBox="0 0 24 24" width="48" height="48" fill="none" stroke="#CFA753" strokeWidth="1.5">
-                    <path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/>
-                    <polyline points="9 22 9 12 15 12 15 22"/>
-                  </svg>
-                </div>
-                <span className="placeholder-main-label">YOUR REAL STORE PHOTO HERE</span>
-                <span className="placeholder-sub-info">Storefront Exterior • Signboard • Interior View</span>
-              </div>
+            <div className="real-store-photo-container group relative overflow-hidden">
+              <img
+                src="/images/store/kamal-selections-showroom-interior.png"
+                alt="Kamal Selections Showroom Interior - Shadnagar"
+                className="w-full h-full object-cover object-center transition-transform duration-700 ease-out group-hover:scale-105"
+                loading="lazy"
+              />
+              <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent pointer-events-none" />
 
-              {/* OPTIONAL SMALL PILL TAG */}
+              {/* LOCATION BADGE */}
               <div className="store-location-badge">
                 <svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="#CFA753" strokeWidth="2">
                   <path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7z"/>
