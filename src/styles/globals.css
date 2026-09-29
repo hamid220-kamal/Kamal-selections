@@ -2924,54 +2924,43 @@ img {
 .fashion-collage-grid {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  gap: 1.1rem;
+  gap: 1.25rem;
   width: 100%;
-  max-width: 420px;
+  max-width: 440px;
   position: relative;
 }
 
 .collage-item {
   position: relative;
-  border-radius: 16px;
+  height: 225px;
+  border-radius: 20px;
   overflow: hidden;
-  box-shadow: 0 12px 32px rgba(0, 0, 0, 0.45);
-  border: 1px solid rgba(229, 195, 120, 0.3);
-  transition: transform 0.4s cubic-bezier(0.16, 1, 0.3, 1);
+  box-shadow: 0 14px 35px rgba(0, 0, 0, 0.5);
+  border: 1px solid rgba(229, 195, 120, 0.35);
+  background: #1F030C;
+  transition: transform 0.4s cubic-bezier(0.16, 1, 0.3, 1), border-color 0.4s ease, box-shadow 0.4s ease;
 }
 
 .collage-item:hover {
-  transform: translateY(-4px) scale(1.02);
-  border-color: rgba(229, 195, 120, 0.6);
-}
-
-.collage-1 {
-  height: 210px;
-}
-
-.collage-2 {
-  height: 245px;
-  margin-top: -15px;
-}
-
-.collage-3 {
-  height: 225px;
-  margin-top: -10px;
-}
-
-.collage-4 {
-  height: 200px;
-  margin-top: -25px;
+  transform: translateY(-5px) scale(1.02);
+  border-color: rgba(229, 195, 120, 0.7);
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.6), 0 0 25px rgba(229, 195, 120, 0.2);
 }
 
 .collage-item img {
   width: 100%;
   height: 100%;
   object-fit: cover;
-  transition: transform 0.6s cubic-bezier(0.16, 1, 0.3, 1);
+  object-position: top center;
+  transition: transform 0.7s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.collage-item.collage-craft img {
+  object-position: center;
 }
 
 .collage-item:hover img {
-  transform: scale(1.08);
+  transform: scale(1.06);
 }
 
 /* Right Zone Four Reason Cards */
@@ -2983,54 +2972,57 @@ img {
 .reasons-cards-wrapper {
   display: flex;
   flex-direction: column;
-  gap: 1.2rem;
+  gap: 1rem;
 }
 
 .reason-card-item {
-  background: rgba(255, 255, 255, 0.04);
-  border: 1px solid rgba(229, 195, 120, 0.18);
+  background: rgba(255, 255, 255, 0.035);
+  border: 1px solid rgba(229, 195, 120, 0.2);
   border-radius: 16px;
-  padding: 1.4rem 1.6rem;
-  backdrop-filter: blur(10px);
-  transition: transform 0.3s cubic-bezier(0.16, 1, 0.3, 1), border-color 0.3s ease, background-color 0.3s ease;
+  padding: 1.15rem 1.4rem;
+  backdrop-filter: blur(12px);
+  transition: transform 0.3s cubic-bezier(0.16, 1, 0.3, 1), border-color 0.3s ease, background-color 0.3s ease, box-shadow 0.3s ease;
 }
 
 .reason-card-item:hover {
-  transform: translateY(-3px);
-  border-color: rgba(229, 195, 120, 0.48);
+  transform: translateX(4px);
+  border-color: rgba(229, 195, 120, 0.55);
   background: rgba(255, 255, 255, 0.07);
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.3);
 }
 
 .reason-header {
   display: flex;
   align-items: center;
   gap: 12px;
-  margin-bottom: 0.4rem;
+  margin-bottom: 0.35rem;
 }
 
 .reason-number {
   font-family: var(--font-serif-brand);
-  font-size: 1rem;
+  font-size: 0.9rem;
   font-weight: 700;
   color: var(--color-gold-main);
   background: rgba(229, 195, 120, 0.12);
-  padding: 3px 10px;
+  padding: 2px 9px;
   border-radius: 20px;
   border: 1px solid rgba(229, 195, 120, 0.3);
+  letter-spacing: 0.05em;
 }
 
 .reason-title {
   font-family: var(--font-serif-brand);
-  font-size: 1.25rem;
+  font-size: 1.18rem;
   font-weight: 700;
   color: #FFF8EA;
+  letter-spacing: 0.02em;
 }
 
 .reason-desc {
   font-family: var(--font-sans-ui);
-  font-size: 0.92rem;
-  line-height: 1.6;
-  color: rgba(253, 248, 242, 0.82);
+  font-size: 0.88rem;
+  line-height: 1.55;
+  color: rgba(253, 248, 242, 0.85);
   margin: 0;
 }
 

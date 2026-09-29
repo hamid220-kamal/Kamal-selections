@@ -68,40 +68,36 @@ export function WhyKamalSelections({ onOpenStoreModal }: WhyKamalSelectionsProps
         {/* 2. CENTER ZONE: FASHION DETAILS COLLAGE */}
         <div className="why-collage-col animate-on-scroll slide-up delay-1">
           <div className="fashion-collage-grid">
-            <div className="collage-item collage-1">
+            <div className="collage-item">
               <img
-                src="/images/home/kamal-selections-craftsmanship-zari-embroidery.jpg"
-                alt="Intricate Indian Zari Embroidery and Pure Fabric Detail at Kamal Selections"
+                src="/images/home/why-womens-ethnic.jpg"
+                alt="Kamal Selections Designer Women's Festive Kurti and Ethnic Wear"
                 loading="lazy"
               />
-              <div className="collage-border-frame"></div>
             </div>
 
-            <div className="collage-item collage-2">
+            <div className="collage-item collage-craft">
               <img
-                src="/images/home/kamal-selections-artisan-kurti-stitching.jpg"
-                alt="Fine Stitching and Handwork on Women's Kurtis at Kamal Selections"
+                src="/images/home/why-craft-zari.jpg"
+                alt="Intricate Indian Gold Zari Embroidery and Luxury Silk Craftsmanship"
                 loading="lazy"
               />
-              <div className="collage-border-frame"></div>
             </div>
 
-            <div className="collage-item collage-3">
+            <div className="collage-item">
               <img
-                src="/images/home/kamal-selections-kids-comfort-fabric-detail.jpg"
-                alt="Soft Breathable Fabrics and Gentle Embellishments for Children"
+                src="/images/home/kids-cat-kidssets.jpg"
+                alt="Comfortable and Vibrant Kids Festive Wear at Kamal Selections"
                 loading="lazy"
               />
-              <div className="collage-border-frame"></div>
             </div>
 
-            <div className="collage-item collage-4">
+            <div className="collage-item">
               <img
-                src="/images/home/kamal-selections-sequin-styling-craft.jpg"
-                alt="Artisanal Sequin Embellishments and Festive Finishing at Kamal Selections"
+                src="/images/home/womens-cat-partywear.jpg"
+                alt="Glamorous Occasion and Festive Wear at Kamal Selections Showroom"
                 loading="lazy"
               />
-              <div className="collage-border-frame"></div>
             </div>
           </div>
         </div>
