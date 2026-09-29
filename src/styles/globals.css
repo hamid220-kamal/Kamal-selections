@@ -4303,106 +4303,132 @@ img {
   margin-bottom: 3rem;
 }
 
-/* 1. Top Brand Header Horizontal Split */
-.footer-brand-header {
+/* 1. Top Brand Header Bar */
+.footer-top-bar {
   display: flex;
-  align-items: flex-start;
+  align-items: center;
   justify-content: space-between;
-  gap: 2.5rem;
-  padding-bottom: 2.5rem;
+  gap: 2rem;
   flex-wrap: wrap;
+  padding-bottom: 0.5rem;
 }
 
-.footer-brand-left {
+.footer-brand-summary {
   display: flex;
   flex-direction: column;
-  max-width: 420px;
+  gap: 0.5rem;
 }
 
 .footer-logo-img {
-  width: 190px;
+  width: 185px;
   height: auto;
   object-fit: contain;
-  margin-bottom: 1rem;
   filter: drop-shadow(0 2px 12px rgba(0,0,0,0.5));
 }
 
-.footer-tagline-script {
-  font-family: var(--font-script);
-  font-size: 1.75rem;
-  color: #E8A8C2;
-  line-height: 1.25;
-  margin-bottom: 0.5rem;
-  text-shadow: 0 2px 8px rgba(0,0,0,0.4);
-}
-
-.footer-sub-location {
+.footer-motto {
   font-family: var(--font-sans-ui);
-  font-size: 0.88rem;
-  color: rgba(253, 248, 242, 0.65);
-  letter-spacing: 0.04em;
+  font-size: 0.92rem;
+  color: rgba(253, 248, 242, 0.75);
+  letter-spacing: 0.03em;
+  margin: 0;
 }
 
-.footer-brand-right {
-  flex-shrink: 0;
-}
-
-.footer-invitation-box {
-  background: rgba(10, 1, 5, 0.6);
-  border: 1px solid rgba(229, 195, 120, 0.35);
-  padding: 1.6rem 2rem;
-  border-radius: 18px;
-  box-shadow: 0 16px 40px rgba(0, 0, 0, 0.4), inset 0 1px 0 rgba(229, 195, 120, 0.15);
+.footer-actions-wrap {
   display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  backdrop-filter: blur(12px);
-  -webkit-backdrop-filter: blur(12px);
+  align-items: center;
+  gap: 1.25rem;
+  flex-wrap: wrap;
 }
 
-.invitation-heading {
-  font-family: var(--font-serif-brand);
-  font-size: 1.4rem;
-  font-weight: 700;
-  color: #FFF8EA;
-  margin-bottom: 0.35rem;
-}
-
-.invitation-sub {
+.footer-insta-pill {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 0.55rem 1.25rem;
+  background: rgba(229, 195, 120, 0.08);
+  border: 1px solid rgba(229, 195, 120, 0.32);
+  border-radius: 50px;
+  color: var(--color-gold-main);
   font-family: var(--font-sans-ui);
-  font-size: 0.9rem;
-  color: rgba(253, 248, 242, 0.72);
-  margin-bottom: 1.1rem;
+  font-size: 0.86rem;
+  font-weight: 600;
+  text-decoration: none;
+  transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+  backdrop-filter: blur(8px);
 }
 
-.footer-middle-divider {
+.footer-insta-pill:hover {
+  background: rgba(229, 195, 120, 0.22);
+  color: #FFF;
+  transform: translateY(-2px);
+  box-shadow: 0 6px 20px rgba(229, 195, 120, 0.25);
+}
+
+.footer-divider-line {
   width: 100%;
   height: 1px;
-  background: rgba(229, 195, 120, 0.2);
-  margin: 2rem 0 2.5rem 0;
+  background: linear-gradient(90deg, transparent 0%, rgba(229, 195, 120, 0.25) 50%, transparent 100%);
+  margin: 2rem 0 2.2rem 0;
 }
 
-/* 2. Main Footer Navigation Grid (4 Columns) */
-.footer-nav-grid {
+/* 2. Main 4-Column Unified Content Grid */
+.footer-columns-grid {
   display: grid;
-  grid-template-columns: repeat(4, 1fr);
+  grid-template-columns: 1.3fr 1fr 1fr 1.3fr;
   gap: 2.5rem;
-  margin-bottom: 2.5rem;
+  margin-bottom: 0.5rem;
 }
 
-.footer-col-title {
+.footer-column {
+  display: flex;
+  flex-direction: column;
+}
+
+.footer-heading {
   font-family: var(--font-sans-ui);
   font-size: 0.76rem;
   font-weight: 700;
   letter-spacing: 0.16em;
   color: var(--color-gold-main);
   text-transform: uppercase;
-  margin-bottom: 1.2rem;
-  padding-bottom: 0.6rem;
-  border-bottom: 1px solid rgba(229, 195, 120, 0.2);
+  margin-bottom: 1.25rem;
+  position: relative;
+  display: inline-block;
 }
 
-.footer-links-list {
+.footer-about-text {
+  font-family: var(--font-sans-ui);
+  font-size: 0.9rem;
+  line-height: 1.68;
+  color: rgba(253, 248, 242, 0.78);
+  margin-bottom: 1.2rem;
+}
+
+.footer-timing-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  background: rgba(255, 255, 255, 0.04);
+  border: 1px solid rgba(229, 195, 120, 0.2);
+  padding: 0.45rem 0.9rem;
+  border-radius: 30px;
+  font-family: var(--font-sans-ui);
+  font-size: 0.8rem;
+  color: #F8E5BA;
+  width: fit-content;
+}
+
+.timing-dot {
+  width: 7px;
+  height: 7px;
+  border-radius: 50%;
+  background: #10B981;
+  box-shadow: 0 0 8px #10B981;
+  animation: pulse 2s infinite;
+}
+
+.footer-nav-list {
   list-style: none;
   padding: 0;
   margin: 0;
@@ -4411,223 +4437,171 @@ img {
   gap: 0.7rem;
 }
 
-.footer-links-list a {
+.footer-nav-list a,
+.footer-btn-link {
   font-family: var(--font-sans-ui);
-  font-size: 0.9rem;
+  font-size: 0.88rem;
   color: rgba(253, 248, 242, 0.75);
   text-decoration: none;
-  transition: color 0.25s ease, transform 0.2s ease;
+  transition: color 0.25s ease, transform 0.25s ease;
   display: inline-block;
+  background: none;
+  border: none;
+  padding: 0;
+  text-align: left;
+  cursor: pointer;
 }
 
-.footer-links-list a:hover {
+.footer-nav-list a:hover,
+.footer-btn-link:hover {
   color: var(--color-gold-main);
   transform: translateX(4px);
 }
 
-/* 3. Contact Information Strip */
-.footer-contact-strip {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  background: rgba(255, 255, 255, 0.04);
-  border: 1px solid rgba(229, 195, 120, 0.22);
-  padding: 1.4rem 2rem;
-  border-radius: 14px;
-  margin-bottom: 2rem;
-  flex-wrap: wrap;
-  gap: 1.5rem;
-  backdrop-filter: blur(6px);
-  -webkit-backdrop-filter: blur(6px);
-}
-
-.contact-strip-item {
-  display: flex;
-  align-items: center;
-  gap: 0.85rem;
-}
-
-.contact-icon {
-  width: 38px;
-  height: 38px;
-  border-radius: 50%;
-  background: rgba(229, 195, 120, 0.14);
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-shrink: 0;
+/* Column 4: Address Box & Directions */
+.footer-address-box {
+  background: rgba(255, 255, 255, 0.035);
   border: 1px solid rgba(229, 195, 120, 0.2);
+  border-radius: 16px;
+  padding: 1.25rem 1.4rem;
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
 }
 
-.contact-text-wrap {
-  display: flex;
-  flex-direction: column;
-}
-
-.contact-label {
+.footer-address {
   font-family: var(--font-sans-ui);
-  font-size: 0.68rem;
+  font-size: 0.88rem;
+  line-height: 1.5;
+  color: rgba(253, 248, 242, 0.82);
+}
+
+.footer-phone-link {
+  font-family: var(--font-sans-ui);
+  font-size: 0.95rem;
   font-weight: 700;
-  letter-spacing: 0.1em;
-  color: var(--color-gold-main);
-  text-transform: uppercase;
-}
-
-.contact-val {
-  font-family: var(--font-sans-ui);
-  font-size: 0.9rem;
   color: #FFF8EA;
-  font-style: normal;
-  margin-top: 2px;
-}
-
-.phone-link {
   text-decoration: none;
-  transition: color 0.3s ease;
+  transition: color 0.25s ease;
 }
 
-.phone-link:hover {
+.footer-phone-link:hover {
   color: var(--color-gold-main);
 }
 
-/* 4. Social Media Strip */
-.footer-social-strip {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  gap: 1.2rem;
-  margin-bottom: 2rem;
-}
-
-.social-strip-title {
-  font-family: var(--font-sans-ui);
-  font-size: 0.75rem;
-  font-weight: 700;
-  letter-spacing: 0.12em;
-  color: rgba(253, 248, 242, 0.55);
-  text-transform: uppercase;
-}
-
-.social-insta-link {
+.footer-directions-btn {
   display: inline-flex;
   align-items: center;
-  gap: 8px;
-  padding: 0.45rem 1.2rem;
+  justify-content: space-between;
+  width: 100%;
+  padding: 0.6rem 1rem;
   background: rgba(229, 195, 120, 0.1);
-  border: 1px solid rgba(229, 195, 120, 0.32);
-  border-radius: 50px;
+  border: 1px solid rgba(229, 195, 120, 0.3);
+  border-radius: 10px;
   color: var(--color-gold-main);
   font-family: var(--font-sans-ui);
-  font-size: 0.86rem;
+  font-size: 0.82rem;
   font-weight: 600;
   text-decoration: none;
   transition: all 0.3s ease;
-  backdrop-filter: blur(4px);
 }
 
-.social-insta-link:hover {
+.footer-directions-btn:hover {
   background: rgba(229, 195, 120, 0.25);
-  color: #FFF;
+  color: #FFFFFF;
+  border-color: rgba(229, 195, 120, 0.6);
   transform: translateY(-2px);
-  box-shadow: 0 6px 20px rgba(229, 195, 120, 0.25);
 }
 
-.footer-thin-divider {
-  width: 100%;
-  height: 1px;
-  background: rgba(229, 195, 120, 0.14);
-  margin-bottom: 1.5rem;
-}
-
-/* 5. Legal & Copyright Bottom Bar */
+/* 3. Bottom Legal & Copyright Bar */
 .footer-bottom-bar {
   display: flex;
   align-items: center;
   justify-content: space-between;
   font-family: var(--font-sans-ui);
   font-size: 0.82rem;
-  color: rgba(253, 248, 242, 0.5);
+  color: rgba(253, 248, 242, 0.55);
   flex-wrap: wrap;
-  gap: 1rem;
+  gap: 1.2rem;
+  padding-top: 0.5rem;
 }
 
-.footer-legal-links {
+.footer-copyright {
   display: flex;
   align-items: center;
   gap: 0.8rem;
+  flex-wrap: wrap;
 }
 
-.legal-link {
-  color: rgba(253, 248, 242, 0.5);
-  text-decoration: none;
-  transition: color 0.3s ease;
-}
-
-.legal-link:hover {
+.copyright-sub {
   color: var(--color-gold-main);
+  opacity: 0.8;
 }
 
-.legal-dot {
-  color: rgba(229, 195, 120, 0.35);
-}
-
-.footer-copyright-wrap {
+.footer-bottom-links {
   display: flex;
   align-items: center;
-  gap: 1.2rem;
+  gap: 1rem;
 }
 
-.copyright-location {
+.footer-legal-link {
+  color: rgba(253, 248, 242, 0.55);
+  text-decoration: none;
+  transition: color 0.25s ease;
+}
+
+.footer-legal-link:hover {
   color: var(--color-gold-main);
-  opacity: 0.75;
 }
 
-/* Responsive Rules for Footer */
-@media (max-width: 992px) {
-  .footer-nav-grid {
-    grid-template-columns: repeat(2, 1fr);
+.dot-sep {
+  opacity: 0.3;
+}
+
+.back-to-top-btn {
+  background: none;
+  border: none;
+  padding: 0;
+  display: inline-flex;
+  align-items: center;
+  gap: 5px;
+  color: var(--color-gold-main);
+  font-family: var(--font-sans-ui);
+  font-size: 0.82rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: transform 0.25s ease, color 0.25s ease;
+}
+
+.back-to-top-btn:hover {
+  color: #FFFFFF;
+  transform: translateY(-2px);
+}
+
+/* Responsive Footer Rules */
+@media (max-width: 1024px) {
+  .footer-columns-grid {
+    grid-template-columns: 1fr 1fr;
+    gap: 2.5rem;
+  }
+}
+
+@media (max-width: 640px) {
+  .footer-columns-grid {
+    grid-template-columns: 1fr;
     gap: 2rem;
   }
-  .footer-brand-header {
+  .footer-top-bar {
     flex-direction: column;
     align-items: flex-start;
-    gap: 2rem;
   }
-  .footer-invitation-box {
+  .footer-actions-wrap {
     width: 100%;
-    box-sizing: border-box;
-  }
-}
-
-@media (max-width: 576px) {
-  .footer-main-container {
-    padding: 2.5rem 1.25rem 2rem 1.25rem;
-  }
-  .footer-nav-grid {
-    grid-template-columns: repeat(2, 1fr);
-    gap: 1.5rem;
-  }
-  .footer-contact-strip {
-    flex-direction: column;
-    align-items: flex-start;
-    padding: 1.2rem 1.2rem;
-    gap: 1.2rem;
+    justify-content: space-between;
   }
   .footer-bottom-bar {
     flex-direction: column;
     align-items: flex-start;
-    gap: 0.7rem;
-  }
-  .footer-social-strip {
-    flex-wrap: wrap;
-    justify-content: flex-start;
-    gap: 0.6rem;
-  }
-  .footer-logo-img {
-    width: 160px;
-  }
-  .footer-tagline-script {
-    font-size: 1.5rem;
+    gap: 0.8rem;
   }
 }
 
