@@ -10,7 +10,6 @@ import { WomensPreview } from "@/components/home/WomensPreview";
 import { KidsPreview } from "@/components/home/KidsPreview";
 import { WhyKamalSelections } from "@/components/home/WhyKamalSelections";
 import { StorePreview } from "@/components/home/StorePreview";
-import { LatestStyles } from "@/components/home/LatestStyles";
 import { FAQPreview } from "@/components/home/FAQPreview";
 import { FinalVisitCTA } from "@/components/home/FinalVisitCTA";
 import { StoreModal } from "@/components/modals/StoreModal";
@@ -88,10 +87,7 @@ export default function HomePage() {
         {/* SECTION 6: OUR STORE */}
         <StorePreview />
 
-        {/* SECTION 7: LATEST STYLES */}
-        <LatestStyles />
-
-        {/* SECTION 8: FAQ */}
+        {/* SECTION 7: FAQ */}
         <FAQPreview onOpenStoreModal={() => setIsStoreModalOpen(true)} />
 
         {/* SECTION 9: FINAL VISIT CTA */}
