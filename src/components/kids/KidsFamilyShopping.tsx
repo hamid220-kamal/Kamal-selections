@@ -1,6 +1,7 @@
 "use client";
 
 import Link from "next/link";
+import Image from "next/image";
 
 interface KidsFamilyShoppingProps {
   onOpenStoreModal?: () => void;
@@ -69,45 +70,18 @@ export function KidsFamilyShopping({ onOpenStoreModal }: KidsFamilyShoppingProps
               </div>
             </div>
 
-            {/* RIGHT: FAMILY WARDROBE HIGHLIGHT CARD (6 COLS) */}
+            {/* RIGHT: FAMILY WARDROBE FULL PHOTO CARD (6 COLS) */}
             <div className="lg:col-span-6">
-              <div className="relative rounded-2xl overflow-hidden shadow-2xl border border-[#E5C378]/40 bg-gradient-to-br from-[#2E050F] via-[#20040A] to-[#140106] p-8 sm:p-10 text-white">
-                <div className="flex items-center justify-between mb-6 pb-4 border-b border-[#E5C378]/25">
-                  <span className="text-[10px] font-bold text-[#E5C378] tracking-[0.24em] uppercase">
-                    HARMONIOUS STYLING
-                  </span>
-                  <span className="text-xs text-[#F8E5BA]/80 font-serif italic">Shadnagar Showroom</span>
-                </div>
-
-                <h3 className="font-serif text-2xl sm:text-3xl font-bold text-white mb-4">
-                  Celebration Wardrobe Together.
-                </h3>
-                <p className="text-sm text-[#F8E5BA]/90 leading-relaxed mb-6">
-                  Save time shopping across multiple stores. Find coordinated mother-daughter festive palettes and father-son styling under one welcoming roof.
-                </p>
-
-                <div className="space-y-3 pt-2">
-                  <div className="flex items-start gap-3 p-3.5 rounded-xl bg-white/5 border border-white/10">
-                    <span className="text-[#E5C378] mt-0.5">✦</span>
-                    <div className="text-xs">
-                      <strong className="text-white block mb-0.5">Matching Festive Color Stories</strong>
-                      <span className="text-[#F8E5BA]/80">Harmonized pastels, maroons, and royal blues for family ceremonies and festivals.</span>
-                    </div>
-                  </div>
-
-                  <div className="flex items-start gap-3 p-3.5 rounded-xl bg-white/5 border border-white/10">
-                    <span className="text-[#E5C378] mt-0.5">✦</span>
-                    <div className="text-xs">
-                      <strong className="text-white block mb-0.5">Family-Friendly Shopping Pace</strong>
-                      <span className="text-[#F8E5BA]/80">Relaxed seating and patient staff so parents and kids can choose with complete peace of mind.</span>
-                    </div>
-                  </div>
-                </div>
-
-                <div className="mt-8 pt-4 border-t border-[#E5C378]/20 flex items-center justify-between text-xs text-[#E5C378]">
-                  <span>Ibrahim Complex, Shadnagar</span>
-                  <span className="font-semibold uppercase tracking-wider">Women &amp; Kids Showroom</span>
-                </div>
+              <div className="relative rounded-3xl overflow-hidden shadow-2xl border border-[#E5C378]/40 min-h-[380px] sm:min-h-[440px] lg:min-h-[480px] w-full group">
+                <Image
+                  src="/images/store/kamal-selections-family-wardrobe.jpg"
+                  alt="Kamal Selections Curated Family Ethnic Collection"
+                  fill
+                  className="object-cover object-center transition-transform duration-700 group-hover:scale-105"
+                  sizes="(max-width: 1024px) 100vw, 50vw"
+                  priority
+                />
+                <div className="absolute inset-0 bg-gradient-to-t from-[#20040A]/40 via-transparent to-black/10 pointer-events-none" />
               </div>
             </div>
 
