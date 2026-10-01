@@ -100,16 +100,16 @@ export function StoreIntro() {
               {/* Image Container */}
               <div className="relative aspect-[4/3] rounded-3xl overflow-hidden shadow-2xl border border-[#E5C378]/40 bg-[#D8CEC1]">
                 <img
-                  src="/images/store/kamal-selections-boutique-exterior-shadnagar.jpg"
-                  alt="Kamal Selections boutique exterior and entrance welcoming shoppers in Shadnagar"
-                  className="w-full h-full object-cover object-[center_26%] transform hover:scale-105 transition-transform duration-700 ease-out"
+                  src="/store2.png"
+                  alt="Kamal Selections Real Store Interior"
+                  className="w-full h-full object-cover object-center transform hover:scale-105 transition-transform duration-700 ease-out"
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-[#20040A]/60 via-transparent to-transparent"></div>
 
                 {/* In-Store Badge */}
                 <div className="absolute top-4 left-4 z-10">
                   <span className="px-3.5 py-1 rounded-full bg-[#20040A]/80 border border-[#D4AF37]/50 text-[#F8E5BA] text-[10px] font-bold tracking-[0.2em] uppercase backdrop-blur-md shadow-md">
-                    STOREFRONT &amp; SIGNAGE
+                    SHOWROOM SELECTION
                   </span>
                 </div>
 
