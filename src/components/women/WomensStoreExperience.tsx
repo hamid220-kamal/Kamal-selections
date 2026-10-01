@@ -1,6 +1,7 @@
 "use client";
 
 import Link from "next/link";
+import Image from "next/image";
 import { brandData } from "@/data/brand";
 
 interface WomensStoreExperienceProps {
@@ -48,7 +49,7 @@ export function WomensStoreExperience({ onOpenStoreModal }: WomensStoreExperienc
                 <button
                   type="button"
                   onClick={onOpenStoreModal}
-                  className="btn btn-primary btn-pill"
+                  className="btn btn-[#FAF5EB] btn-primary btn-pill"
                   id="womens-store-visit-btn"
                 >
                   <span>Visit Our Store</span>
@@ -78,49 +79,17 @@ export function WomensStoreExperience({ onOpenStoreModal }: WomensStoreExperienc
             </div>
           </div>
 
-          {/* RIGHT: STORE ENVIRONMENT CARD (6 COLS) */}
+          {/* RIGHT: FULL PHOTO CARD (6 COLS, NO TEXT) */}
           <div className="lg:col-span-6">
-            <div className="relative rounded-3xl overflow-hidden shadow-2xl border border-[#E5C378]/40 bg-gradient-to-br from-[#2E0611] via-[#20040A] to-[#140106] p-8 sm:p-10 text-white">
-              <div className="flex items-center justify-between mb-6 pb-4 border-b border-[#E5C378]/25">
-                <div>
-                  <span className="text-[10px] font-bold text-[#E5C378] tracking-[0.22em] uppercase block mb-1">
-                    PHYSICAL SHOWROOM
-                  </span>
-                  <h3 className="font-serif text-2xl sm:text-3xl font-bold text-white">
-                    Kamal Selections
-                  </h3>
-                </div>
-                <div className="px-3.5 py-1.5 rounded-full bg-[#E5C378]/20 border border-[#E5C378]/40 text-[#F8E5BA] text-xs font-semibold">
-                  Open Daily · 10 AM – 9 PM
-                </div>
-              </div>
-
-              <p className="text-sm text-[#F8E5BA]/90 leading-relaxed mb-6">
-                Located conveniently at Ibrahim Complex on Main Road, Shadnagar. Experience the tactile beauty of our women&apos;s collection in person.
-              </p>
-
-              <div className="space-y-3 mb-8">
-                <div className="flex items-start gap-3 p-3.5 rounded-xl bg-white/5 border border-white/10">
-                  <span className="text-[#E5C378] mt-0.5">✦</span>
-                  <div className="text-xs">
-                    <strong className="text-white block mb-0.5">Feel Genuine Textures</strong>
-                    <span className="text-[#F8E5BA]/80">Inspect pure cottons, flowing georgettes, and artisanal embroidery first-hand.</span>
-                  </div>
-                </div>
-
-                <div className="flex items-start gap-3 p-3.5 rounded-xl bg-white/5 border border-white/10">
-                  <span className="text-[#E5C378] mt-0.5">✦</span>
-                  <div className="text-xs">
-                    <strong className="text-white block mb-0.5">Try Your Fit With Ease</strong>
-                    <span className="text-[#F8E5BA]/80">Find the silhouette and size that flatters you naturally before choosing.</span>
-                  </div>
-                </div>
-              </div>
-
-              <div className="flex items-center justify-between text-xs text-[#E5C378] pt-4 border-t border-[#E5C378]/25">
-                <span>Ibrahim Complex, Main Road, Shadnagar</span>
-                <span className="font-bold">Telangana 509216</span>
-              </div>
+            <div className="relative rounded-3xl overflow-hidden shadow-2xl border border-[#E5C378]/40 min-h-[380px] sm:min-h-[440px] lg:min-h-[480px] w-full">
+              <Image
+                src="/images/store/kamal-selections-kids-wear-showroom.png"
+                alt="Kamal Selections Physical Showroom in Shadnagar"
+                fill
+                className="object-cover object-center"
+                sizes="(max-width: 1024px) 100vw, 50vw"
+                priority
+              />
             </div>
           </div>
 
