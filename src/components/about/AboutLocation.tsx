@@ -1,5 +1,6 @@
 "use client";
 
+import Image from "next/image";
 import { brandData } from "@/data/brand";
 
 export function AboutLocation() {
@@ -59,45 +60,17 @@ export function AboutLocation() {
             </a>
           </div>
 
-          {/* RIGHT: SHADNAGAR SHOWROOM LANDMARK GUIDE */}
+          {/* RIGHT: SHADNAGAR STORE FRONT / BOARD PHOTO CARD */}
           <div className="md:w-1/2 w-full">
-            <div className="relative rounded-2xl overflow-hidden shadow-xl border border-[#E5C378]/40 bg-gradient-to-br from-[#2E050F] via-[#20040A] to-[#140106] p-7 sm:p-9 text-white group">
-              <div className="flex items-center justify-between mb-5 pb-3 border-b border-[#E5C378]/25">
-                <span className="text-[10px] font-bold text-[#E5C378] tracking-[0.22em] uppercase">
-                  STORE LANDMARK GUIDE
-                </span>
-                <span className="text-xs text-[#F8E5BA]/80 font-serif italic">Heart of Town</span>
-              </div>
-
-              <h3 className="font-serif text-2xl font-bold text-white mb-2">
-                Main Road Convenience.
-              </h3>
-              <p className="text-xs text-[#F8E5BA]/90 leading-relaxed mb-6">
-                Situated prominently along the main commercial corridor of Shadnagar, easily accessible from all residential neighborhoods and transit stops.
-              </p>
-
-              <div className="space-y-3 mb-6">
-                <div className="flex items-start gap-3 p-3 rounded-xl bg-white/5 border border-white/10">
-                  <span className="text-[#E5C378] text-xs mt-0.5">✦</span>
-                  <div className="text-xs">
-                    <strong className="text-white block mb-0.5">Ibrahim Complex Landmark</strong>
-                    <span className="text-[#F8E5BA]/80">Easily recognized commercial building with wide front access.</span>
-                  </div>
-                </div>
-
-                <div className="flex items-start gap-3 p-3 rounded-xl bg-white/5 border border-white/10">
-                  <span className="text-[#E5C378] text-xs mt-0.5">✦</span>
-                  <div className="text-xs">
-                    <strong className="text-white block mb-0.5">Extended Opening Hours</strong>
-                    <span className="text-[#F8E5BA]/80">Open 10:00 AM to 9:00 PM every day of the week, including Sundays.</span>
-                  </div>
-                </div>
-              </div>
-
-              <div className="pt-3 border-t border-[#E5C378]/20 flex items-center justify-between text-xs text-[#E5C378]">
-                <span>Pincode: 509216</span>
-                <span className="font-semibold uppercase tracking-wider">Telangana, India</span>
-              </div>
+            <div className="relative rounded-2xl overflow-hidden shadow-xl border border-[#E5C378]/40 min-h-[360px] sm:min-h-[400px] w-full">
+              <Image
+                src="/images/store/kamal-selections-storefront-shadnagar.png"
+                alt="Kamal Selections Storefront Sign Board in Shadnagar"
+                fill
+                className="object-cover object-center"
+                sizes="(max-width: 768px) 100vw, 50vw"
+                priority
+              />
             </div>
           </div>
 

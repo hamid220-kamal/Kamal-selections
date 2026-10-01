@@ -1,6 +1,7 @@
 "use client";
 
 import Link from "next/link";
+import Image from "next/image";
 import { brandData } from "@/data/brand";
 
 interface AboutVisitUsProps {
@@ -76,45 +77,18 @@ export function AboutVisitUs({ onOpenStoreModal }: AboutVisitUsProps = {}) {
             </div>
           </div>
 
-          {/* RIGHT: STORE ENVIRONMENT PREVIEW CARD (5 COLS) */}
+          {/* RIGHT: STORE ENVIRONMENT PREVIEW PHOTO CARD (5 COLS) */}
           <div className="lg:col-span-5">
-            <div className="relative rounded-2xl overflow-hidden shadow-2xl border border-[#E5C378]/40 bg-gradient-to-br from-[#2E050F] via-[#20040A] to-[#140106] p-7 sm:p-9 text-white">
-              <div className="flex items-center justify-between mb-5 pb-3 border-b border-[#E5C378]/25">
-                <span className="text-[10px] font-bold text-[#E5C378] tracking-[0.22em] uppercase">
-                  STORE AMENITIES
-                </span>
-                <span className="text-xs text-[#F8E5BA]/80 font-serif italic">In-Person Comfort</span>
-              </div>
-
-              <h3 className="font-serif text-2xl font-bold text-white mb-2">
-                A Welcoming Space.
-              </h3>
-              <p className="text-xs text-[#F8E5BA]/90 leading-relaxed mb-6">
-                Step inside for a peaceful shopping experience designed for women, children, and families looking for quality clothing.
-              </p>
-
-              <div className="space-y-3 mb-6">
-                <div className="flex items-start gap-3 p-3 rounded-xl bg-white/5 border border-white/10">
-                  <span className="text-[#E5C378] text-xs mt-0.5">✦</span>
-                  <div className="text-xs">
-                    <strong className="text-white block mb-0.5">Air-Conditioned Showroom</strong>
-                    <span className="text-[#F8E5BA]/80">Well-lit, orderly display racks with easy browsing.</span>
-                  </div>
-                </div>
-
-                <div className="flex items-start gap-3 p-3 rounded-xl bg-white/5 border border-white/10">
-                  <span className="text-[#E5C378] text-xs mt-0.5">✦</span>
-                  <div className="text-xs">
-                    <strong className="text-white block mb-0.5">Multiple Payment Options</strong>
-                    <span className="text-[#F8E5BA]/80">UPI, all major credit/debit cards &amp; cash accepted.</span>
-                  </div>
-                </div>
-              </div>
-
-              <div className="pt-3 border-t border-[#E5C378]/20 flex items-center justify-between text-xs text-[#E5C378]">
-                <span className="font-semibold uppercase tracking-wider">Ibrahim Complex · Main Road</span>
-                <span>Shadnagar</span>
-              </div>
+            <div className="relative rounded-3xl overflow-hidden shadow-2xl border border-[#E5C378]/40 min-h-[380px] sm:min-h-[440px] lg:min-h-[480px] w-full group">
+              <Image
+                src="/images/store/kamal-selections-new-angle-showroom.jpg"
+                alt="Kamal Selections Showroom Interior - New Angle View"
+                fill
+                className="object-cover object-center transition-transform duration-700 group-hover:scale-105"
+                sizes="(max-width: 1024px) 100vw, 45vw"
+                priority
+              />
+              <div className="absolute inset-0 bg-gradient-to-t from-[#20040A]/60 via-transparent to-black/20 pointer-events-none" />
             </div>
           </div>
 
