@@ -1,6 +1,7 @@
 "use client";
 
 import Link from "next/link";
+import Image from "next/image";
 import { brandData } from "@/data/brand";
 
 interface AboutRealStoreProps {
@@ -70,49 +71,17 @@ export function AboutRealStore({ onOpenStoreModal }: AboutRealStoreProps = {}) {
             </div>
           </div>
 
-          {/* RIGHT: REAL SHOWROOM EXPERIENCE CARD (7 COLS) */}
+          {/* RIGHT: REAL SHOWROOM FULL PHOTO CARD (7 COLS) */}
           <div className="lg:col-span-7 relative">
-            <div className="relative rounded-3xl overflow-hidden shadow-2xl border border-[#E5C378]/40 bg-gradient-to-br from-[#2E050F] via-[#20040A] to-[#140106] p-8 sm:p-10 text-white">
-              <div className="flex items-center justify-between mb-6 pb-4 border-b border-[#E5C378]/25">
-                <div>
-                  <span className="text-[10px] font-bold text-[#E5C378] tracking-[0.24em] uppercase block mb-1">
-                    PHYSICAL BOUTIQUE
-                  </span>
-                  <h3 className="font-serif text-2xl sm:text-3xl font-bold text-white">
-                    Kamal Selections Showroom
-                  </h3>
-                </div>
-                <div className="px-3.5 py-1.5 rounded-full bg-[#E5C378]/20 border border-[#E5C378]/40 text-[#F8E5BA] text-xs font-semibold">
-                  Open Daily · 10 AM – 9 PM
-                </div>
-              </div>
-
-              <p className="text-sm text-[#F8E5BA]/90 leading-relaxed mb-6">
-                Situated at the heart of Shadnagar on Main Road. Designed for customers who value inspecting pure fabrics, comparing subtle color variations, and trying garments with complete comfort.
-              </p>
-
-              <div className="grid grid-cols-1 sm:grid-cols-2 gap-3.5 mb-8">
-                <div className="p-3.5 rounded-xl bg-white/5 border border-white/10">
-                  <div className="flex items-center gap-2 mb-1">
-                    <span className="text-[#E5C378]">✦</span>
-                    <strong className="text-xs text-white">Spacious Trial Rooms</strong>
-                  </div>
-                  <p className="text-[11px] text-[#F8E5BA]/80">Comfortable, private fitting rooms for women and children.</p>
-                </div>
-
-                <div className="p-3.5 rounded-xl bg-white/5 border border-white/10">
-                  <div className="flex items-center gap-2 mb-1">
-                    <span className="text-[#E5C378]">✦</span>
-                    <strong className="text-xs text-white">Warm Personal Service</strong>
-                  </div>
-                  <p className="text-[11px] text-[#F8E5BA]/80">Attentive assistance to help you pair silhouettes and sizes.</p>
-                </div>
-              </div>
-
-              <div className="pt-4 border-t border-[#E5C378]/20 flex items-center justify-between text-xs text-[#E5C378]">
-                <span>Ibrahim Complex, Main Road, Shadnagar</span>
-                <span className="font-semibold uppercase tracking-wider">Welcome In-Store</span>
-              </div>
+            <div className="relative rounded-3xl overflow-hidden shadow-2xl border border-[#E5C378]/40 min-h-[380px] sm:min-h-[440px] lg:min-h-[480px] w-full">
+              <Image
+                src="/images/store/kamal-selections-kids-wear-showroom.png"
+                alt="Kamal Selections Physical Showroom in Shadnagar"
+                fill
+                className="object-cover object-center"
+                sizes="(max-width: 1024px) 100vw, 55vw"
+                priority
+              />
             </div>
           </div>
 
