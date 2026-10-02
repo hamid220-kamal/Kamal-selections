@@ -83,8 +83,8 @@ export function WomensStoreExperience({ onOpenStoreModal }: WomensStoreExperienc
           <div className="lg:col-span-6">
             <div className="relative rounded-3xl overflow-hidden shadow-2xl border border-[#E5C378]/40 min-h-[380px] sm:min-h-[440px] lg:min-h-[480px] w-full">
               <Image
-                src="/images/store/kamal-selections-kids-wear-showroom.png"
-                alt="Kamal Selections Physical Showroom in Shadnagar"
+                src="/images/store/kamal-selections-womens-wear-collection.png"
+                alt="Kamal Selections Women's Wear Department Showroom in Shadnagar"
                 fill
                 className="object-cover object-center"
                 sizes="(max-width: 1024px) 100vw, 50vw"

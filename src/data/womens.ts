@@ -133,7 +133,7 @@ export const womensData: WomensPageData = {
       category: "Kurtis",
       descriptor: "A bright everyday kurti with detailed embroidery",
       aspect: "portrait",
-      image: "/images/women/products/garment-001.jpg",
+      image: "/images/women/products/kamal-selections-mustard-embroidered-kurti.jpg",
       altText: "Mustard embroidered kurti at Kamal Selections Shadnagar",
     },
     {
@@ -142,8 +142,8 @@ export const womensData: WomensPageData = {
       category: "Party Wear",
       descriptor: "A richly detailed look for celebrations and evening events",
       aspect: "tall",
-      image: "/images/women/products/garment-002.jpg",
-      altText: "Navy embellished lehenga for party wear",
+      image: "/images/women/products/kamal-selections-navy-embellished-lehenga.jpg",
+      altText: "Navy embellished lehenga for party wear at Kamal Selections",
     },
     {
       id: "look-3",
@@ -151,8 +151,8 @@ export const womensData: WomensPageData = {
       category: "Dresses",
       descriptor: "A softly flared dress with an all-over floral print",
       aspect: "tall",
-      image: "/images/women/products/garment-005.jpg",
-      altText: "Pink floral flared occasion dress",
+      image: "/images/women/products/kamal-selections-pink-floral-occasion-dress.jpg",
+      altText: "Pink floral flared occasion dress at Kamal Selections",
     },
     {
       id: "look-4",
@@ -160,7 +160,7 @@ export const womensData: WomensPageData = {
       category: "3-Piece Sets",
       descriptor: "A coordinated three-piece suit with a matching dupatta",
       aspect: "square",
-      image: "/images/women/products/garment-004.jpg",
+      image: "/images/women/products/kamal-selections-lavender-embroidered-suit.jpg",
       altText: "Lavender embroidered three-piece ethnic suit set",
     },
     {
@@ -169,7 +169,7 @@ export const womensData: WomensPageData = {
       category: "Party Wear",
       descriptor: "A deep blue embellished ensemble for special occasions",
       aspect: "portrait",
-      image: "/images/women/products/garment-003.jpg",
+      image: "/images/home/womens-cat-partywear.jpg",
       altText: "Blue embroidered festive lehenga at Kamal Selections",
     },
     {
@@ -178,7 +178,7 @@ export const womensData: WomensPageData = {
       category: "3-Piece Sets",
       descriptor: "A warm-toned coordinated set with fine embroidery",
       aspect: "tall",
-      image: "/images/women/products/garment-006.jpg",
+      image: "/images/women/products/kamal-selections-mustard-three-piece-suit.jpg",
       altText: "Mustard embroidered three-piece suit set",
     },
     {
@@ -187,7 +187,7 @@ export const womensData: WomensPageData = {
       category: "Tops",
       descriptor: "Easy-to-style tops and tunics for everyday wear",
       aspect: "portrait",
-      image: "/images/women/categories/tops.jpg",
+      image: "/images/home/womens-cat-tops.jpg",
       altText: "Women's tops and tunics collection",
     },
     {
@@ -196,7 +196,7 @@ export const womensData: WomensPageData = {
       category: "Leggings",
       descriptor: "Stretch-friendly essentials in a range of colors",
       aspect: "portrait",
-      image: "/images/women/categories/leggings.jpg",
+      image: "/images/home/womens-cat-leggings.jpg",
       altText: "Women's leggings collection",
     },
     {
@@ -205,7 +205,7 @@ export const womensData: WomensPageData = {
       category: "Burqa",
       descriptor: "Modest silhouettes with thoughtful finishing details",
       aspect: "portrait",
-      image: "/images/women/categories/burqa.jpg",
+      image: "/images/home/womens-cat-burqa.jpg",
       altText: "Modest burqa and abaya collection",
     },
   ],
@@ -215,7 +215,7 @@ export const womensData: WomensPageData = {
       tag: "EVERYDAY",
       title: "Comfortable Everyday Styles",
       description: "Soft cotton kurtis, easy tops & stretch leggings designed for effortless daily wear.",
-      image: "/images/women/categories/kurtis.jpg",
+      image: "/images/home/womens-cat-kurtis.jpg",
       altText: "Everyday Women's Wear at Kamal Selections",
     },
     {
@@ -223,7 +223,7 @@ export const womensData: WomensPageData = {
       tag: "ELEVATED",
       title: "Outings & Family Gatherings",
       description: "Flared dresses, printed 3-piece sets, and stylish tunics for weekend outings and get-togethers.",
-      image: "/images/women/categories/dresses.jpg",
+      image: "/images/home/womens-cat-dresses.jpg",
       altText: "Elevated Outings Women's Fashion",
     },
     {
@@ -231,7 +231,7 @@ export const womensData: WomensPageData = {
       tag: "OCCASION",
       title: "Celebrations & Special Moments",
       description: "Dressier looks, intricate embroidered suits, and festive party wear for memorable occasions.",
-      image: "/images/women/categories/party-wear.jpg",
+      image: "/images/home/womens-cat-3piece.jpg",
       altText: "Special Occasion Women's Fashion in Shadnagar",
     },
   ],

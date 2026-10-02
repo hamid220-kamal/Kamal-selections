@@ -31,8 +31,8 @@ export function AboutSplit() {
           <div className="relative group overflow-hidden rounded-3xl border border-[#E5C378]/40 shadow-xl min-h-[480px] sm:min-h-[540px] lg:min-h-[580px] p-6 sm:p-8 flex flex-col justify-end text-white transition-all duration-500 hover:shadow-2xl hover:border-[#D4AF37]">
             {/* FULL BACKGROUND PHOTO */}
             <Image
-              src="/images/women/cat-partywear.jpg"
-              alt="Kamal Selections Women's Wear Collection"
+              src="/images/women/categories/kamal-selections-womens-designer-dresses.jpg"
+              alt="Kamal Selections Women's Wear Collection in Shadnagar"
               fill
               className="object-cover object-top transition-transform duration-700 ease-out group-hover:scale-105"
               sizes="(max-width: 768px) 100vw, 50vw"
@@ -77,8 +77,8 @@ export function AboutSplit() {
           <div className="relative group overflow-hidden rounded-3xl border border-[#E5C378]/40 shadow-xl min-h-[480px] sm:min-h-[540px] lg:min-h-[580px] p-6 sm:p-8 flex flex-col justify-end text-white transition-all duration-500 hover:shadow-2xl hover:border-[#D4AF37]">
             {/* FULL BACKGROUND PHOTO */}
             <Image
-              src="/assets/cat-girls-wear.jpg"
-              alt="Kamal Selections Kids' Wear Collection"
+              src="/images/kids/categories/kamal-selections-girls-ethnic-wear.jpg"
+              alt="Kamal Selections Kids' Wear Collection in Shadnagar"
               fill
               className="object-cover object-top transition-transform duration-700 ease-out group-hover:scale-105"
               sizes="(max-width: 768px) 100vw, 50vw"

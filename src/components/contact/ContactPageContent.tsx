@@ -62,6 +62,7 @@ export function ContactPageContent() {
         onClose={() => setIsMobileMenuOpen(false)}
         onOpenStoreModal={() => setIsStoreModalOpen(true)}
         onOpenSizeGuideModal={() => setIsSizeGuideOpen(true)}
+        onOpenSearchModal={() => setIsSearchModalOpen(true)}
       />
 
       {/* MAIN CONTENT - EXACT LOCAL STORE CONTACT HIERARCHY */}

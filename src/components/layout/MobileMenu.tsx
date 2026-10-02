@@ -1,19 +1,41 @@
 "use client";
 
+import { useEffect } from "react";
 import Link from "next/link";
+
 interface MobileMenuProps {
   isOpen: boolean;
   onClose: () => void;
   onOpenStoreModal?: () => void;
   onOpenSizeGuideModal?: () => void;
+  onOpenSearchModal?: () => void;
 }
 
 export function MobileMenu({
   isOpen,
   onClose,
-  onOpenStoreModal,
-  onOpenSizeGuideModal,
+  onOpenSearchModal,
 }: MobileMenuProps) {
+  useEffect(() => {
+    const handleKeyDown = (e: KeyboardEvent) => {
+      if (e.key === "Escape" && isOpen) {
+        onClose();
+      }
+    };
+
+    if (isOpen) {
+      document.body.style.overflow = "hidden";
+    } else {
+      document.body.style.overflow = "";
+    }
+
+    window.addEventListener("keydown", handleKeyDown);
+    return () => {
+      document.body.style.overflow = "";
+      window.removeEventListener("keydown", handleKeyDown);
+    };
+  }, [isOpen, onClose]);
+
   return (
     <div
       className={`mobile-drawer ${isOpen ? "active" : ""}`}
@@ -38,6 +60,24 @@ export function MobileMenu({
           <li><Link href="/about" className="drawer-link" onClick={onClose}>About Us</Link></li>
           <li><Link href="/store" className="drawer-link" onClick={onClose}>Our Store</Link></li>
           <li><Link href="/contact" className="drawer-link" onClick={onClose}>Contact</Link></li>
+          {onOpenSearchModal && (
+            <li>
+              <button
+                type="button"
+                className="drawer-link text-left w-full flex items-center gap-2"
+                onClick={() => {
+                  onClose();
+                  onOpenSearchModal();
+                }}
+              >
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
+                  <circle cx="11" cy="11" r="8"></circle>
+                  <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+                </svg>
+                <span>Search Collections</span>
+              </button>
+            </li>
+          )}
         </ul>
         <div className="drawer-footer">
           <p className="drawer-location">

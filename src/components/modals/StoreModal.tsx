@@ -1,5 +1,7 @@
 "use client";
 
+import { brandData } from "@/data/brand";
+
 interface StoreModalProps {
   isOpen: boolean;
   onClose: () => void;
@@ -10,7 +12,7 @@ export function StoreModal({ isOpen, onClose }: StoreModalProps) {
     <div className={`modal ${isOpen ? "active" : ""}`} id="store-modal" aria-hidden={!isOpen}>
       <div className="modal-backdrop" id="store-modal-backdrop" onClick={onClose}></div>
       <div className="modal-card">
-        <button className="modal-close" id="close-store-modal" onClick={onClose}>
+        <button className="modal-close" id="close-store-modal" onClick={onClose} aria-label="Close store info">
           &times;
         </button>
         <div className="modal-header">
@@ -20,27 +22,31 @@ export function StoreModal({ isOpen, onClose }: StoreModalProps) {
               <circle cx="12" cy="9" r="2.5"/>
             </svg>
           </div>
-          <h3 className="modal-title">Visit Kamal Selections</h3>
-          <p className="modal-sub">Shadnagar, Telangana • Established 2021</p>
+          <h3 className="modal-title">Visit {brandData.name}</h3>
+          <p className="modal-sub">{brandData.address.city}, {brandData.address.state} • Established {brandData.establishedYear}</p>
         </div>
         <div className="modal-body">
           <div className="store-info-box">
             <div className="info-row">
               <strong>📍 Store Address:</strong>
-              <p>Kamal Selections, Main Road Market, Shadnagar, Ranga Reddy District, Telangana 509216, India</p>
+              <p>{brandData.address.fullAddress} {brandData.address.pincode}, India</p>
             </div>
             <div className="info-row">
               <strong>⏰ Store Timings:</strong>
-              <p>Monday – Sunday: 10:00 AM – 9:30 PM (Open 7 Days)</p>
+              <p>{brandData.hours.displayHours}</p>
+            </div>
+            <div className="info-row">
+              <strong>📞 Phone / WhatsApp:</strong>
+              <p>+91 {brandData.phone}</p>
             </div>
             <div className="info-row">
               <strong>🛍️ Categories Available:</strong>
-              <p>Women's Kurtis, Dresses, Leggings, Burqa &amp; Complete Kids Wear Range</p>
+              <p>Women's Kurtis, Dresses, Leggings, Burqa, 3-Piece Sets &amp; Complete Kids Wear Range</p>
             </div>
           </div>
         </div>
         <div className="modal-footer">
-          <a href="https://www.google.com/maps/search/?api=1&query=Kamal+Selections+Ibrahim+Complex+Main+Road+Shadnagar+Telangana" target="_blank" rel="noopener noreferrer" className="btn btn-primary btn-block">
+          <a href={brandData.maps.directionsUrl} target="_blank" rel="noopener noreferrer" className="btn btn-primary btn-block">
             Get Directions on Google Maps &rarr;
           </a>
         </div>

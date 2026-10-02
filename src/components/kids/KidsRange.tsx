@@ -14,7 +14,7 @@ const KIDS_CATEGORIES = [
     imageHeight: "h-72 sm:h-80 lg:h-96",
   },
   {
-    id: "sets",
+    id: "kids-sets",
     name: "Kids Sets",
     desc: "Easy coordinated looks for everyday wear.",
     image: "/images/kids/categories/kamal-selections-kids-coordinated-sets.jpg",
@@ -26,7 +26,7 @@ const KIDS_CATEGORIES = [
     imageHeight: "h-72 sm:h-80 lg:h-96",
   },
   {
-    id: "girls",
+    id: "girls-wear",
     name: "Girls' Clothing",
     desc: "Comfortable styles for every little occasion.",
     image: "/images/kids/categories/kamal-selections-girls-ethnic-wear.jpg",
@@ -38,7 +38,7 @@ const KIDS_CATEGORIES = [
     imageHeight: "h-72 sm:h-80 lg:h-96",
   },
   {
-    id: "boys",
+    id: "boys-wear",
     name: "Boys' Clothing",
     desc: "Smart, playful looks made for active days.",
     image: "/images/kids/categories/kamal-selections-boys-kurta-pyjama.jpg",
@@ -88,6 +88,7 @@ export function KidsRange() {
           {KIDS_CATEGORIES.map((cat) => (
             <div
               key={cat.id}
+              id={cat.id}
               className="group relative rounded-3xl overflow-hidden bg-[#FFFFFF] border border-[#E5C378]/35 shadow-lg flex flex-col justify-between transition-all duration-500 hover:shadow-2xl hover:border-[#D4AF37]"
             >
               {/* IMAGE WRAPPER (4:5 PORTRAIT RATIO PREVENTS HEAD/CHIN/DRESS CROPPING) */}

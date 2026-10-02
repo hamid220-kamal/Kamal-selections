@@ -100,8 +100,8 @@ export function StoreIntro() {
               {/* Image Container */}
               <div className="relative aspect-[4/3] rounded-3xl overflow-hidden shadow-2xl border border-[#E5C378]/40 bg-[#D8CEC1]">
                 <img
-                  src="/store2.png"
-                  alt="Kamal Selections Real Store Interior"
+                  src="/images/store/kamal-selections-new-angle-showroom.jpg"
+                  alt="Kamal Selections Real Store Showroom in Shadnagar"
                   className="w-full h-full object-cover object-center transform hover:scale-105 transition-transform duration-700 ease-out"
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-[#20040A]/60 via-transparent to-transparent"></div>

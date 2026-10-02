@@ -66,6 +66,7 @@ export function StorePageContent() {
         onClose={() => setIsMobileMenuOpen(false)}
         onOpenStoreModal={() => setIsStoreModalOpen(true)}
         onOpenSizeGuideModal={() => setIsSizeGuideOpen(true)}
+        onOpenSearchModal={() => setIsSearchModalOpen(true)}
       />
 
       {/* MAIN CONTENT - EXACT STORE SHOWCASE HIERARCHY */}

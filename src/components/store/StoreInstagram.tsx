@@ -64,7 +64,7 @@ export function StoreInstagram() {
           </h2>
 
           <p className="text-base text-[#69564A] leading-relaxed max-w-lg mx-auto mb-8">
-            Follow <span className="text-[#A41A50] font-semibold">@{brandData.social.instagramHandle}</span> for new festive arrivals, behind-the-scenes draping, and daily Shadnagar showroom highlights.
+            Follow <span className="text-[#A41A50] font-semibold">{brandData.social.instagramHandle}</span> for new festive arrivals, behind-the-scenes draping, and daily Shadnagar showroom highlights.
           </p>
 
           <a

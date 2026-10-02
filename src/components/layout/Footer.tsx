@@ -93,10 +93,10 @@ export function Footer({ onOpenStoreModal, onOpenSizeGuideModal }: FooterProps) 
               <li><Link href="/women">Women&apos;s Ethnic Wear</Link></li>
               <li><Link href="/women#kurtis">Embroidered Kurtis</Link></li>
               <li><Link href="/women#dresses">Festive Dresses &amp; Gowns</Link></li>
-              <li><Link href="/women#3piece">Co-ord 3-Piece Sets</Link></li>
+              <li><Link href="/women#3piece-sets">Co-ord 3-Piece Sets</Link></li>
               <li><Link href="/women#burqa">Modest Abaya &amp; Burqa</Link></li>
               <li><Link href="/kids">Kids&apos; Wear (Girls &amp; Boys)</Link></li>
-              <li><Link href="/kids#kids-frocks">Birthday Frocks &amp; Sets</Link></li>
+              <li><Link href="/kids#frocks">Birthday Frocks &amp; Sets</Link></li>
             </ul>
           </div>
 

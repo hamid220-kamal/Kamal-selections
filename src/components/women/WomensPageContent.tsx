@@ -63,6 +63,7 @@ export function WomensPageContent() {
         onClose={() => setIsMobileMenuOpen(false)}
         onOpenStoreModal={() => setIsStoreModalOpen(true)}
         onOpenSizeGuideModal={() => setIsSizeGuideOpen(true)}
+        onOpenSearchModal={() => setIsSearchModalOpen(true)}
       />
 
       {/* MAIN CONTENT - EXACT EDITORIAL SHOWCASE HIERARCHY */}

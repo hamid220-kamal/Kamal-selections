@@ -57,7 +57,7 @@ const CATEGORIES: CategoryTile[] = [
     heightClass: "h-64 sm:h-72",
   },
   {
-    id: "3piece",
+    id: "3piece-sets",
     name: "3-Piece Sets",
     phrase: "Complete looks with coordinated style.",
     image: "/images/women/categories/kamal-selections-womens-three-piece-ethnic-suits.jpg",
@@ -66,7 +66,7 @@ const CATEGORIES: CategoryTile[] = [
     heightClass: "h-64 sm:h-80",
   },
   {
-    id: "partywear",
+    id: "party-wear",
     name: "Party Wear",
     phrase: "Statement looks for celebrations.",
     image: "/images/women/categories/kamal-selections-womens-sequined-partywear.jpg",

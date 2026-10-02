@@ -65,6 +65,7 @@ export function AboutPageContent() {
         onClose={() => setIsMobileMenuOpen(false)}
         onOpenStoreModal={() => setIsStoreModalOpen(true)}
         onOpenSizeGuideModal={() => setIsSizeGuideOpen(true)}
+        onOpenSearchModal={() => setIsSearchModalOpen(true)}
       />
 
       {/* MAIN CONTENT - EXACT STORYTELLING SHOWCASE HIERARCHY */}
