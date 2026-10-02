@@ -62,7 +62,7 @@ export function AboutRealStore({ onOpenStoreModal }: AboutRealStoreProps = {}) {
                 href={brandData.maps.directionsUrl}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="btn btn-outline btn-pill"
+                className="btn btn-pill border-2 border-[#A41A50] text-[#A41A50] hover:bg-[#A41A50] hover:text-white font-bold transition-all shadow-sm"
                 id="about-store-directions-btn"
               >
                 <span>Get Directions</span>
