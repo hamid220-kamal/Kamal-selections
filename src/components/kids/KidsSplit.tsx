@@ -1,4 +1,4 @@
-"use client";
+import Image from "next/image";
 
 export function KidsSplit() {
   return (
@@ -31,10 +31,12 @@ export function KidsSplit() {
           <div className="relative group overflow-hidden rounded-3xl bg-[#FFFFFF] border border-[#E5C378]/35 shadow-xl flex flex-col transition-all duration-500 hover:shadow-2xl hover:border-[#D4AF37]">
             {/* Image Container with Editorial Asymmetric Crop */}
             <div className="relative aspect-[3/4] sm:aspect-[4/5] w-full overflow-hidden">
-              <img
+              <Image
                 src="/images/kids/kamal-selections-girls-pastel-lehenga.jpg"
                 alt="Little girl in pastel pink embroidered festive lehenga from Kamal Selections"
                 className="w-full h-full object-cover object-top transform group-hover:scale-105 transition-transform duration-700 ease-out"
+                fill
+                sizes="(max-width: 768px) 100vw, 50vw"
                 loading="lazy"
               />
               <div className="absolute inset-0 bg-gradient-to-t from-[#2A050E]/80 via-transparent to-transparent"></div>
@@ -75,10 +77,12 @@ export function KidsSplit() {
           <div className="relative group overflow-hidden rounded-3xl bg-[#FFFFFF] border border-[#E5C378]/35 shadow-xl flex flex-col transition-all duration-500 hover:shadow-2xl hover:border-[#D4AF37]">
             {/* Image Container with Editorial Asymmetric Crop */}
             <div className="relative aspect-[3/4] sm:aspect-[4/5] w-full overflow-hidden">
-              <img
+              <Image
                 src="/images/kids/kamal-selections-boys-emerald-sherwani.jpg"
                 alt="Young boy in emerald green festive sherwani from Kamal Selections"
                 className="w-full h-full object-cover object-top transform group-hover:scale-105 transition-transform duration-700 ease-out"
+                fill
+                sizes="(max-width: 768px) 100vw, 50vw"
                 loading="lazy"
               />
               <div className="absolute inset-0 bg-gradient-to-t from-[#0F1E36]/85 via-transparent to-transparent"></div>

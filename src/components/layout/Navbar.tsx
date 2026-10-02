@@ -4,6 +4,8 @@ import { useEffect, useState } from "react";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 
+import Image from "next/image";
+
 interface NavbarProps {
   onOpenStoreModal?: () => void;
   onOpenSizeGuideModal?: () => void;
@@ -23,7 +25,7 @@ export function Navbar({
       setIsScrolled(window.scrollY > 40);
     };
 
-    window.addEventListener("scroll", handleScroll);
+    window.addEventListener("scroll", handleScroll, { passive: true });
     return () => window.removeEventListener("scroll", handleScroll);
   }, []);
 
@@ -32,7 +34,14 @@ export function Navbar({
       <div className="navbar-container">
         {/* LOGO */}
         <Link href="/" className="brand-logo" aria-label="Kamal Selections Home">
-          <img src="/brand/logo/kamal-selections-logo.png" alt="Kamal Selections Boutique Logo" className="brand-logo-img" />
+          <Image
+            src="/brand/logo/kamal-selections-logo.png"
+            alt="Kamal Selections Boutique Logo"
+            className="brand-logo-img"
+            width={160}
+            height={64}
+            priority
+          />
           <span className="brand-logo-text">Kamal Selections</span>
         </Link>
 

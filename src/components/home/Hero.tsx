@@ -1,6 +1,7 @@
 "use client";
 
 import Link from "next/link";
+import Image from "next/image";
 
 interface HeroProps {
   onOpenStoreModal?: () => void;
@@ -12,11 +13,15 @@ export function Hero({ onOpenStoreModal }: HeroProps) {
     <section className="hero-section" id="home">
       {/* EDITORIAL BACKGROUND IMAGE LAYER */}
       <div className="hero-bg-container">
-        <img
+        <Image
           src="/images/home/kamal-selections-home-hero-indian-fashion.jpg"
           alt="Kamal Selections - Premium Indian Ethnic Fashion Showroom in Shadnagar"
           className="hero-bg-img"
           id="hero-bg-img"
+          priority
+          fill
+          sizes="100vw"
+          quality={80}
         />
         <div className="hero-burgundy-overlay"></div>
         <div className="hero-vignette"></div>

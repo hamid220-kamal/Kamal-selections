@@ -1,4 +1,4 @@
-"use client";
+import Image from "next/image";
 
 interface CategoryTile {
   id: string;
@@ -122,10 +122,12 @@ export function WomensRange() {
               >
                 {/* 4:5 Portrait Aspect Ratio preserves 100% vertical model height (head to toe) */}
                 <div className="relative aspect-[4/5] w-full overflow-hidden">
-                  <img
+                  <Image
                     src={cat.image}
                     alt={cat.alt}
                     className="w-full h-full object-cover object-[center_15%] transform group-hover:scale-105 transition-transform duration-700 ease-out"
+                    fill
+                    sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
                     loading="lazy"
                   />
 

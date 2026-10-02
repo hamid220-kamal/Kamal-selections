@@ -1,4 +1,4 @@
-"use client";
+import Image from "next/image";
 
 export function WomensIntro() {
   return (
@@ -81,10 +81,13 @@ export function WomensIntro() {
               
               {/* Main Image Container */}
               <div className="relative aspect-[4/3] sm:aspect-[5/4] rounded-2xl overflow-hidden shadow-2xl border border-[#E5C378]/40">
-                <img
+                <Image
                   src="/images/women/kamal-selections-womens-boutique-browsing.jpg"
                   alt="Customer exploring curated ethnic dresses and kurtis at Kamal Selections boutique in Shadnagar"
                   className="w-full h-full object-cover object-center transform hover:scale-105 transition-transform duration-700 ease-out"
+                  fill
+                  sizes="(max-width: 768px) 100vw, 40vw"
+                  loading="lazy"
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-[#2A050E]/40 via-transparent to-transparent"></div>
               </div>

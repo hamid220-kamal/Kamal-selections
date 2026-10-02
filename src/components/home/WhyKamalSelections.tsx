@@ -1,6 +1,5 @@
-"use client";
-
 import Link from "next/link";
+import Image from "next/image";
 
 interface WhyKamalSelectionsProps {
   onOpenStoreModal?: () => void;
@@ -68,34 +67,46 @@ export function WhyKamalSelections({ onOpenStoreModal }: WhyKamalSelectionsProps
         {/* 2. CENTER ZONE: FASHION DETAILS COLLAGE */}
         <div className="why-collage-col animate-on-scroll slide-up delay-1">
           <div className="fashion-collage-grid">
-            <div className="collage-item">
-              <img
+            <div className="collage-item relative overflow-hidden rounded-2xl min-h-[160px]">
+              <Image
                 src="/images/home/why-womens-ethnic.jpg"
                 alt="Kamal Selections Designer Women's Festive Kurti and Ethnic Wear"
+                className="object-cover object-center"
+                fill
+                sizes="(max-width: 768px) 50vw, 25vw"
                 loading="lazy"
               />
             </div>
 
-            <div className="collage-item collage-craft">
-              <img
+            <div className="collage-item collage-craft relative overflow-hidden rounded-2xl min-h-[160px]">
+              <Image
                 src="/images/home/why-craft-zari.jpg"
                 alt="Intricate Indian Gold Zari Embroidery and Luxury Silk Craftsmanship"
+                className="object-cover object-center"
+                fill
+                sizes="(max-width: 768px) 50vw, 25vw"
                 loading="lazy"
               />
             </div>
 
-            <div className="collage-item">
-              <img
+            <div className="collage-item relative overflow-hidden rounded-2xl min-h-[160px]">
+              <Image
                 src="/images/home/kids-cat-kidssets.jpg"
                 alt="Comfortable and Vibrant Kids Festive Wear at Kamal Selections"
+                className="object-cover object-center"
+                fill
+                sizes="(max-width: 768px) 50vw, 25vw"
                 loading="lazy"
               />
             </div>
 
-            <div className="collage-item">
-              <img
+            <div className="collage-item relative overflow-hidden rounded-2xl min-h-[160px]">
+              <Image
                 src="/images/home/womens-cat-partywear.jpg"
                 alt="Glamorous Occasion and Festive Wear at Kamal Selections Showroom"
+                className="object-cover object-center"
+                fill
+                sizes="(max-width: 768px) 50vw, 25vw"
                 loading="lazy"
               />
             </div>

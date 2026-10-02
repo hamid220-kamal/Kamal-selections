@@ -1,4 +1,4 @@
-"use client";
+import Image from "next/image";
 
 export function StoreGallery() {
   return (
@@ -34,10 +34,12 @@ export function StoreGallery() {
           {/* IMAGE 1: MAIN ENTRANCE & SHOWROOM OVERVIEW */}
           <div className="group relative rounded-3xl overflow-hidden bg-[#FFFFFF] border border-[#E5C378]/40 shadow-xl flex flex-col justify-between transition-all duration-500 hover:shadow-2xl hover:border-[#D4AF37]">
             <div className="relative aspect-[4/5] sm:aspect-[3/4] w-full overflow-hidden bg-[#E8DFD5]">
-              <img
+              <Image
                 src="/images/store/kamal-selections-showroom-interior.png"
                 alt="Kamal Selections main entrance and showroom overview with well-lit clothing displays in Shadnagar"
                 className="w-full h-full object-cover object-center transform group-hover:scale-105 transition-transform duration-700 ease-out"
+                fill
+                sizes="(max-width: 768px) 100vw, 50vw"
                 loading="lazy"
               />
               <div className="absolute inset-0 bg-gradient-to-t from-[#20040A]/85 via-[#20040A]/20 to-transparent"></div>
@@ -73,10 +75,12 @@ export function StoreGallery() {
           {/* IMAGE 2: STORE EXTERIOR / SIGNAGE */}
           <div className="group relative rounded-3xl overflow-hidden bg-[#FFFFFF] border border-[#E5C378]/40 shadow-xl flex flex-col justify-between transition-all duration-500 hover:shadow-2xl hover:border-[#D4AF37]">
             <div className="relative aspect-[4/5] sm:aspect-[3/4] w-full overflow-hidden bg-[#E8DFD5]">
-              <img
+              <Image
                 src="/images/store/kamal-selections-storefront-shadnagar.png"
                 alt="Kamal Selections exterior storefront and prominent signage board at Ibrahim Complex, Main Road, Shadnagar"
                 className="w-full h-full object-cover object-top transform group-hover:scale-105 transition-transform duration-700 ease-out"
+                fill
+                sizes="(max-width: 768px) 100vw, 50vw"
                 loading="lazy"
               />
               <div className="absolute inset-0 bg-gradient-to-t from-[#20040A]/85 via-[#20040A]/20 to-transparent"></div>
@@ -112,10 +116,12 @@ export function StoreGallery() {
           {/* IMAGE 3: WOMEN'S COLLECTION / SHOWROOM INTERIOR */}
           <div className="group relative rounded-3xl overflow-hidden bg-[#FFFFFF] border border-[#E5C378]/40 shadow-xl flex flex-col justify-between transition-all duration-500 hover:shadow-2xl hover:border-[#D4AF37]">
             <div className="relative aspect-[4/5] sm:aspect-[3/4] w-full overflow-hidden bg-[#E8DFD5]">
-              <img
+              <Image
                 src="/images/store/kamal-selections-womens-wear-collection.png"
                 alt="Kamal Selections women's wear collection and ethnic garment racks inside the Shadnagar showroom"
                 className="w-full h-full object-cover object-center transform group-hover:scale-105 transition-transform duration-700 ease-out"
+                fill
+                sizes="(max-width: 768px) 100vw, 50vw"
                 loading="lazy"
               />
               <div className="absolute inset-0 bg-gradient-to-t from-[#20040A]/85 via-[#20040A]/20 to-transparent"></div>
@@ -151,10 +157,12 @@ export function StoreGallery() {
           {/* IMAGE 4: KIDS COLLECTION / COUNTER & INTERIOR */}
           <div className="group relative rounded-3xl overflow-hidden bg-[#FFFFFF] border border-[#E5C378]/40 shadow-xl flex flex-col justify-between transition-all duration-500 hover:shadow-2xl hover:border-[#D4AF37]">
             <div className="relative aspect-[4/5] sm:aspect-[3/4] w-full overflow-hidden bg-[#E8DFD5]">
-              <img
+              <Image
                 src="/images/store/kamal-selections-kids-wear-showroom.png"
                 alt="Kamal Selections kids wear collection, billing counter, and interior garment displays in Shadnagar"
                 className="w-full h-full object-cover object-center transform group-hover:scale-105 transition-transform duration-700 ease-out"
+                fill
+                sizes="(max-width: 768px) 100vw, 50vw"
                 loading="lazy"
               />
               <div className="absolute inset-0 bg-gradient-to-t from-[#0F1E36]/85 via-[#0F1E36]/20 to-transparent"></div>

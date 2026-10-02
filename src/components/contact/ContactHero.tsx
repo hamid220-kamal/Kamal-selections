@@ -1,5 +1,6 @@
 "use client";
 
+import Image from "next/image";
 import { brandData } from "@/data/brand";
 
 export function ContactHero() {
@@ -7,11 +8,15 @@ export function ContactHero() {
     <section className="hero-section" id="contact-hero">
       {/* FULL-BLEED EDITORIAL BACKGROUND IMAGE LAYER */}
       <div className="hero-bg-container">
-        <img
+        <Image
           src="/images/contact/kamal-selections-contact-hero-lifestyle.jpg"
           alt="Contact Kamal Selections fashion boutique team and visit our showroom in Shadnagar"
           className="hero-bg-img"
           id="hero-bg-img"
+          priority
+          fill
+          sizes="100vw"
+          quality={80}
         />
         <div className="hero-burgundy-overlay"></div>
         <div className="hero-vignette"></div>

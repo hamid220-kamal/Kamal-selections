@@ -1,14 +1,16 @@
-"use client";
+import Image from "next/image";
 
 export function KidsSignature() {
   return (
     <section className="relative w-full overflow-hidden bg-[#20040A]" id="kids-signature">
       {/* FULL-WIDTH CINEMATIC BACKGROUND IMAGE */}
       <div className="relative w-full h-[60vh] sm:h-[70vh] lg:h-[80vh] min-h-[460px]">
-        <img
+        <Image
           src="/images/kids/kamal-selections-kids-signature-campaign.jpg"
           alt="Indian children in coordinated festive clothing from Kamal Selections lookbook in Shadnagar"
           className="w-full h-full object-cover object-center"
+          fill
+          sizes="100vw"
           loading="lazy"
         />
 

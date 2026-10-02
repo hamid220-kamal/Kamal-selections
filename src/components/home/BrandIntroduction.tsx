@@ -1,4 +1,4 @@
-"use client";
+import Image from "next/image";
 
 interface BrandIntroductionProps {
   onOpenStoreModal?: () => void;
@@ -112,7 +112,15 @@ export function BrandIntroduction({ onOpenStoreModal }: BrandIntroductionProps) 
         <div className="intro-visual-col animate-on-scroll slide-left">
           <div className="arched-frame-wrapper">
             <div className="arched-image-container">
-              <img src="/images/home/kamal-selections-festive-ethnic-collection.jpg" alt="Kamal Selections - Festive Women's Fashion in Shadnagar" className="arched-fashion-img" loading="lazy" />
+              <Image
+                src="/images/home/kamal-selections-festive-ethnic-collection.jpg"
+                alt="Kamal Selections - Festive Women's Fashion in Shadnagar"
+                className="arched-fashion-img"
+                width={600}
+                height={750}
+                sizes="(max-width: 768px) 100vw, 50vw"
+                loading="lazy"
+              />
               <div className="arched-img-overlay" aria-hidden="true"></div>
             </div>
 

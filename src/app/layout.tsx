@@ -1,4 +1,5 @@
 import type { Metadata, Viewport } from "next";
+import { Plus_Jakarta_Sans, Cinzel, Cormorant_Garamond, Alex_Brush } from "next/font/google";
 import "@/styles/globals.css";
 import {
   generatePageMetadata,
@@ -8,6 +9,35 @@ import {
 } from "@/lib/seo";
 import { seoConfig } from "@/data/seo";
 import { GoogleReviewBadge } from "@/components/common/GoogleReviewBadge";
+
+const plusJakartaSans = Plus_Jakarta_Sans({
+  subsets: ["latin"],
+  weight: ["400", "500", "600", "700"],
+  variable: "--font-sans-ui",
+  display: "swap",
+});
+
+const cinzel = Cinzel({
+  subsets: ["latin"],
+  weight: ["500", "600", "700", "800"],
+  variable: "--font-serif-brand",
+  display: "swap",
+});
+
+const cormorantGaramond = Cormorant_Garamond({
+  subsets: ["latin"],
+  weight: ["400", "600", "700"],
+  style: ["normal", "italic"],
+  variable: "--font-serif-heading",
+  display: "swap",
+});
+
+const alexBrush = Alex_Brush({
+  subsets: ["latin"],
+  weight: ["400"],
+  variable: "--font-script",
+  display: "swap",
+});
 
 export const metadata: Metadata = {
   ...generatePageMetadata(
@@ -45,15 +75,11 @@ export default function RootLayout({
   };
 
   return (
-    <html lang="en">
+    <html
+      lang="en"
+      className={`${plusJakartaSans.variable} ${cinzel.variable} ${cormorantGaramond.variable} ${alexBrush.variable}`}
+    >
       <head>
-        {/* Google Fonts */}
-        <link rel="preconnect" href="https://fonts.googleapis.com" />
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="anonymous" />
-        <link
-          href="https://fonts.googleapis.com/css2?family=Alex+Brush&family=Cinzel:wght@400;500;600;700;800&family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;0,700;1,400;1,600&family=Outfit:wght@300;400;500;600;700&family=Plus+Jakarta+Sans:wght@300;400;500;600;700&display=swap"
-          rel="stylesheet"
-        />
         <script
           type="application/ld+json"
           dangerouslySetInnerHTML={{

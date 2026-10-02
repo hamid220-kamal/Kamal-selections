@@ -1,4 +1,4 @@
-"use client";
+import Image from "next/image";
 
 export function KidsIntro() {
   return (
@@ -86,10 +86,13 @@ export function KidsIntro() {
               
               {/* Image Container */}
               <div className="relative aspect-[4/3] sm:aspect-[5/4] rounded-2xl overflow-hidden shadow-2xl border border-[#E5C378]/40">
-                <img
+                <Image
                   src="/images/kids/kamal-selections-kids-lifestyle-shopping.jpg"
                   alt="Children smiling together in festive clothing from Kamal Selections in Shadnagar"
                   className="w-full h-full object-cover object-center transform hover:scale-105 transition-transform duration-700 ease-out"
+                  fill
+                  sizes="(max-width: 768px) 100vw, 40vw"
+                  loading="lazy"
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-[#2A050E]/40 via-transparent to-transparent"></div>
               </div>

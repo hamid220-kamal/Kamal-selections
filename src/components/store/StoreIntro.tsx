@@ -1,6 +1,5 @@
-"use client";
-
 import Link from "next/link";
+import Image from "next/image";
 import { brandData } from "@/data/brand";
 
 export function StoreIntro() {
@@ -99,10 +98,13 @@ export function StoreIntro() {
               
               {/* Image Container */}
               <div className="relative aspect-[4/3] rounded-3xl overflow-hidden shadow-2xl border border-[#E5C378]/40 bg-[#D8CEC1]">
-                <img
+                <Image
                   src="/images/store/kamal-selections-new-angle-showroom.jpg"
                   alt="Kamal Selections Real Store Showroom in Shadnagar"
                   className="w-full h-full object-cover object-center transform hover:scale-105 transition-transform duration-700 ease-out"
+                  fill
+                  sizes="(max-width: 768px) 100vw, 50vw"
+                  loading="lazy"
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-[#20040A]/60 via-transparent to-transparent"></div>
 

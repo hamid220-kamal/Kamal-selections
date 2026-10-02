@@ -1,5 +1,4 @@
-"use client";
-
+import Image from "next/image";
 import { brandData } from "@/data/brand";
 
 export function ContactVisitStore() {
@@ -14,9 +13,11 @@ export function ContactVisitStore() {
               <div className="absolute -left-3 -top-3 sm:-left-4 sm:-top-4 w-full h-full border border-[#D4AF37]/50 rounded-3xl pointer-events-none" aria-hidden="true" />
               
               <div className="relative aspect-[4/3] sm:aspect-[16/11] rounded-3xl overflow-hidden shadow-2xl border border-[#E5C378]/40 bg-[#D8CEC1]">
-                <img
+                <Image
                   src="/images/contact/kamal-selections-shadnagar-evening-showroom.jpg"
                   alt="Kamal Selections illuminated boutique showroom in Shadnagar welcoming evening visitors"
+                  fill
+                  sizes="(max-width: 1024px) 100vw, 50vw"
                   className="w-full h-full object-cover object-center transform hover:scale-105 transition-transform duration-700 ease-out"
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-[#20040A]/60 via-transparent to-transparent"></div>

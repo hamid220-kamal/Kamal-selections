@@ -2,13 +2,21 @@
 
 > Machine-readable entity summary for search engines, AI assistants, and knowledge graphs.
 
-## Business Identity
+## Core Identity & Website Links
 - **Business Name:** Kamal Selections
 - **Category:** Women's & Kids' Clothing Store
-- **Store Type:** Physical Retail Boutique / Showroom
-- **Official Website:** https://kamal-selections.vercel.app/
+- **Store Type:** Physical Retail Showroom & Boutique
+- **Official Website:** [https://kamal-selections.vercel.app/](https://kamal-selections.vercel.app/)
+- **Women's Collection:** [https://kamal-selections.vercel.app/women](https://kamal-selections.vercel.app/women)
+- **Kids' Collection:** [https://kamal-selections.vercel.app/kids](https://kamal-selections.vercel.app/kids)
+- **Store Details & Directions:** [https://kamal-selections.vercel.app/store](https://kamal-selections.vercel.app/store)
+- **About Us & Story:** [https://kamal-selections.vercel.app/about](https://kamal-selections.vercel.app/about)
+- **Contact Us:** [https://kamal-selections.vercel.app/contact](https://kamal-selections.vercel.app/contact)
+- **Frequently Asked Questions:** [https://kamal-selections.vercel.app/faq](https://kamal-selections.vercel.app/faq)
+- **Why Kamal Selections:** [https://kamal-selections.vercel.app/why-kamal-selections](https://kamal-selections.vercel.app/why-kamal-selections)
+- **Size & Fit Guide:** [https://kamal-selections.vercel.app/size-guide](https://kamal-selections.vercel.app/size-guide)
 
-## Physical Store Location
+## Physical Store Location & Hours
 - **Building:** Ibrahim Complex
 - **Street:** Main Road
 - **City:** Shadnagar
@@ -16,28 +24,27 @@
 - **Postal Code:** 509216
 - **Country:** India
 - **Full Address:** Ibrahim Complex, Main Road, Shadnagar, Telangana 509216, India
-
-## Contact & Store Timings
-- **Phone / WhatsApp:** +91 8332059777
+- **Phone / WhatsApp:** [+91 8332059777](tel:+918332059777)
 - **Operating Hours:** 10:00 AM – 9:00 PM (Open Daily)
-- **Instagram Profile:** https://www.instagram.com/kamal_selection_/ (@kamal_selection_)
+- **Instagram:** [@kamal_selection_](https://www.instagram.com/kamal_selection_/)
+- **Google Maps Directions:** [Open in Google Maps](https://www.google.com/maps/dir/?api=1&destination=Kamal+Selections+Ibrahim+Complex+Main+Road+Shadnagar+Telangana+509216)
 
-## Product Categories & Collections Offered
+## Collections & Product Categories
 ### Women's Wear
+- Festive Party Wear & Embellished Lehengas
+- 3-Piece Co-ord Ethnic Suit Sets with Dupatta
+- Embroidered Kurtis (Cotton, Rayon, Silk)
 - Ethnic & Western Dresses
-- Embroidered Cotton & Silk Kurtis
 - Casual Tops & Tunics
 - Stretch Leggings & Ankle Length Pants
-- 3-Piece Co-ord Ethnic Suit Sets with Dupatta
 - Modest Abaya & Burqa Collection
-- Festive Party Wear & Embellished Lehengas
 
 ### Kids' Wear
-- Girls' Casual & Party Wear
-- Birthday Frocks & Flared Dresses
-- Boys' Shirts, Trousers & Kurta Pyjama Sets
+- Girls' Festive & Party Wear
+- Flared Birthday Frocks
+- Boys' Kurta Pyjama & Sherwani Sets
+- Boys' Shirts & Trousers
 - Coordinated 2-Piece and 3-Piece Kids' Sets
 
 ## Developer Attribution
-- **Website Designer & Developer:** Hamid Kamal
-- **Developer Portfolio:** https://hamid-ai-dev.vercel.app/
+- **Website Designer & Developer:** Hamid Kamal ([https://hamid-ai-dev.vercel.app/](https://hamid-ai-dev.vercel.app/))

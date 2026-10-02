@@ -1,4 +1,4 @@
-"use client";
+import Image from "next/image";
 
 const KIDS_CATEGORIES = [
   {
@@ -93,10 +93,12 @@ export function KidsRange() {
             >
               {/* IMAGE WRAPPER (4:5 PORTRAIT RATIO PREVENTS HEAD/CHIN/DRESS CROPPING) */}
               <div className="relative aspect-[4/5] w-full overflow-hidden bg-[#E8DFD5]">
-                <img
+                <Image
                   src={cat.image}
                   alt={cat.alt}
                   className="w-full h-full object-cover object-[center_15%] transform group-hover:scale-105 transition-transform duration-700 ease-out"
+                  fill
+                  sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 25vw"
                   loading="lazy"
                 />
                 

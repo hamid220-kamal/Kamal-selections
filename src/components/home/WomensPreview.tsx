@@ -1,6 +1,5 @@
-"use client";
-
 import Link from "next/link";
+import Image from "next/image";
 
 interface WomensPreviewProps {
   onOpenStoreModal?: () => void;
@@ -130,11 +129,13 @@ export function WomensPreview({ onOpenStoreModal }: WomensPreviewProps) {
 
         {/* 2. CENTER COLUMN: LARGE HERO FASHION PORTRAIT */}
         <div className="womens-hero-portrait-col animate-on-scroll slide-up">
-          <div className="portrait-arch-frame">
-            <img
+          <div className="portrait-arch-frame relative w-full min-h-[380px] sm:min-h-[440px] overflow-hidden rounded-[32px]">
+            <Image
               src="/images/home/kamal-selections-womens-couture-showcase.jpg"
               alt="Kamal Selections Bridal and Festive Women's Couture"
-              className="portrait-img"
+              className="portrait-img object-cover object-center"
+              fill
+              sizes="(max-width: 768px) 100vw, 33vw"
               loading="lazy"
             />
             <div className="portrait-img-shadow" aria-hidden="true"></div>
@@ -156,11 +157,13 @@ export function WomensPreview({ onOpenStoreModal }: WomensPreviewProps) {
           <div className="gallery-cards-wrapper">
             {/* TOP ROW: LARGE CARDS (DRESSES & KURTIS) */}
             <div className="gallery-row row-large">
-              <Link href="/women" className="category-card-item card-large group relative block overflow-hidden rounded-2xl border border-[#E5C378]/30 shadow-md no-underline">
-                <img
+              <Link href="/women" className="category-card-item card-large group relative block overflow-hidden rounded-2xl border border-[#E5C378]/30 shadow-md no-underline min-h-[140px]">
+                <Image
                   src="/images/home/womens-cat-dresses.jpg"
                   alt="Kamal Selections Dresses"
                   className="absolute inset-0 w-full h-full object-cover object-center transition-transform duration-700 ease-out group-hover:scale-105"
+                  fill
+                  sizes="(max-width: 768px) 50vw, 20vw"
                   loading="lazy"
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-black/75 via-transparent to-transparent pointer-events-none" />
@@ -171,11 +174,13 @@ export function WomensPreview({ onOpenStoreModal }: WomensPreviewProps) {
                 </div>
               </Link>
 
-              <Link href="/women" className="category-card-item card-large group relative block overflow-hidden rounded-2xl border border-[#E5C378]/30 shadow-md no-underline">
-                <img
+              <Link href="/women" className="category-card-item card-large group relative block overflow-hidden rounded-2xl border border-[#E5C378]/30 shadow-md no-underline min-h-[140px]">
+                <Image
                   src="/images/home/womens-cat-kurtis.jpg"
                   alt="Kamal Selections Kurtis"
                   className="absolute inset-0 w-full h-full object-cover object-center transition-transform duration-700 ease-out group-hover:scale-105"
+                  fill
+                  sizes="(max-width: 768px) 50vw, 20vw"
                   loading="lazy"
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-black/75 via-transparent to-transparent pointer-events-none" />
@@ -189,11 +194,13 @@ export function WomensPreview({ onOpenStoreModal }: WomensPreviewProps) {
 
             {/* MIDDLE ROW: MEDIUM CARDS (TOPS & LEGGINGS) */}
             <div className="gallery-row row-medium">
-              <Link href="/women" className="category-card-item card-medium group relative block overflow-hidden rounded-2xl border border-[#E5C378]/30 shadow-md no-underline">
-                <img
+              <Link href="/women" className="category-card-item card-medium group relative block overflow-hidden rounded-2xl border border-[#E5C378]/30 shadow-md no-underline min-h-[120px]">
+                <Image
                   src="/images/home/womens-cat-tops.jpg"
                   alt="Kamal Selections Tops"
                   className="absolute inset-0 w-full h-full object-cover object-center transition-transform duration-700 ease-out group-hover:scale-105"
+                  fill
+                  sizes="(max-width: 768px) 50vw, 20vw"
                   loading="lazy"
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-black/75 via-transparent to-transparent pointer-events-none" />
@@ -204,11 +211,13 @@ export function WomensPreview({ onOpenStoreModal }: WomensPreviewProps) {
                 </div>
               </Link>
 
-              <Link href="/women" className="category-card-item card-medium group relative block overflow-hidden rounded-2xl border border-[#E5C378]/30 shadow-md no-underline">
-                <img
+              <Link href="/women" className="category-card-item card-medium group relative block overflow-hidden rounded-2xl border border-[#E5C378]/30 shadow-md no-underline min-h-[120px]">
+                <Image
                   src="/images/home/womens-cat-leggings.jpg"
                   alt="Kamal Selections Leggings"
                   className="absolute inset-0 w-full h-full object-cover object-center transition-transform duration-700 ease-out group-hover:scale-105"
+                  fill
+                  sizes="(max-width: 768px) 50vw, 20vw"
                   loading="lazy"
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-black/75 via-transparent to-transparent pointer-events-none" />
@@ -222,11 +231,13 @@ export function WomensPreview({ onOpenStoreModal }: WomensPreviewProps) {
 
             {/* BOTTOM ROW: SMALL CARDS (BURQA, 3-PIECE SETS, PARTY WEAR) */}
             <div className="gallery-row row-small">
-              <Link href="/women" className="category-card-item card-small group relative block overflow-hidden rounded-2xl border border-[#E5C378]/25 shadow-md no-underline">
-                <img
+              <Link href="/women" className="category-card-item card-small group relative block overflow-hidden rounded-2xl border border-[#E5C378]/25 shadow-md no-underline min-h-[100px]">
+                <Image
                   src="/images/home/womens-cat-burqa.jpg"
                   alt="Kamal Selections Burqa"
                   className="absolute inset-0 w-full h-full object-cover object-center transition-transform duration-700 ease-out group-hover:scale-105"
+                  fill
+                  sizes="(max-width: 768px) 33vw, 15vw"
                   loading="lazy"
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-black/75 via-transparent to-transparent pointer-events-none" />
@@ -237,11 +248,13 @@ export function WomensPreview({ onOpenStoreModal }: WomensPreviewProps) {
                 </div>
               </Link>
 
-              <Link href="/women" className="category-card-item card-small group relative block overflow-hidden rounded-2xl border border-[#E5C378]/25 shadow-md no-underline">
-                <img
+              <Link href="/women" className="category-card-item card-small group relative block overflow-hidden rounded-2xl border border-[#E5C378]/25 shadow-md no-underline min-h-[100px]">
+                <Image
                   src="/images/home/womens-cat-3piece.jpg"
                   alt="Kamal Selections 3-Piece Sets"
                   className="absolute inset-0 w-full h-full object-cover object-center transition-transform duration-700 ease-out group-hover:scale-105"
+                  fill
+                  sizes="(max-width: 768px) 33vw, 15vw"
                   loading="lazy"
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-black/75 via-transparent to-transparent pointer-events-none" />
@@ -252,11 +265,13 @@ export function WomensPreview({ onOpenStoreModal }: WomensPreviewProps) {
                 </div>
               </Link>
 
-              <Link href="/women" className="category-card-item card-small group relative block overflow-hidden rounded-2xl border border-[#E5C378]/25 shadow-md no-underline">
-                <img
+              <Link href="/women" className="category-card-item card-small group relative block overflow-hidden rounded-2xl border border-[#E5C378]/25 shadow-md no-underline min-h-[100px]">
+                <Image
                   src="/images/home/womens-cat-partywear.jpg"
                   alt="Kamal Selections Party Wear"
                   className="absolute inset-0 w-full h-full object-cover object-center transition-transform duration-700 ease-out group-hover:scale-105"
+                  fill
+                  sizes="(max-width: 768px) 33vw, 15vw"
                   loading="lazy"
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-black/75 via-transparent to-transparent pointer-events-none" />

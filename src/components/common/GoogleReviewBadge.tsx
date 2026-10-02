@@ -1,13 +1,22 @@
 "use client";
 
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import { brandData } from "@/data/brand";
 
 export function GoogleReviewBadge() {
+  const [mounted, setMounted] = useState(false);
   const [isMinimized, setIsMinimized] = useState(false);
   const [isDismissed, setIsDismissed] = useState(false);
 
-  if (isDismissed) return null;
+  useEffect(() => {
+    // Delay badge appearance until initial page render is fully settled
+    const timer = setTimeout(() => {
+      setMounted(true);
+    }, 2000);
+    return () => clearTimeout(timer);
+  }, []);
+
+  if (!mounted || isDismissed) return null;
 
   return (
     <aside

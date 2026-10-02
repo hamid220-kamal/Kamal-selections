@@ -1,6 +1,5 @@
-"use client";
-
 import Link from "next/link";
+import Image from "next/image";
 
 interface KidsPreviewProps {
   onOpenStoreModal?: () => void;
@@ -118,11 +117,13 @@ export function KidsPreview({ onOpenStoreModal }: KidsPreviewProps) {
             </div>
           </div>
 
-          <div className="kids-arch-frame">
-            <img
+          <div className="kids-arch-frame relative w-full min-h-[380px] sm:min-h-[440px] overflow-hidden rounded-[32px]">
+            <Image
               src="/images/home/kamal-selections-kids-celebration-attire.jpg"
               alt="Kamal Selections Kids Festive and Celebration Clothing Showcase"
-              className="portrait-img"
+              className="portrait-img object-cover object-center"
+              fill
+              sizes="(max-width: 768px) 100vw, 33vw"
               loading="lazy"
             />
             <div className="portrait-img-shadow" aria-hidden="true"></div>
@@ -132,11 +133,13 @@ export function KidsPreview({ onOpenStoreModal }: KidsPreviewProps) {
         {/* 3. RIGHT ZONE: FOUR CATEGORY EDITORIAL CARDS (2x2) */}
         <div className="kids-gallery-grid-col animate-on-scroll slide-left">
           <div className="kids-2x2-grid">
-            <Link href="/kids" className="category-card-item kids-card group relative block overflow-hidden rounded-2xl border border-[#E5C378]/30 shadow-md no-underline">
-              <img
+            <Link href="/kids" className="category-card-item kids-card group relative block overflow-hidden rounded-2xl border border-[#E5C378]/30 shadow-md no-underline min-h-[140px]">
+              <Image
                 src="/images/home/kids-cat-girlswear.jpg"
                 alt="Kamal Selections Girls Wear"
                 className="absolute inset-0 w-full h-full object-cover object-center transition-transform duration-700 ease-out group-hover:scale-105"
+                fill
+                sizes="(max-width: 768px) 50vw, 20vw"
                 loading="lazy"
               />
               <div className="absolute inset-0 bg-gradient-to-t from-black/75 via-transparent to-transparent pointer-events-none" />
@@ -147,11 +150,13 @@ export function KidsPreview({ onOpenStoreModal }: KidsPreviewProps) {
               </div>
             </Link>
 
-            <Link href="/kids" className="category-card-item kids-card group relative block overflow-hidden rounded-2xl border border-[#E5C378]/30 shadow-md no-underline">
-              <img
+            <Link href="/kids" className="category-card-item kids-card group relative block overflow-hidden rounded-2xl border border-[#E5C378]/30 shadow-md no-underline min-h-[140px]">
+              <Image
                 src="/images/home/kids-cat-boyswear.jpg"
                 alt="Kamal Selections Boys Wear"
                 className="absolute inset-0 w-full h-full object-cover object-center transition-transform duration-700 ease-out group-hover:scale-105"
+                fill
+                sizes="(max-width: 768px) 50vw, 20vw"
                 loading="lazy"
               />
               <div className="absolute inset-0 bg-gradient-to-t from-black/75 via-transparent to-transparent pointer-events-none" />
@@ -162,11 +167,13 @@ export function KidsPreview({ onOpenStoreModal }: KidsPreviewProps) {
               </div>
             </Link>
 
-            <Link href="/kids" className="category-card-item kids-card group relative block overflow-hidden rounded-2xl border border-[#E5C378]/30 shadow-md no-underline">
-              <img
+            <Link href="/kids" className="category-card-item kids-card group relative block overflow-hidden rounded-2xl border border-[#E5C378]/30 shadow-md no-underline min-h-[140px]">
+              <Image
                 src="/images/home/kids-cat-frocks.jpg"
                 alt="Kamal Selections Frocks"
                 className="absolute inset-0 w-full h-full object-cover object-center transition-transform duration-700 ease-out group-hover:scale-105"
+                fill
+                sizes="(max-width: 768px) 50vw, 20vw"
                 loading="lazy"
               />
               <div className="absolute inset-0 bg-gradient-to-t from-black/75 via-transparent to-transparent pointer-events-none" />
@@ -177,11 +184,13 @@ export function KidsPreview({ onOpenStoreModal }: KidsPreviewProps) {
               </div>
             </Link>
 
-            <Link href="/kids" className="category-card-item kids-card group relative block overflow-hidden rounded-2xl border border-[#E5C378]/30 shadow-md no-underline">
-              <img
+            <Link href="/kids" className="category-card-item kids-card group relative block overflow-hidden rounded-2xl border border-[#E5C378]/30 shadow-md no-underline min-h-[140px]">
+              <Image
                 src="/images/home/kids-cat-kidssets.jpg"
                 alt="Kamal Selections Kids Sets"
                 className="absolute inset-0 w-full h-full object-cover object-center transition-transform duration-700 ease-out group-hover:scale-105"
+                fill
+                sizes="(max-width: 768px) 50vw, 20vw"
                 loading="lazy"
               />
               <div className="absolute inset-0 bg-gradient-to-t from-black/75 via-transparent to-transparent pointer-events-none" />

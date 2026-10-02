@@ -1,6 +1,7 @@
 "use client";
 
 import Link from "next/link";
+import Image from "next/image";
 import { brandData } from "@/data/brand";
 
 interface FooterProps {
@@ -18,12 +19,14 @@ export function Footer({ onOpenStoreModal, onOpenSizeGuideModal }: FooterProps) 
   return (
     <footer className="site-footer" id="footer">
       {/* PHOTOREALISTIC BOUTIQUE BACKGROUND */}
-      <img
+      <Image
         src="/images/footer/kamal-selections-boutique-footer-bg.jpg"
         alt=""
         className="footer-bg-image"
         aria-hidden="true"
-        loading="lazy"
+        fill
+        sizes="100vw"
+        quality={75}
       />
       {/* DARK LUXURY OVERLAY FOR MAXIMUM CONTRAST */}
       <div className="footer-bg-overlay" aria-hidden="true"></div>
@@ -34,10 +37,12 @@ export function Footer({ onOpenStoreModal, onOpenSizeGuideModal }: FooterProps) 
         <div className="footer-top-bar">
           <div className="footer-brand-summary">
             <Link href="/" className="footer-logo-link" aria-label="Kamal Selections Homepage">
-              <img
+              <Image
                 src="/brand/logo/kamal-selections-logo.png"
                 alt="Kamal Selections Boutique Logo"
                 className="footer-logo-img"
+                width={130}
+                height={52}
               />
             </Link>
             <p className="footer-motto">

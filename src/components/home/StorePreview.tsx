@@ -1,8 +1,12 @@
 "use client";
 
+import { useState } from "react";
+import Image from "next/image";
 import { brandData } from "@/data/brand";
 
 export function StorePreview() {
+  const [loadMap, setLoadMap] = useState(false);
+
   return (
     <section className="section-our-store" id="our-store">
       {/* SUBTLE ARCHITECTURAL LINE ACCENTS */}
@@ -20,11 +24,13 @@ export function StorePreview() {
         <div className="store-split-grid">
           {/* LEFT ~55%: LARGE REAL STORE PHOTO */}
           <div className="store-photo-column animate-on-scroll slide-up">
-            <div className="real-store-photo-container group relative overflow-hidden">
-              <img
+            <div className="real-store-photo-container group relative overflow-hidden min-h-[350px] rounded-3xl">
+              <Image
                 src="/images/store/kamal-selections-showroom-interior.png"
                 alt="Kamal Selections Showroom Interior - Shadnagar"
                 className="w-full h-full object-cover object-center transition-transform duration-700 ease-out group-hover:scale-105"
+                fill
+                sizes="(max-width: 768px) 100vw, 55vw"
                 loading="lazy"
               />
               <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent pointer-events-none" />
@@ -114,14 +120,48 @@ export function StorePreview() {
 
         {/* MAP PREVIEW AREA */}
         <div className="store-map-preview-wrap animate-on-scroll fade-in delay-2">
-          <div className="map-card-container">
-            <iframe 
-              className="google-map-iframe"
-              title="Kamal Selections Shadnagar Map Location"
-              src={brandData.maps.embedUrl}
-              loading="lazy"
-              allowFullScreen>
-            </iframe>
+          <div className="map-card-container relative min-h-[300px] overflow-hidden rounded-2xl bg-[#2A0717]">
+            {loadMap ? (
+              <iframe 
+                className="google-map-iframe"
+                title="Kamal Selections Shadnagar Map Location"
+                src={brandData.maps.embedUrl}
+                loading="lazy"
+                allowFullScreen>
+              </iframe>
+            ) : (
+              <div className="w-full h-full min-h-[280px] flex flex-col items-center justify-center p-6 text-center bg-gradient-to-br from-[#2A0717] to-[#1A030C] border border-[#E5C378]/30">
+                <div className="w-12 h-12 rounded-full bg-[#E5C378]/15 border border-[#E5C378]/50 flex items-center justify-center text-[#E5C378] mb-3">
+                  <svg viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" strokeWidth="2">
+                    <path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7z"/>
+                    <circle cx="12" cy="9" r="2.5"/>
+                  </svg>
+                </div>
+                <h4 className="font-serif text-lg font-bold text-white mb-1">
+                  Ibrahim Complex, Main Road, Shadnagar
+                </h4>
+                <p className="text-xs text-[#FAF3EB]/70 max-w-sm mb-4">
+                  Telangana 509216 · Open Daily 10:00 AM – 9:00 PM
+                </p>
+                <div className="flex items-center gap-3 flex-wrap justify-center">
+                  <button
+                    type="button"
+                    onClick={() => setLoadMap(true)}
+                    className="btn btn-gold btn-sm"
+                  >
+                    <span>Load Interactive Map</span>
+                  </button>
+                  <a
+                    href={brandData.maps.directionsUrl}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="btn btn-outline btn-sm"
+                  >
+                    <span>Open in Google Maps &rarr;</span>
+                  </a>
+                </div>
+              </div>
+            )}
 
             <div className="map-overlay-banner">
               <div className="map-banner-info">

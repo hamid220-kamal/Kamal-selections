@@ -1,6 +1,7 @@
 "use client";
 
 import Link from "next/link";
+import Image from "next/image";
 
 interface KidsHeroProps {
   onOpenStoreModal?: () => void;
@@ -11,11 +12,15 @@ export function KidsHero({ onOpenStoreModal }: KidsHeroProps = {}) {
     <section className="hero-section" id="kids-hero">
       {/* FULL-BLEED EDITORIAL BACKGROUND IMAGE LAYER */}
       <div className="hero-bg-container">
-        <img
+        <Image
           src="/images/kids/kamal-selections-kids-wear-hero-banner.jpg"
           alt="Kamal Selections Kids Wear - Little Looks For Their Biggest Days"
           className="hero-bg-img"
           id="hero-bg-img"
+          priority
+          fill
+          sizes="100vw"
+          quality={80}
         />
         <div className="hero-burgundy-overlay"></div>
         <div className="hero-vignette"></div>
