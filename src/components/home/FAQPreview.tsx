@@ -1,10 +1,8 @@
-"use client";
-
 interface FAQPreviewProps {
   onOpenStoreModal?: () => void;
 }
 
-export function FAQPreview({ onOpenStoreModal }: FAQPreviewProps) {
+export function FAQPreview({ onOpenStoreModal }: FAQPreviewProps = {}) {
   const schemaData = {
     "@context": "https://schema.org",
     "@type": "FAQPage",

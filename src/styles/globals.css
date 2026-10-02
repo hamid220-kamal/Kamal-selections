@@ -2062,25 +2062,25 @@ img {
   color: var(--color-gold-dark);
 }
 
-/* Scroll Animations */
+/* Scroll Animations & Guaranteed Content Visibility */
 .animate-on-scroll {
-  opacity: 0;
-  transition: opacity 0.8s cubic-bezier(0.16, 1, 0.3, 1), transform 0.8s cubic-bezier(0.16, 1, 0.3, 1);
-  will-change: opacity, transform;
+  opacity: 1;
+  transform: translate(0, 0);
+  transition: opacity 0.6s cubic-bezier(0.16, 1, 0.3, 1), transform 0.6s cubic-bezier(0.16, 1, 0.3, 1);
 }
 
 .animate-on-scroll.fade-in {
-  opacity: 0;
+  opacity: 1;
 }
 
 .animate-on-scroll.slide-up {
-  opacity: 0;
-  transform: translateY(30px);
+  opacity: 1;
+  transform: translateY(0);
 }
 
 .animate-on-scroll.slide-left {
-  opacity: 0;
-  transform: translateX(35px);
+  opacity: 1;
+  transform: translateX(0);
 }
 
 .animate-on-scroll.visible {
@@ -4610,13 +4610,13 @@ img {
    SCROLL TRIGGERED ANIMATIONS & PARITY FALLBACKS
    ========================================== */
 .animate-on-scroll {
-  opacity: 0;
-  transform: translateY(24px);
-  transition: opacity 0.8s cubic-bezier(0.16, 1, 0.3, 1), transform 0.8s cubic-bezier(0.16, 1, 0.3, 1);
+  opacity: 1;
+  transform: translate(0, 0);
+  transition: opacity 0.6s cubic-bezier(0.16, 1, 0.3, 1), transform 0.6s cubic-bezier(0.16, 1, 0.3, 1);
 }
 
 .animate-on-scroll.slide-left {
-  transform: translateX(24px);
+  transform: translateX(0);
 }
 
 .animate-on-scroll.fade-in {

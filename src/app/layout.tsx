@@ -9,6 +9,8 @@ import {
 } from "@/lib/seo";
 import { seoConfig } from "@/data/seo";
 import { GoogleReviewBadge } from "@/components/common/GoogleReviewBadge";
+import { ModalProvider } from "@/context/ModalContext";
+import { ScrollAnimateObserver } from "@/components/common/ScrollAnimateObserver";
 
 const plusJakartaSans = Plus_Jakarta_Sans({
   subsets: ["latin"],
@@ -88,10 +90,14 @@ export default function RootLayout({
         />
       </head>
       <body>
-        {children}
-        <GoogleReviewBadge />
+        <ModalProvider>
+          {children}
+          <GoogleReviewBadge />
+          <ScrollAnimateObserver />
+        </ModalProvider>
       </body>
     </html>
   );
 }
+
 

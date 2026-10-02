@@ -73,7 +73,7 @@ export function WhyKamalSelections({ onOpenStoreModal }: WhyKamalSelectionsProps
                 alt="Kamal Selections Designer Women's Festive Kurti and Ethnic Wear"
                 className="object-cover object-center"
                 fill
-                sizes="(max-width: 768px) 50vw, 25vw"
+                sizes="(max-width: 640px) 45vw, (max-width: 1024px) 25vw, 200px"
                 loading="lazy"
               />
             </div>
@@ -84,7 +84,7 @@ export function WhyKamalSelections({ onOpenStoreModal }: WhyKamalSelectionsProps
                 alt="Intricate Indian Gold Zari Embroidery and Luxury Silk Craftsmanship"
                 className="object-cover object-center"
                 fill
-                sizes="(max-width: 768px) 50vw, 25vw"
+                sizes="(max-width: 640px) 45vw, (max-width: 1024px) 25vw, 200px"
                 loading="lazy"
               />
             </div>
@@ -95,7 +95,7 @@ export function WhyKamalSelections({ onOpenStoreModal }: WhyKamalSelectionsProps
                 alt="Comfortable and Vibrant Kids Festive Wear at Kamal Selections"
                 className="object-cover object-center"
                 fill
-                sizes="(max-width: 768px) 50vw, 25vw"
+                sizes="(max-width: 640px) 45vw, (max-width: 1024px) 25vw, 200px"
                 loading="lazy"
               />
             </div>
@@ -106,7 +106,7 @@ export function WhyKamalSelections({ onOpenStoreModal }: WhyKamalSelectionsProps
                 alt="Glamorous Occasion and Festive Wear at Kamal Selections Showroom"
                 className="object-cover object-center"
                 fill
-                sizes="(max-width: 768px) 50vw, 25vw"
+                sizes="(max-width: 640px) 45vw, (max-width: 1024px) 25vw, 200px"
                 loading="lazy"
               />
             </div>

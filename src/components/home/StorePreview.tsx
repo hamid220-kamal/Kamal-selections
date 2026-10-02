@@ -30,7 +30,7 @@ export function StorePreview() {
                 alt="Kamal Selections Showroom Interior - Shadnagar"
                 className="w-full h-full object-cover object-center transition-transform duration-700 ease-out group-hover:scale-105"
                 fill
-                sizes="(max-width: 768px) 100vw, 55vw"
+                sizes="(max-width: 640px) 92vw, (max-width: 1024px) 50vw, 550px"
                 loading="lazy"
               />
               <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent pointer-events-none" />
@@ -137,9 +137,9 @@ export function StorePreview() {
                     <circle cx="12" cy="9" r="2.5"/>
                   </svg>
                 </div>
-                <h4 className="font-serif text-lg font-bold text-white mb-1">
+                <h3 className="font-serif text-lg font-bold text-white mb-1">
                   Ibrahim Complex, Main Road, Shadnagar
-                </h4>
+                </h3>
                 <p className="text-xs text-[#FAF3EB]/70 max-w-sm mb-4">
                   Telangana 509216 · Open Daily 10:00 AM – 9:00 PM
                 </p>

@@ -135,7 +135,7 @@ export function WomensPreview({ onOpenStoreModal }: WomensPreviewProps) {
               alt="Kamal Selections Bridal and Festive Women's Couture"
               className="portrait-img object-cover object-center"
               fill
-              sizes="(max-width: 768px) 100vw, 33vw"
+              sizes="(max-width: 640px) 90vw, (max-width: 1024px) 35vw, 420px"
               loading="lazy"
             />
             <div className="portrait-img-shadow" aria-hidden="true"></div>
@@ -163,7 +163,7 @@ export function WomensPreview({ onOpenStoreModal }: WomensPreviewProps) {
                   alt="Kamal Selections Dresses"
                   className="absolute inset-0 w-full h-full object-cover object-center transition-transform duration-700 ease-out group-hover:scale-105"
                   fill
-                  sizes="(max-width: 768px) 50vw, 20vw"
+                  sizes="(max-width: 640px) 45vw, (max-width: 1024px) 20vw, 220px"
                   loading="lazy"
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-black/75 via-transparent to-transparent pointer-events-none" />
@@ -180,7 +180,7 @@ export function WomensPreview({ onOpenStoreModal }: WomensPreviewProps) {
                   alt="Kamal Selections Kurtis"
                   className="absolute inset-0 w-full h-full object-cover object-center transition-transform duration-700 ease-out group-hover:scale-105"
                   fill
-                  sizes="(max-width: 768px) 50vw, 20vw"
+                  sizes="(max-width: 640px) 45vw, (max-width: 1024px) 20vw, 220px"
                   loading="lazy"
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-black/75 via-transparent to-transparent pointer-events-none" />
@@ -200,7 +200,7 @@ export function WomensPreview({ onOpenStoreModal }: WomensPreviewProps) {
                   alt="Kamal Selections Tops"
                   className="absolute inset-0 w-full h-full object-cover object-center transition-transform duration-700 ease-out group-hover:scale-105"
                   fill
-                  sizes="(max-width: 768px) 50vw, 20vw"
+                  sizes="(max-width: 640px) 45vw, (max-width: 1024px) 20vw, 220px"
                   loading="lazy"
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-black/75 via-transparent to-transparent pointer-events-none" />
@@ -217,7 +217,7 @@ export function WomensPreview({ onOpenStoreModal }: WomensPreviewProps) {
                   alt="Kamal Selections Leggings"
                   className="absolute inset-0 w-full h-full object-cover object-center transition-transform duration-700 ease-out group-hover:scale-105"
                   fill
-                  sizes="(max-width: 768px) 50vw, 20vw"
+                  sizes="(max-width: 640px) 45vw, (max-width: 1024px) 20vw, 220px"
                   loading="lazy"
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-black/75 via-transparent to-transparent pointer-events-none" />
@@ -237,14 +237,14 @@ export function WomensPreview({ onOpenStoreModal }: WomensPreviewProps) {
                   alt="Kamal Selections Burqa"
                   className="absolute inset-0 w-full h-full object-cover object-center transition-transform duration-700 ease-out group-hover:scale-105"
                   fill
-                  sizes="(max-width: 768px) 33vw, 15vw"
+                  sizes="(max-width: 640px) 30vw, (max-width: 1024px) 15vw, 150px"
                   loading="lazy"
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-black/75 via-transparent to-transparent pointer-events-none" />
                 <div className="relative z-10 p-3 flex flex-col justify-end h-full">
-                  <h4 className="font-serif text-sm sm:text-base text-[#FFFFFF] font-bold drop-shadow-md tracking-wide">
+                  <h3 className="font-serif text-sm sm:text-base text-[#FFFFFF] font-bold drop-shadow-md tracking-wide">
                     Burqa
-                  </h4>
+                  </h3>
                 </div>
               </Link>
 
@@ -254,14 +254,14 @@ export function WomensPreview({ onOpenStoreModal }: WomensPreviewProps) {
                   alt="Kamal Selections 3-Piece Sets"
                   className="absolute inset-0 w-full h-full object-cover object-center transition-transform duration-700 ease-out group-hover:scale-105"
                   fill
-                  sizes="(max-width: 768px) 33vw, 15vw"
+                  sizes="(max-width: 640px) 30vw, (max-width: 1024px) 15vw, 150px"
                   loading="lazy"
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-black/75 via-transparent to-transparent pointer-events-none" />
                 <div className="relative z-10 p-3 flex flex-col justify-end h-full">
-                  <h4 className="font-serif text-sm sm:text-base text-[#FFFFFF] font-bold drop-shadow-md tracking-wide">
+                  <h3 className="font-serif text-sm sm:text-base text-[#FFFFFF] font-bold drop-shadow-md tracking-wide">
                     3-Piece Sets
-                  </h4>
+                  </h3>
                 </div>
               </Link>
 
@@ -271,14 +271,14 @@ export function WomensPreview({ onOpenStoreModal }: WomensPreviewProps) {
                   alt="Kamal Selections Party Wear"
                   className="absolute inset-0 w-full h-full object-cover object-center transition-transform duration-700 ease-out group-hover:scale-105"
                   fill
-                  sizes="(max-width: 768px) 33vw, 15vw"
+                  sizes="(max-width: 640px) 30vw, (max-width: 1024px) 15vw, 150px"
                   loading="lazy"
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-black/75 via-transparent to-transparent pointer-events-none" />
                 <div className="relative z-10 p-3 flex flex-col justify-end h-full">
-                  <h4 className="font-serif text-sm sm:text-base text-[#FFFFFF] font-bold drop-shadow-md tracking-wide">
+                  <h3 className="font-serif text-sm sm:text-base text-[#FFFFFF] font-bold drop-shadow-md tracking-wide">
                     Party Wear
-                  </h4>
+                  </h3>
                 </div>
               </Link>
             </div>

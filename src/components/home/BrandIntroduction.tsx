@@ -118,7 +118,7 @@ export function BrandIntroduction({ onOpenStoreModal }: BrandIntroductionProps) 
                 className="arched-fashion-img"
                 width={600}
                 height={750}
-                sizes="(max-width: 768px) 100vw, 50vw"
+                sizes="(max-width: 640px) 92vw, (max-width: 1024px) 45vw, 550px"
                 loading="lazy"
               />
               <div className="arched-img-overlay" aria-hidden="true"></div>

@@ -123,7 +123,7 @@ export function KidsPreview({ onOpenStoreModal }: KidsPreviewProps) {
               alt="Kamal Selections Kids Festive and Celebration Clothing Showcase"
               className="portrait-img object-cover object-center"
               fill
-              sizes="(max-width: 768px) 100vw, 33vw"
+              sizes="(max-width: 640px) 90vw, (max-width: 1024px) 35vw, 420px"
               loading="lazy"
             />
             <div className="portrait-img-shadow" aria-hidden="true"></div>
@@ -139,7 +139,7 @@ export function KidsPreview({ onOpenStoreModal }: KidsPreviewProps) {
                 alt="Kamal Selections Girls Wear"
                 className="absolute inset-0 w-full h-full object-cover object-center transition-transform duration-700 ease-out group-hover:scale-105"
                 fill
-                sizes="(max-width: 768px) 50vw, 20vw"
+                sizes="(max-width: 640px) 45vw, (max-width: 1024px) 20vw, 220px"
                 loading="lazy"
               />
               <div className="absolute inset-0 bg-gradient-to-t from-black/75 via-transparent to-transparent pointer-events-none" />
@@ -156,7 +156,7 @@ export function KidsPreview({ onOpenStoreModal }: KidsPreviewProps) {
                 alt="Kamal Selections Boys Wear"
                 className="absolute inset-0 w-full h-full object-cover object-center transition-transform duration-700 ease-out group-hover:scale-105"
                 fill
-                sizes="(max-width: 768px) 50vw, 20vw"
+                sizes="(max-width: 640px) 45vw, (max-width: 1024px) 20vw, 220px"
                 loading="lazy"
               />
               <div className="absolute inset-0 bg-gradient-to-t from-black/75 via-transparent to-transparent pointer-events-none" />
@@ -173,7 +173,7 @@ export function KidsPreview({ onOpenStoreModal }: KidsPreviewProps) {
                 alt="Kamal Selections Frocks"
                 className="absolute inset-0 w-full h-full object-cover object-center transition-transform duration-700 ease-out group-hover:scale-105"
                 fill
-                sizes="(max-width: 768px) 50vw, 20vw"
+                sizes="(max-width: 640px) 45vw, (max-width: 1024px) 20vw, 220px"
                 loading="lazy"
               />
               <div className="absolute inset-0 bg-gradient-to-t from-black/75 via-transparent to-transparent pointer-events-none" />
@@ -190,7 +190,7 @@ export function KidsPreview({ onOpenStoreModal }: KidsPreviewProps) {
                 alt="Kamal Selections Kids Sets"
                 className="absolute inset-0 w-full h-full object-cover object-center transition-transform duration-700 ease-out group-hover:scale-105"
                 fill
-                sizes="(max-width: 768px) 50vw, 20vw"
+                sizes="(max-width: 640px) 45vw, (max-width: 1024px) 20vw, 220px"
                 loading="lazy"
               />
               <div className="absolute inset-0 bg-gradient-to-t from-black/75 via-transparent to-transparent pointer-events-none" />

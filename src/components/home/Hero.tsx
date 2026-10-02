@@ -1,5 +1,3 @@
-"use client";
-
 import Link from "next/link";
 import Image from "next/image";
 
@@ -8,7 +6,7 @@ interface HeroProps {
   onOpenSizeGuideModal?: () => void;
 }
 
-export function Hero({ onOpenStoreModal }: HeroProps) {
+export function Hero({ onOpenStoreModal }: HeroProps = {}) {
   return (
     <section className="hero-section" id="home">
       {/* EDITORIAL BACKGROUND IMAGE LAYER */}
