@@ -1,25 +1,42 @@
 "use client";
 
 import { useState, FormEvent } from "react";
-import { brandData } from "@/data/brand";
 
 export function ContactSimpleEnquiry() {
   const [name, setName] = useState("");
   const [phone, setPhone] = useState("");
   const [message, setMessage] = useState("");
   const [enquiryPrompted, setEnquiryPrompted] = useState(false);
+  const [whatsappLink, setWhatsappLink] = useState("");
 
   const handleSubmit = (e: FormEvent) => {
     e.preventDefault();
-    if (!name.trim() || !phone.trim()) return;
 
-    // Truthful client behavior: As instructed, do NOT create fake server success states.
-    // Prompt the visitor to connect directly with the store via phone.
+    let text = `Hi Kamal Selections!`;
+    if (name.trim()) {
+      text += ` My name is ${name.trim()}.`;
+    }
+    if (message.trim()) {
+      text += ` I'd like to inquire about: ${message.trim()}`;
+    } else {
+      text += ` I'd like to inquire about your clothing collection and store visit in Shadnagar.`;
+    }
+    if (phone.trim()) {
+      text += ` (Contact Number: ${phone.trim()})`;
+    }
+
+    const targetUrl = `https://wa.me/918332059777?text=${encodeURIComponent(text)}`;
+    setWhatsappLink(targetUrl);
     setEnquiryPrompted(true);
+
+    // Open WhatsApp in a new tab
+    if (typeof window !== "undefined") {
+      window.open(targetUrl, "_blank");
+    }
   };
 
   return (
-    <section className="py-16 md:py-20 bg-[#F4EEE5] text-[#30251F] relative border-t border-[#E5C378]/25" id="enquiry">
+    <section className="py-16 md:py-24 bg-[#F4EEE5] text-[#30251F] relative border-t border-[#E5C378]/25" id="enquiry">
       <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
         
         {/* HEADER */}
@@ -37,7 +54,7 @@ export function ContactSimpleEnquiry() {
           </h2>
 
           <p className="text-base sm:text-lg text-[#51443B] leading-relaxed">
-            Tell us what you&apos;re looking for and we&apos;ll help you connect with the store.
+            Fill in your details below to send a direct prefilled WhatsApp enquiry to <strong className="text-[#A41A50]">8332059777</strong>.
           </p>
         </div>
 
@@ -74,7 +91,7 @@ export function ContactSimpleEnquiry() {
                 required
                 value={phone}
                 onChange={(e) => setPhone(e.target.value)}
-                placeholder="e.g. 98765 43210"
+                placeholder="e.g. 83320 59777"
                 className="w-full px-4 py-3 rounded-xl border border-[#E5C378]/50 bg-[#FAF3EB]/40 text-[#30251F] placeholder-[#69564A]/60 text-sm focus:outline-none focus:ring-2 focus:ring-[#A41A50] focus:border-transparent transition"
               />
             </div>
@@ -82,7 +99,7 @@ export function ContactSimpleEnquiry() {
             {/* MESSAGE FIELD */}
             <div>
               <label htmlFor="enquiry-message" className="block text-xs font-bold text-[#30251F] uppercase tracking-wider mb-2">
-                Message (Optional)
+                Message / Inquiry Details
               </label>
               <textarea
                 id="enquiry-message"
@@ -90,7 +107,7 @@ export function ContactSimpleEnquiry() {
                 rows={4}
                 value={message}
                 onChange={(e) => setMessage(e.target.value)}
-                placeholder="e.g. Inquiring about party wear 3-piece sets or kids frocks for an upcoming function..."
+                placeholder="e.g. Inquiring about party wear 3-piece sets, saree availability, or kids frocks..."
                 className="w-full px-4 py-3 rounded-xl border border-[#E5C378]/50 bg-[#FAF3EB]/40 text-[#30251F] placeholder-[#69564A]/60 text-sm focus:outline-none focus:ring-2 focus:ring-[#A41A50] focus:border-transparent transition resize-none"
               ></textarea>
             </div>
@@ -99,37 +116,43 @@ export function ContactSimpleEnquiry() {
             <div>
               <button
                 type="submit"
-                className="btn btn-primary btn-pill w-full justify-center text-sm font-bold uppercase tracking-wider py-4 shadow-lg"
+                className="btn btn-primary btn-pill w-full justify-center text-sm font-bold uppercase tracking-wider py-4 shadow-lg flex items-center gap-2 bg-[#25D366] hover:bg-[#1EBE57] border-none text-white"
                 id="submit-enquiry-btn"
               >
-                <span>SEND ENQUIRY →</span>
+                <svg viewBox="0 0 24 24" width="20" height="20" fill="currentColor">
+                  <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.501-.669-.51l-.57-.01c-.198 0-.52.074-.792.372s-1.04 1.016-1.04 2.479 1.065 2.876 1.213 3.074c.149.198 2.095 3.2 5.076 4.487.709.306 1.263.489 1.694.626.712.226 1.36.194 1.872.118.571-.085 1.758-.719 2.006-1.413.248-.695.248-1.29.173-1.414-.074-.124-.272-.198-.57-.347z"/>
+                  <path d="M12 0C5.373 0 0 5.373 0 12c0 2.12.55 4.11 1.517 5.845L0 24l6.32-1.48C8.016 23.447 9.957 24 12 24c6.627 0 12-5.373 12-12S18.627 0 12 0zm0 22c-1.84 0-3.565-.488-5.06-1.34l-.362-.208-3.755.879.995-3.66-.231-.375C2.637 15.764 2 13.948 2 12c0-5.514 4.486-10 10-10s10 4.486 10 10-4.486 10-10 10z"/>
+                </svg>
+                <span>SEND ENQUIRY ON WHATSAPP →</span>
               </button>
             </div>
 
-            {/* TRUTHFUL DIRECT-CALL PROMPT UPON FORM SUBMISSION */}
+            {/* CONFIRMATION NOTIFICATION */}
             {enquiryPrompted && (
-              <div className="p-4 rounded-xl bg-[#FAF3EB] border border-[#D4AF37] text-center animate-fade-in">
-                <p className="text-xs font-semibold text-[#A41A50] uppercase tracking-wider mb-1">
-                  Ready to Connect with the Store
+              <div className="p-5 rounded-2xl bg-[#FAF3EB] border border-[#25D366] text-center animate-fade-in shadow-md">
+                <p className="text-xs font-bold text-[#A41A50] uppercase tracking-wider mb-1">
+                  Connecting to WhatsApp (8332059777)
                 </p>
-                <p className="text-sm text-[#51443B] mb-3">
-                  Thank you, {name}! For the fastest response, tap below to speak directly with our team at Kamal Selections in Shadnagar:
+                <p className="text-xs text-[#51443B] mb-3 leading-relaxed">
+                  Opening WhatsApp with your prefilled message for <strong>{name}</strong>. If WhatsApp did not open automatically, tap below:
                 </p>
                 <a
-                  href={`tel:${brandData.phone}`}
-                  className="inline-flex items-center gap-2 px-5 py-2.5 rounded-full bg-[#A41A50] text-white text-xs font-bold uppercase tracking-wider hover:bg-[#861240] transition"
+                  href={whatsappLink}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="inline-flex items-center gap-2 px-6 py-3 rounded-full bg-[#25D366] text-white text-xs font-bold uppercase tracking-wider hover:bg-[#1EBE57] transition shadow-md"
                 >
-                  <svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" strokeWidth="2.2">
-                    <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/>
+                  <svg viewBox="0 0 24 24" width="16" height="16" fill="currentColor">
+                    <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.501-.669-.51l-.57-.01c-.198 0-.52.074-.792.372s-1.04 1.016-1.04 2.479 1.065 2.876 1.213 3.074c.149.198 2.095 3.2 5.076 4.487.709.306 1.263.489 1.694.626.712.226 1.36.194 1.872.118.571-.085 1.758-.719 2.006-1.413.248-.695.248-1.29.173-1.414-.074-.124-.272-.198-.57-.347z"/>
                   </svg>
-                  <span>Call {brandData.phone}</span>
+                  <span>Open WhatsApp Enquiry</span>
                 </a>
               </div>
             )}
 
             {/* FOOTNOTE */}
             <p className="text-center text-[11px] text-[#69564A] leading-relaxed pt-2">
-              We respect your privacy. Calls connect directly with our physical store in Ibrahim Complex, Shadnagar.
+              Direct WhatsApp inquiries connect directly with our store team at <strong>+91 83320 59777</strong> in Ibrahim Complex, Shadnagar.
             </p>
 
           </form>
