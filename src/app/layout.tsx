@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import "@/styles/globals.css";
 import { generatePageMetadata, generateLocalBusinessSchema } from "@/lib/seo";
 import { seoConfig } from "@/data/seo";
+import { GoogleReviewBadge } from "@/components/common/GoogleReviewBadge";
 
 export const metadata: Metadata = generatePageMetadata(
   seoConfig.defaultTitle,
@@ -34,6 +35,7 @@ export default function RootLayout({
       </head>
       <body>
         {children}
+        <GoogleReviewBadge />
       </body>
     </html>
   );

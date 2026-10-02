@@ -25,6 +25,7 @@ export interface BrandInfo {
   maps: {
     directionsUrl: string;
     embedUrl: string;
+    reviewUrl: string;
   };
   establishedYear: number;
 }
