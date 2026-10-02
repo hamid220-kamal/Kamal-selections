@@ -26,9 +26,9 @@ export const brandData: BrandInfo = {
   },
   maps: {
     directionsUrl:
-      "https://www.google.com/maps/search/?api=1&query=Kamal+Selections+Ibrahim+Complex+Main+Road+Shadnagar+Telangana",
+      "https://www.google.com/maps/dir/?api=1&destination=Kamal+Selections+Ibrahim+Complex+Main+Road+Shadnagar+Telangana+509216",
     embedUrl:
-      "https://maps.google.com/maps?q=Shadnagar,%20Telangana&t=&z=15&ie=UTF8&iwloc=&output=embed",
+      "https://maps.google.com/maps?q=Kamal%20Selections%2C%20Ibrahim%20Complex%2C%20Main%20Road%2C%20Shadnagar%2C%20Telangana%20509216&t=&z=16&ie=UTF8&iwloc=&output=embed",
     reviewUrl: "https://g.page/r/CYNsP5VFI4cvEBM/review",
   },
 };

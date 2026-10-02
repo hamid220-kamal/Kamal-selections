@@ -8,8 +8,8 @@ export function generatePageMetadata(
   path: string = "",
   ogImage: string = "/brand/logo/kamal-selections-logo.png"
 ): Metadata {
-  const normalizedPath = path ? (path.startsWith("/") ? path : `/${path}`) : "/";
-  const url = `${seoConfig.baseUrl}${normalizedPath === "/" ? "/" : normalizedPath}`;
+  const normalizedPath = path ? (path.startsWith("/") ? path : `/${path}`) : "";
+  const canonicalUrl = `${seoConfig.baseUrl}${normalizedPath}`;
   const fullOgImageUrl = ogImage.startsWith("http")
     ? ogImage
     : `${seoConfig.baseUrl}${ogImage}`;
@@ -22,12 +22,12 @@ export function generatePageMetadata(
     creator: "Hamid Kamal",
     publisher: brandData.name,
     alternates: {
-      canonical: url,
+      canonical: canonicalUrl,
     },
     openGraph: {
       title,
       description,
-      url,
+      url: canonicalUrl,
       siteName: brandData.name,
       locale: "en_IN",
       type: "website",
@@ -78,11 +78,12 @@ export function generateDeveloperPersonSchema() {
 export function generateLocalBusinessSchema() {
   return {
     "@context": "https://schema.org",
-    "@type": "ClothingStore",
+    "@type": ["ClothingStore", "LocalBusiness", "Organization"],
     "@id": `${seoConfig.baseUrl}/#business`,
     name: brandData.name,
     alternateName: "Kamal Selections Shadnagar",
-    description: "Women's & Kids' Clothing Store located at Ibrahim Complex, Main Road, Shadnagar, Telangana.",
+    description:
+      "Women's & Kids' Clothing Store located at Ibrahim Complex, Main Road, Shadnagar, Telangana 509216, India.",
     url: `${seoConfig.baseUrl}/`,
     telephone: `+91${brandData.phone}`,
     logo: {
@@ -90,11 +91,14 @@ export function generateLocalBusinessSchema() {
       url: `${seoConfig.baseUrl}/brand/logo/kamal-selections-logo.png`,
     },
     image: [
+      `${seoConfig.baseUrl}/brand/logo/kamal-selections-logo.png`,
       `${seoConfig.baseUrl}/images/store/kamal-selections-showroom-interior.png`,
       `${seoConfig.baseUrl}/images/store/kamal-selections-store-hero-facade.jpg`,
+      `${seoConfig.baseUrl}/images/store/kamal-selections-storefront-shadnagar.png`,
     ],
     address: {
       "@type": "PostalAddress",
+      buildingName: brandData.address.building,
       streetAddress: `${brandData.address.building}, ${brandData.address.street}`,
       addressLocality: brandData.address.city,
       addressRegion: brandData.address.state,
@@ -128,6 +132,9 @@ export function generateLocalBusinessSchema() {
     },
     hasMap: brandData.maps.directionsUrl,
     sameAs: [brandData.social.instagramUrl],
+    founder: {
+      "@id": `${seoConfig.baseUrl}/#developer`,
+    },
     hasOfferCatalog: {
       "@type": "OfferCatalog",
       name: "Clothing Collections",
@@ -179,29 +186,76 @@ export function generateWebSiteSchema() {
   };
 }
 
-export function generateBreadcrumbSchema(
-  items: { name: string; item: string }[]
+export function generateWebPageSchema(
+  name: string,
+  description: string,
+  path: string
 ) {
+  const normalizedPath = path ? (path.startsWith("/") ? path : `/${path}`) : "";
+  const pageUrl = `${seoConfig.baseUrl}${normalizedPath}`;
+  return {
+    "@context": "https://schema.org",
+    "@type": "WebPage",
+    "@id": `${pageUrl}#webpage`,
+    url: pageUrl,
+    name,
+    description,
+    inLanguage: "en-IN",
+    isPartOf: {
+      "@id": `${seoConfig.baseUrl}/#website`,
+    },
+    about: {
+      "@id": `${seoConfig.baseUrl}/#business`,
+    },
+    breadcrumb: {
+      "@id": `${pageUrl}#breadcrumb`,
+    },
+  };
+}
+
+export function generateBreadcrumbSchema(
+  items: { name: string; item: string }[],
+  currentPath: string = ""
+) {
+  const normalizedPath = currentPath
+    ? currentPath.startsWith("/")
+      ? currentPath
+      : `/${currentPath}`
+    : "";
+  const pageUrl = `${seoConfig.baseUrl}${normalizedPath}`;
   return {
     "@context": "https://schema.org",
     "@type": "BreadcrumbList",
-    itemListElement: items.map((crumb, index) => ({
-      "@type": "ListItem",
-      position: index + 1,
-      name: crumb.name,
-      item: crumb.item.startsWith("http")
+    "@id": `${pageUrl}#breadcrumb`,
+    itemListElement: items.map((crumb, index) => {
+      const crumbPath = crumb.item.startsWith("/")
         ? crumb.item
-        : `${seoConfig.baseUrl}${crumb.item === "/" ? "/" : crumb.item}`,
-    })),
+        : `/${crumb.item}`;
+      const itemUrl = crumb.item.startsWith("http")
+        ? crumb.item
+        : `${seoConfig.baseUrl}${crumbPath === "/" ? "" : crumbPath}`;
+      return {
+        "@type": "ListItem",
+        position: index + 1,
+        name: crumb.name,
+        item: itemUrl || `${seoConfig.baseUrl}/`,
+      };
+    }),
   };
 }
 
 export function generateFAQSchema(
-  faqs: { question: string; answer: string }[]
+  faqs: { question: string; answer: string }[],
+  currentPath: string = "/faq"
 ) {
+  const normalizedPath = currentPath.startsWith("/")
+    ? currentPath
+    : `/${currentPath}`;
+  const pageUrl = `${seoConfig.baseUrl}${normalizedPath}`;
   return {
     "@context": "https://schema.org",
     "@type": "FAQPage",
+    "@id": `${pageUrl}#faq`,
     mainEntity: faqs.map((faq) => ({
       "@type": "Question",
       name: faq.question,
@@ -212,5 +266,6 @@ export function generateFAQSchema(
     })),
   };
 }
+
 
 

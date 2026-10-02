@@ -1,5 +1,7 @@
 "use client";
 
+import { brandData } from "@/data/brand";
+
 export function StorePreview() {
   return (
     <section className="section-our-store" id="our-store">
@@ -91,7 +93,7 @@ export function StorePreview() {
 
               {/* CTAS: PRIMARY DIRECTIONS & SECONDARY CALL */}
               <div className="store-cta-group">
-                <a href="https://www.google.com/maps/search/?api=1&query=Kamal+Selections+Ibrahim+Complex+Main+Road+Shadnagar+Telangana" target="_blank" rel="noopener noreferrer" className="btn btn-burgundy btn-pill">
+                <a href={brandData.maps.directionsUrl} target="_blank" rel="noopener noreferrer" className="btn btn-burgundy btn-pill">
                   <span>Get Directions</span>
                   <svg className="btn-arrow" viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" strokeWidth="2.2">
                     <line x1="5" y1="12" x2="19" y2="12"></line>
@@ -116,7 +118,7 @@ export function StorePreview() {
             <iframe 
               className="google-map-iframe"
               title="Kamal Selections Shadnagar Map Location"
-              src="https://maps.google.com/maps?q=Shadnagar,%20Telangana&t=&z=15&ie=UTF8&iwloc=&output=embed"
+              src={brandData.maps.embedUrl}
               loading="lazy"
               allowFullScreen>
             </iframe>
@@ -126,7 +128,7 @@ export function StorePreview() {
                 <span className="map-banner-title">Kamal Selections · Ibrahim Complex</span>
                 <span className="map-banner-address">Main Road, Shadnagar, Telangana</span>
               </div>
-              <a href="https://www.google.com/maps/search/?api=1&query=Kamal+Selections+Ibrahim+Complex+Main+Road+Shadnagar+Telangana" target="_blank" rel="noopener noreferrer" className="btn btn-gold btn-sm">
+              <a href={brandData.maps.directionsUrl} target="_blank" rel="noopener noreferrer" className="btn btn-gold btn-sm">
                 <span>Get Directions &rarr;</span>
               </a>
             </div>

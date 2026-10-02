@@ -1,0 +1,43 @@
+# Kamal Selections — Official Entity & Business Information
+
+> Machine-readable entity summary for search engines, AI assistants, and knowledge graphs.
+
+## Business Identity
+- **Business Name:** Kamal Selections
+- **Category:** Women's & Kids' Clothing Store
+- **Store Type:** Physical Retail Boutique / Showroom
+- **Official Website:** https://kamal-selections.vercel.app/
+
+## Physical Store Location
+- **Building:** Ibrahim Complex
+- **Street:** Main Road
+- **City:** Shadnagar
+- **State:** Telangana
+- **Postal Code:** 509216
+- **Country:** India
+- **Full Address:** Ibrahim Complex, Main Road, Shadnagar, Telangana 509216, India
+
+## Contact & Store Timings
+- **Phone / WhatsApp:** +91 8332059777
+- **Operating Hours:** 10:00 AM – 9:00 PM (Open Daily)
+- **Instagram Profile:** https://www.instagram.com/kamal_selection_/ (@kamal_selection_)
+
+## Product Categories & Collections Offered
+### Women's Wear
+- Ethnic & Western Dresses
+- Embroidered Cotton & Silk Kurtis
+- Casual Tops & Tunics
+- Stretch Leggings & Ankle Length Pants
+- 3-Piece Co-ord Ethnic Suit Sets with Dupatta
+- Modest Abaya & Burqa Collection
+- Festive Party Wear & Embellished Lehengas
+
+### Kids' Wear
+- Girls' Casual & Party Wear
+- Birthday Frocks & Flared Dresses
+- Boys' Shirts, Trousers & Kurta Pyjama Sets
+- Coordinated 2-Piece and 3-Piece Kids' Sets
+
+## Developer Attribution
+- **Website Designer & Developer:** Hamid Kamal
+- **Developer Portfolio:** https://hamid-ai-dev.vercel.app/

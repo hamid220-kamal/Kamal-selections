@@ -1,6 +1,6 @@
 import { Metadata } from "next";
 import { HomePageContent } from "@/components/home/HomePageContent";
-import { generatePageMetadata } from "@/lib/seo";
+import { generatePageMetadata, generateWebPageSchema, generateBreadcrumbSchema } from "@/lib/seo";
 import { seoConfig } from "@/data/seo";
 
 export const metadata: Metadata = generatePageMetadata(
@@ -10,5 +10,29 @@ export const metadata: Metadata = generatePageMetadata(
 );
 
 export default function HomePage() {
-  return <HomePageContent />;
+  const webPageSchema = generateWebPageSchema(
+    seoConfig.pages.home.title,
+    seoConfig.pages.home.description,
+    "/"
+  );
+
+  const breadcrumbSchema = generateBreadcrumbSchema(
+    [{ name: "Home", item: "/" }],
+    "/"
+  );
+
+  return (
+    <>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(webPageSchema) }}
+      />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }}
+      />
+      <HomePageContent />
+    </>
+  );
 }
+

@@ -143,7 +143,7 @@ export function Footer({ onOpenStoreModal, onOpenSizeGuideModal }: FooterProps) 
               </div>
 
               <a
-                href="https://www.google.com/maps/search/?api=1&query=Kamal+Selections+Ibrahim+Complex+Main+Road+Shadnagar+Telangana"
+                href={brandData.maps.directionsUrl}
                 target="_blank"
                 rel="noopener noreferrer"
                 className="footer-directions-btn"
