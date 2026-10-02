@@ -16,11 +16,11 @@ export function AboutTimeline() {
           </div>
 
           <h2 className="font-serif text-3xl sm:text-4xl lg:text-5xl font-bold text-[#30251F] mb-4">
-            Since 2021.
+            Our Store Journey.
           </h2>
 
           <p className="text-sm sm:text-base text-[#69564A] max-w-md mx-auto">
-            A quiet beginning, steady trust, and a continuous presence on Main Road, Shadnagar.
+            A continuous physical presence and trusted retail clothing boutique on Main Road, Shadnagar.
           </p>
         </div>
 
@@ -31,25 +31,25 @@ export function AboutTimeline() {
 
           <div className="space-y-12 sm:space-y-16">
             
-            {/* NODE 1: 2021 THE BEGINNING */}
+            {/* NODE 1: FOUNDATION */}
             <div className="relative flex flex-col sm:flex-row items-center justify-between gap-6 sm:gap-12">
               {/* Left Side Content */}
               <div className="sm:w-1/2 sm:text-right">
                 <span className="text-xs font-bold text-[#A41A50] uppercase tracking-widest block mb-1">
-                  ESTABLISHED
+                  STORE FOUNDATION
                 </span>
                 <h3 className="font-serif text-2xl sm:text-3xl font-bold text-[#30251F] mb-2">
                   THE BEGINNING
                 </h3>
                 <p className="text-sm text-[#51443B] leading-relaxed max-w-sm sm:ml-auto">
-                  Kamal Selections opened its doors in Shadnagar to offer women and children a dedicated space for festive and everyday outfits.
+                  Kamal Selections opened its showroom in Shadnagar to offer women and children a dedicated space for festive and everyday outfits.
                 </p>
               </div>
 
               {/* Center Node Badge */}
               <div className="z-10 w-16 h-16 rounded-full bg-gradient-to-br from-[#F8E5BA] via-[#FAF3EB] to-[#E5C378] border-2 border-[#D4AF37] shadow-lg flex items-center justify-center shrink-0">
-                <span className="font-serif font-bold text-sm text-[#4A0717]">
-                  2021
+                <span className="font-serif font-bold text-xs text-[#4A0717] tracking-wider uppercase">
+                  STORE
                 </span>
               </div>
 

@@ -124,8 +124,8 @@ export function BrandIntroduction({ onOpenStoreModal }: BrandIntroductionProps) 
                   <path d="M 20,18 C 14,15 8,10 6,5 C 13,6 17,12 20,18 Z" />
                   <path d="M 20,18 C 26,15 32,10 34,5 C 27,6 23,12 20,18 Z" />
                 </svg>
-                <span className="badge-sub">Since</span>
-                <span className="badge-year">2021</span>
+                <span className="badge-sub">Store</span>
+                <span className="badge-year">Shadnagar</span>
               </div>
             </div>
           </div>

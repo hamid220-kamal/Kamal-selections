@@ -3,7 +3,7 @@ import { seoConfig } from "@/data/seo";
 
 export default function sitemap(): MetadataRoute.Sitemap {
   const routes = [
-    { route: "", changeFrequency: "daily" as const, priority: 1.0 },
+    { route: "/", changeFrequency: "daily" as const, priority: 1.0 },
     { route: "/women", changeFrequency: "weekly" as const, priority: 0.9 },
     { route: "/kids", changeFrequency: "weekly" as const, priority: 0.9 },
     { route: "/store", changeFrequency: "weekly" as const, priority: 0.9 },
@@ -18,9 +18,9 @@ export default function sitemap(): MetadataRoute.Sitemap {
 
   return routes.map(({ route, changeFrequency, priority }) => ({
     url: `${seoConfig.baseUrl}${route}`,
-    lastModified: new Date(),
     changeFrequency,
     priority,
   }));
 }
+
 

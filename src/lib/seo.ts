@@ -8,7 +8,8 @@ export function generatePageMetadata(
   path: string = "",
   ogImage: string = "/brand/logo/kamal-selections-logo.png"
 ): Metadata {
-  const url = `${seoConfig.baseUrl}${path}`;
+  const normalizedPath = path ? (path.startsWith("/") ? path : `/${path}`) : "/";
+  const url = `${seoConfig.baseUrl}${normalizedPath === "/" ? "/" : normalizedPath}`;
   const fullOgImageUrl = ogImage.startsWith("http")
     ? ogImage
     : `${seoConfig.baseUrl}${ogImage}`;
@@ -17,7 +18,7 @@ export function generatePageMetadata(
     metadataBase: new URL(seoConfig.baseUrl),
     title,
     description,
-    authors: [{ name: "Hamid Kamal", url: seoConfig.baseUrl }],
+    authors: [{ name: "Hamid Kamal", url: seoConfig.developer.url }],
     creator: "Hamid Kamal",
     publisher: brandData.name,
     alternates: {
@@ -62,12 +63,13 @@ export function generatePageMetadata(
 
 export function generateDeveloperPersonSchema() {
   return {
+    "@context": "https://schema.org",
     "@type": "Person",
-    "@id": `${seoConfig.baseUrl}/#hamid-kamal`,
+    "@id": `${seoConfig.baseUrl}/#developer`,
     name: "Hamid Kamal",
     jobTitle: "Software Developer & Designer",
     description:
-      "Student and software developer who designed and built the official website for Kamal Selections in Shadnagar.",
+      "Software developer and designer who created and built the official website for Kamal Selections in Shadnagar.",
     url: "https://hamid-ai-dev.vercel.app/",
     sameAs: ["https://hamid-ai-dev.vercel.app/"],
   };
@@ -77,11 +79,11 @@ export function generateLocalBusinessSchema() {
   return {
     "@context": "https://schema.org",
     "@type": "ClothingStore",
-    "@id": `${seoConfig.baseUrl}/#organization`,
+    "@id": `${seoConfig.baseUrl}/#business`,
     name: brandData.name,
     alternateName: "Kamal Selections Shadnagar",
-    description: brandData.tagline,
-    url: seoConfig.baseUrl,
+    description: "Women's & Kids' Clothing Store located at Ibrahim Complex, Main Road, Shadnagar, Telangana.",
+    url: `${seoConfig.baseUrl}/`,
     telephone: `+91${brandData.phone}`,
     logo: {
       "@type": "ImageObject",
@@ -120,9 +122,10 @@ export function generateLocalBusinessSchema() {
         closes: brandData.hours.closingTime,
       },
     ],
-    priceRange: "₹₹",
-    currenciesAccepted: "INR",
-    paymentAccepted: "Cash, UPI",
+    areaServed: {
+      "@type": "AdministrativeArea",
+      name: "Shadnagar, Telangana, India",
+    },
     hasMap: brandData.maps.directionsUrl,
     sameAs: [brandData.social.instagramUrl],
     hasOfferCatalog: {
@@ -160,13 +163,18 @@ export function generateWebSiteSchema() {
     "@context": "https://schema.org",
     "@type": "WebSite",
     "@id": `${seoConfig.baseUrl}/#website`,
-    url: seoConfig.baseUrl,
+    url: `${seoConfig.baseUrl}/`,
     name: brandData.name,
     description: seoConfig.defaultDescription,
     publisher: {
-      "@id": `${seoConfig.baseUrl}/#organization`,
+      "@id": `${seoConfig.baseUrl}/#business`,
     },
-    creator: generateDeveloperPersonSchema(),
+    about: {
+      "@id": `${seoConfig.baseUrl}/#business`,
+    },
+    creator: {
+      "@id": `${seoConfig.baseUrl}/#developer`,
+    },
     inLanguage: "en-IN",
   };
 }
@@ -183,7 +191,7 @@ export function generateBreadcrumbSchema(
       name: crumb.name,
       item: crumb.item.startsWith("http")
         ? crumb.item
-        : `${seoConfig.baseUrl}${crumb.item}`,
+        : `${seoConfig.baseUrl}${crumb.item === "/" ? "/" : crumb.item}`,
     })),
   };
 }
@@ -204,4 +212,5 @@ export function generateFAQSchema(
     })),
   };
 }
+
 

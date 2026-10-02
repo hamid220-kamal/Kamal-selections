@@ -34,7 +34,7 @@ export function AboutBeginning() {
                 <span className="uppercase tracking-[0.2em] font-semibold text-[#A41A50]">
                   Kamal Selections · Shadnagar
                 </span>
-                <span className="font-serif italic">Est. 2021</span>
+                <span className="font-serif italic">Retail Store</span>
               </div>
             </div>
           </div>
@@ -62,7 +62,7 @@ export function AboutBeginning() {
 
             {/* SUPPORTING COPY */}
             <p className="text-base sm:text-lg text-[#51443B] leading-relaxed mb-6">
-              Kamal Selections began in 2021 in Shadnagar with a simple purpose — to bring women&apos;s and kids&apos; fashion together in one place, with styles families could explore comfortably and affordably.
+              Kamal Selections was created in Shadnagar with a simple purpose — to bring women&apos;s and kids&apos; fashion together in one place, with styles families could explore comfortably and affordably.
             </p>
 
             {/* SCRIPT ACCENT */}

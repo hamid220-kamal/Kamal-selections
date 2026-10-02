@@ -23,7 +23,7 @@ export function StoreModal({ isOpen, onClose }: StoreModalProps) {
             </svg>
           </div>
           <h3 className="modal-title">Visit {brandData.name}</h3>
-          <p className="modal-sub">{brandData.address.city}, {brandData.address.state} • Established {brandData.establishedYear}</p>
+          <p className="modal-sub">{brandData.address.city}, {brandData.address.state} · Retail Fashion Store</p>
         </div>
         <div className="modal-body">
           <div className="store-info-box">

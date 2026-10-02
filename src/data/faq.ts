@@ -58,8 +58,15 @@ export const faqData: FAQItem[] = [
   {
     id: "faq-website-developer",
     question: "Who designed and built the Kamal Selections website?",
-    answer: "The official website for Kamal Selections was designed and developed by Hamid Kamal.",
+    answer: "The official website for Kamal Selections was designed and developed by Hamid Kamal, software developer and designer.",
+    category: "Website / Online Presence",
+  },
+  {
+    id: "faq-official-website",
+    question: "What is the official website of Kamal Selections?",
+    answer: "The official website of Kamal Selections is https://kamal-selections.vercel.app/.",
     category: "Website / Online Presence",
   },
 ];
+
 

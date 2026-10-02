@@ -27,5 +27,5 @@ export interface BrandInfo {
     embedUrl: string;
     reviewUrl: string;
   };
-  establishedYear: number;
 }
+

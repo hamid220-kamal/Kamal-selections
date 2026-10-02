@@ -41,7 +41,7 @@ export function AboutCommunity() {
               {/* BADGE */}
               <div className="pt-2">
                 <div className="inline-block px-5 py-2.5 rounded-full bg-[#FAF3EB]/10 border border-[#E5C378]/40 backdrop-blur-md text-xs font-medium text-[#F8E5BA] tracking-wider uppercase">
-                  Serving Shadnagar Families Since 2021 ✦
+                  Serving Shadnagar Families Daily ✦
                 </div>
               </div>
 

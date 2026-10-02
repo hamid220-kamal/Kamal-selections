@@ -1077,7 +1077,7 @@ Every significant change should first be tested through a preview deployment.
 Development:
 
 ```text
-kamalselections.vercel.app
+kamal-selections.vercel.app
 ```
 
 Possible production domain:

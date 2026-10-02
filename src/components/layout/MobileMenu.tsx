@@ -45,7 +45,7 @@ export function MobileMenu({
         <div className="drawer-header">
           <div className="drawer-brand">
             <span className="drawer-title">KAMAL SELECTIONS</span>
-            <span className="drawer-sub">Est. 2021 • Shadnagar</span>
+            <span className="drawer-sub">Shadnagar, Telangana</span>
           </div>
           <button className="close-btn" id="close-drawer-btn" aria-label="Close menu" onClick={onClose}>
             &times;

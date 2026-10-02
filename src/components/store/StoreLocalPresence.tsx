@@ -27,17 +27,17 @@ export function StoreLocalPresence() {
             </p>
 
             <p className="text-sm text-[#69564A] leading-relaxed">
-              We started here in 2021 with the idea that shopping for quality clothes shouldn&apos;t require long trips into Hyderabad. Everything we offer is chosen with our local community in mind.
+              Our store was created with the idea that shopping for quality clothes shouldn&apos;t require long trips into Hyderabad. Everything we offer is chosen with our local community in mind.
             </p>
           </div>
 
           <div className="md:w-2/5 w-full relative z-10">
             <div className="p-6 sm:p-8 rounded-2xl bg-[#FAF3EB] border border-[#E5C378]/50 shadow-inner text-center">
               <span className="font-serif text-3xl sm:text-4xl font-bold text-[#A41A50] block mb-1">
-                2021
+                SHADNAGAR
               </span>
               <span className="text-xs uppercase tracking-[0.2em] font-bold text-[#D4AF37] block mb-3">
-                FOUNDED IN SHADNAGAR
+                LOCAL FASHION STORE
               </span>
               <p className="text-xs text-[#69564A] leading-relaxed">
                 A dedicated physical space for women&apos;s ethnic wear, kids&apos; party outfits, and everyday family fashion.

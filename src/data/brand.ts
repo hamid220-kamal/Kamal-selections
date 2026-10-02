@@ -31,5 +31,5 @@ export const brandData: BrandInfo = {
       "https://maps.google.com/maps?q=Shadnagar,%20Telangana&t=&z=15&ie=UTF8&iwloc=&output=embed",
     reviewUrl: "https://g.page/r/CYNsP5VFI4cvEBM/review",
   },
-  establishedYear: 2021,
 };
+

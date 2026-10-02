@@ -1,13 +1,14 @@
 export const seoConfig = {
   siteName: "Kamal Selections",
-  baseUrl: "https://www.kamalselections.com",
+  baseUrl: "https://kamal-selections.vercel.app",
   defaultTitle: "Kamal Selections | Women's & Kids' Clothing Store in Shadnagar",
   defaultDescription:
-    "Kamal Selections is a physical clothing store in Ibrahim Complex, Main Road, Shadnagar, Telangana. Browse women's ethnic wear, dresses, kurtis, 3-piece sets, burqas, frocks & kids' clothing.",
+    "Kamal Selections is a physical clothing store in Ibrahim Complex, Main Road, Shadnagar, Telangana 509216. Browse women's ethnic wear, dresses, kurtis, 3-piece sets, burqas, frocks & kids' clothing.",
   developer: {
     name: "Hamid Kamal",
-    role: "Website Developer & Designer",
+    role: "Software Developer & Designer",
     description: "Designed and developed the official website for Kamal Selections clothing store in Shadnagar.",
+    url: "https://hamid-ai-dev.vercel.app/",
   },
   pages: {
     home: {
@@ -28,7 +29,7 @@ export const seoConfig = {
     about: {
       title: "About Kamal Selections | Family Clothing Store in Shadnagar",
       description:
-        "Learn about Kamal Selections, a family-focused retail fashion store in Shadnagar, Telangana serving local shoppers since 2021. Website designed & built by Hamid Kamal.",
+        "Learn about Kamal Selections, a family-focused retail fashion store located at Ibrahim Complex, Main Road, Shadnagar, Telangana. Website designed & built by Hamid Kamal.",
     },
     whyUs: {
       title: "Why Kamal Selections | Value-Focused Fashion in Shadnagar",
@@ -38,7 +39,7 @@ export const seoConfig = {
     store: {
       title: "Kamal Selections Physical Store | Ibrahim Complex, Main Road, Shadnagar",
       description:
-        "Visit the physical Kamal Selections showroom at Ibrahim Complex, Main Road, Shadnagar, Telangana 509216. Phone: 8332059777. Open daily 10 AM to 9 PM.",
+        "Visit the physical Kamal Selections showroom at Ibrahim Complex, Main Road, Shadnagar, Telangana 509216. Phone: +91 8332059777. Open daily 10 AM to 9 PM.",
     },
     contact: {
       title: "Contact Kamal Selections Shadnagar | Store Address & Phone Number",
@@ -65,4 +66,5 @@ export const seoConfig = {
     },
   },
 };
+
 

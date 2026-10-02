@@ -93,7 +93,7 @@ export function Hero({ onOpenStoreModal }: HeroProps) {
               <circle cx="12" cy="9" r="2.5" fill="#E5C378"/>
             </svg>
             <span>Women’s &amp; Kids’ Wear in Shadnagar</span>
-            <span className="est-badge">Est. 2021</span>
+            <span className="est-badge">Retail Store</span>
           </div>
 
           {/* CTA BUTTONS GROUP */}

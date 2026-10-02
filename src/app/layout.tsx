@@ -4,6 +4,7 @@ import {
   generatePageMetadata,
   generateLocalBusinessSchema,
   generateWebSiteSchema,
+  generateDeveloperPersonSchema,
 } from "@/lib/seo";
 import { seoConfig } from "@/data/seo";
 import { GoogleReviewBadge } from "@/components/common/GoogleReviewBadge";
@@ -12,7 +13,7 @@ export const metadata: Metadata = {
   ...generatePageMetadata(
     seoConfig.defaultTitle,
     seoConfig.defaultDescription,
-    ""
+    "/"
   ),
   icons: {
     icon: "/brand/logo/kamal-selections-logo.png",
@@ -39,6 +40,7 @@ export default function RootLayout({
     "@graph": [
       generateLocalBusinessSchema(),
       generateWebSiteSchema(),
+      generateDeveloperPersonSchema(),
     ],
   };
 

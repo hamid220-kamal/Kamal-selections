@@ -74,17 +74,11 @@ export function AboutHero({ onOpenStoreModal }: AboutHeroProps = {}) {
             Chosen with care.<br />Made for your everyday.
           </p>
 
-          {/* EDITORIAL SUPPORTING PARAGRAPH WITH SMALL CIRCULAR STORY MARKER */}
+          {/* EDITORIAL SUPPORTING PARAGRAPH */}
           <div className="flex items-start gap-4 max-w-[510px] mb-5">
-            {/* SMALL STORY MARKER: EST. 2021 */}
-            <div className="hero-story-marker animate-fade-in delay-7 mt-0.5" aria-label="Established 2021" title="Established 2021">
-              <span className="marker-est">EST.</span>
-              <span className="marker-year">2021</span>
-            </div>
-
             {/* SUPPORTING COPY */}
             <p className="hero-desc-copy animate-slide-up delay-4 !mb-0">
-              Since 2021, Kamal Selections has been serving women and families in Shadnagar with thoughtfully selected fashion for everyday life, celebrations and everything in between.
+              Kamal Selections serves women and families in Shadnagar with thoughtfully selected fashion for everyday life, celebrations and special occasions.
             </p>
           </div>
 
@@ -118,8 +112,8 @@ export function AboutHero({ onOpenStoreModal }: AboutHeroProps = {}) {
                 </svg>
               </div>
               <div className="benefit-text">
-                <span className="benefit-title">Since 2021</span>
-                <span className="benefit-sub">Serving Shadnagar</span>
+                <span className="benefit-title">Open Daily</span>
+                <span className="benefit-sub">10 AM – 9 PM</span>
               </div>
             </div>
 
