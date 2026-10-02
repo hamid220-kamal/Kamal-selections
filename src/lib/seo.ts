@@ -120,6 +120,10 @@ export function generateLocalBusinessSchema() {
         closes: brandData.hours.closingTime,
       },
     ],
+    priceRange: "₹₹",
+    currenciesAccepted: "INR",
+    paymentAccepted: "Cash, UPI",
+    hasMap: brandData.maps.directionsUrl,
     sameAs: [brandData.social.instagramUrl],
     hasOfferCatalog: {
       "@type": "OfferCatalog",
@@ -148,7 +152,6 @@ export function generateLocalBusinessSchema() {
         },
       ],
     },
-    author: generateDeveloperPersonSchema(),
   };
 }
 

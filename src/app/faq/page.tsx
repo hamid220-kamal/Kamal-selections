@@ -31,7 +31,7 @@ export default function FAQPage() {
       <section className="py-20 bg-[#FDF8F2] text-[#3E0A23]">
         <div className="max-w-4xl mx-auto px-4">
           <div className="text-center mb-12">
-            <span className="text-xs uppercase tracking-widest text-[#CFA753]">KNOWLEDGE BASE &amp; AEO</span>
+            <span className="text-xs uppercase tracking-widest text-[#CFA753]">KNOWLEDGE BASE &amp; STORE INFORMATION</span>
             <h1 className="font-serif text-4xl font-bold mt-2">Frequently Asked Questions</h1>
             <p className="text-sm text-[#4A2B35] mt-2 max-w-xl mx-auto">
               Find direct, factual answers about Kamal Selections clothing store in Shadnagar, Telangana.

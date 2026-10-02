@@ -111,7 +111,7 @@ export function GoogleReviewBadge() {
               <span>★</span>
               <span>★</span>
               <span>★</span>
-              <span className="text-xs font-bold text-[#30251F] ml-1">5.0</span>
+              <span className="text-xs font-bold text-[#30251F] ml-1">Rate Us</span>
             </div>
 
             <h4 className="font-serif text-lg font-bold text-[#30251F] mb-1 leading-snug">

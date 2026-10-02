@@ -44,9 +44,21 @@ export const faqData: FAQItem[] = [
     category: "Store",
   },
   {
+    id: "faq-find-womens-clothing-shadnagar",
+    question: "Where can I find women's clothing in Shadnagar?",
+    answer: "You can find women's wear at Kamal Selections, situated at Ibrahim Complex, Main Road, Shadnagar, Telangana. We offer ethnic dresses, embroidered kurtis, tops, leggings, 3-piece co-ord sets, burqas, and party wear.",
+    category: "Women's Wear",
+  },
+  {
+    id: "faq-find-kids-wear-shadnagar",
+    question: "Where can I find kids wear in Shadnagar?",
+    answer: "You can shop kids' clothing at Kamal Selections on Main Road, Shadnagar. Our collection includes girls' dresses, birthday frocks, boys' wear, and festive kids' sets.",
+    category: "Kids Wear",
+  },
+  {
     id: "faq-website-developer",
     question: "Who designed and built the Kamal Selections website?",
-    answer: "The official website for Kamal Selections was designed and developed by Hamid Kamal, a 17-year-old student and software developer.",
+    answer: "The official website for Kamal Selections was designed and developed by Hamid Kamal.",
     category: "Website / Online Presence",
   },
 ];
