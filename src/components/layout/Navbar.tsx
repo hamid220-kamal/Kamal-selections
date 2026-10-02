@@ -7,14 +7,12 @@ import { usePathname } from "next/navigation";
 interface NavbarProps {
   onOpenStoreModal?: () => void;
   onOpenSizeGuideModal?: () => void;
-  onOpenSearchModal?: () => void;
   onToggleMobileMenu?: () => void;
 }
 
 export function Navbar({
   onOpenStoreModal,
   onOpenSizeGuideModal,
-  onOpenSearchModal,
   onToggleMobileMenu,
 }: NavbarProps) {
   const [isScrolled, setIsScrolled] = useState(false);
@@ -76,19 +74,6 @@ export function Navbar({
 
         {/* RIGHT ACTIONS */}
         <div className="nav-actions">
-          {onOpenSearchModal && (
-            <button
-              className="icon-btn search-trigger"
-              id="open-search-modal-btn"
-              aria-label="Open Search"
-              onClick={onOpenSearchModal}
-            >
-              <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
-                <circle cx="11" cy="11" r="8"></circle>
-                <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
-              </svg>
-            </button>
-          )}
           <button
             className="icon-btn menu-trigger"
             id="mobile-menu-btn"

@@ -18,12 +18,10 @@ import { AboutContactStrip } from "@/components/about/AboutContactStrip";
 import { AboutFinalCTA } from "@/components/about/AboutFinalCTA";
 import { StoreModal } from "@/components/modals/StoreModal";
 import { SizeGuideModal } from "@/components/modals/SizeGuideModal";
-import { SearchModal } from "@/components/modals/SearchModal";
 
 export function AboutPageContent() {
   const [isStoreModalOpen, setIsStoreModalOpen] = useState(false);
   const [isSizeGuideOpen, setIsSizeGuideOpen] = useState(false);
-  const [isSearchModalOpen, setIsSearchModalOpen] = useState(false);
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
 
   useEffect(() => {
@@ -55,7 +53,6 @@ export function AboutPageContent() {
       <Navbar
         onOpenStoreModal={() => setIsStoreModalOpen(true)}
         onOpenSizeGuideModal={() => setIsSizeGuideOpen(true)}
-        onOpenSearchModal={() => setIsSearchModalOpen(true)}
         onToggleMobileMenu={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
       />
 
@@ -65,7 +62,6 @@ export function AboutPageContent() {
         onClose={() => setIsMobileMenuOpen(false)}
         onOpenStoreModal={() => setIsStoreModalOpen(true)}
         onOpenSizeGuideModal={() => setIsSizeGuideOpen(true)}
-        onOpenSearchModal={() => setIsSearchModalOpen(true)}
       />
 
       {/* MAIN CONTENT - EXACT STORYTELLING SHOWCASE HIERARCHY */}
@@ -121,10 +117,6 @@ export function AboutPageContent() {
       <SizeGuideModal
         isOpen={isSizeGuideOpen}
         onClose={() => setIsSizeGuideOpen(false)}
-      />
-      <SearchModal
-        isOpen={isSearchModalOpen}
-        onClose={() => setIsSearchModalOpen(false)}
       />
     </div>
   );

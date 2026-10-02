@@ -14,12 +14,10 @@ import { FAQPreview } from "@/components/home/FAQPreview";
 import { FinalVisitCTA } from "@/components/home/FinalVisitCTA";
 import { StoreModal } from "@/components/modals/StoreModal";
 import { SizeGuideModal } from "@/components/modals/SizeGuideModal";
-import { SearchModal } from "@/components/modals/SearchModal";
 
 export function HomePageContent() {
   const [isStoreModalOpen, setIsStoreModalOpen] = useState(false);
   const [isSizeGuideOpen, setIsSizeGuideOpen] = useState(false);
-  const [isSearchModalOpen, setIsSearchModalOpen] = useState(false);
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
 
   useEffect(() => {
@@ -51,7 +49,6 @@ export function HomePageContent() {
       <Navbar
         onOpenStoreModal={() => setIsStoreModalOpen(true)}
         onOpenSizeGuideModal={() => setIsSizeGuideOpen(true)}
-        onOpenSearchModal={() => setIsSearchModalOpen(true)}
         onToggleMobileMenu={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
       />
 
@@ -61,7 +58,6 @@ export function HomePageContent() {
         onClose={() => setIsMobileMenuOpen(false)}
         onOpenStoreModal={() => setIsStoreModalOpen(true)}
         onOpenSizeGuideModal={() => setIsSizeGuideOpen(true)}
-        onOpenSearchModal={() => setIsSearchModalOpen(true)}
       />
 
       {/* MAIN SECTIONS */}
@@ -70,7 +66,6 @@ export function HomePageContent() {
         <Hero
           onOpenStoreModal={() => setIsStoreModalOpen(true)}
           onOpenSizeGuideModal={() => setIsSizeGuideOpen(true)}
-          onOpenSearchModal={() => setIsSearchModalOpen(true)}
         />
 
         {/* SECTION 2: BRAND INTRODUCTION */}
@@ -109,10 +104,6 @@ export function HomePageContent() {
       <SizeGuideModal
         isOpen={isSizeGuideOpen}
         onClose={() => setIsSizeGuideOpen(false)}
-      />
-      <SearchModal
-        isOpen={isSearchModalOpen}
-        onClose={() => setIsSearchModalOpen(false)}
       />
     </div>
   );

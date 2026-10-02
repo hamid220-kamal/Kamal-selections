@@ -15,12 +15,10 @@ import { ContactQuickStrip } from "@/components/contact/ContactQuickStrip";
 import { ContactFinalCTA } from "@/components/contact/ContactFinalCTA";
 import { StoreModal } from "@/components/modals/StoreModal";
 import { SizeGuideModal } from "@/components/modals/SizeGuideModal";
-import { SearchModal } from "@/components/modals/SearchModal";
 
 export function ContactPageContent() {
   const [isStoreModalOpen, setIsStoreModalOpen] = useState(false);
   const [isSizeGuideOpen, setIsSizeGuideOpen] = useState(false);
-  const [isSearchModalOpen, setIsSearchModalOpen] = useState(false);
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
 
   useEffect(() => {
@@ -52,7 +50,6 @@ export function ContactPageContent() {
       <Navbar
         onOpenStoreModal={() => setIsStoreModalOpen(true)}
         onOpenSizeGuideModal={() => setIsSizeGuideOpen(true)}
-        onOpenSearchModal={() => setIsSearchModalOpen(true)}
         onToggleMobileMenu={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
       />
 
@@ -62,7 +59,6 @@ export function ContactPageContent() {
         onClose={() => setIsMobileMenuOpen(false)}
         onOpenStoreModal={() => setIsStoreModalOpen(true)}
         onOpenSizeGuideModal={() => setIsSizeGuideOpen(true)}
-        onOpenSearchModal={() => setIsSearchModalOpen(true)}
       />
 
       {/* MAIN CONTENT - EXACT LOCAL STORE CONTACT HIERARCHY */}
@@ -109,10 +105,6 @@ export function ContactPageContent() {
       <SizeGuideModal
         isOpen={isSizeGuideOpen}
         onClose={() => setIsSizeGuideOpen(false)}
-      />
-      <SearchModal
-        isOpen={isSearchModalOpen}
-        onClose={() => setIsSearchModalOpen(false)}
       />
     </div>
   );

@@ -18,12 +18,10 @@ import { KidsLocationStrip } from "@/components/kids/KidsLocationStrip";
 import { KidsFinalBanner } from "@/components/kids/KidsFinalBanner";
 import { StoreModal } from "@/components/modals/StoreModal";
 import { SizeGuideModal } from "@/components/modals/SizeGuideModal";
-import { SearchModal } from "@/components/modals/SearchModal";
 
 export function KidsPageContent() {
   const [isStoreModalOpen, setIsStoreModalOpen] = useState(false);
   const [isSizeGuideOpen, setIsSizeGuideOpen] = useState(false);
-  const [isSearchModalOpen, setIsSearchModalOpen] = useState(false);
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
 
   useEffect(() => {
@@ -55,7 +53,6 @@ export function KidsPageContent() {
       <Navbar
         onOpenStoreModal={() => setIsStoreModalOpen(true)}
         onOpenSizeGuideModal={() => setIsSizeGuideOpen(true)}
-        onOpenSearchModal={() => setIsSearchModalOpen(true)}
         onToggleMobileMenu={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
       />
 
@@ -65,7 +62,6 @@ export function KidsPageContent() {
         onClose={() => setIsMobileMenuOpen(false)}
         onOpenStoreModal={() => setIsStoreModalOpen(true)}
         onOpenSizeGuideModal={() => setIsSizeGuideOpen(true)}
-        onOpenSearchModal={() => setIsSearchModalOpen(true)}
       />
 
       {/* MAIN CONTENT - EXACT EDITORIAL SHOWCASE HIERARCHY */}
@@ -121,10 +117,6 @@ export function KidsPageContent() {
       <SizeGuideModal
         isOpen={isSizeGuideOpen}
         onClose={() => setIsSizeGuideOpen(false)}
-      />
-      <SearchModal
-        isOpen={isSearchModalOpen}
-        onClose={() => setIsSearchModalOpen(false)}
       />
     </div>
   );

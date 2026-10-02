@@ -16,12 +16,10 @@ import { WomensLocationStrip } from "@/components/women/WomensLocationStrip";
 import { WomensFinalBanner } from "@/components/women/WomensFinalBanner";
 import { StoreModal } from "@/components/modals/StoreModal";
 import { SizeGuideModal } from "@/components/modals/SizeGuideModal";
-import { SearchModal } from "@/components/modals/SearchModal";
 
 export function WomensPageContent() {
   const [isStoreModalOpen, setIsStoreModalOpen] = useState(false);
   const [isSizeGuideOpen, setIsSizeGuideOpen] = useState(false);
-  const [isSearchModalOpen, setIsSearchModalOpen] = useState(false);
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
 
   useEffect(() => {
@@ -53,7 +51,6 @@ export function WomensPageContent() {
       <Navbar
         onOpenStoreModal={() => setIsStoreModalOpen(true)}
         onOpenSizeGuideModal={() => setIsSizeGuideOpen(true)}
-        onOpenSearchModal={() => setIsSearchModalOpen(true)}
         onToggleMobileMenu={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
       />
 
@@ -63,7 +60,6 @@ export function WomensPageContent() {
         onClose={() => setIsMobileMenuOpen(false)}
         onOpenStoreModal={() => setIsStoreModalOpen(true)}
         onOpenSizeGuideModal={() => setIsSizeGuideOpen(true)}
-        onOpenSearchModal={() => setIsSearchModalOpen(true)}
       />
 
       {/* MAIN CONTENT - EXACT EDITORIAL SHOWCASE HIERARCHY */}
@@ -113,10 +109,6 @@ export function WomensPageContent() {
       <SizeGuideModal
         isOpen={isSizeGuideOpen}
         onClose={() => setIsSizeGuideOpen(false)}
-      />
-      <SearchModal
-        isOpen={isSearchModalOpen}
-        onClose={() => setIsSearchModalOpen(false)}
       />
     </div>
   );

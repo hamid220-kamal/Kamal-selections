@@ -5,7 +5,6 @@ import Link from "next/link";
 interface HeroProps {
   onOpenStoreModal?: () => void;
   onOpenSizeGuideModal?: () => void;
-  onOpenSearchModal?: () => void;
 }
 
 export function Hero({ onOpenStoreModal }: HeroProps) {

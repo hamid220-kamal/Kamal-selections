@@ -5,7 +5,6 @@ import Link from "next/link";
 interface WomensHeroProps {
   onOpenStoreModal?: () => void;
   onOpenSizeGuideModal?: () => void;
-  onOpenSearchModal?: () => void;
 }
 
 export function WomensHero({ onOpenStoreModal }: WomensHeroProps = {}) {
