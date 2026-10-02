@@ -1,7 +1,7 @@
 import { Metadata } from "next";
 import Link from "next/link";
 import { PageContainer } from "@/components/layout/PageContainer";
-import { generatePageMetadata } from "@/lib/seo";
+import { generatePageMetadata, generateBreadcrumbSchema } from "@/lib/seo";
 import { seoConfig } from "@/data/seo";
 import { brandData } from "@/data/brand";
 
@@ -12,9 +12,19 @@ export const metadata: Metadata = generatePageMetadata(
 );
 
 export default function TermsPage() {
+  const breadcrumbSchema = generateBreadcrumbSchema([
+    { name: "Home", item: "/" },
+    { name: "Terms & Conditions", item: "/terms" },
+  ]);
+
   return (
     <PageContainer>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }}
+      />
       <section className="py-16 md:py-24 bg-[#FAF3EB] text-[#30251F] relative overflow-hidden">
+
         {/* AMBIENT GLOW */}
         <div className="absolute top-0 right-0 w-96 h-96 bg-gradient-to-bl from-[#E5C378]/15 via-transparent to-transparent rounded-full blur-3xl pointer-events-none" />
 

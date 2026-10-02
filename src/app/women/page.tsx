@@ -1,13 +1,28 @@
 import { Metadata } from "next";
 import { WomensPageContent } from "@/components/women/WomensPageContent";
-import { generatePageMetadata } from "@/lib/seo";
+import { generatePageMetadata, generateBreadcrumbSchema } from "@/lib/seo";
+import { seoConfig } from "@/data/seo";
 
 export const metadata: Metadata = generatePageMetadata(
-  "Women's Wear in Shadnagar | Kamal Selections",
-  "Kamal Selections women's wear in Shadnagar, including dresses, kurtis, tops, leggings, burqa, 3-piece sets and party wear.",
+  seoConfig.pages.women.title,
+  seoConfig.pages.women.description,
   "/women"
 );
 
 export default function WomensPage() {
-  return <WomensPageContent />;
+  const breadcrumbSchema = generateBreadcrumbSchema([
+    { name: "Home", item: "/" },
+    { name: "Women's Wear", item: "/women" },
+  ]);
+
+  return (
+    <>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }}
+      />
+      <WomensPageContent />
+    </>
+  );
 }
+

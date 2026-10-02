@@ -1,6 +1,6 @@
 import { Metadata } from "next";
 import { AboutPageContent } from "@/components/about/AboutPageContent";
-import { generatePageMetadata } from "@/lib/seo";
+import { generatePageMetadata, generateBreadcrumbSchema } from "@/lib/seo";
 import { seoConfig } from "@/data/seo";
 
 export const metadata: Metadata = generatePageMetadata(
@@ -10,5 +10,19 @@ export const metadata: Metadata = generatePageMetadata(
 );
 
 export default function AboutPage() {
-  return <AboutPageContent />;
+  const breadcrumbSchema = generateBreadcrumbSchema([
+    { name: "Home", item: "/" },
+    { name: "About Us", item: "/about" },
+  ]);
+
+  return (
+    <>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }}
+      />
+      <AboutPageContent />
+    </>
+  );
 }
+

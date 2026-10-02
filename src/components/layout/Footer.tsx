@@ -162,7 +162,17 @@ export function Footer({ onOpenStoreModal, onOpenSizeGuideModal }: FooterProps) 
         <div className="footer-bottom-bar">
           <div className="footer-copyright">
             <span>© 2026 Kamal Selections. All rights reserved.</span>
-            <span className="copyright-sub">Shadnagar, Telangana</span>
+            <span className="copyright-sub">
+              Shadnagar, Telangana · Website designed &amp; developed by{" "}
+              <a
+                href="https://hamid-ai-dev.vercel.app/"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-[#E5C378] hover:underline font-medium"
+              >
+                Hamid Kamal
+              </a>
+            </span>
           </div>
 
           <div className="footer-bottom-links">
