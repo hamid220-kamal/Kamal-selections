@@ -21,9 +21,6 @@ export function generatePageMetadata(
     authors: [{ name: "Hamid Kamal", url: seoConfig.developer.url }],
     creator: "Hamid Kamal",
     publisher: brandData.name,
-    verification: {
-      google: "rbGIuYx-CG_UjgEcXqTy93OcCqfGouuSt-YbH4lRoGg",
-    },
     alternates: {
       canonical: canonicalUrl,
     },
